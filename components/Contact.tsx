@@ -2,88 +2,78 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Mail, Clock } from "lucide-react";
-import { useScrollContext } from "@/providers/ScrollProvider";
+import { useNav } from "@/providers/NavProvider";
 
-const fadeUp = {
-    initial: { opacity: 0, y: 20 },
+const fade = {
+    initial: { opacity: 0, y: 18 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: "-40px" },
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.55, ease: "easeOut" as const },
 };
 
 export default function Contact() {
-    const { refs } = useScrollContext();
+    const { kontakt } = useNav();
 
     return (
-        <section
-            ref={refs.kontakt}
-            className="border-b border-border"
-            aria-labelledby="contact-heading"
-        >
+        <section ref={kontakt.ref} className="border-b border-border" aria-labelledby="h-contact">
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                 <motion.p
-                    className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
-                    {...fadeUp}
+                    className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
+                    {...fade}
                 >
                     Kontakt
                 </motion.p>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-bold leading-tight mb-12"
-                    id="contact-heading"
-                    {...fadeUp}
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                    id="h-contact"
+                    {...fade}
                 >
-                    Najdete nás ve vnitrobloku
+                    Stavte se na Mikulandské
                 </motion.h2>
 
-                {/* Contact — 1px-gap architectural grid */}
-                <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
-                    {/* Left — contact info */}
-                    <motion.div
-                        className="p-8 md:p-10 lg:p-12 bg-background"
-                        {...fadeUp}
-                    >
-                        {/* Address */}
+                <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
+                    {/* Left — info */}
+                    <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
                         <div className="mb-8">
                             <div className="flex items-center gap-2 mb-3">
-                                <MapPin size={14} strokeWidth={2} className="text-muted" />
-                                <h3 className="text-xs font-bold uppercase tracking-[0.06em]">Adresa</h3>
+                                <MapPin size={13} strokeWidth={1.5} className="text-muted" />
+                                <h3 className="text-[10px] font-light uppercase tracking-[0.14em]">Adresa</h3>
                             </div>
-                            <address className="not-italic text-muted leading-[1.75]">
+                            <address className="not-italic text-sm font-light text-muted leading-[1.8]">
                                 separé<br />
-                                náměstí Jana Palacha 80<br />
-                                110 00 Praha 1 – Staré Město<br />
-                                (vchod z vnitrobloku UMPRUM)
+                                Mikulandská 133<br />
+                                110 00 Praha 1 – Nové Město
                             </address>
                         </div>
 
-                        {/* Contact */}
                         <div className="mb-8">
                             <div className="flex items-center gap-2 mb-3">
-                                <Mail size={14} strokeWidth={2} className="text-muted" />
-                                <h3 className="text-xs font-bold uppercase tracking-[0.06em]">Spojení</h3>
+                                <Mail size={13} strokeWidth={1.5} className="text-muted" />
+                                <h3 className="text-[10px] font-light uppercase tracking-[0.14em]">Spojení</h3>
                             </div>
-                            <p className="text-muted leading-[1.75]">
+                            <p className="text-sm font-light text-muted leading-[1.8]">
                                 <a
                                     href="mailto:ahoj@separe.cz"
-                                    className="underline underline-offset-[3px] hover:opacity-60 transition-opacity"
+                                    className="underline underline-offset-[3px] decoration-neutral-300 hover:decoration-foreground transition-colors"
                                 >
                                     ahoj@separe.cz
                                 </a>
                                 <br />
                                 <a
                                     href="tel:+420777123456"
-                                    className="underline underline-offset-[3px] hover:opacity-60 transition-opacity"
+                                    className="underline underline-offset-[3px] decoration-neutral-300 hover:decoration-foreground transition-colors"
                                 >
                                     +420 777 123 456
                                 </a>
                             </p>
                         </div>
 
-                        {/* Hours */}
                         <div className="mb-8">
                             <div className="flex items-center gap-2 mb-3">
-                                <Clock size={14} strokeWidth={2} className="text-muted" />
-                                <h3 className="text-xs font-bold uppercase tracking-[0.06em]">Otevírací doba</h3>
+                                <Clock size={13} strokeWidth={1.5} className="text-muted" />
+                                <h3 className="text-[10px] font-light uppercase tracking-[0.14em]">
+                                    Otevírací doba
+                                </h3>
                             </div>
                             <table className="w-full">
                                 <tbody>
@@ -91,10 +81,10 @@ export default function Contact() {
                                         ["Pondělí – Pátek", "8:00 – 22:00"],
                                         ["Sobota", "9:00 – 23:00"],
                                         ["Neděle", "9:00 – 20:00"],
-                                    ].map(([day, hours]) => (
+                                    ].map(([day, hrs]) => (
                                         <tr key={day}>
                                             <td className="py-1 text-sm font-medium pr-8">{day}</td>
-                                            <td className="py-1 text-sm text-muted">{hours}</td>
+                                            <td className="py-1 text-sm font-light text-muted">{hrs}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -103,29 +93,28 @@ export default function Contact() {
 
                         <button
                             onClick={() => window.open("mailto:ahoj@separe.cz?subject=Rezervace stolu")}
-                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
+                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
                         >
                             Rezervovat stůl
                         </button>
                     </motion.div>
 
                     {/* Right — map */}
-                    <motion.div
-                        className="p-8 md:p-10 lg:p-12 bg-background"
-                        {...fadeUp}
-                    >
+                    <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
                         <div className="flex items-center gap-2 mb-3">
-                            <MapPin size={14} strokeWidth={2} className="text-muted" />
-                            <h3 className="text-xs font-bold uppercase tracking-[0.06em]">Kde nás najdete</h3>
+                            <MapPin size={13} strokeWidth={1.5} className="text-muted" />
+                            <h3 className="text-[10px] font-light uppercase tracking-[0.14em]">
+                                Kde nás najdete
+                            </h3>
                         </div>
-                        <p className="text-muted leading-[1.75] mb-6">
-                            Vstup z vnitrobloku budovy UMPRUM na náměstí Jana Palacha. Projděte průjezdem a
-                            zahněte doleva — separé je za malým dvorkem s lavičkami.
+                        <p className="text-sm font-light text-muted leading-[1.8] mb-6">
+                            Vstup přímo z ulice Mikulandská. Projděte průchodem do dvora — v létě tu funguje
+                            naše zahradní posezení pod platany.
                         </p>
-                        <div className="w-full h-60 md:h-72 border border-border rounded-sm overflow-hidden">
+                        <div className="w-full h-60 md:h-72 rounded-sm overflow-hidden">
                             <iframe
                                 src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
-                                title="Mapa — separé, náměstí Jana Palacha, Praha 1"
+                                title="Mapa — separé, Mikulandská 133, Praha 1"
                                 className="w-full h-full"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"

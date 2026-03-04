@@ -1,31 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Coffee, Wine, Dice5 } from "lucide-react";
-import { useScrollContext } from "@/providers/ScrollProvider";
+import { Coffee, Wine, Pizza, Dice5 } from "lucide-react";
+import { useNav } from "@/providers/NavProvider";
 import type { ReactNode } from "react";
 
-interface ValueItem {
+/* ─── Data ─── */
+
+interface ValueCard {
     icon: ReactNode;
     title: string;
     text: string;
 }
 
-const values: ValueItem[] = [
+const values: ValueCard[] = [
     {
-        icon: <Coffee size={28} strokeWidth={1.5} />,
+        icon: <Coffee size={26} strokeWidth={1.3} />,
         title: "Výběrová káva",
-        text: "Spolupracujeme s českými mikropražírnami. Espresso i filtr, vždy čerstvě namletý.",
+        text: "Spolupracujeme s českými mikropražírnami. Espresso i filtr — vždy čerstvě namletý, vždy single origin.",
     },
     {
-        icon: <Wine size={28} strokeWidth={1.5} />,
+        icon: <Wine size={26} strokeWidth={1.3} />,
         title: "Přírodní víno",
         text: "Malí vinaři z Moravy i zahraničí. Rotující nabídka, vždy něco nového k ochutnání.",
     },
     {
-        icon: <Dice5 size={28} strokeWidth={1.5} />,
-        title: "Deskovky & komunita",
-        text: "Přes 80 her k zapůjčení zdarma. Pravidelné herní večery a komunitní akce.",
+        icon: <Pizza size={26} strokeWidth={1.3} />,
+        title: "Pinsa Romana",
+        text: "Lehké těsto z trojité fermentace. Sezónní ingredience, italská technika, pražský twist.",
+    },
+    {
+        icon: <Dice5 size={26} strokeWidth={1.3} />,
+        title: "Hra & Sdílení",
+        text: "Přes 80 deskovek k zapůjčení zdarma. Pravidelné herní večery a komunitní akce.",
     },
 ];
 
@@ -35,12 +42,12 @@ interface MenuItem {
     price: string;
 }
 
-interface MenuCategory {
+interface MenuCat {
     title: string;
     items: MenuItem[];
 }
 
-const menuCategories: MenuCategory[] = [
+const menu: MenuCat[] = [
     {
         title: "Káva",
         items: [
@@ -62,131 +69,121 @@ const menuCategories: MenuCategory[] = [
         ],
     },
     {
-        title: "Malá kuchyně",
+        title: "Pinsa & Kuchyně",
         items: [
-            { name: "Focaccia s olivami", desc: "Domácí pečivo, extra virgin", price: "95 Kč" },
+            { name: "Margherita", desc: "San Marzano, fior di latte, bazalka", price: "165 Kč" },
+            { name: "Prosciutto e rucola", desc: "Parmská šunka, rukola, parmezán", price: "195 Kč" },
+            { name: "Verdura", desc: "Grilovaná zelenina, ricotta, pesto", price: "175 Kč" },
             { name: "Hummus s pita", desc: "Cizrna, tahini, grilovaná pita", price: "105 Kč" },
             { name: "Sýrový talíř", desc: "Výběr 3 českých sýrů, med, ořechy", price: "185 Kč" },
-            { name: "Bruschetta", desc: "Rajčata, bazalka, česnek, balzamiko", price: "85 Kč" },
-            { name: "Domácí koláč", desc: "Denní nabídka, sezónní ovoce", price: "65 Kč" },
         ],
     },
 ];
 
-const fadeUp = {
-    initial: { opacity: 0, y: 20 },
+const fade = {
+    initial: { opacity: 0, y: 18 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: "-40px" },
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.55, ease: "easeOut" as const },
 };
 
+/* ─── Component ─── */
+
 export default function BentoGrid() {
-    const { refs } = useScrollContext();
+    const { oNas, nabidka } = useNav();
 
     return (
         <>
-            {/* ===== O NÁS ===== */}
-            <section
-                ref={refs["o-nas"]}
-                className="border-b border-border"
-                aria-labelledby="about-heading"
-            >
+            {/* ═══ O NÁS ═══ */}
+            <section ref={oNas.ref} className="border-b border-border" aria-labelledby="h-about">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                     <motion.p
-                        className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
-                        {...fadeUp}
+                        className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
+                        {...fade}
                     >
                         O nás
                     </motion.p>
                     <motion.h2
-                        className="text-3xl md:text-[2.75rem] font-bold leading-tight mb-6"
-                        id="about-heading"
-                        {...fadeUp}
+                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-5"
+                        id="h-about"
+                        {...fade}
                     >
                         Místo, kde se potkává káva, víno a hry.
                     </motion.h2>
-                    <motion.p
-                        className="text-muted leading-[1.75] max-w-2xl mb-12"
-                        {...fadeUp}
-                    >
-                        Separé vzniklo v roce 2023 jako odpověď na otázku, kde se v centru Prahy dá opravdu
-                        zpomalit. Schovali jsme se do vnitrobloku budovy UMPRUM a vybudovali prostor, který
-                        funguje jako obývák pro celou čtvrť — ráno voní čerstvě praženou kávou, večer se tu
-                        otevírá přírodní víno a na stolech se rozehrávají deskovky.
+                    <motion.p className="text-muted font-light leading-[1.8] max-w-2xl mb-12" {...fade}>
+                        Separé vzniklo jako odpověď na otázku, kde se v centru Prahy dá opravdu zpomalit.
+                        Na Mikulandské 133 jsme vybudovali prostor, který funguje jako obývák pro celou
+                        čtvrť — ráno voní čerstvě praženou kávou, večer se tu otevírá přírodní víno a na
+                        stolech se rozehrávají deskovky. V létě se naše dvůr proměňuje v zelenou oázu
+                        s posezením pod stromy.
                     </motion.p>
 
-                    {/* Values — 1px-gap architectural grid */}
-                    <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
-                        {values.map((item, i) => (
+                    {/* 4-col Bento — gap-px technique */}
+                    <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
+                        {values.map((v, i) => (
                             <motion.div
-                                key={item.title}
-                                className="p-8 md:p-10 lg:p-12 bg-background"
-                                initial={{ opacity: 0, y: 20 }}
+                                key={v.title}
+                                className="p-8 md:p-10 bg-background"
+                                initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
-                                transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
+                                transition={{ duration: 0.45, delay: i * 0.08 }}
                             >
-                                <div className="text-foreground mb-4">{item.icon}</div>
-                                <h3 className="text-base md:text-lg font-bold mb-2">{item.title}</h3>
-                                <p className="text-sm text-muted leading-relaxed">{item.text}</p>
+                                <div className="text-foreground/70 mb-4">{v.icon}</div>
+                                <h3 className="text-sm font-black tracking-tight mb-2">{v.title}</h3>
+                                <p className="text-xs font-light text-muted leading-relaxed">{v.text}</p>
                             </motion.div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ===== NABÍDKA ===== */}
-            <section
-                ref={refs.nabidka}
-                className="border-b border-border"
-                aria-labelledby="menu-heading"
-            >
+            {/* ═══ NABÍDKA ═══ */}
+            <section ref={nabidka.ref} className="border-b border-border" aria-labelledby="h-menu">
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                     <motion.p
-                        className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
-                        {...fadeUp}
+                        className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
+                        {...fade}
                     >
                         Nabídka
                     </motion.p>
                     <motion.h2
-                        className="text-3xl md:text-[2.75rem] font-bold leading-tight mb-12"
-                        id="menu-heading"
-                        {...fadeUp}
+                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                        id="h-menu"
+                        {...fade}
                     >
                         Co u nás najdete
                     </motion.h2>
 
-                    {/* Menu — 1px-gap architectural grid */}
-                    <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
-                        {menuCategories.map((cat, catIdx) => (
+                    {/* 3-col menu — gap-px technique */}
+                    <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
+                        {menu.map((cat, ci) => (
                             <motion.div
                                 key={cat.title}
                                 className="p-8 md:p-10 bg-background"
-                                initial={{ opacity: 0, y: 20 }}
+                                initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
-                                transition={{ duration: 0.5, delay: catIdx * 0.1, ease: "easeOut" }}
+                                transition={{ duration: 0.45, delay: ci * 0.1 }}
                             >
-                                <h3 className="text-xs font-bold uppercase tracking-[0.08em] mb-6 pb-3 border-b border-border-dark">
+                                <h3 className="text-[10px] font-light uppercase tracking-[0.14em] mb-6 pb-3 border-b border-neutral-300">
                                     {cat.title}
                                 </h3>
-                                <div className="space-y-0">
-                                    {cat.items.map((item, idx) => (
-                                        <div
-                                            key={item.name}
-                                            className={`flex justify-between items-baseline gap-4 py-3 ${idx > 0 ? "border-t border-border" : ""
-                                                }`}
-                                        >
-                                            <div>
-                                                <div className="font-medium">{item.name}</div>
-                                                <div className="text-xs text-muted mt-0.5">{item.desc}</div>
-                                            </div>
-                                            <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
-                                                {item.price}
-                                            </span>
+                                {cat.items.map((item, idx) => (
+                                    <div
+                                        key={item.name}
+                                        className={`flex justify-between items-baseline gap-4 py-3 ${idx > 0 ? "border-t border-neutral-200" : ""
+                                            }`}
+                                    >
+                                        <div>
+                                            <div className="text-sm font-medium">{item.name}</div>
+                                            <div className="text-[11px] font-light text-muted mt-0.5">{item.desc}</div>
                                         </div>
-                                    ))}
-                                </div>
+                                        <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
+                                            {item.price}
+                                        </span>
+                                    </div>
+                                ))}
                             </motion.div>
                         ))}
                     </div>
