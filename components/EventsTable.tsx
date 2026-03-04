@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
+import { useScrollContext } from "@/providers/ScrollProvider";
 
 interface EventItem {
     day: string;
@@ -92,8 +93,14 @@ const fadeUp = {
 };
 
 export default function EventsTable() {
+    const { refs } = useScrollContext();
+
     return (
-        <section className="border-b border-border" id="akce" aria-labelledby="events-heading">
+        <section
+            ref={refs.akce}
+            className="border-b border-border"
+            aria-labelledby="events-heading"
+        >
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                 <div className="flex items-center gap-3 mb-2">
                     <Calendar size={16} strokeWidth={2} className="text-muted" />
@@ -112,8 +119,9 @@ export default function EventsTable() {
                     Co se u nás chystá
                 </motion.h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 border border-border rounded-sm overflow-hidden">
-                    <div className="p-8 md:p-10 lg:p-12 bg-background border-b md:border-b-0 md:border-r border-border">
+                {/* Events — 1px-gap architectural grid */}
+                <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
+                    <div className="p-8 md:p-10 lg:p-12 bg-background">
                         {eventsLeft.map((event, i) => (
                             <EventCard key={event.title} event={event} index={i} />
                         ))}

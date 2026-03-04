@@ -2,10 +2,17 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useScrollContext } from "@/providers/ScrollProvider";
 
 export default function Hero() {
+    const { refs, scrollTo } = useScrollContext();
+
     return (
-        <section className="relative min-h-svh flex items-end pt-[72px] overflow-hidden" aria-label="Úvod">
+        <section
+            ref={refs.hero}
+            className="relative min-h-svh flex items-end pt-[72px] overflow-hidden"
+            aria-label="Úvod"
+        >
             {/* Background image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -58,15 +65,15 @@ export default function Hero() {
                     komunitu, klid a dobrou chuť — stranou od ruchu města.
                 </motion.p>
 
-                <motion.a
-                    href="#kontakt"
-                    className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-[#E8E8E2] transition-colors duration-150"
+                <motion.button
+                    onClick={() => scrollTo("kontakt")}
+                    className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-[#E8E8E2] transition-colors duration-150 cursor-pointer border-none"
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.65 }}
                 >
                     Rezervovat stůl
-                </motion.a>
+                </motion.button>
             </div>
         </section>
     );

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Coffee, Wine, Dice5 } from "lucide-react";
+import { useScrollContext } from "@/providers/ScrollProvider";
 import type { ReactNode } from "react";
 
 interface ValueItem {
@@ -80,10 +81,16 @@ const fadeUp = {
 };
 
 export default function BentoGrid() {
+    const { refs } = useScrollContext();
+
     return (
         <>
             {/* ===== O NÁS ===== */}
-            <section className="border-b border-border" id="o-nas" aria-labelledby="about-heading">
+            <section
+                ref={refs["o-nas"]}
+                className="border-b border-border"
+                aria-labelledby="about-heading"
+            >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                     <motion.p
                         className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
@@ -108,13 +115,12 @@ export default function BentoGrid() {
                         otevírá přírodní víno a na stolech se rozehrávají deskovky.
                     </motion.p>
 
-                    {/* Values Bento */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 border border-border rounded-sm overflow-hidden">
+                    {/* Values — 1px-gap architectural grid */}
+                    <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
                         {values.map((item, i) => (
                             <motion.div
                                 key={item.title}
-                                className={`p-8 md:p-10 lg:p-12 bg-background ${i < values.length - 1 ? "border-b md:border-b-0 md:border-r border-border" : ""
-                                    }`}
+                                className="p-8 md:p-10 lg:p-12 bg-background"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
@@ -130,7 +136,11 @@ export default function BentoGrid() {
             </section>
 
             {/* ===== NABÍDKA ===== */}
-            <section className="border-b border-border" id="nabidka" aria-labelledby="menu-heading">
+            <section
+                ref={refs.nabidka}
+                className="border-b border-border"
+                aria-labelledby="menu-heading"
+            >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                     <motion.p
                         className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
@@ -146,15 +156,12 @@ export default function BentoGrid() {
                         Co u nás najdete
                     </motion.h2>
 
-                    {/* Menu Bento */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 border border-border rounded-sm overflow-hidden">
+                    {/* Menu — 1px-gap architectural grid */}
+                    <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
                         {menuCategories.map((cat, catIdx) => (
                             <motion.div
                                 key={cat.title}
-                                className={`p-8 md:p-10 bg-background ${catIdx < menuCategories.length - 1
-                                        ? "border-b md:border-b-0 md:border-r border-border"
-                                        : ""
-                                    }`}
+                                className="p-8 md:p-10 bg-background"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}

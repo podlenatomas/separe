@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
+import { useScrollContext } from "@/providers/ScrollProvider";
 
 const fadeUp = {
     initial: { opacity: 0, y: 20 },
@@ -11,8 +12,14 @@ const fadeUp = {
 };
 
 export default function Contact() {
+    const { refs } = useScrollContext();
+
     return (
-        <section className="border-b border-border" id="kontakt" aria-labelledby="contact-heading">
+        <section
+            ref={refs.kontakt}
+            className="border-b border-border"
+            aria-labelledby="contact-heading"
+        >
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                 <motion.p
                     className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted mb-2"
@@ -28,10 +35,11 @@ export default function Contact() {
                     Najdete nás ve vnitrobloku
                 </motion.h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 border border-border rounded-sm overflow-hidden">
+                {/* Contact — 1px-gap architectural grid */}
+                <div className="bg-border rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
                     {/* Left — contact info */}
                     <motion.div
-                        className="p-8 md:p-10 lg:p-12 bg-background border-b md:border-b-0 md:border-r border-border"
+                        className="p-8 md:p-10 lg:p-12 bg-background"
                         {...fadeUp}
                     >
                         {/* Address */}
@@ -93,12 +101,12 @@ export default function Contact() {
                             </table>
                         </div>
 
-                        <a
-                            href="#kontakt"
-                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-foreground/85 transition-colors"
+                        <button
+                            onClick={() => window.open("mailto:ahoj@separe.cz?subject=Rezervace stolu")}
+                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
                         >
                             Rezervovat stůl
-                        </a>
+                        </button>
                     </motion.div>
 
                     {/* Right — map */}
@@ -116,7 +124,7 @@ export default function Contact() {
                         </p>
                         <div className="w-full h-60 md:h-72 border border-border rounded-sm overflow-hidden">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8!2d14.4148!3d50.0898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e9b946f8af%3A0x400af0f6614e810!2zTsOhbS4gSmFuYSBQYWxhY2hhLCBTdGFyw6kgTcSbc3RvLCAxMTAgMDAgUHJhaGEgMQ!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
+                                src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
                                 title="Mapa — separé, náměstí Jana Palacha, Praha 1"
                                 className="w-full h-full"
                                 loading="lazy"

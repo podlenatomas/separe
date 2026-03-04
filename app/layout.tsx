@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import LenisProvider from "@/providers/LenisProvider";
+import ScrollProvider from "@/providers/ScrollProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,7 +34,11 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Přeskočit na obsah
         </a>
-        {children}
+        <LenisProvider>
+          <ScrollProvider>
+            {children}
+          </ScrollProvider>
+        </LenisProvider>
       </body>
     </html>
   );

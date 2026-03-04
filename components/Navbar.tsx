@@ -1,14 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { useScrollContext, type SectionId } from "@/providers/ScrollProvider";
 
-const navLinks = [
-    { href: "#o-nas", label: "O nás" },
-    { href: "#nabidka", label: "Nabídka" },
-    { href: "#akce", label: "Akce" },
-    { href: "#kontakt", label: "Kontakt" },
+interface NavLink {
+    id: SectionId;
+    label: string;
+}
+
+const navLinks: NavLink[] = [
+    { id: "o-nas", label: "O nás" },
+    { id: "nabidka", label: "Nabídka" },
+    { id: "akce", label: "Akce" },
+    { id: "kontakt", label: "Kontakt" },
 ];
 
 const overlayVariants = {
@@ -37,40 +43,46 @@ const linkVariants = {
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const { scrollTo } = useScrollContext();
 
-    const handleLinkClick = () => {
-        setIsOpen(false);
-    };
+    const handleNav = useCallback(
+        (id: SectionId) => {
+            setIsOpen(false);
+            // Small delay to allow mobile menu close animation
+            setTimeout(() => scrollTo(id), isOpen ? 350 : 0);
+        },
+        [scrollTo, isOpen]
+    );
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
             <div className="max-w-7xl mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
                 {/* Logo */}
-                <a
-                    href="#"
-                    className="text-2xl font-bold tracking-tight text-foreground"
-                    aria-label="separé — domů"
+                <button
+                    onClick={() => scrollTo("hero")}
+                    className="text-2xl font-bold tracking-tight text-foreground cursor-pointer"
+                    aria-label="separé — na začátek stránky"
                 >
                     separé
-                </a>
+                </button>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-10" aria-label="Hlavní navigace">
                     {navLinks.map((link) => (
-                        <a
-                            key={link.href}
-                            href={link.href}
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-foreground hover:opacity-60 transition-opacity duration-150 relative group"
+                        <button
+                            key={link.id}
+                            onClick={() => handleNav(link.id)}
+                            className="text-xs font-semibold uppercase tracking-[0.08em] text-foreground hover:opacity-60 transition-opacity duration-150 relative group cursor-pointer bg-transparent border-none"
                         >
                             {link.label}
                             <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
-                        </a>
+                        </button>
                     ))}
                 </nav>
 
                 {/* Hamburger */}
                 <motion.button
-                    className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110]"
+                    className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110] cursor-pointer"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label={isOpen ? "Zavřít menu" : "Otevřít menu"}
                     aria-expanded={isOpen}
@@ -116,30 +128,28 @@ export default function Navbar() {
                         aria-label="Mobilní navigace"
                     >
                         {navLinks.map((link, i) => (
-                            <motion.a
-                                key={link.href}
-                                href={link.href}
-                                className="text-2xl font-bold uppercase tracking-[0.06em] text-foreground hover:opacity-60 transition-opacity"
-                                onClick={handleLinkClick}
+                            <motion.button
+                                key={link.id}
+                                className="text-2xl font-bold uppercase tracking-[0.06em] text-foreground hover:opacity-60 transition-opacity cursor-pointer bg-transparent border-none"
+                                onClick={() => handleNav(link.id)}
                                 variants={linkVariants}
                                 initial="closed"
                                 animate="open"
                                 custom={i}
                             >
                                 {link.label}
-                            </motion.a>
+                            </motion.button>
                         ))}
-                        <motion.a
-                            href="#kontakt"
-                            className="mt-4 px-8 py-3 bg-foreground text-background text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-foreground/85 transition-colors"
-                            onClick={handleLinkClick}
+                        <motion.button
+                            className="mt-4 px-8 py-3 bg-foreground text-background text-sm font-semibold uppercase tracking-[0.08em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
+                            onClick={() => handleNav("kontakt")}
                             variants={linkVariants}
                             initial="closed"
                             animate="open"
                             custom={navLinks.length}
                         >
                             Rezervovat stůl
-                        </motion.a>
+                        </motion.button>
                     </motion.nav>
                 )}
             </AnimatePresence>
