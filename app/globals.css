@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F5F5F0;
+  --foreground: #1A1A1A;
+  --muted: #4A4A4A;
+  --border: rgba(26, 26, 26, 0.15);
+  --border-dark: rgba(26, 26, 26, 0.3);
+  --success: #7A8B6F;
+  --error: #B85C3C;
+  --accent: #6B5E4F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Reset & Base */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Architectural border utility */
+.border-arch {
+  border-color: var(--border);
+}
+
+/* Selection */
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 1000;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+
+/* Scrollbar minimal */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-dark);
+  border-radius: 3px;
 }
