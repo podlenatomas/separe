@@ -39,7 +39,7 @@ export default function Navbar() {
     );
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <header className="sticky top-0 left-0 right-0 z-50 bg-[#F5F5F0]/80 backdrop-blur-md border-b border-neutral-200/50 transition-all duration-300">
             <div className="max-w-7xl mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
                 <button
                     onClick={() => go("hero")}
@@ -121,7 +121,7 @@ export default function Navbar() {
                             </motion.button>
                         ))}
                         <motion.button
-                            className="mt-3 px-8 py-3 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
+                            className="mt-3 px-8 py-3 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
                             onClick={() => go("kontakt")}
                             variants={itemVariants}
                             initial="closed"

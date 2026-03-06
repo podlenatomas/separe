@@ -170,7 +170,7 @@ export default function BentoGrid() {
                                 {cat.items.map((item, idx) => (
                                     <div
                                         key={item.name}
-                                        className={`flex justify-between items-baseline gap-4 py-3 ${idx > 0 ? "border-t border-neutral-200" : ""
+                                        className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-colors duration-300 hover:bg-neutral-200/30 ${idx > 0 ? "border-t border-neutral-200" : ""
                                             }`}
                                     >
                                         <div>

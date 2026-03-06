@@ -96,7 +96,7 @@ export default function Contact() {
 
                         <button
                             onClick={() => window.open("mailto:ahoj@separe.cz?subject=Rezervace stolu")}
-                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 transition-colors cursor-pointer border-none"
+                            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
                         >
                             Rezervovat stůl
                         </button>

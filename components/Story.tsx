@@ -15,8 +15,18 @@ export default function Story() {
     const { pribeh } = useNav();
 
     return (
-        <section ref={pribeh.ref} className="border-b border-border" aria-labelledby="h-story">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+        <section ref={pribeh.ref} className="relative border-b border-border overflow-hidden" aria-labelledby="h-story">
+            {/* Anti-grid watermark — crosses the 1px divider */}
+            <div
+                className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none"
+                aria-hidden="true"
+            >
+                <span className="text-[16rem] md:text-[22rem] lg:text-[28rem] font-black tracking-tighter text-neutral-900/[0.035] leading-none">
+                    1891
+                </span>
+            </div>
+
+            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
                 <div className="flex items-center gap-3 mb-2">
                     <BookOpen size={14} strokeWidth={1.5} className="text-muted" />
                     <motion.p
@@ -34,7 +44,7 @@ export default function Story() {
                     Plán z&nbsp;roku 1891. A&nbsp;jeden úřední šiml.
                 </motion.h2>
 
-                <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
+                <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
                     <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
                         <p className="text-muted font-light leading-[1.85] mb-6">
                             Náhody neexistují. Když jsme na Mikulandské otevírali Separé, netušili jsme,
