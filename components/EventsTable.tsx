@@ -45,7 +45,7 @@ export default function EventsTable() {
 
     return (
         <section ref={akce.ref} className="bg-[#1A1A1A] text-[#F5F5F0] border-b border-white/10" aria-labelledby="h-events">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                 <motion.p
                     className="text-[10px] font-light uppercase tracking-[0.18em] text-[#F5F5F0]/50 mb-2"
                     {...fade}

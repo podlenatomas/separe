@@ -15,8 +15,8 @@ export default function Hero() {
         >
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1600&q=80"
-                    alt="Interiér baru separé na Mikulandské — teplé světlo, dřevěný bar, útulná atmosféra"
+                    src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2000"
+                    alt="Atmosféra baru separé — teplé světlo, víno, večerní nálada"
                     fill
                     priority
                     className="object-cover"

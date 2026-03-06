@@ -16,7 +16,7 @@ export default function Contact() {
 
     return (
         <section ref={kontakt.ref} className="border-b border-border" aria-labelledby="h-contact">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                 <motion.p
                     className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
                     {...fade}
@@ -119,7 +119,7 @@ export default function Contact() {
                             <iframe
                                 src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
                                 title="Mapa — Separé, Mikulandská 133/3, Praha 1"
-                                className="w-full h-full"
+                                className="w-full h-full grayscale contrast-75 opacity-80 mix-blend-multiply hover:grayscale-0 hover:contrast-100 hover:opacity-100 transition-all duration-500"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 allowFullScreen

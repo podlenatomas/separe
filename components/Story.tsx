@@ -26,7 +26,7 @@ export default function Story() {
                 </span>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                 <div className="flex items-center gap-3 mb-2">
                     <BookOpen size={14} strokeWidth={1.5} className="text-muted" />
                     <motion.p

@@ -90,7 +90,7 @@ export default function BentoGrid() {
         <>
             {/* ═══ O NÁS ═══ */}
             <section ref={oNas.ref} className="border-b border-border" aria-labelledby="h-about">
-                <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                     <motion.p
                         className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
                         {...fade}
@@ -134,7 +134,7 @@ export default function BentoGrid() {
 
             {/* ═══ NABÍDKA ═══ */}
             <section ref={nabidka.ref} className="border-b border-border" aria-labelledby="h-menu">
-                <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32 text-left">
                     <motion.p
                         className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
                         {...fade}
@@ -148,7 +148,7 @@ export default function BentoGrid() {
                     >
                         Co má smysl pít a&nbsp;jíst
                     </motion.h2>
-                    <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                    <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12 text-left" {...fade}>
                         Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví
                         a&nbsp;co dokonale funguje u&nbsp;stolu s&nbsp;přáteli.
                     </motion.p>
