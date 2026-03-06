@@ -120,6 +120,7 @@ export default function Contact() {
                                 src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
                                 title="Mapa — Separé, Mikulandská 133/3, Praha 1"
                                 className="w-full h-full grayscale contrast-75 opacity-80 mix-blend-multiply hover:grayscale-0 hover:contrast-100 hover:opacity-100 transition-all duration-500"
+                                style={{ filter: 'grayscale(100%) contrast(0.75)', opacity: 0.8, mixBlendMode: 'multiply' }}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 allowFullScreen

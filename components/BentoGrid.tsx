@@ -148,7 +148,7 @@ export default function BentoGrid() {
                     >
                         Co má smysl pít a&nbsp;jíst
                     </motion.h2>
-                    <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12 text-left" {...fade}>
+                    <motion.p className="text-left text-neutral-600 max-w-2xl mb-12" {...fade}>
                         Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví
                         a&nbsp;co dokonale funguje u&nbsp;stolu s&nbsp;přáteli.
                     </motion.p>

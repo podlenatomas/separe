@@ -39,7 +39,7 @@ export default function Navbar() {
     );
 
     return (
-        <header className="sticky top-0 left-0 right-0 z-50 bg-[#F5F5F0]/80 backdrop-blur-md border-b border-neutral-200/50 transition-all duration-300">
+        <header className="sticky top-0 z-50 w-full bg-[#F5F5F0]/60 backdrop-blur-lg border-b border-neutral-200/50">
             <div className="max-w-7xl mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
                 <button
                     onClick={() => go("hero")}
