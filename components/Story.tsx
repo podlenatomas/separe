@@ -33,7 +33,7 @@ export default function Story() {
                     </motion.p>
                 </div>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12 text-balance"
                     id="h-story"
                     {...fade}
                 >
@@ -42,12 +42,12 @@ export default function Story() {
 
                 <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
                     <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
-                        <p className="text-muted font-light leading-[1.85] mb-6">
+                        <p className="text-muted font-light leading-[1.85] mb-6 text-pretty">
                             Náhody neexistují. Když jsme na Mikulandské otevírali Separé, netušili jsme,
                             že tenhle dům měl k&nbsp;dobrému pití nakročeno už na konci 19.&nbsp;století.
                             Až pohled do starých archivů nám ukázal, jak blízko to tehdy bylo.
                         </p>
-                        <p className="text-muted font-light leading-[1.85]">
+                        <p className="text-muted font-light leading-[1.85] text-pretty">
                             V&nbsp;říjnu 1891 si majitel domu, pan J.&nbsp;F.&nbsp;Tomaschek, zažádal na
                             pražském magistrátu o&nbsp;povolení. Měl jasnou vizi — chtěl tu nalévat
                             a&nbsp;prodávat víno. Jenže narazil na tvrdou zeď rakousko-uherské byrokracie.
@@ -55,7 +55,7 @@ export default function Story() {
                     </motion.div>
 
                     <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
-                        <p className="text-muted font-light leading-[1.85] mb-6">
+                        <p className="text-muted font-light leading-[1.85] mb-6 text-pretty">
                             Úřad si vymínil poplatky a&nbsp;úmorné podmínky, které tehdy nejspíš nešlo
                             splnit. Na zažloutlém dokumentu z&nbsp;roku 1895 totiž stojí stručná, rukou
                             psaná tečka za celým projektem:{" "}
@@ -63,7 +63,7 @@ export default function Story() {
                                 „Vinárna nebyla zřízena."
                             </span>
                         </p>
-                        <p className="text-muted font-light leading-[1.85]">
+                        <p className="text-muted font-light leading-[1.85] text-pretty">
                             Trvalo dlouhá desetiletí, než se v&nbsp;tomhle domě konečně začalo oficiálně
                             připíjet. A&nbsp;i&nbsp;když dnes už si na klasickou vinárnu nehrajeme — místo
                             toho čepujeme řemeslná piva, otevíráme divoké pet-naty a&nbsp;stoly plníme

@@ -24,13 +24,13 @@ export default function Contact() {
                     Kontakt
                 </motion.p>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3 text-balance"
                     id="h-contact"
                     {...fade}
                 >
                     Zapadněte do vnitrobloku
                 </motion.h2>
-                <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12 text-pretty" {...fade}>
                     Vstup je přímo z&nbsp;ulice Mikulandská. Stačí projít průchodem do dvora a&nbsp;jste
                     u&nbsp;nás. V&nbsp;létě tu navíc otevíráme klidné zahradní posezení ve&nbsp;stínu stromů.
                 </motion.p>
@@ -110,7 +110,7 @@ export default function Contact() {
                                 Kde nás najdete
                             </h3>
                         </div>
-                        <p className="text-sm font-light text-muted leading-[1.8] mb-6">
+                        <p className="text-sm font-light text-muted leading-[1.8] mb-6 text-pretty">
                             Jsme jen pár kroků od rušné Národní třídy, ale jakmile projdete průchodem do
                             dvora, svět se ztiší. V&nbsp;létě si sedněte pod stromy na naší zahradní
                             terase — nejklidnější zašívárna v&nbsp;Praze.

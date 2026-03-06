@@ -17,22 +17,22 @@ const values: ValueCard[] = [
     {
         icon: <Beer size={26} strokeWidth={1.3} />,
         title: "Řemeslná piva",
-        text: "Pečlivý výběr toho nejlepšího z malých a létajících pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat.",
+        text: "Pečlivý výběr toho nejlepšího z\u00A0malých a\u00A0létajících pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat.",
     },
     {
         icon: <Wine size={26} strokeWidth={1.3} />,
         title: "Šumivá vína & Pet-naty",
-        text: "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a naturální vína, která si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev.",
+        text: "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a\u00A0naturální vína, která si nejvíc užijete, když si s\u00A0přáteli otevřete rovnou celou lahev.",
     },
     {
         icon: <GlassWater size={26} strokeWidth={1.3} />,
         title: "Přívlastková vína",
-        text: "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce.",
+        text: "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v\u00A0naší vinotéce.",
     },
     {
         icon: <Dice5 size={26} strokeWidth={1.3} />,
         title: "Deskovky & Kvízy",
-        text: "Přes 80 her k zapůjčení zdarma. Pravidelné herní večery a legendární středeční hospodské kvízy. U nás se nezastavuje jen na \u201Ejedno\u201C — u nás se zůstává.",
+        text: "Přes 80 her k\u00A0zapůjčení zdarma. Pravidelné herní večery a\u00A0legendární středeční hospodské kvízy. U\u00A0nás se nezastavuje jen na \u201Ejedno\u201C — u\u00A0nás se zůstává.",
     },
 ];
 
@@ -51,9 +51,9 @@ const menu: MenuCat[] = [
     {
         title: "Pivo",
         items: [
-            { name: "Řemeslný ležák", desc: "Rotující výběr z malých pivovarů", price: "dle nabídky" },
+            { name: "Řemeslný ležák", desc: "Rotující výběr z\u00A0malých pivovarů", price: "dle nabídky" },
             { name: "Speciály na čepu", desc: "IPA, APA, sour — vždy něco nového", price: "dle nabídky" },
-            { name: "Lahvové speciály", desc: "Limitované edice a zahraniční hosté", price: "dle nabídky" },
+            { name: "Lahvové speciály", desc: "Limitované edice a\u00A0zahraniční hosté", price: "dle nabídky" },
         ],
     },
     {
@@ -61,15 +61,15 @@ const menu: MenuCat[] = [
         items: [
             { name: "Přívlastková (rozlev)", desc: "Česká přívlastková vína", price: "od 85 Kč" },
             { name: "Láhev Pet-natu", desc: "Ideální pro partu — naturální bubliny", price: "od 450 Kč" },
-            { name: "Šumivé víno", desc: "Výběr z Evropy, vždy chlazené", price: "od 120 Kč" },
+            { name: "Šumivé víno", desc: "Výběr z\u00A0Evropy, vždy chlazené", price: "od 120 Kč" },
         ],
     },
     {
         title: "Jídlo",
         items: [
             { name: "Pinsa Margherita", desc: "San Marzano, fior di latte, bazalka", price: "165 Kč" },
-            { name: "Pinsa Prosciutto e rucola", desc: "Parmská šunka, rukola, parmezán", price: "195 Kč" },
-            { name: "Sýrový talíř k vínu", desc: "Výběr českých sýrů, med, ořechy", price: "185 Kč" },
+            { name: "Pinsa Prosciutto e\u00A0rucola", desc: "Parmská šunka, rukola, parmezán", price: "195 Kč" },
+            { name: "Sýrový talíř k\u00A0vínu", desc: "Výběr českých sýrů, med, ořechy", price: "185 Kč" },
         ],
     },
 ];
@@ -98,13 +98,13 @@ export default function BentoGrid() {
                         O nás
                     </motion.p>
                     <motion.h2
-                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-5"
+                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-5 text-balance"
                         id="h-about"
                         {...fade}
                     >
                         Rodinný podnik s&nbsp;domáckou atmosférou
                     </motion.h2>
-                    <motion.p className="text-muted font-light leading-[1.8] max-w-2xl mb-12" {...fade}>
+                    <motion.p className="text-muted font-light leading-[1.8] max-w-2xl mb-12 text-pretty" {...fade}>
                         Separé vzniklo z&nbsp;jednoduché myšlenky: chtěli jsme v&nbsp;centru Prahy vytvořit
                         místo, kam bychom sami rádi chodili. Žádný neosobní bar s&nbsp;naškrobenou obsluhou,
                         ale poctivý rodinný podnik, který funguje jako obývák pro lidi z&nbsp;okolí.
@@ -128,8 +128,8 @@ export default function BentoGrid() {
                                     <span className="hidden md:block absolute -bottom-2 -right-2 text-neutral-400/60 font-light text-xs pointer-events-none select-none z-10">+</span>
                                 )}
                                 <div className="text-foreground/70 mb-4">{v.icon}</div>
-                                <h3 className="text-sm font-black tracking-tight mb-2">{v.title}</h3>
-                                <p className="text-xs font-light text-muted leading-relaxed">{v.text}</p>
+                                <h3 className="text-sm font-black tracking-tight mb-2 text-balance">{v.title}</h3>
+                                <p className="text-xs font-light text-muted leading-relaxed text-pretty">{v.text}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -146,13 +146,13 @@ export default function BentoGrid() {
                         Nabídka
                     </motion.p>
                     <motion.h2
-                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
+                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3 text-balance"
                         id="h-menu"
                         {...fade}
                     >
                         Co má smysl pít a&nbsp;jíst
                     </motion.h2>
-                    <motion.p className="text-left text-neutral-600 max-w-2xl mb-12" {...fade}>
+                    <motion.p className="text-left text-neutral-600 max-w-2xl mb-12 text-pretty" {...fade}>
                         Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví
                         a&nbsp;co dokonale funguje u&nbsp;stolu s&nbsp;přáteli.
                     </motion.p>
@@ -198,7 +198,7 @@ export default function BentoGrid() {
                         className="text-[11px] font-light text-muted mt-6 italic"
                         {...fade}
                     >
-                        Ceny a položky se mohou měnit dle aktuální nabídky.
+                        Ceny a\u00A0položky se mohou měnit dle aktuální nabídky.
                     </motion.p>
                 </div>
             </section>

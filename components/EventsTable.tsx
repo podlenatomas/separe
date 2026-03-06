@@ -17,19 +17,19 @@ const eventBlocks: EventBlock[] = [
         icon: <Calendar size={22} strokeWidth={1.3} />,
         title: "Hospodské kvízy",
         schedule: "Každou středu od 19:00",
-        desc: "Postavte tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Naše kvízy jsou legendární a místa rychle mizí.",
+        desc: "Postavte tým, objednejte si na stůl pár lahví vína a\u00A0ukažte, co víte. Naše kvízy jsou legendární a\u00A0místa rychle mizí.",
     },
     {
         icon: <Dice5 size={22} strokeWidth={1.3} />,
         title: "Deskovky k dispozici kdykoliv",
-        schedule: "Každý den v otevírací době",
+        schedule: "Každý den v\u00A0otevírací době",
         desc: "Přes 80 her od rychlých party kousků po náročnější strategie. Půjčení ke stolu je zdarma.",
     },
     {
         icon: <Wine size={22} strokeWidth={1.3} />,
         title: "Degustace a vernisáže",
         schedule: "Nepravidelně — sledujte náš program",
-        desc: "Pravidelně u nás ožívá kultura. Přijďte ochutnávat i objevovat.",
+        desc: "Pravidelně u\u00A0nás ožívá kultura. Přijďte ochutnávat i\u00A0objevovat.",
     },
 ];
 
@@ -53,13 +53,13 @@ export default function EventsTable() {
                     Akce
                 </motion.p>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3 text-balance"
                     id="h-events"
                     {...fade}
                 >
                     Středeční kvízy a&nbsp;večery plné her
                 </motion.h2>
-                <motion.p className="text-[#F5F5F0]/60 font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                <motion.p className="text-[#F5F5F0]/60 font-light leading-[1.8] max-w-xl mb-12 text-pretty" {...fade}>
                     Separé žije. Jsme ideální základna pro soutěživé povahy, milovníky dobrého pití
                     i&nbsp;stratégy.
                 </motion.p>
@@ -76,11 +76,11 @@ export default function EventsTable() {
                             transition={{ duration: 0.45, delay: i * 0.1 }}
                         >
                             <div className="text-[#F5F5F0]/50 mb-4">{block.icon}</div>
-                            <h3 className="text-sm font-black tracking-tight text-[#F5F5F0] mb-1">{block.title}</h3>
+                            <h3 className="text-sm font-black tracking-tight text-[#F5F5F0] mb-1 text-balance">{block.title}</h3>
                             <p className="text-[10px] font-light uppercase tracking-[0.1em] text-[#F5F5F0]/40 mb-4">
                                 {block.schedule}
                             </p>
-                            <p className="text-xs font-light text-[#F5F5F0]/60 leading-relaxed">{block.desc}</p>
+                            <p className="text-xs font-light text-[#F5F5F0]/60 leading-relaxed text-pretty">{block.desc}</p>
                         </motion.div>
                     ))}
                 </div>

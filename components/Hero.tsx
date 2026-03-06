@@ -48,7 +48,7 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.h1
-                    className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[0.98] text-[#F5F5F0] max-w-2xl mb-6"
+                    className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[0.98] text-[#F5F5F0] max-w-2xl mb-6 text-balance"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.35 }}
@@ -57,15 +57,15 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-8 leading-relaxed"
+                    className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-8 leading-relaxed text-pretty"
                     initial={{ opacity: 0, y: 14 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
                     Separé je malý rodinný bar na Mikulandské. Místo s&nbsp;nezaměnitelným
                     geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy
-                    a&nbsp;atmosférou, ve&nbsp;které se snadno zapomene na to, že jste jen
-                    pár kroků od rušné Národní třídy.
+                    a&nbsp;atmosférou, ve&nbsp;které se snadno zapomene na to, že jste jen pár
+                    kroků od rušné Národní třídy.
                 </motion.p>
 
                 <motion.button
