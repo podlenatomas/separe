@@ -13,7 +13,11 @@ export default function Hero() {
             className="relative min-h-svh flex items-end pt-[72px] overflow-hidden"
             aria-label="Úvod"
         >
-            <div className="absolute inset-0 z-0">
+            <motion.div
+                className="absolute inset-0 z-0"
+                animate={{ scale: [1, 1.08, 1] }}
+                transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+            >
                 <Image
                     src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2000"
                     alt="Atmosféra baru separé — teplé světlo, víno, večerní nálada"
@@ -22,7 +26,7 @@ export default function Hero() {
                     className="object-cover"
                     sizes="100vw"
                 />
-            </div>
+            </motion.div>
 
             <div
                 className="absolute inset-0 z-[1]"

@@ -162,7 +162,7 @@ export default function BentoGrid() {
                         {menu.map((cat, ci) => (
                             <motion.div
                                 key={cat.title}
-                                className="relative p-8 md:p-10 bg-background"
+                                className="group relative p-8 md:p-10 bg-background"
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
@@ -178,7 +178,7 @@ export default function BentoGrid() {
                                 {cat.items.map((item, idx) => (
                                     <div
                                         key={item.name}
-                                        className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-colors duration-300 hover:bg-neutral-200/30 ${idx > 0 ? "border-t border-neutral-200" : ""
+                                        className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out group-hover:opacity-30 hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""
                                             }`}
                                     >
                                         <div>
