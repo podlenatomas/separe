@@ -16,12 +16,9 @@ export default function Story() {
 
     return (
         <section ref={pribeh.ref} className="relative border-b border-border overflow-hidden" aria-labelledby="h-story">
-            {/* Anti-grid watermark — crosses the 1px divider */}
-            <div
-                className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none select-none"
-                aria-hidden="true"
-            >
-                <span className="text-[16rem] md:text-[22rem] lg:text-[28rem] font-black tracking-tighter text-neutral-900/[0.035] leading-none">
+            {/* Anti-grid watermark — typographic bleed */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0 flex items-center justify-center opacity-5">
+                <span className="text-[15rem] md:text-[25rem] font-black tracking-tighter text-neutral-900 select-none">
                     1891
                 </span>
             </div>
