@@ -49,7 +49,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.35 }}
                 >
-                    Řemeslné pivo, šumivá vína a&nbsp;klid uprostřed města
+                    Řemeslné pivo,{" "}<br className="hidden md:block" /><span className="font-[family-name:var(--font-serif)] italic font-medium text-[#F5F5F0]/90">šumivá vína</span>{" "}<br className="hidden md:block" />a&nbsp;klid uprostřed města
                 </motion.h1>
 
                 <motion.p

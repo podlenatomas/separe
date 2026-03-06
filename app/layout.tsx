@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/providers/LenisProvider";
 import NavProvider from "@/providers/NavProvider";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
   subsets: ["latin", "latin-ext"],
   display: "swap",
 });
@@ -41,13 +47,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         <a href="#main" className="skip-link">
           Přeskočit na obsah
         </a>
         <LenisProvider>
           <NavProvider>{children}</NavProvider>
         </LenisProvider>
+        {/* Global paper noise overlay — tactile 2026 texture */}
+        <div
+          className="pointer-events-none fixed inset-0 z-[100] h-full w-full opacity-[0.03] mix-blend-difference"
+          style={{
+            backgroundImage:
+              "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')",
+          }}
+          aria-hidden="true"
+        />
       </body>
     </html>
   );

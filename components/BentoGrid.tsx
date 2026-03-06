@@ -113,16 +113,20 @@ export default function BentoGrid() {
                     </motion.p>
 
                     {/* 4-col Bento — gap-px technique */}
-                    <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
+                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
                         {values.map((v, i) => (
                             <motion.div
                                 key={v.title}
-                                className="p-8 md:p-10 bg-background"
+                                className="relative p-8 md:p-10 bg-background"
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
                                 transition={{ duration: 0.45, delay: i * 0.08 }}
                             >
+                                {/* Crosshair at bottom-right intersection */}
+                                {i < values.length - 1 && (
+                                    <span className="hidden md:block absolute -bottom-2 -right-2 text-neutral-400/60 font-light text-xs pointer-events-none select-none z-10">+</span>
+                                )}
                                 <div className="text-foreground/70 mb-4">{v.icon}</div>
                                 <h3 className="text-sm font-black tracking-tight mb-2">{v.title}</h3>
                                 <p className="text-xs font-light text-muted leading-relaxed">{v.text}</p>
@@ -154,16 +158,20 @@ export default function BentoGrid() {
                     </motion.p>
 
                     {/* 3-col menu — gap-px technique */}
-                    <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
+                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
                         {menu.map((cat, ci) => (
                             <motion.div
                                 key={cat.title}
-                                className="p-8 md:p-10 bg-background"
+                                className="relative p-8 md:p-10 bg-background"
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
                                 transition={{ duration: 0.45, delay: ci * 0.1 }}
                             >
+                                {/* Crosshair at bottom-right intersection */}
+                                {ci < menu.length - 1 && (
+                                    <span className="hidden md:block absolute -bottom-2 -right-2 text-neutral-400/60 font-light text-xs pointer-events-none select-none z-10">+</span>
+                                )}
                                 <h3 className="text-[10px] font-light uppercase tracking-[0.14em] mb-6 pb-3 border-b border-neutral-300">
                                     {cat.title}
                                 </h3>
