@@ -16,14 +16,13 @@ export default function Story() {
 
     return (
         <section ref={pribeh.ref} className="relative border-b border-border overflow-hidden" aria-labelledby="h-story">
-            {/* Anti-grid watermark — typographic bleed */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0 flex items-center justify-center opacity-5">
-                <span className="text-[15rem] md:text-[25rem] font-black tracking-tighter text-neutral-900 select-none">
-                    1891
-                </span>
-            </div>
-
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
+                {/* Anti-grid watermark — typographic bleed */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5] flex items-center justify-center">
+                    <span className="text-[15rem] md:text-[25rem] font-black tracking-tighter text-neutral-900 select-none opacity-[0.04]">
+                        1891
+                    </span>
+                </div>
                 <div className="flex items-center gap-3 mb-2">
                     <BookOpen size={14} strokeWidth={1.5} className="text-muted" />
                     <motion.p
