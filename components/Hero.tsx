@@ -16,7 +16,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1600&q=80"
-                    alt="Interiér kavárny separé na Mikulandské — teplé světlo, cihlová zeď, dřevěný bar"
+                    alt="Interiér baru separé na Mikulandské — teplé světlo, dřevěný bar, útulná atmosféra"
                     fill
                     priority
                     className="object-cover"
@@ -40,7 +40,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Mikulandská 133 · Praha 1
+                    Mikulandská 133/3 · Praha 1
                 </motion.p>
 
                 <motion.h1
@@ -49,17 +49,19 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.35 }}
                 >
-                    Nabízíme víno, pivo, kávu, deskovky, radost.
+                    Řemeslné pivo, šumivá vína a&nbsp;klid uprostřed města
                 </motion.h1>
 
                 <motion.p
-                    className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-md mb-8 leading-relaxed"
+                    className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-8 leading-relaxed"
                     initial={{ opacity: 0, y: 14 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                    Prémiová městská oáza v srdci Prahy. Třetí prostor pro ty, kdo hledají
-                    komunitu, klid a dobrou chuť — stranou od ruchu města.
+                    Separé je malý rodinný bar na Mikulandské. Místo s&nbsp;nezaměnitelným
+                    geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy
+                    a&nbsp;atmosférou, ve&nbsp;které se snadno zapomene na to, že jste jen
+                    pár kroků od rušné Národní třídy.
                 </motion.p>
 
                 <motion.button

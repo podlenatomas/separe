@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Coffee, Wine, Pizza, Dice5 } from "lucide-react";
+import { Beer, Wine, GlassWater, Dice5 } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
 import type { ReactNode } from "react";
 
@@ -15,24 +15,24 @@ interface ValueCard {
 
 const values: ValueCard[] = [
     {
-        icon: <Coffee size={26} strokeWidth={1.3} />,
-        title: "Výběrová káva",
-        text: "Spolupracujeme s českými mikropražírnami. Espresso i filtr — vždy čerstvě namletý, vždy single origin.",
+        icon: <Beer size={26} strokeWidth={1.3} />,
+        title: "Řemeslná piva",
+        text: "Pečlivý výběr toho nejlepšího z malých a létajících pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat.",
     },
     {
         icon: <Wine size={26} strokeWidth={1.3} />,
-        title: "Přírodní víno",
-        text: "Malí vinaři z Moravy i zahraničí. Rotující nabídka, vždy něco nového k ochutnání.",
+        title: "Šumivá vína & Pet-naty",
+        text: "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a naturální vína, která si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev.",
     },
     {
-        icon: <Pizza size={26} strokeWidth={1.3} />,
-        title: "Pinsa Romana",
-        text: "Lehké těsto z trojité fermentace. Sezónní ingredience, italská technika, pražský twist.",
+        icon: <GlassWater size={26} strokeWidth={1.3} />,
+        title: "Přívlastková vína",
+        text: "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce.",
     },
     {
         icon: <Dice5 size={26} strokeWidth={1.3} />,
-        title: "Hra & Sdílení",
-        text: "Přes 80 deskovek k zapůjčení zdarma. Pravidelné herní večery a komunitní akce.",
+        title: "Deskovky & Kvízy",
+        text: "Přes 80 her k zapůjčení zdarma. Pravidelné herní večery a legendární středeční hospodské kvízy. U nás se nezastavuje jen na \u201Ejedno\u201C — u nás se zůstává.",
     },
 ];
 
@@ -49,33 +49,27 @@ interface MenuCat {
 
 const menu: MenuCat[] = [
     {
-        title: "Káva",
+        title: "Pivo",
         items: [
-            { name: "Espresso", desc: "Single shot, Ethiopie Sidamo", price: "55 Kč" },
-            { name: "Cappuccino", desc: "Dvojitý espresso, pěněné mléko", price: "75 Kč" },
-            { name: "Flat White", desc: "Dvojitý ristretto, hedvábná pěna", price: "85 Kč" },
-            { name: "Filtrovaná káva", desc: "V60 pour-over, denní výběr", price: "70 Kč" },
-            { name: "Matcha Latte", desc: "Ceremonial grade, ovesné mléko", price: "90 Kč" },
+            { name: "Řemeslný ležák", desc: "Rotující výběr z malých pivovarů", price: "dle nabídky" },
+            { name: "Speciály na čepu", desc: "IPA, APA, sour — vždy něco nového", price: "dle nabídky" },
+            { name: "Lahvové speciály", desc: "Limitované edice a zahraniční hosté", price: "dle nabídky" },
         ],
     },
     {
         title: "Víno",
         items: [
-            { name: "Müller Thurgau", desc: "Vinařství Špalek, Morava", price: "65 Kč" },
-            { name: "Veltlínské zelené", desc: "Nestarec, pet-nat", price: "85 Kč" },
-            { name: "Frankovka rosé", desc: "Vinařství Krásná hora", price: "75 Kč" },
-            { name: "Svatovavřinecké", desc: "Milan Nestarec, natural", price: "80 Kč" },
-            { name: "Oranžové víno", desc: "Vinařství Dobšice, macerované", price: "95 Kč" },
+            { name: "Přívlastková (rozlev)", desc: "Česká přívlastková vína", price: "od 85 Kč" },
+            { name: "Láhev Pet-natu", desc: "Ideální pro partu — naturální bubliny", price: "od 450 Kč" },
+            { name: "Šumivé víno", desc: "Výběr z Evropy, vždy chlazené", price: "od 120 Kč" },
         ],
     },
     {
-        title: "Pinsa & Kuchyně",
+        title: "Jídlo",
         items: [
-            { name: "Margherita", desc: "San Marzano, fior di latte, bazalka", price: "165 Kč" },
-            { name: "Prosciutto e rucola", desc: "Parmská šunka, rukola, parmezán", price: "195 Kč" },
-            { name: "Verdura", desc: "Grilovaná zelenina, ricotta, pesto", price: "175 Kč" },
-            { name: "Hummus s pita", desc: "Cizrna, tahini, grilovaná pita", price: "105 Kč" },
-            { name: "Sýrový talíř", desc: "Výběr 3 českých sýrů, med, ořechy", price: "185 Kč" },
+            { name: "Pinsa Margherita", desc: "San Marzano, fior di latte, bazalka", price: "165 Kč" },
+            { name: "Pinsa Prosciutto e rucola", desc: "Parmská šunka, rukola, parmezán", price: "195 Kč" },
+            { name: "Sýrový talíř k vínu", desc: "Výběr českých sýrů, med, ořechy", price: "185 Kč" },
         ],
     },
 ];
@@ -108,14 +102,14 @@ export default function BentoGrid() {
                         id="h-about"
                         {...fade}
                     >
-                        Místo, kde se potkává káva, víno a hry.
+                        Rodinný podnik s&nbsp;domáckou atmosférou
                     </motion.h2>
                     <motion.p className="text-muted font-light leading-[1.8] max-w-2xl mb-12" {...fade}>
-                        Separé vzniklo jako odpověď na otázku, kde se v centru Prahy dá opravdu zpomalit.
-                        Na Mikulandské 133 jsme vybudovali prostor, který funguje jako obývák pro celou
-                        čtvrť — ráno voní čerstvě praženou kávou, večer se tu otevírá přírodní víno a na
-                        stolech se rozehrávají deskovky. V létě se naše dvůr proměňuje v zelenou oázu
-                        s posezením pod stromy.
+                        Separé vzniklo z&nbsp;jednoduché myšlenky: chtěli jsme v&nbsp;centru Prahy vytvořit
+                        místo, kam bychom sami rádi chodili. Žádný neosobní bar s&nbsp;naškrobenou obsluhou,
+                        ale poctivý rodinný podnik, který funguje jako obývák pro lidi z&nbsp;okolí.
+                        Milujeme poctivé řemeslo a&nbsp;zajímavé chutě. Nečekejte u&nbsp;nás proto žádnou nudnou
+                        klasiku.
                     </motion.p>
 
                     {/* 4-col Bento — gap-px technique */}
@@ -148,12 +142,16 @@ export default function BentoGrid() {
                         Nabídka
                     </motion.p>
                     <motion.h2
-                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                        className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
                         id="h-menu"
                         {...fade}
                     >
-                        Co u nás najdete
+                        Co má smysl pít a&nbsp;jíst
                     </motion.h2>
+                    <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                        Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví
+                        a&nbsp;co dokonale funguje u&nbsp;stolu s&nbsp;přáteli.
+                    </motion.p>
 
                     {/* 3-col menu — gap-px technique */}
                     <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
@@ -187,6 +185,13 @@ export default function BentoGrid() {
                             </motion.div>
                         ))}
                     </div>
+
+                    <motion.p
+                        className="text-[11px] font-light text-muted mt-6 italic"
+                        {...fade}
+                    >
+                        Ceny a položky se mohou měnit dle aktuální nabídky.
+                    </motion.p>
                 </div>
             </section>
         </>

@@ -11,6 +11,7 @@ interface SectionScroll {
 interface NavContextValue {
     hero: SectionScroll;
     oNas: SectionScroll;
+    pribeh: SectionScroll;
     nabidka: SectionScroll;
     akce: SectionScroll;
     kontakt: SectionScroll;
@@ -27,12 +28,13 @@ export function useNav() {
 export default function NavProvider({ children }: { children: ReactNode }) {
     const hero = useScrollTo();
     const oNas = useScrollTo();
+    const pribeh = useScrollTo();
     const nabidka = useScrollTo();
     const akce = useScrollTo();
     const kontakt = useScrollTo();
 
     return (
-        <NavContext.Provider value={{ hero, oNas, nabidka, akce, kontakt }}>
+        <NavContext.Provider value={{ hero, oNas, pribeh, nabidka, akce, kontakt }}>
             {children}
         </NavContext.Provider>
     );

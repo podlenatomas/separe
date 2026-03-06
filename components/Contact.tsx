@@ -24,12 +24,16 @@ export default function Contact() {
                     Kontakt
                 </motion.p>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
                     id="h-contact"
                     {...fade}
                 >
-                    Stavte se na Mikulandské
+                    Zapadněte do vnitrobloku
                 </motion.h2>
+                <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                    Vstup je přímo z&nbsp;ulice Mikulandská. Stačí projít průchodem do dvora a&nbsp;jste
+                    u&nbsp;nás. V&nbsp;létě tu navíc otevíráme klidné zahradní posezení ve&nbsp;stínu stromů.
+                </motion.p>
 
                 <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
                     {/* Left — info */}
@@ -40,9 +44,9 @@ export default function Contact() {
                                 <h3 className="text-[10px] font-light uppercase tracking-[0.14em]">Adresa</h3>
                             </div>
                             <address className="not-italic text-sm font-light text-muted leading-[1.8]">
-                                separé<br />
-                                Mikulandská 133<br />
-                                110 00 Praha 1 – Nové Město
+                                Separé<br />
+                                Mikulandská 133/3<br />
+                                110 00 Praha 1 — Nové Město
                             </address>
                         </div>
 
@@ -60,10 +64,10 @@ export default function Contact() {
                                 </a>
                                 <br />
                                 <a
-                                    href="tel:+420777123456"
+                                    href="tel:+420722339488"
                                     className="underline underline-offset-[3px] decoration-neutral-300 hover:decoration-foreground transition-colors"
                                 >
-                                    +420 777 123 456
+                                    +420 722 339 488
                                 </a>
                             </p>
                         </div>
@@ -78,9 +82,8 @@ export default function Contact() {
                             <table className="w-full">
                                 <tbody>
                                     {[
-                                        ["Pondělí – Pátek", "8:00 – 22:00"],
-                                        ["Sobota", "9:00 – 23:00"],
-                                        ["Neděle", "9:00 – 20:00"],
+                                        ["Pondělí – Sobota", "17:00 – 24:00"],
+                                        ["Neděle", "Zavřeno"],
                                     ].map(([day, hrs]) => (
                                         <tr key={day}>
                                             <td className="py-1 text-sm font-medium pr-8">{day}</td>
@@ -108,13 +111,14 @@ export default function Contact() {
                             </h3>
                         </div>
                         <p className="text-sm font-light text-muted leading-[1.8] mb-6">
-                            Vstup přímo z ulice Mikulandská. Projděte průchodem do dvora — v létě tu funguje
-                            naše zahradní posezení pod platany.
+                            Jsme jen pár kroků od rušné Národní třídy, ale jakmile projdete průchodem do
+                            dvora, svět se ztiší. V&nbsp;létě si sedněte pod stromy na naší zahradní
+                            terase — nejklidnější zašívárna v&nbsp;Praze.
                         </p>
                         <div className="w-full h-60 md:h-72 rounded-sm overflow-hidden">
                             <iframe
                                 src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
-                                title="Mapa — separé, Mikulandská 133, Praha 1"
+                                title="Mapa — Separé, Mikulandská 133/3, Praha 1"
                                 className="w-full h-full"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"

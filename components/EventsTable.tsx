@@ -1,59 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar } from "lucide-react";
+import { Calendar, Dice5, Wine } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
+import type { ReactNode } from "react";
 
-interface EventRow {
-    day: string;
-    month: string;
+interface EventBlock {
+    icon: ReactNode;
     title: string;
-    meta: string;
+    schedule: string;
     desc: string;
 }
 
-const events: EventRow[] = [
+const eventBlocks: EventBlock[] = [
     {
-        day: "12",
-        month: "bře",
-        title: "Pub Quiz: Všeobecný vědomostní kvíz",
-        meta: "Středa · 19:00 – 21:30 · Vstup zdarma",
-        desc: "Týmy po 2–5 hráčích. Pro vítěze lahev vína z naší nabídky.",
+        icon: <Calendar size={22} strokeWidth={1.3} />,
+        title: "Hospodské kvízy",
+        schedule: "Každou středu od 19:00",
+        desc: "Postavte tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Naše kvízy jsou legendární a místa rychle mizí.",
     },
     {
-        day: "21",
-        month: "bře",
-        title: "Vernisáž: Tiché krajiny — Tereza Nová",
-        meta: "Pátek · 18:00 – 21:00 · Vstup zdarma",
-        desc: "Výstava velkoformátových fotografií z českého pohraničí. Úvodní slovo kurátorka Jana Plíšková.",
+        icon: <Dice5 size={22} strokeWidth={1.3} />,
+        title: "Deskovky k dispozici kdykoliv",
+        schedule: "Každý den v otevírací době",
+        desc: "Přes 80 her od rychlých party kousků po náročnější strategie. Půjčení ke stolu je zdarma.",
     },
     {
-        day: "28",
-        month: "bře",
-        title: "Degustace: Přírodní vína z Moravy",
-        meta: "Pátek · 17:00 – 20:00 · 350 Kč",
-        desc: "Šest vzorků od tří moravských vinařů. Komentovaná degustace s občerstvením.",
-    },
-    {
-        day: "05",
-        month: "dub",
-        title: "Herní večer: Strategické deskovky",
-        meta: "Sobota · 18:00 – 22:00 · Vstup zdarma",
-        desc: "Wingspan, Terraforming Mars a další taktické hry. Všechny hry zapůjčíme.",
-    },
-    {
-        day: "12",
-        month: "dub",
-        title: "Workshop: Latte art pro začátečníky",
-        meta: "Neděle · 10:00 – 12:00 · 450 Kč",
-        desc: "Základy latte artu pod vedením našeho baristy. Max 8 účastníků.",
-    },
-    {
-        day: "19",
-        month: "dub",
-        title: "Pub Quiz: Film & Seriály",
-        meta: "Středa · 19:00 – 21:30 · Vstup zdarma",
-        desc: "Tematický kvíz pro filmové fanoušky. Bonusové kolo: live soundtrack.",
+        icon: <Wine size={22} strokeWidth={1.3} />,
+        title: "Degustace a vernisáže",
+        schedule: "Nepravidelně — sledujte náš program",
+        desc: "Pravidelně u nás ožívá kultura. Přijďte ochutnávat i objevovat.",
     },
 ];
 
@@ -70,55 +46,42 @@ export default function EventsTable() {
     return (
         <section ref={akce.ref} className="border-b border-border" aria-labelledby="h-events">
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
-                <div className="flex items-center gap-3 mb-2">
-                    <Calendar size={14} strokeWidth={1.5} className="text-muted" />
-                    <motion.p
-                        className="text-[10px] font-light uppercase tracking-[0.18em] text-muted"
-                        {...fade}
-                    >
-                        Akce
-                    </motion.p>
-                </div>
+                <motion.p
+                    className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
+                    {...fade}
+                >
+                    Akce
+                </motion.p>
                 <motion.h2
-                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-12"
+                    className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-3"
                     id="h-events"
                     {...fade}
                 >
-                    Co se u nás chystá
+                    Středeční kvízy a&nbsp;večery plné her
                 </motion.h2>
+                <motion.p className="text-muted font-light leading-[1.8] max-w-xl mb-12" {...fade}>
+                    Separé žije. Jsme ideální základna pro soutěživé povahy, milovníky dobrého pití
+                    i&nbsp;stratégy.
+                </motion.p>
 
-                {/* Tabular grid — gap-px */}
-                <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 gap-px">
-                    {events.map((e, i) => (
-                        <motion.article
-                            key={e.title}
-                            className="bg-background px-6 py-5 md:px-10 md:py-6 grid grid-cols-[56px_1fr] md:grid-cols-[72px_200px_1fr] gap-x-5 gap-y-1 items-baseline"
-                            initial={{ opacity: 0, y: 14 }}
+                {/* 3-col event blocks — gap-px */}
+                <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
+                    {eventBlocks.map((block, i) => (
+                        <motion.div
+                            key={block.title}
+                            className="p-8 md:p-10 bg-background"
+                            initial={{ opacity: 0, y: 18 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-30px" }}
-                            transition={{ duration: 0.4, delay: i * 0.05 }}
+                            viewport={{ once: true, margin: "-40px" }}
+                            transition={{ duration: 0.45, delay: i * 0.1 }}
                         >
-                            {/* Date */}
-                            <div className="text-center md:text-left">
-                                <span className="text-2xl font-black leading-none">{e.day}</span>
-                                <span className="text-[10px] font-light uppercase tracking-[0.1em] text-muted ml-1">
-                                    {e.month}
-                                </span>
-                            </div>
-
-                            {/* Title */}
-                            <h3 className="text-sm font-semibold col-span-1 md:col-span-1">{e.title}</h3>
-
-                            {/* Desc — hidden on mobile, shown on md+ */}
-                            <p className="hidden md:block text-xs font-light text-muted leading-relaxed">
-                                {e.desc}
+                            <div className="text-foreground/70 mb-4">{block.icon}</div>
+                            <h3 className="text-sm font-black tracking-tight mb-1">{block.title}</h3>
+                            <p className="text-[10px] font-light uppercase tracking-[0.1em] text-muted mb-4">
+                                {block.schedule}
                             </p>
-
-                            {/* Meta — span full row under */}
-                            <p className="text-[10px] font-light text-muted tracking-wide col-span-2 md:col-span-3">
-                                {e.meta}
-                            </p>
-                        </motion.article>
+                            <p className="text-xs font-light text-muted leading-relaxed">{block.desc}</p>
+                        </motion.div>
                     ))}
                 </div>
             </div>
