@@ -1,28 +1,29 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
 
 const NAV_ITEMS = [
-    { key: "oNas" as const, label: "O nás" },
-    { key: "nabidka" as const, label: "Nabídka" },
-    { key: "akce" as const, label: "Akce" },
-    { key: "kontakt" as const, label: "Kontakt" },
+    { key: "oNas" as const, label: "O nás", external: false },
+    { key: "nabidka" as const, label: "Nabídka", external: false },
+    { key: "akce" as const, label: "Akce", external: false },
+    { key: "kontakt" as const, label: "Kontakt", external: false },
+    { key: "rezervace", label: "Rezervace", external: true, href: "https://separerezervace.cz" }, // Todo: insert real link when provided
 ];
 
 const overlayVariants = {
-    closed: { opacity: 0, transition: { duration: 0.25, ease: "easeInOut" as const } },
-    open: { opacity: 1, transition: { duration: 0.25, ease: "easeInOut" as const } },
+    closed: { y: "-100%", transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
+    open: { y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
 };
 
 const itemVariants = {
-    closed: { opacity: 0, y: 24 },
+    closed: { opacity: 0, y: 40 },
     open: (i: number) => ({
         opacity: 1,
         y: 0,
-        transition: { delay: 0.08 + i * 0.055, duration: 0.3, ease: "easeOut" as const },
+        transition: { delay: 0.2 + i * 0.1, duration: 0.5, ease: "easeOut" as const },
     }),
 };
 
@@ -30,10 +31,35 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     const nav = useNav();
 
+    // AUTO-CLOSE ON RESIZE (React Viewport Management)
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 768) { // 'md' breakpoint
+                setOpen(false);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    // Lock body scroll when menu is open
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = ""; // Cleanup on unmount
+        };
+    }, [open]);
+
     const go = useCallback(
         (key: keyof typeof nav) => {
             setOpen(false);
-            setTimeout(() => nav[key].trigger(), open ? 300 : 0);
+            setTimeout(() => {
+                nav[key]?.trigger?.();
+            }, open ? 400 : 0);
         },
         [nav, open]
     );
@@ -43,22 +69,35 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
                 <button
                     onClick={() => go("hero")}
-                    className="text-[1.35rem] font-black tracking-tight text-foreground cursor-pointer bg-transparent border-none"
+                    className="text-[1.35rem] font-black tracking-tight text-foreground cursor-pointer bg-transparent border-none relative z-[110]"
                     aria-label="separé — na začátek"
                 >
                     separé
                 </button>
 
                 <nav className="hidden md:flex items-center gap-10" aria-label="Hlavní navigace">
-                    {NAV_ITEMS.map(({ key, label }) => (
-                        <button
-                            key={key}
-                            onClick={() => go(key)}
-                            className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer bg-transparent border-none relative group"
-                        >
-                            {label}
-                            <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
-                        </button>
+                    {NAV_ITEMS.map((item) => (
+                        item.external ? (
+                            <a
+                                key={item.key}
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer relative group"
+                            >
+                                {item.label}
+                                <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
+                            </a>
+                        ) : (
+                            <button
+                                key={item.key}
+                                onClick={() => go(item.key as keyof typeof nav)}
+                                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer bg-transparent border-none relative group"
+                            >
+                                {item.label}
+                                <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
+                            </button>
+                        )
                     ))}
                 </nav>
 
@@ -79,7 +118,7 @@ export default function Navbar() {
                                 exit={{ rotate: 90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <X size={20} strokeWidth={1.5} />
+                                <X size={24} strokeWidth={1.5} className="text-neutral-900" />
                             </motion.div>
                         ) : (
                             <motion.div
@@ -89,7 +128,7 @@ export default function Navbar() {
                                 exit={{ rotate: -90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <Menu size={20} strokeWidth={1.5} />
+                                <Menu size={24} strokeWidth={1.5} className="text-neutral-900" />
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -100,36 +139,67 @@ export default function Navbar() {
                 {open && (
                     <motion.nav
                         id="mobile-nav"
-                        className="fixed inset-0 bg-background z-[100] flex flex-col items-center justify-center gap-7"
+                        className="fixed inset-0 w-full h-screen bg-[#F5F5F0] z-[100] flex flex-col justify-center px-8"
                         variants={overlayVariants}
                         initial="closed"
                         animate="open"
                         exit="closed"
                         aria-label="Mobilní navigace"
                     >
-                        {NAV_ITEMS.map(({ key, label }, i) => (
-                            <motion.button
-                                key={key}
-                                className="text-xl font-black uppercase tracking-[0.04em] text-foreground hover:opacity-60 transition-opacity cursor-pointer bg-transparent border-none"
-                                onClick={() => go(key)}
-                                variants={itemVariants}
-                                initial="closed"
-                                animate="open"
-                                custom={i}
-                            >
-                                {label}
-                            </motion.button>
-                        ))}
-                        <motion.button
-                            className="mt-3 px-8 py-3 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
-                            onClick={() => go("kontakt")}
+                        <div className="flex flex-col items-start w-full max-w-sm mx-auto">
+                            {NAV_ITEMS.map((item, i) => (
+                                <div key={item.key} className="overflow-hidden w-full">
+                                    {item.external ? (
+                                        <motion.div
+                                            variants={itemVariants}
+                                            initial="closed"
+                                            animate="open"
+                                            custom={i}
+                                            className="w-full"
+                                        >
+                                            <a
+                                                href={item.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="block text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer hover:text-neutral-600 transition-colors"
+                                                onClick={() => setOpen(false)}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        </motion.div>
+                                    ) : (
+                                        <motion.button
+                                            className="text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer bg-transparent border-none hover:text-neutral-600 transition-colors"
+                                            onClick={() => go(item.key as keyof typeof nav)}
+                                            variants={itemVariants}
+                                            initial="closed"
+                                            animate="open"
+                                            custom={i}
+                                        >
+                                            {item.label}
+                                        </motion.button>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Secondary info at absolute bottom */}
+                        <motion.div
+                            className="absolute bottom-8 left-8 right-8 flex justify-between items-end border-t border-neutral-300 pt-6"
                             variants={itemVariants}
                             initial="closed"
                             animate="open"
                             custom={NAV_ITEMS.length}
                         >
-                            Rezervovat stůl
-                        </motion.button>
+                            <div className="flex flex-col gap-1">
+                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">Sledujte nás</span>
+                                <a href="#" className="text-sm font-medium text-neutral-900 underline underline-offset-4">Instagram</a>
+                            </div>
+                            <div className="flex flex-col gap-1 items-end">
+                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">Adresa</span>
+                                <span className="text-sm font-medium text-neutral-900">Mikulandská 133</span>
+                            </div>
+                        </motion.div>
                     </motion.nav>
                 )}
             </AnimatePresence>
