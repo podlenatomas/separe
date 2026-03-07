@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useNav } from "@/providers/NavProvider";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
     const { hero, kontakt } = useNav();
+    const t = useTranslations("Hero");
 
     return (
         <section
@@ -44,7 +46,7 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-neutral-300/50 bg-[#F5F5F0]/10 backdrop-blur-md text-xs font-bold uppercase tracking-widest text-neutral-200">
-                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Mikulandská 133/3, Praha 1
+                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> {t("addressBadge")}
                     </div>
                 </motion.div>
 
@@ -54,7 +56,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.35 }}
                 >
-                    Řemeslné pivo,{" "}<br className="hidden md:block" /><span className="font-[family-name:var(--font-serif)] italic font-medium text-[#F5F5F0]/90">šumivá vína</span>{" "}<br className="hidden md:block" />a&nbsp;klid uprostřed města
+                    {t("titleCraft")}{" "}<br className="hidden md:block" /><span className="font-[family-name:var(--font-serif)] italic font-medium text-[#F5F5F0]/90">{t("titleWine")}</span>{" "}<br className="hidden md:block" />{t("titlePeace")}
                 </motion.h1>
 
                 <motion.p
@@ -63,10 +65,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                    Separé je malý rodinný bar na Mikulandské. Místo s&nbsp;nezaměnitelným
-                    geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy
-                    a&nbsp;atmosférou, ve&nbsp;které se snadno zapomene na to, že jste jen pár
-                    kroků od rušné Národní třídy.
+                    {t("subtitle")}
                 </motion.p>
 
                 <motion.div
@@ -79,7 +78,7 @@ export default function Hero() {
                         onClick={kontakt.trigger}
                         className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0"
                     >
-                        Rezervovat stůl
+                        {t("cta")}
                     </button>
                 </motion.div>
             </div>

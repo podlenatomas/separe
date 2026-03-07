@@ -1,0 +1,22 @@
+{
+    "Navbar": {
+        "about": "O nás",
+        "menu": "Nabídka",
+        "events": "Akce",
+        "contact": "Kontakt",
+        "reservation": "Rezervace",
+        "followUs": "Sledujte nás",
+        "address": "Adresa"
+    },
+    "Hero": {
+        "addressBadge": "Mikulandská 133/3, Praha 1",
+        "titleCraft": "Řemeslné pivo,",
+        "titleWine": "šumivá vína",
+        "titlePeace": "a\u00A0klid uprostřed města",
+        "subtitle": "Separé je malý rodinný bar na Mikulandské. Místo s\u00A0nezaměnitelným geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy a\u00A0atmosférou, ve\u00A0které se snadno zapomene na to, že jste jen pár kroků od rušné Národní třídy.",
+        "cta": "Rezervovat stůl"
+    },
+    "LanguageSwitcher": {
+        "switchTo": "English"
+    }
+}

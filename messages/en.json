@@ -1,0 +1,22 @@
+{
+    "Navbar": {
+        "about": "About Us",
+        "menu": "Menu",
+        "events": "Events",
+        "contact": "Contact",
+        "reservation": "Reservation",
+        "followUs": "Follow us",
+        "address": "Address"
+    },
+    "Hero": {
+        "addressBadge": "Mikulandská 133/3, Prague 1",
+        "titleCraft": "Craft beer,",
+        "titleWine": "sparkling wine",
+        "titlePeace": "and peace in the city center",
+        "subtitle": "Separé is a small family bar on Mikulandská. A place with an unmistakable genius loci, where people come for honest drinks, pub quizzes, and an atmosphere that makes you forget you're just steps from the busy Národní třída.",
+        "cta": "Book a table"
+    },
+    "LanguageSwitcher": {
+        "switchTo": "Česky"
+    }
+}

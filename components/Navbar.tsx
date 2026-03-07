@@ -4,13 +4,15 @@ import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const NAV_ITEMS = [
-    { key: "oNas" as const, label: "O nás", external: false },
-    { key: "nabidka" as const, label: "Nabídka", external: false },
-    { key: "akce" as const, label: "Akce", external: false },
-    { key: "kontakt" as const, label: "Kontakt", external: false },
-    { key: "rezervace", label: "Rezervace", external: true, href: "https://separerezervace.cz" }, // Todo: insert real link when provided
+    { key: "oNas" as const, labelKey: "about" as const, external: false },
+    { key: "nabidka" as const, labelKey: "menu" as const, external: false },
+    { key: "akce" as const, labelKey: "events" as const, external: false },
+    { key: "kontakt" as const, labelKey: "contact" as const, external: false },
+    { key: "rezervace", labelKey: "reservation" as const, external: true, href: "https://separerezervace.cz" },
 ];
 
 const overlayVariants = {
@@ -30,6 +32,7 @@ const itemVariants = {
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     const nav = useNav();
+    const t = useTranslations("Navbar");
 
     // AUTO-CLOSE ON RESIZE (React Viewport Management)
     useEffect(() => {
@@ -85,7 +88,7 @@ export default function Navbar() {
                                 rel="noopener noreferrer"
                                 className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer relative group"
                             >
-                                {item.label}
+                                {t(item.labelKey)}
                                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
                             </a>
                         ) : (
@@ -94,11 +97,12 @@ export default function Navbar() {
                                 onClick={() => go(item.key as keyof typeof nav)}
                                 className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer bg-transparent border-none relative group"
                             >
-                                {item.label}
+                                {t(item.labelKey)}
                                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
                             </button>
                         )
                     ))}
+                    <LanguageSwitcher />
                 </nav>
 
                 <motion.button
@@ -164,7 +168,7 @@ export default function Navbar() {
                                                 className="block text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer hover:text-neutral-600 transition-colors"
                                                 onClick={() => setOpen(false)}
                                             >
-                                                {item.label}
+                                                {t(item.labelKey)}
                                             </a>
                                         </motion.div>
                                     ) : (
@@ -176,7 +180,7 @@ export default function Navbar() {
                                             animate="open"
                                             custom={i}
                                         >
-                                            {item.label}
+                                            {t(item.labelKey)}
                                         </motion.button>
                                     )}
                                 </div>
@@ -192,12 +196,13 @@ export default function Navbar() {
                             custom={NAV_ITEMS.length}
                         >
                             <div className="flex flex-col gap-1">
-                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">Sledujte nás</span>
+                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">{t("followUs")}</span>
                                 <a href="#" className="text-sm font-medium text-neutral-900 underline underline-offset-4">Instagram</a>
                             </div>
-                            <div className="flex flex-col gap-1 items-end">
-                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">Adresa</span>
+                            <div className="flex flex-col gap-2 items-end">
+                                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">{t("address")}</span>
                                 <span className="text-sm font-medium text-neutral-900">Mikulandská 133</span>
+                                <LanguageSwitcher />
                             </div>
                         </motion.div>
                     </motion.nav>
