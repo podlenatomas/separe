@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
+import Salonek from "@/components/Salonek";
+import Reviews from "@/components/Reviews";
+import Moodboard from "@/components/Moodboard";
 import Story from "@/components/Story";
 import EventsTable from "@/components/EventsTable";
 import Contact from "@/components/Contact";
@@ -24,6 +27,9 @@ export default function Home() {
       </div>
       <main id="main">
         <BentoGrid />
+        <Salonek />
+        <Reviews />
+        <Moodboard />
         <Story />
         <EventsTable />
         <Contact />
