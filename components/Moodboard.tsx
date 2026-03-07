@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Instagram } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const fade = {
     initial: { opacity: 0, y: 18 },
@@ -13,45 +14,46 @@ const fade = {
 
 interface MoodPhoto {
     src: string;
-    alt: string;
-    /** Tailwind classes for aspect ratio & grid span  */
+    altKey: string;
     span: string;
 }
 
 const photos: MoodPhoto[] = [
     {
         src: "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?q=80&w=800",
-        alt: "Nalévání vína v teplém světle",
+        altKey: "p1",
         span: "col-span-2 row-span-2 aspect-[4/5]",
     },
     {
         src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=800",
-        alt: "Útulný interiér baru s teplým osvětlením",
+        altKey: "p2",
         span: "col-span-1 row-span-1 aspect-square",
     },
     {
         src: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?q=80&w=800",
-        alt: "Barový pult s řemeslnými pivy",
+        altKey: "p3",
         span: "col-span-1 row-span-1 aspect-square",
     },
     {
         src: "https://images.unsplash.com/photo-1632501641765-e568d28b0015?q=80&w=800",
-        alt: "Deskovky rozložené na stole",
+        altKey: "p4",
         span: "col-span-1 row-span-2 aspect-[3/5]",
     },
     {
         src: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800",
-        alt: "Přátelé u stolu s vínem",
+        altKey: "p5",
         span: "col-span-1 row-span-1 aspect-[5/3]",
     },
     {
         src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800",
-        alt: "Sklenice vína v měkkém světle",
+        altKey: "p6",
         span: "col-span-1 row-span-1 aspect-[5/3]",
     },
 ];
 
 export default function Moodboard() {
+    const t = useTranslations("Moodboard");
+
     return (
         <section className="border-b border-border" aria-labelledby="h-moodboard">
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
@@ -59,21 +61,20 @@ export default function Moodboard() {
                     className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
                     {...fade}
                 >
-                    Galerie
+                    {t("eyebrow")}
                 </motion.p>
                 <motion.h2
                     className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-5 text-balance"
                     id="h-moodboard"
                     {...fade}
                 >
-                    Zastav se.
+                    {t("title")}
                 </motion.h2>
                 <motion.p
                     className="text-muted font-light leading-[1.8] max-w-2xl mb-12 text-pretty"
                     {...fade}
                 >
-                    Malý výřez z&nbsp;atmosféry Mikulandské. Zbytek je lepší zažít
-                    osobně — u&nbsp;sklenky vína nebo nad&nbsp;deskovkou.
+                    {t("description")}
                 </motion.p>
 
                 {/* Custom asymmetric masonry grid */}
@@ -89,7 +90,7 @@ export default function Moodboard() {
                         >
                             <Image
                                 src={photo.src}
-                                alt={photo.alt}
+                                alt={t(`photos.${photo.altKey}`)}
                                 fill
                                 className="object-cover transition-transform duration-700 hover:scale-105"
                                 sizes="(max-width: 768px) 50vw, 25vw"

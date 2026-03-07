@@ -18,5 +18,202 @@
     },
     "LanguageSwitcher": {
         "switchTo": "English"
+    },
+    "About": {
+        "eyebrow": "O nás",
+        "title": "Rodinný podnik s\u00A0domáckou atmosférou",
+        "description": "Separé vzniklo z\u00A0jednoduché myšlenky: chtěli jsme v\u00A0centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s\u00A0naškrobenou obsluhou, ale poctivý rodinný podnik, který funguje jako obývák pro lidi z\u00A0okolí. Milujeme poctivé řemeslo a\u00A0zajímavé chutě. Nečekejte u\u00A0nás proto žádnou nudnou klasiku.",
+        "swipeHint": "Tahem posuňte",
+        "values": {
+            "beer": {
+                "title": "Řemeslná piva",
+                "text": "Pečlivý výběr toho nejlepšího z\u00A0malých a\u00A0létajících pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat."
+            },
+            "wine": {
+                "title": "Šumivá vína & Pet-naty",
+                "text": "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a\u00A0naturální vína, která si nejvíc užijete, když si s\u00A0přáteli otevřete rovnou celou lahev."
+            },
+            "quality": {
+                "title": "Přívlastková vína",
+                "text": "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v\u00A0naší vinotéce."
+            },
+            "games": {
+                "title": "Deskovky & Kvízy",
+                "text": "Přes 80 her k\u00A0zapůjčení zdarma. Pravidelné herní večery a\u00A0legendární středeční hospodské kvízy. U\u00A0nás se nezastavuje jen na \u201Ejedno\u201C — u\u00A0nás se zůstává."
+            }
+        }
+    },
+    "Menu": {
+        "eyebrow": "Nabídka",
+        "title": "Co má smysl pít a\u00A0jíst",
+        "description": "Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví a\u00A0co dokonale funguje u\u00A0stolu s\u00A0přáteli.",
+        "footnote": "Ceny a\u00A0položky se mohou měnit dle aktuální nabídky.",
+        "categories": {
+            "beer": {
+                "title": "Pivo",
+                "items": {
+                    "lager": {
+                        "name": "Řemeslný ležák",
+                        "desc": "Rotující výběr z\u00A0malých pivovarů",
+                        "price": "dle nabídky"
+                    },
+                    "specials": {
+                        "name": "Speciály na čepu",
+                        "desc": "IPA, APA, sour — vždy něco nového",
+                        "price": "dle nabídky"
+                    },
+                    "bottles": {
+                        "name": "Lahvové speciály",
+                        "desc": "Limitované edice a\u00A0zahraniční hosté",
+                        "price": "dle nabídky"
+                    }
+                }
+            },
+            "wine": {
+                "title": "Víno",
+                "items": {
+                    "glass": {
+                        "name": "Přívlastková (rozlev)",
+                        "desc": "Česká přívlastková vína",
+                        "price": "od 85 Kč"
+                    },
+                    "petnat": {
+                        "name": "Láhev Pet-natu",
+                        "desc": "Ideální pro partu — naturální bubliny",
+                        "price": "od 450 Kč"
+                    },
+                    "sparkling": {
+                        "name": "Šumivé víno",
+                        "desc": "Výběr z\u00A0Evropy, vždy chlazené",
+                        "price": "od 120 Kč"
+                    }
+                }
+            },
+            "food": {
+                "title": "Jídlo",
+                "items": {
+                    "margherita": {
+                        "name": "Pinsa Margherita",
+                        "desc": "San Marzano, fior di latte, bazalka",
+                        "price": "165 Kč"
+                    },
+                    "prosciutto": {
+                        "name": "Pinsa Prosciutto e\u00A0rucola",
+                        "desc": "Parmská šunka, rukola, parmezán",
+                        "price": "195 Kč"
+                    },
+                    "cheese": {
+                        "name": "Sýrový talíř k\u00A0vínu",
+                        "desc": "Výběr českých sýrů, med, ořechy",
+                        "price": "185 Kč"
+                    }
+                }
+            }
+        }
+    },
+    "Salonek": {
+        "eyebrow": "Salonek",
+        "titleYour": "Tvoje akce.",
+        "titleOur": "prostor.",
+        "description": "Nejsme sterilní zasedačka. Máme oddělený salonek s\u00A0projektorem, kde vládne uvolněná atmosféra a\u00A0dobré víno. Ať už slavíš narozeniny, pořádáš menší firemní večer nebo jen chceš mít svůj stůl pro partu přátel, všechno připravíme na\u00A0míru. O\u00A0malé občerstvení se postaráme sami a\u00A0na větší akce máme spolehlivé parťáky.",
+        "tagProjector": "Projektor",
+        "tagPrivacy": "Soukromí",
+        "tagCustom": "Vše na\u00A0míru",
+        "cta": "Domluvit akci"
+    },
+    "Reviews": {
+        "eyebrow": "Recenze",
+        "title": "Co se šušká v\u00A0Mikulandské.",
+        "description": "Separé stojí na\u00A0jednoduchých věcech — dobré pití, příjemná atmosféra a\u00A0lidi, kteří se rádi vrací. Tohle o\u00A0nás píšete vy. Dělá nám to radost.",
+        "ctaPrompt": "Zastavil ses u\u00A0nás a\u00A0bavilo tě to? Budeme rádi za\u00A0recenzi — pomáhá nám to růst.",
+        "cta": "Nechat recenzi na Googlu",
+        "fallback": {
+            "r1": {
+                "name": "Martin K.",
+                "text": "Úžasné místo s\u00A0neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a\u00A0ta zahrada ve dvoře — parádní únik z\u00A0centra. Chodíme sem pravidelně na kvízy.",
+                "date": "před 2\u00A0týdny"
+            },
+            "r2": {
+                "name": "Tereza M.",
+                "text": "Konečně bar, kde se dá normálně posedět bez hluku a\u00A0fronty. Vynikající výběr vín, pet-naty fantastické. Salonek jsme využili na narozeniny a\u00A0bylo to přesně, jak jsme chtěli.",
+                "date": "před měsícem"
+            },
+            "r3": {
+                "name": "Jakub P.",
+                "text": "Nejlepší zašívárna v\u00A0Praze. Přijdeš na jedno pivo, odejdeš po třech hodinách s\u00A0novou oblíbenou deskovkou. Obsluha je milá a\u00A0ví, co doporučit. Vrátím se.",
+                "date": "před 3\u00A0týdny"
+            }
+        }
+    },
+    "Moodboard": {
+        "eyebrow": "Galerie",
+        "title": "Zastav se.",
+        "description": "Malý výřez z\u00A0atmosféry Mikulandské. Zbytek je lepší zažít osobně — u\u00A0sklenky vína nebo nad\u00A0deskovkou.",
+        "photos": {
+            "p1": "Nalévání vína v teplém světle",
+            "p2": "Útulný interiér baru s teplým osvětlením",
+            "p3": "Barový pult s řemeslnými pivy",
+            "p4": "Deskovky rozložené na stole",
+            "p5": "Přátelé u stolu s vínem",
+            "p6": "Sklenice vína v měkkém světle"
+        }
+    },
+    "Story": {
+        "eyebrow": "Příběh místa",
+        "title": "Plán z\u00A0roku 1891. A\u00A0jeden úřední šiml.",
+        "p1": "Náhody neexistují. Když jsme na Mikulandské otevírali Separé, netušili jsme, že tenhle dům měl k\u00A0dobrému pití nakročeno už na konci 19.\u00A0století. Až pohled do starých archivů nám ukázal, jak blízko to tehdy bylo.",
+        "p2": "V\u00A0říjnu 1891 si majitel domu, pan J.\u00A0F.\u00A0Tomaschek, zažádal na pražském magistrátu o\u00A0povolení. Měl jasnou vizi — chtěl tu nalévat a\u00A0prodávat víno. Jenže narazil na tvrdou zeď rakousko-uherské byrokracie.",
+        "p3a": "Úřad si vymínil poplatky a\u00A0úmorné podmínky, které tehdy nejspíš nešlo splnit. Na zažloutlém dokumentu z\u00A0roku 1895 totiž stojí stručná, rukou psaná tečka za celým projektem: ",
+        "p3quote": "„Vinárna nebyla zřízena.\"",
+        "p4a": "Trvalo dlouhá desetiletí, než se v\u00A0tomhle domě konečně začalo oficiálně připíjet. A\u00A0i\u00A0když dnes už si na klasickou vinárnu nehrajeme — místo toho čepujeme řemeslná piva, otevíráme divoké pet-naty a\u00A0stoly plníme deskovkami — jsme si jistí jednou věcí. ",
+        "p4highlight": "Pan Tomaschek by z\u00A0téhle zašívárny měl radost.",
+        "epilogue": "Sen z\u00A0roku 1891 jsme zkrátka dotáhli do konce. Jen s\u00A0trochu lepším pitím a\u00A0bez razítka s\u00A0orlicí."
+    },
+    "Events": {
+        "eyebrow": "Akce",
+        "title": "Středeční kvízy a\u00A0večery plné her",
+        "description": "Separé žije. Jsme ideální základna pro soutěživé povahy, milovníky dobrého pití i\u00A0stratégy.",
+        "swipeHint": "Tahem posuňte",
+        "blocks": {
+            "quiz": {
+                "title": "Hospodské kvízy",
+                "schedule": "Každou středu od 19:00",
+                "desc": "Postavte tým, objednejte si na stůl pár lahví vína a\u00A0ukažte, co víte. Naše kvízy jsou legendární a\u00A0místa rychle mizí."
+            },
+            "games": {
+                "title": "Deskovky k dispozici kdykoliv",
+                "schedule": "Každý den v\u00A0otevírací době",
+                "desc": "Přes 80 her od rychlých party kousků po náročnější strategie. Půjčení ke stolu je zdarma."
+            },
+            "tasting": {
+                "title": "Degustace a vernisáže",
+                "schedule": "Nepravidelně — sledujte náš program",
+                "desc": "Pravidelně u\u00A0nás ožívá kultura. Přijďte ochutnávat i\u00A0objevovat."
+            }
+        }
+    },
+    "Contact": {
+        "eyebrow": "Kontakt",
+        "title": "Zapadněte do vnitrobloku",
+        "description": "Vstup je přímo z\u00A0ulice Mikulandská. Stačí projít průchodem do dvora a\u00A0jste u\u00A0nás. V\u00A0létě tu navíc otevíráme klidné zahradní posezení ve\u00A0stínu stromů.",
+        "addressLabel": "Adresa",
+        "addressLine1": "Separé",
+        "addressLine2": "Mikulandská 133/3",
+        "addressLine3": "110 00 Praha 1 — Nové Město",
+        "contactLabel": "Spojení",
+        "hoursLabel": "Otevírací doba",
+        "hoursMoSa": "Pondělí – Sobota",
+        "hoursMoSaTime": "17:00 – 24:00",
+        "hoursSu": "Neděle",
+        "hoursSuTime": "Zavřeno",
+        "ctaReserve": "Rezervovat stůl",
+        "mapLabel": "Kde nás najdete",
+        "mapDescription": "Jsme jen pár kroků od rušné Národní třídy, ale jakmile projdete průchodem do dvora, svět se ztiší. V\u00A0létě si sedněte pod stromy na naší zahradní terase — nejklidnější zašívárna v\u00A0Praze."
+    },
+    "Footer": {
+        "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"
+    },
+    "Page": {
+        "spinnerText": "Separé · Mikulandská · Third Place ·\u00A0"
     }
 }

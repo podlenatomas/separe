@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
+import { useTranslations } from "next-intl";
 
 const fade = {
     initial: { opacity: 0, y: 18 },
@@ -13,6 +14,7 @@ const fade = {
 
 export default function Story() {
     const { pribeh } = useNav();
+    const t = useTranslations("Story");
 
     return (
         <section ref={pribeh.ref} className="relative border-b border-border overflow-hidden" aria-labelledby="h-story">
@@ -29,7 +31,7 @@ export default function Story() {
                         className="text-[10px] font-light uppercase tracking-[0.18em] text-muted"
                         {...fade}
                     >
-                        Příběh místa
+                        {t("eyebrow")}
                     </motion.p>
                 </div>
                 <motion.h2
@@ -37,39 +39,30 @@ export default function Story() {
                     id="h-story"
                     {...fade}
                 >
-                    Plán z&nbsp;roku 1891. A&nbsp;jeden úřední šiml.
+                    {t("title")}
                 </motion.h2>
 
                 <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
                     <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
                         <p className="text-muted font-light leading-[1.85] mb-6 text-pretty">
-                            Náhody neexistují. Když jsme na Mikulandské otevírali Separé, netušili jsme,
-                            že tenhle dům měl k&nbsp;dobrému pití nakročeno už na konci 19.&nbsp;století.
-                            Až pohled do starých archivů nám ukázal, jak blízko to tehdy bylo.
+                            {t("p1")}
                         </p>
                         <p className="text-muted font-light leading-[1.85] text-pretty">
-                            V&nbsp;říjnu 1891 si majitel domu, pan J.&nbsp;F.&nbsp;Tomaschek, zažádal na
-                            pražském magistrátu o&nbsp;povolení. Měl jasnou vizi — chtěl tu nalévat
-                            a&nbsp;prodávat víno. Jenže narazil na tvrdou zeď rakousko-uherské byrokracie.
+                            {t("p2")}
                         </p>
                     </motion.div>
 
                     <motion.div className="p-8 md:p-10 lg:p-12 bg-background" {...fade}>
                         <p className="text-muted font-light leading-[1.85] mb-6 text-pretty">
-                            Úřad si vymínil poplatky a&nbsp;úmorné podmínky, které tehdy nejspíš nešlo
-                            splnit. Na zažloutlém dokumentu z&nbsp;roku 1895 totiž stojí stručná, rukou
-                            psaná tečka za celým projektem:{" "}
+                            {t("p3a")}
                             <span className="font-medium text-foreground italic">
-                                „Vinárna nebyla zřízena."
+                                {t("p3quote")}
                             </span>
                         </p>
                         <p className="text-muted font-light leading-[1.85] text-pretty">
-                            Trvalo dlouhá desetiletí, než se v&nbsp;tomhle domě konečně začalo oficiálně
-                            připíjet. A&nbsp;i&nbsp;když dnes už si na klasickou vinárnu nehrajeme — místo
-                            toho čepujeme řemeslná piva, otevíráme divoké pet-naty a&nbsp;stoly plníme
-                            deskovkami — jsme si jistí jednou věcí.{" "}
+                            {t("p4a")}
                             <span className="font-medium text-foreground">
-                                Pan Tomaschek by z&nbsp;téhle zašívárny měl radost.
+                                {t("p4highlight")}
                             </span>
                         </p>
                     </motion.div>
@@ -79,8 +72,7 @@ export default function Story() {
                     className="text-sm font-light text-muted mt-8 max-w-xl leading-relaxed italic"
                     {...fade}
                 >
-                    Sen z&nbsp;roku 1891 jsme zkrátka dotáhli do konce. Jen s&nbsp;trochu lepším pitím
-                    a&nbsp;bez razítka s&nbsp;orlicí.
+                    {t("epilogue")}
                 </motion.p>
             </div>
         </section>

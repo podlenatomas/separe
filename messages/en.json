@@ -1,6 +1,6 @@
 {
     "Navbar": {
-        "about": "About Us",
+        "about": "About",
         "menu": "Menu",
         "events": "Events",
         "contact": "Contact",
@@ -18,5 +18,202 @@
     },
     "LanguageSwitcher": {
         "switchTo": "Česky"
+    },
+    "About": {
+        "eyebrow": "About us",
+        "title": "A family joint with living-room energy",
+        "description": "Separé was born from a simple idea: we wanted to create a spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no corporate vibe — just an honest family bar that doubles as a living room for the neighborhood. We're obsessed with real craft and bold flavors. Don't expect anything boring here.",
+        "swipeHint": "Swipe to explore",
+        "values": {
+            "beer": {
+                "title": "Craft Beer",
+                "text": "A carefully curated tap list from small and gypsy breweries. We rotate regularly so there's always something new to discover."
+            },
+            "wine": {
+                "title": "Sparkling Wine & Pet-Nats",
+                "text": "We go way beyond Italian Prosecco. Expect interesting bubbles and natural wines — best enjoyed when you crack open a whole bottle with friends."
+            },
+            "quality": {
+                "title": "Quality Czech Wines",
+                "text": "Local excellence from trusted winemakers, doing justice to Czech craft. Premium single-vineyard wines carefully guarded in our collection."
+            },
+            "games": {
+                "title": "Board Games & Quizzes",
+                "text": "Over 80 games to borrow for free. Regular game nights and our legendary Wednesday pub quizzes. You don't just stop by — you stay."
+            }
+        }
+    },
+    "Menu": {
+        "eyebrow": "Menu",
+        "title": "What's worth drinking and eating",
+        "description": "We don't overthink the menu — we just make it honest. We focus on what we love and what works perfectly at a table with friends.",
+        "footnote": "Prices and items may change based on current availability.",
+        "categories": {
+            "beer": {
+                "title": "Beer",
+                "items": {
+                    "lager": {
+                        "name": "Craft Lager",
+                        "desc": "Rotating picks from small breweries",
+                        "price": "varies"
+                    },
+                    "specials": {
+                        "name": "Tap Specials",
+                        "desc": "IPA, APA, sour — always something fresh",
+                        "price": "varies"
+                    },
+                    "bottles": {
+                        "name": "Bottled Specials",
+                        "desc": "Limited editions & international guests",
+                        "price": "varies"
+                    }
+                }
+            },
+            "wine": {
+                "title": "Wine",
+                "items": {
+                    "glass": {
+                        "name": "Czech Wine (by glass)",
+                        "desc": "Premium Czech single-vineyard wines",
+                        "price": "from 85 CZK"
+                    },
+                    "petnat": {
+                        "name": "Bottle of Pet-Nat",
+                        "desc": "Perfect for sharing — natural bubbles",
+                        "price": "from 450 CZK"
+                    },
+                    "sparkling": {
+                        "name": "Sparkling Wine",
+                        "desc": "Selection from across Europe, always chilled",
+                        "price": "from 120 CZK"
+                    }
+                }
+            },
+            "food": {
+                "title": "Food",
+                "items": {
+                    "margherita": {
+                        "name": "Pinsa Margherita",
+                        "desc": "San Marzano, fior di latte, basil",
+                        "price": "165 CZK"
+                    },
+                    "prosciutto": {
+                        "name": "Pinsa Prosciutto e Rucola",
+                        "desc": "Parma ham, arugula, parmesan",
+                        "price": "195 CZK"
+                    },
+                    "cheese": {
+                        "name": "Cheese Board",
+                        "desc": "Czech cheese selection, honey, walnuts",
+                        "price": "185 CZK"
+                    }
+                }
+            }
+        }
+    },
+    "Salonek": {
+        "eyebrow": "Private Room",
+        "titleYour": "Your event.",
+        "titleOur": "space.",
+        "description": "We're not a sterile boardroom. We have a separate private room with a projector, good wine, and a relaxed atmosphere. Whether it's a birthday, a small company gathering, or just a reserved table for your crew — we tailor everything. We handle light bites in-house and have trusted partners for bigger events.",
+        "tagProjector": "Projector",
+        "tagPrivacy": "Privacy",
+        "tagCustom": "Fully custom",
+        "cta": "Plan your event"
+    },
+    "Reviews": {
+        "eyebrow": "Reviews",
+        "title": "Word in the courtyard.",
+        "description": "Separé stands on simple things — good drinks, a warm atmosphere, and people who keep coming back. This is what you write about us. It makes our day.",
+        "ctaPrompt": "Stopped by and had a good time? We'd love a review — it helps us grow.",
+        "cta": "Leave a review on Google",
+        "fallback": {
+            "r1": {
+                "name": "Martin K.",
+                "text": "Amazing place with a one-of-a-kind atmosphere. The craft beers are excellent, the staff is friendly, and the courtyard garden — a perfect escape from the city center. We come here regularly for the quizzes.",
+                "date": "2 weeks ago"
+            },
+            "r2": {
+                "name": "Tereza M.",
+                "text": "Finally a bar where you can actually sit down without noise and queues. Outstanding wine selection, the pet-nats are fantastic. We used the private room for a birthday and it was exactly what we wanted.",
+                "date": "a month ago"
+            },
+            "r3": {
+                "name": "Jakub P.",
+                "text": "The best hideaway in Prague. You come for one beer, you leave three hours later with a new favorite board game. The staff is lovely and knows what to recommend. I'll be back.",
+                "date": "3 weeks ago"
+            }
+        }
+    },
+    "Moodboard": {
+        "eyebrow": "Gallery",
+        "title": "Drop by.",
+        "description": "A small slice of the Mikulandská atmosphere. The rest is better experienced in person — over a glass of wine or a board game.",
+        "photos": {
+            "p1": "Pouring wine in warm light",
+            "p2": "Cozy bar interior with warm lighting",
+            "p3": "Bar counter with craft beers",
+            "p4": "Board games spread across the table",
+            "p5": "Friends at a table with wine",
+            "p6": "Glass of wine in soft light"
+        }
+    },
+    "Story": {
+        "eyebrow": "The Story",
+        "title": "The 1891 blueprint. And a touch of bureaucracy.",
+        "p1": "Coincidences don't exist. When we opened Separé on Mikulandská, we had no idea this building had been destined for good drinking since the late 19th century. It took a trip to the old archives to reveal just how close it once came.",
+        "p2": "In October 1891, the building owner, Mr. J. F. Tomaschek, filed a permit with the Prague magistrate. He had a clear vision — he wanted to pour and sell wine right here. But he ran straight into the brick wall of Austro-Hungarian bureaucracy.",
+        "p3a": "The authorities demanded fees and exhausting conditions that were likely impossible to meet at the time. On a yellowed document from 1895, a brief, handwritten full stop closes the entire project: ",
+        "p3quote": "\u201cThe wine bar was never established.\u201d",
+        "p4a": "It took long decades before a proper toast was finally raised in this building. And even though today we don't pretend to be a classic wine bar — we pour craft beers, open wild pet-nats, and fill our tables with board games — we're certain of one thing. ",
+        "p4highlight": "Mr. Tomaschek would have loved this little hideaway.",
+        "epilogue": "We simply finished what started in 1891. Just with better drinks — and without the imperial stamp."
+    },
+    "Events": {
+        "eyebrow": "Events",
+        "title": "Wednesday quizzes and evenings full of games",
+        "description": "Separé is alive. The perfect base for competitive minds, lovers of good drinks, and strategists alike.",
+        "swipeHint": "Swipe to explore",
+        "blocks": {
+            "quiz": {
+                "title": "Pub Quizzes",
+                "schedule": "Every Wednesday from 7 PM",
+                "desc": "Assemble your team, order a few bottles of wine, and show what you know. Our quizzes are legendary — and seats go fast."
+            },
+            "games": {
+                "title": "Board Games Anytime",
+                "schedule": "Every day during opening hours",
+                "desc": "Over 80 games from quick party classics to deep strategies. Borrowing is always free."
+            },
+            "tasting": {
+                "title": "Tastings & Vernissages",
+                "schedule": "Irregular — check our program",
+                "desc": "Culture comes alive here regularly. Come taste and discover."
+            }
+        }
+    },
+    "Contact": {
+        "eyebrow": "Contact",
+        "title": "Find us in the courtyard",
+        "description": "The entrance is right off Mikulandská street. Just walk through the passage into the courtyard and you're here. In summer, we also open a peaceful garden terrace in the shade of the trees.",
+        "addressLabel": "Address",
+        "addressLine1": "Separé",
+        "addressLine2": "Mikulandská 133/3",
+        "addressLine3": "110 00 Prague 1 — Nové Město",
+        "contactLabel": "Get in touch",
+        "hoursLabel": "Opening hours",
+        "hoursMoSa": "Monday – Saturday",
+        "hoursMoSaTime": "5:00 PM – Midnight",
+        "hoursSu": "Sunday",
+        "hoursSuTime": "Closed",
+        "ctaReserve": "Book a table",
+        "mapLabel": "How to find us",
+        "mapDescription": "We're just a few steps from the busy Národní třída, but once you walk through the passage into the courtyard, the world goes quiet. In summer, grab a seat under the trees on our garden terrace — the quietest hideaway in Prague."
+    },
+    "Footer": {
+        "copyright": "© 2026 separé · Mikulandská 133/3, Prague 1"
+    },
+    "Page": {
+        "spinnerText": "Separé · Mikulandská · Third Place ·\u00A0"
     }
 }

@@ -1,14 +1,17 @@
 "use client";
 
 import { Instagram } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+    const t = useTranslations("Footer");
+
     return (
         <footer className="py-10 md:py-12" role="contentinfo">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-y-10 gap-x-4 text-center md:text-left">
                     <span className="text-[10px] font-light uppercase tracking-[0.12em] text-muted">
-                        © 2026 separé · Mikulandská 133/3, Praha 1
+                        {t("copyright")}
                     </span>
                     <div className="flex flex-col items-center gap-6 md:flex-row">
                         <a

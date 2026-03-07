@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Lock, Projector, Sparkles } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const fade = {
     initial: { opacity: 0, y: 18 },
@@ -11,6 +12,8 @@ const fade = {
 };
 
 export default function Salonek() {
+    const t = useTranslations("Salonek");
+
     return (
         <section className="border-b border-border" aria-labelledby="h-salonek">
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
@@ -18,43 +21,39 @@ export default function Salonek() {
                     className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
                     {...fade}
                 >
-                    Salonek
+                    {t("eyebrow")}
                 </motion.p>
                 <motion.h2
                     className="text-3xl md:text-[2.75rem] font-black tracking-tighter leading-tight mb-5 text-balance"
                     id="h-salonek"
                     {...fade}
                 >
-                    Tvoje akce.{" "}
+                    {t("titleYour")}{" "}
                     <span className="font-[family-name:var(--font-serif)] italic font-medium">
                         separé
                     </span>{" "}
-                    prostor.
+                    {t("titleOur")}
                 </motion.h2>
                 <motion.p
                     className="text-muted font-light leading-[1.8] max-w-2xl mb-10 text-pretty"
                     {...fade}
                 >
-                    Nejsme sterilní zasedačka. Máme oddělený salonek s&nbsp;projektorem,
-                    kde vládne uvolněná atmosféra a&nbsp;dobré víno. Ať už slavíš narozeniny,
-                    pořádáš menší firemní večer nebo jen chceš mít svůj stůl pro partu
-                    přátel, všechno připravíme na&nbsp;míru. O&nbsp;malé občerstvení se
-                    postaráme sami a&nbsp;na větší akce máme spolehlivé parťáky.
+                    {t("description")}
                 </motion.p>
 
                 {/* Tags */}
                 <motion.div className="flex flex-wrap gap-4 mb-10" {...fade}>
                     {[
-                        { icon: <Projector size={14} strokeWidth={1.5} />, label: "Projektor" },
-                        { icon: <Lock size={14} strokeWidth={1.5} />, label: "Soukromí" },
-                        { icon: <Sparkles size={14} strokeWidth={1.5} />, label: "Vše na\u00A0míru" },
+                        { icon: <Projector size={14} strokeWidth={1.5} />, labelKey: "tagProjector" as const },
+                        { icon: <Lock size={14} strokeWidth={1.5} />, labelKey: "tagPrivacy" as const },
+                        { icon: <Sparkles size={14} strokeWidth={1.5} />, labelKey: "tagCustom" as const },
                     ].map((tag) => (
                         <span
-                            key={tag.label}
+                            key={tag.labelKey}
                             className="inline-flex items-center gap-1.5 text-[10px] font-light uppercase tracking-[0.14em] text-muted border border-neutral-300 rounded-sm px-3 py-1.5"
                         >
                             {tag.icon}
-                            {tag.label}
+                            {t(tag.labelKey)}
                         </span>
                     ))}
                 </motion.div>
@@ -67,7 +66,7 @@ export default function Salonek() {
                         className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0"
                         {...fade}
                     >
-                        Domluvit akci
+                        {t("cta")}
                     </motion.button>
                 </div>
             </div>
