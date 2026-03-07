@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
@@ -16,7 +17,7 @@ interface Review {
     date: string;
 }
 
-const reviews: Review[] = [
+const fallbackReviews: Review[] = [
     {
         name: "Martin K.",
         text: "Úžasné místo s\u00A0neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a\u00A0ta zahrada ve dvoře — parádní únik z\u00A0centra. Chodíme sem pravidelně na kvízy.",
@@ -51,6 +52,29 @@ function Stars() {
 }
 
 export default function Reviews() {
+    const [reviews, setReviews] = useState<Review[]>(fallbackReviews);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchReviews = async () => {
+            try {
+                const res = await fetch("/api/reviews");
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.reviews && data.reviews.length > 0) {
+                        setReviews(data.reviews);
+                    }
+                }
+            } catch {
+                console.error("Failed to fetch Google Reviews, using fallback.");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchReviews();
+    }, []);
+
     return (
         <section className="border-b border-border" aria-labelledby="h-reviews">
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
@@ -78,29 +102,45 @@ export default function Reviews() {
 
                 {/* Review cards — 3-col gap-px grid */}
                 <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
-                    {reviews.map((r, i) => (
-                        <motion.blockquote
-                            key={r.name}
-                            className="p-8 md:p-10 bg-background flex flex-col"
-                            initial={{ opacity: 0, y: 18 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-40px" }}
-                            transition={{ duration: 0.45, delay: i * 0.1 }}
-                        >
-                            <Stars />
-                            <p className="text-sm font-light text-muted leading-[1.8] mb-6 flex-1 text-pretty">
-                                &ldquo;{r.text}&rdquo;
-                            </p>
-                            <footer className="flex items-baseline justify-between">
-                                <cite className="not-italic text-xs font-medium">
-                                    {r.name}
-                                </cite>
-                                <span className="text-[10px] font-light text-muted">
-                                    {r.date}
-                                </span>
-                            </footer>
-                        </motion.blockquote>
-                    ))}
+                    {loading ? (
+                        /* Skeletons */
+                        [...Array(3)].map((_, i) => (
+                            <div key={i} className="p-8 md:p-10 bg-background flex flex-col animate-pulse">
+                                <Stars />
+                                <div className="h-4 bg-neutral-100 rounded w-full mb-3 mt-1"></div>
+                                <div className="h-4 bg-neutral-100 rounded w-full mb-3"></div>
+                                <div className="h-4 bg-neutral-100 rounded w-3/4 mb-6 flex-1"></div>
+                                <div className="flex items-baseline justify-between mt-auto">
+                                    <div className="h-3 bg-neutral-100 rounded w-20"></div>
+                                    <div className="h-3 bg-neutral-100 rounded w-16"></div>
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        reviews.map((r, i) => (
+                            <motion.blockquote
+                                key={r.name + i}
+                                className="p-8 md:p-10 bg-background flex flex-col"
+                                initial={{ opacity: 0, y: 18 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-40px" }}
+                                transition={{ duration: 0.45, delay: i * 0.1 }}
+                            >
+                                <Stars />
+                                <p className="text-sm font-light text-muted leading-[1.8] mb-6 flex-1 text-pretty">
+                                    &ldquo;{r.text}&rdquo;
+                                </p>
+                                <footer className="flex items-baseline justify-between">
+                                    <cite className="not-italic text-xs font-medium">
+                                        {r.name}
+                                    </cite>
+                                    <span className="text-[10px] font-light text-muted whitespace-nowrap">
+                                        {r.date}
+                                    </span>
+                                </footer>
+                            </motion.blockquote>
+                        ))
+                    )}
                 </div>
 
                 <motion.p
