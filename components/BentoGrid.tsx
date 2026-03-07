@@ -112,12 +112,12 @@ export default function BentoGrid() {
                         klasiku.
                     </motion.p>
 
-                    {/* 4-col Bento — gap-px technique */}
-                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
+                    {/* 4-col Bento — horizontal snap on mobile, grid on desktop */}
+                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden flex overflow-x-auto snap-x snap-mandatory hide-scrollbar [mask-image:linear-gradient(to_right,black_85%,transparent_100%)] md:[mask-image:none] md:grid md:grid-cols-4 gap-px">
                         {values.map((v, i) => (
                             <motion.div
                                 key={v.title}
-                                className="relative p-8 md:p-10 bg-background"
+                                className="relative p-8 md:p-10 bg-background snap-center w-[85vw] sm:w-[70vw] md:w-auto min-w-[85vw] sm:min-w-[70vw] md:min-w-0"
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
@@ -133,6 +133,7 @@ export default function BentoGrid() {
                             </motion.div>
                         ))}
                     </div>
+                    <div className="md:hidden text-center text-[10px] uppercase tracking-widest text-neutral-400 my-4 flex items-center justify-center gap-2"><span className="animate-pulse">←</span> Tahem posuňte <span className="animate-pulse">→</span></div>
                 </div>
             </section>
 
@@ -160,9 +161,9 @@ export default function BentoGrid() {
                     {/* 3-col menu — gap-px technique */}
                     <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
                         {menu.map((cat, ci) => (
-                            <motion.div
+                            <motion.details
                                 key={cat.title}
-                                className="group relative p-8 md:p-10 bg-background"
+                                className="group relative p-8 md:p-10 bg-background md:open:block [&_summary::-webkit-details-marker]:hidden"
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
@@ -172,25 +173,28 @@ export default function BentoGrid() {
                                 {ci < menu.length - 1 && (
                                     <span className="hidden md:block absolute -bottom-2 -right-2 text-neutral-400/60 font-light text-xs pointer-events-none select-none z-10">+</span>
                                 )}
-                                <h3 className="text-[10px] font-light uppercase tracking-[0.14em] mb-6 pb-3 border-b border-neutral-300">
+                                <summary className="md:pointer-events-none flex justify-between items-center cursor-pointer list-none text-[14px] md:text-[10px] font-black md:font-light uppercase tracking-[0.14em] py-4 md:py-0 md:mb-6 md:pb-3 border-b border-neutral-300">
                                     {cat.title}
-                                </h3>
-                                {cat.items.map((item, idx) => (
-                                    <div
-                                        key={item.name}
-                                        className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out group-hover:opacity-30 hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""
-                                            }`}
-                                    >
-                                        <div>
-                                            <div className="text-sm font-medium">{item.name}</div>
-                                            <div className="text-[11px] font-light text-muted mt-0.5">{item.desc}</div>
+                                    <span className="md:hidden text-2xl font-normal group-open:rotate-45 transition-transform duration-200 leading-none inline-block">+</span>
+                                </summary>
+                                <div className="mt-4 md:mt-0 transition-all duration-300">
+                                    {cat.items.map((item, idx) => (
+                                        <div
+                                            key={item.name}
+                                            className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out md:group-hover:opacity-30 md:hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""
+                                                }`}
+                                        >
+                                            <div>
+                                                <div className="text-sm font-medium">{item.name}</div>
+                                                <div className="text-[11px] font-light text-muted mt-0.5">{item.desc}</div>
+                                            </div>
+                                            <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
+                                                {item.price}
+                                            </span>
                                         </div>
-                                        <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
-                                            {item.price}
-                                        </span>
-                                    </div>
-                                ))}
-                            </motion.div>
+                                    ))}
+                                </div>
+                            </motion.details>
                         ))}
                     </div>
 

@@ -38,14 +38,15 @@ export default function Hero() {
             />
 
             <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 md:px-12 pb-16 md:pb-24">
-                <motion.p
-                    className="text-[10px] font-light uppercase tracking-[0.18em] text-[#F5F5F0]/70 mb-4"
+                <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Mikulandská 133/3 · Praha 1
-                </motion.p>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-neutral-300/50 bg-[#F5F5F0]/10 backdrop-blur-md text-xs font-bold uppercase tracking-widest text-neutral-200">
+                        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Mikulandská 133/3, Praha 1
+                    </div>
+                </motion.div>
 
                 <motion.h1
                     className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[0.98] text-[#F5F5F0] max-w-2xl mb-6 text-balance"
@@ -68,15 +69,19 @@ export default function Hero() {
                     kroků od rušné Národní třídy.
                 </motion.p>
 
-                <motion.button
-                    onClick={kontakt.trigger}
-                    className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
+                <motion.div
+                    className="mt-8 flex justify-center md:justify-start w-full"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.65 }}
                 >
-                    Rezervovat stůl
-                </motion.button>
+                    <button
+                        onClick={kontakt.trigger}
+                        className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0"
+                    >
+                        Rezervovat stůl
+                    </button>
+                </motion.div>
             </div>
         </section>
     );

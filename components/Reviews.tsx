@@ -150,15 +150,17 @@ export default function Reviews() {
                     Zastavil ses u&nbsp;nás a&nbsp;bavilo tě to? Budeme rádi za&nbsp;recenzi
                     — pomáhá nám to růst.
                 </motion.p>
-                <motion.a
-                    href="https://g.page/r/separe-praha/review"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center h-12 px-8 mt-6 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer"
-                    {...fade}
-                >
-                    Nechat recenzi na Googlu
-                </motion.a>
+                <div className="mt-6 flex justify-center md:justify-start w-full">
+                    <motion.a
+                        href="https://g.page/r/separe-praha/review"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0"
+                        {...fade}
+                    >
+                        Nechat recenzi na Googlu
+                    </motion.a>
+                </div>
             </div>
         </section>
     );

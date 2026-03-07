@@ -86,3 +86,15 @@ body {
   background: var(--border-dark);
   border-radius: 3px;
 }
+
+/* Hide scrollbar for snapping sections */
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -100,16 +100,18 @@ export default function Moodboard() {
                     ))}
                 </div>
 
-                <motion.a
-                    href="https://instagram.com/separe_mikulandska"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 justify-center h-12 px-8 mt-10 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer"
-                    {...fade}
-                >
-                    <Instagram size={14} strokeWidth={1.5} />
-                    @separe_mikulandska
-                </motion.a>
+                <div className="mt-10 flex justify-center md:justify-start w-full">
+                    <motion.a
+                        href="https://instagram.com/separe_mikulandska"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0"
+                        {...fade}
+                    >
+                        <Instagram size={14} strokeWidth={1.5} />
+                        @separe_mikulandska
+                    </motion.a>
+                </div>
             </div>
         </section>
     );
