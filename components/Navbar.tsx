@@ -102,41 +102,45 @@ export default function Navbar() {
                             </button>
                         )
                     ))}
-                    <LanguageSwitcher />
                 </nav>
 
-                <motion.button
-                    className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110] cursor-pointer bg-transparent border-none"
-                    onClick={() => setOpen(!open)}
-                    aria-label={open ? "Zavřít menu" : "Otevřít menu"}
-                    aria-expanded={open}
-                    aria-controls="mobile-nav"
-                    whileTap={{ scale: 0.92 }}
-                >
-                    <AnimatePresence mode="wait" initial={false}>
-                        {open ? (
-                            <motion.div
-                                key="x"
-                                initial={{ rotate: -90, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                exit={{ rotate: 90, opacity: 0 }}
-                                transition={{ duration: 0.2 }}
-                            >
-                                <X size={24} strokeWidth={1.5} className="text-neutral-900" />
-                            </motion.div>
-                        ) : (
-                            <motion.div
-                                key="m"
-                                initial={{ rotate: 90, opacity: 0 }}
-                                animate={{ rotate: 0, opacity: 1 }}
-                                exit={{ rotate: -90, opacity: 0 }}
-                                transition={{ duration: 0.2 }}
-                            >
-                                <Menu size={24} strokeWidth={1.5} className="text-neutral-900" />
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-                </motion.button>
+                {/* Global actions: Language Switcher (always visible) + Hamburger (mobile only) */}
+                <div className="flex items-center gap-4">
+                    <LanguageSwitcher />
+
+                    <motion.button
+                        className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110] cursor-pointer bg-transparent border-none"
+                        onClick={() => setOpen(!open)}
+                        aria-label={open ? "Zavřít menu" : "Otevřít menu"}
+                        aria-expanded={open}
+                        aria-controls="mobile-nav"
+                        whileTap={{ scale: 0.92 }}
+                    >
+                        <AnimatePresence mode="wait" initial={false}>
+                            {open ? (
+                                <motion.div
+                                    key="x"
+                                    initial={{ rotate: -90, opacity: 0 }}
+                                    animate={{ rotate: 0, opacity: 1 }}
+                                    exit={{ rotate: 90, opacity: 0 }}
+                                    transition={{ duration: 0.2 }}
+                                >
+                                    <X size={24} strokeWidth={1.5} className="text-neutral-900" />
+                                </motion.div>
+                            ) : (
+                                <motion.div
+                                    key="m"
+                                    initial={{ rotate: 90, opacity: 0 }}
+                                    animate={{ rotate: 0, opacity: 1 }}
+                                    exit={{ rotate: -90, opacity: 0 }}
+                                    transition={{ duration: 0.2 }}
+                                >
+                                    <Menu size={24} strokeWidth={1.5} className="text-neutral-900" />
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </motion.button>
+                </div>
             </div>
 
             <AnimatePresence>
@@ -199,10 +203,9 @@ export default function Navbar() {
                                 <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">{t("followUs")}</span>
                                 <a href="#" className="text-sm font-medium text-neutral-900 underline underline-offset-4">Instagram</a>
                             </div>
-                            <div className="flex flex-col gap-2 items-end">
+                            <div className="flex flex-col gap-1 items-end">
                                 <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">{t("address")}</span>
                                 <span className="text-sm font-medium text-neutral-900">Mikulandská 133</span>
-                                <LanguageSwitcher />
                             </div>
                         </motion.div>
                     </motion.nav>
