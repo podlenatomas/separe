@@ -47,69 +47,114 @@
         "eyebrow": "Nabídka",
         "title": "Co má smysl pít a\u00A0jíst",
         "description": "Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví a\u00A0co dává uvolněnému večeru s\u00A0dobrou partou ten správný spád.",
-        "footnote": "Ceny a\u00A0položky se mohou měnit dle aktuální nabídky.",
-        "categories": {
-            "beer": {
-                "title": "Pivo",
-                "items": {
-                    "lager": {
-                        "name": "Řemeslný ležák",
-                        "desc": "Rotující výběr z\u00A0malých pivovarů",
-                        "price": "dle nabídky"
+        "categories": [
+            {
+                "name": "Pivo & Cider",
+                "items": [
+                    {
+                        "name": "Fabián Hostomice 10°",
+                        "desc": "0,5 l / 0,3 l",
+                        "price": "64 / 40 Kč"
                     },
-                    "specials": {
-                        "name": "Speciály na čepu",
-                        "desc": "IPA, APA, sour — vždy něco nového",
-                        "price": "dle nabídky"
+                    {
+                        "name": "Alois Uhříněves 11°",
+                        "desc": "0,5 l / 0,3 l",
+                        "price": "69 / 43 Kč"
                     },
-                    "bottles": {
-                        "name": "Lahvové speciály",
-                        "desc": "Limitované edice a\u00A0zahraniční hosté",
-                        "price": "dle nabídky"
+                    {
+                        "name": "Fabián Hostomice 12°",
+                        "desc": "0,5 l / 0,3 l",
+                        "price": "74 / 46 Kč"
+                    },
+                    {
+                        "name": "F.H. Prager Cider",
+                        "desc": "Originál / Višeň (0,33 l)",
+                        "price": "85 Kč"
                     }
-                }
+                ]
             },
-            "wine": {
-                "title": "Víno",
-                "items": {
-                    "glass": {
-                        "name": "Přívlastková (rozlev)",
-                        "desc": "Česká přívlastková vína",
-                        "price": "od 85 Kč"
+            {
+                "name": "Míchačky",
+                "items": [
+                    {
+                        "name": "Aperol / Hugo Spritz",
+                        "desc": "Osvěžující klasika",
+                        "price": "159 Kč"
                     },
-                    "petnat": {
-                        "name": "Láhev Pet-natu",
-                        "desc": "Ideální pro partu — naturální bubliny",
-                        "price": "od 450 Kč"
+                    {
+                        "name": "Gin Tonic",
+                        "desc": "Malfy nebo klasika",
+                        "price": "159 Kč"
                     },
-                    "sparkling": {
-                        "name": "Šumivé víno",
-                        "desc": "Výběr z\u00A0Evropy, vždy chlazené",
-                        "price": "od 120 Kč"
+                    {
+                        "name": "Skinny Bitch",
+                        "desc": "Vodka, soda, limeta",
+                        "price": "130 Kč"
+                    },
+                    {
+                        "name": "Kolárum",
+                        "desc": "Náš signature drink",
+                        "price": "130 Kč"
                     }
-                }
+                ]
             },
-            "food": {
-                "title": "Jídlo",
-                "items": {
-                    "margherita": {
-                        "name": "Pinsa Margherita",
+            {
+                "name": "Pinsa Romana",
+                "items": [
+                    {
+                        "name": "Margherita",
                         "desc": "San Marzano, fior di latte, bazalka",
-                        "price": "165 Kč"
+                        "price": "229 Kč"
                     },
-                    "prosciutto": {
-                        "name": "Pinsa Prosciutto e\u00A0rucola",
-                        "desc": "Parmská šunka, rukola, parmezán",
-                        "price": "195 Kč"
+                    {
+                        "name": "Salami Picante",
+                        "desc": "Pikantní salám, sýr",
+                        "price": "249 Kč"
                     },
-                    "cheese": {
-                        "name": "Sýrový talíř k\u00A0vínu",
-                        "desc": "Výběr českých sýrů, med, ořechy",
-                        "price": "185 Kč"
+                    {
+                        "name": "Prosciutto",
+                        "desc": "Parmská šunka, rukola",
+                        "price": "255 Kč"
+                    },
+                    {
+                        "name": "Formaggi",
+                        "desc": "Výběr sýrů",
+                        "price": "259 Kč"
                     }
-                }
+                ]
+            },
+            {
+                "name": "K\u00A0vínu a\u00A0pivu",
+                "items": [
+                    {
+                        "name": "Sýrové / Uzenářské prkénko",
+                        "desc": "200g / 300g dle výběru",
+                        "price": "od 239 Kč"
+                    },
+                    {
+                        "name": "Sekačka v\u00A0housce",
+                        "desc": "Domácí sekaná, hořčice",
+                        "price": "169 Kč"
+                    },
+                    {
+                        "name": "Petrovický nakládaný hermelín",
+                        "desc": "Poctivě uleželý",
+                        "price": "149 Kč"
+                    },
+                    {
+                        "name": "Petrovický utopenec",
+                        "desc": "Klasika s\u00A0cibulí",
+                        "price": "115 Kč"
+                    },
+                    {
+                        "name": "BLT Sandwich",
+                        "desc": "Slanina, salát, rajče",
+                        "price": "165 Kč"
+                    }
+                ]
             }
-        }
+        ],
+        "disclaimer": "Celá nabídka vín a\u00A0destilátů je k\u00A0dispozici na baru."
     },
     "Salonek": {
         "eyebrow": "Salonek",

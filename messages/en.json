@@ -46,70 +46,115 @@
     "Menu": {
         "eyebrow": "Menu",
         "title": "What's worth drinking and eating",
-        "description": "We don't overthink the menu — we just make it honest. We focus on what we love and what gives a laid-back evening with a good crew just the right momentum.",
-        "footnote": "Prices and items may change based on current availability.",
-        "categories": {
-            "beer": {
-                "title": "Beer",
-                "items": {
-                    "lager": {
-                        "name": "Craft Lager",
-                        "desc": "Rotating picks from small breweries",
-                        "price": "varies"
+        "description": "We keep our menu simple but honest. We focus on what we love and what works perfectly when sharing a table with friends.",
+        "categories": [
+            {
+                "name": "Beer & Cider",
+                "items": [
+                    {
+                        "name": "Fabián Hostomice 10°",
+                        "desc": "0.5 l / 0.3 l",
+                        "price": "64 / 40 CZK"
                     },
-                    "specials": {
-                        "name": "Tap Specials",
-                        "desc": "IPA, APA, sour — always something fresh",
-                        "price": "varies"
+                    {
+                        "name": "Alois Uhříněves 11°",
+                        "desc": "0.5 l / 0.3 l",
+                        "price": "69 / 43 CZK"
                     },
-                    "bottles": {
-                        "name": "Bottled Specials",
-                        "desc": "Limited editions & international guests",
-                        "price": "varies"
+                    {
+                        "name": "Fabián Hostomice 12°",
+                        "desc": "0.5 l / 0.3 l",
+                        "price": "74 / 46 CZK"
+                    },
+                    {
+                        "name": "F.H. Prager Cider",
+                        "desc": "Original / Sour Cherry (0.33 l)",
+                        "price": "85 CZK"
                     }
-                }
+                ]
             },
-            "wine": {
-                "title": "Wine",
-                "items": {
-                    "glass": {
-                        "name": "Czech Wine (by glass)",
-                        "desc": "Premium Czech single-vineyard wines",
-                        "price": "from 85 CZK"
+            {
+                "name": "Mixed Drinks",
+                "items": [
+                    {
+                        "name": "Aperol / Hugo Spritz",
+                        "desc": "Refreshing classic",
+                        "price": "159 CZK"
                     },
-                    "petnat": {
-                        "name": "Bottle of Pet-Nat",
-                        "desc": "Perfect for sharing — natural bubbles",
-                        "price": "from 450 CZK"
+                    {
+                        "name": "Gin Tonic",
+                        "desc": "Malfy or classic gin",
+                        "price": "159 CZK"
                     },
-                    "sparkling": {
-                        "name": "Sparkling Wine",
-                        "desc": "Selection from across Europe, always chilled",
-                        "price": "from 120 CZK"
+                    {
+                        "name": "Skinny Bitch",
+                        "desc": "Vodka, soda, lime",
+                        "price": "130 CZK"
+                    },
+                    {
+                        "name": "Kolárum",
+                        "desc": "Our signature drink",
+                        "price": "130 CZK"
                     }
-                }
+                ]
             },
-            "food": {
-                "title": "Food",
-                "items": {
-                    "margherita": {
-                        "name": "Pinsa Margherita",
+            {
+                "name": "Pinsa Romana",
+                "items": [
+                    {
+                        "name": "Margherita",
                         "desc": "San Marzano, fior di latte, basil",
-                        "price": "165 CZK"
+                        "price": "229 CZK"
                     },
-                    "prosciutto": {
-                        "name": "Pinsa Prosciutto e Rucola",
-                        "desc": "Parma ham, arugula, parmesan",
-                        "price": "195 CZK"
+                    {
+                        "name": "Salami Picante",
+                        "desc": "Spicy salami, cheese",
+                        "price": "249 CZK"
                     },
-                    "cheese": {
-                        "name": "Cheese Board",
-                        "desc": "Czech cheese selection, honey, walnuts",
-                        "price": "185 CZK"
+                    {
+                        "name": "Prosciutto",
+                        "desc": "Parma ham, arugula",
+                        "price": "255 CZK"
+                    },
+                    {
+                        "name": "Formaggi",
+                        "desc": "Cheese selection",
+                        "price": "259 CZK"
                     }
-                }
+                ]
+            },
+            {
+                "name": "Bar Snacks",
+                "items": [
+                    {
+                        "name": "Cheese / Charcuterie Board",
+                        "desc": "200g / 300g selection",
+                        "price": "from 239 CZK"
+                    },
+                    {
+                        "name": "Meatloaf in a Bun",
+                        "desc": "Homemade meatloaf, mustard",
+                        "price": "169 CZK"
+                    },
+                    {
+                        "name": "Pickled Camembert",
+                        "desc": "Properly aged Czech classic",
+                        "price": "149 CZK"
+                    },
+                    {
+                        "name": "Utopenec (Pickled Sausage)",
+                        "desc": "Classic pub snack with onions",
+                        "price": "115 CZK"
+                    },
+                    {
+                        "name": "BLT Sandwich",
+                        "desc": "Bacon, lettuce, tomato",
+                        "price": "165 CZK"
+                    }
+                ]
             }
-        }
+        ],
+        "disclaimer": "The full wine and spirits list is available at the bar."
     },
     "Salonek": {
         "eyebrow": "Private Room",

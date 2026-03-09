@@ -15,12 +15,6 @@ const VALUE_ICONS: Record<string, ReactNode> = {
 };
 
 const VALUE_KEYS = ["beer", "wine", "quality", "games"] as const;
-const MENU_KEYS = ["beer", "wine", "food"] as const;
-const ITEM_KEYS: Record<string, readonly string[]> = {
-    beer: ["lager", "specials", "bottles"],
-    wine: ["glass", "petnat", "sparkling"],
-    food: ["margherita", "prosciutto", "cheese"],
-};
 
 const fade = {
     initial: { opacity: 0, y: 18 },
@@ -29,12 +23,25 @@ const fade = {
     transition: { duration: 0.55, ease: "easeOut" as const },
 };
 
+/* ─── Menu category/item types ─── */
+interface MenuItem {
+    name: string;
+    desc: string;
+    price: string;
+}
+interface MenuCategory {
+    name: string;
+    items: MenuItem[];
+}
+
 /* ─── Component ─── */
 
 export default function BentoGrid() {
     const { oNas, nabidka } = useNav();
     const tAbout = useTranslations("About");
     const tMenu = useTranslations("Menu");
+
+    const categories = tMenu.raw("categories") as MenuCategory[];
 
     return (
         <>
@@ -102,38 +109,34 @@ export default function BentoGrid() {
                         {tMenu("description")}
                     </motion.p>
 
-                    {/* 3-col menu — gap-px technique */}
-                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
-                        {MENU_KEYS.map((catKey, ci) => (
+                    {/* 2x2 menu grid — accordion on mobile, expanded on desktop */}
+                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
+                        {categories.map((cat, ci) => (
                             <motion.details
-                                key={catKey}
+                                key={cat.name}
                                 className="menu-accordion group relative p-8 md:p-10 bg-background [&_summary::-webkit-details-marker]:hidden"
                                 open
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
-                                transition={{ duration: 0.45, delay: ci * 0.1 }}
+                                transition={{ duration: 0.45, delay: ci * 0.08 }}
                             >
-                                {ci < MENU_KEYS.length - 1 && (
-                                    <span className="hidden md:block absolute -bottom-2 -right-2 text-neutral-400/60 font-light text-xs pointer-events-none select-none z-10">+</span>
-                                )}
                                 <summary className="md:pointer-events-none flex justify-between items-center cursor-pointer list-none text-[14px] md:text-[10px] font-black md:font-light uppercase tracking-[0.14em] py-4 md:py-0 md:mb-6 md:pb-3 border-b border-neutral-300">
-                                    {tMenu(`categories.${catKey}.title`)}
+                                    {cat.name}
                                     <span className="md:hidden text-2xl font-normal group-open:rotate-45 transition-transform duration-200 leading-none inline-block">+</span>
                                 </summary>
                                 <div className="mt-4 md:mt-0 transition-all duration-300">
-                                    {ITEM_KEYS[catKey].map((itemKey, idx) => (
+                                    {cat.items.map((item, idx) => (
                                         <div
-                                            key={itemKey}
-                                            className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out md:group-hover:opacity-30 md:hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""
-                                                }`}
+                                            key={item.name}
+                                            className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out md:group-hover:opacity-30 md:hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""}`}
                                         >
                                             <div>
-                                                <div className="text-sm font-medium">{tMenu(`categories.${catKey}.items.${itemKey}.name`)}</div>
-                                                <div className="text-[11px] font-light text-muted mt-0.5">{tMenu(`categories.${catKey}.items.${itemKey}.desc`)}</div>
+                                                <div className="text-sm font-medium">{item.name}</div>
+                                                <div className="text-[11px] font-light text-muted mt-0.5">{item.desc}</div>
                                             </div>
                                             <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
-                                                {tMenu(`categories.${catKey}.items.${itemKey}.price`)}
+                                                {item.price}
                                             </span>
                                         </div>
                                     ))}
@@ -146,7 +149,7 @@ export default function BentoGrid() {
                         className="text-[11px] font-light text-muted mt-6 italic"
                         {...fade}
                     >
-                        {tMenu("footnote")}
+                        {tMenu("disclaimer")}
                     </motion.p>
                 </div>
             </section>
