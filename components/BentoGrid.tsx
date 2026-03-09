@@ -107,7 +107,8 @@ export default function BentoGrid() {
                         {MENU_KEYS.map((catKey, ci) => (
                             <motion.details
                                 key={catKey}
-                                className="group relative p-8 md:p-10 bg-background md:open:block [&_summary::-webkit-details-marker]:hidden"
+                                className="menu-accordion group relative p-8 md:p-10 bg-background [&_summary::-webkit-details-marker]:hidden"
+                                open
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
