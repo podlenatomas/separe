@@ -12,8 +12,8 @@
         "addressBadge": "Mikulandská 133/3, Praha 1",
         "titleCraft": "Řemeslné pivo,",
         "titleWine": "šumivá vína",
-        "titlePeace": "deskovky a\u00A0radost uprostřed města",
-        "subtitle": "Separé je malý rodinný bar v\u00A0Mikulandské. Místo s\u00A0nezaměnitelným geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy a\u00A0atmosférou, ve\u00A0které se snadno zapomene na to, že jste jen pár kroků od rušné Národní třídy.",
+        "titlePeace": "deskovky a radost uprostřed města",
+        "subtitle": "Separé je malý rodinný bar v Mikulandské. Místo s nezaměnitelným geniem loci, kam se chodí za poctivým pitím, hospodskými kvízy a atmosférou, ve které se snadno zapomene na to, že jste jen pár kroků od rušné Národní třídy.",
         "cta": "Rezervovat stůl"
     },
     "LanguageSwitcher": {
@@ -21,33 +21,118 @@
     },
     "About": {
         "eyebrow": "O nás",
-        "title": "Rodinný podnik s\u00A0domáckou atmosférou",
-        "description": "Separé vzniklo z\u00A0jednoduché myšlenky: chtěli jsme v\u00A0centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s\u00A0naškrobenou obsluhou, ale poctivý rodinný podnik, který funguje jako obývák pro lidi z\u00A0okolí. Milujeme poctivé řemeslo a\u00A0zajímavé chutě. Průměr přenecháváme jiným a\u00A0do lístku pouštíme jen to, za co dáme ruku do ohně.",
+        "title": "Rodinný podnik s domáckou atmosférou",
+        "description": "Separé vzniklo z jednoduché myšlenky: chtěli jsme v centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s naškrobenou obsluhou, ale poctivý rodinný podnik, který funguje jako obývák pro lidi z okolí. Milujeme poctivé řemeslo a zajímavé chutě. Průměr přenecháváme jiným a do lístku pouštíme jen to, za co dáme ruku do ohně.",
         "swipeHint": "Tahem posuňte",
         "values": {
             "beer": {
                 "title": "Řemeslná piva",
-                "text": "Pečlivý výběr toho nejlepšího z\u00A0malých pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat."
+                "text": "Pečlivý výběr toho nejlepšího z malých pivovarů. Nabídku na čepu pravidelně obměňujeme, aby bylo pořád co objevovat."
             },
             "wine": {
                 "title": "Šumivá vína & Pet-naty",
-                "text": "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a\u00A0naturální vína, která si nejvíc užijete, když si s\u00A0přáteli otevřete rovnou celou lahev."
+                "text": "Neomezujeme se jen na italské Prosecco. Nabízíme zajímavé bubliny a naturální vína, která si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
             },
             "quality": {
                 "title": "Přívlastková vína",
-                "text": "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v\u00A0naší vinotéce."
+                "text": "Lokální kvalita od prověřených vinařů, která dělá čest tuzemskému řemeslu. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce."
             },
             "games": {
                 "title": "Deskovky & Kvízy",
-                "text": "Přes 30 her k\u00A0zapůjčení zdarma. Pravidelné herní večery a\u00A0legendární středeční hospodské kvízy. U\u00A0nás se nezastavuje jen na \u201Ejedno\u201C — u\u00A0nás se zůstává."
+                "text": "Přes 30 her k zapůjčení zdarma. Pravidelné herní večery a legendární středeční hospodské kvízy. U nás se nezastavuje jen na „jedno“ — u nás se zůstává."
             }
         }
     },
     "Menu": {
         "eyebrow": "Nabídka",
         "title": "Co má smysl pít a\u00A0jíst",
-        "description": "Menu neděláme složité, děláme ho poctivé. Soustředíme se na to, co nás baví a\u00A0co dává uvolněnému večeru s\u00A0dobrou partou ten správný spád.",
+        "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
         "categories": [
+            {
+                "name": "Jídlo & Barovky",
+                "items": [
+                    {
+                        "name": "Pinsa Salami picante",
+                        "desc": "Pikantní italský salám",
+                        "price": "249 Kč"
+                    },
+                    {
+                        "name": "Pinsa Prosciutto",
+                        "desc": "Parmská šunka, rukola",
+                        "price": "255 Kč"
+                    },
+                    {
+                        "name": "Pinsa Formaggi",
+                        "desc": "Výběr sýrů",
+                        "price": "259 Kč"
+                    },
+                    {
+                        "name": "Sekačka v housce",
+                        "desc": "Domácí sekaná, jalapeño, šalotka, hořčice",
+                        "price": "169 Kč"
+                    },
+                    {
+                        "name": "BLT sandwich",
+                        "desc": "Slanina, salát, rajče, sriracha mayo",
+                        "price": "165 Kč"
+                    },
+                    {
+                        "name": "Caesar sandwich / salát",
+                        "desc": "Klasika s kuřecím masem",
+                        "price": "159 / 149 Kč"
+                    },
+                    {
+                        "name": "Sýrové prkénko",
+                        "desc": "200g / 300g výběr",
+                        "price": "239 / 359 Kč"
+                    },
+                    {
+                        "name": "Uzenářské prkénko",
+                        "desc": "200g / 300g výběr",
+                        "price": "239 / 350 Kč"
+                    },
+                    {
+                        "name": "Mix prkénko",
+                        "desc": "200g / 300g výběr",
+                        "price": "249 / 369 Kč"
+                    },
+                    {
+                        "name": "Vídeňský párek",
+                        "desc": "2 nebo 3 nohy, hořčice, křen, chléb",
+                        "price": "125 / 175 Kč"
+                    },
+                    {
+                        "name": "Petrovický nakládaný hermelín",
+                        "desc": "Poctivě uleželý",
+                        "price": "149 Kč"
+                    },
+                    {
+                        "name": "Petrovický utopenec",
+                        "desc": "Klasika s cibulí",
+                        "price": "115 Kč"
+                    },
+                    {
+                        "name": "Vajíčková / Škvarková pomazánka",
+                        "desc": "S čerstvým chlebem",
+                        "price": "85 Kč"
+                    },
+                    {
+                        "name": "Olivy zelené 70g",
+                        "desc": "",
+                        "price": "79 Kč"
+                    },
+                    {
+                        "name": "Čerstvě pražené mandle",
+                        "desc": "",
+                        "price": "85 Kč"
+                    },
+                    {
+                        "name": "Chipsy / Popcorn",
+                        "desc": "",
+                        "price": "50 / 75 Kč"
+                    }
+                ]
+            },
             {
                 "name": "Pivo & Cider",
                 "items": [
@@ -67,14 +152,24 @@
                         "price": "74 / 46 Kč"
                     },
                     {
-                        "name": "F.H. Prager Cider",
-                        "desc": "Originál / Višeň (0,33 l)",
+                        "name": "Speciál Uhříněves",
+                        "desc": "Dle aktuální nabídky",
                         "price": "85 Kč"
+                    },
+                    {
+                        "name": "F.H. Prager Cider",
+                        "desc": "Originál / Višeň 0,33 l",
+                        "price": "85 Kč"
+                    },
+                    {
+                        "name": "Nealko pivo",
+                        "desc": "Dle nabídky",
+                        "price": "dle nabídky"
                     }
                 ]
             },
             {
-                "name": "Míchačky",
+                "name": "Míchačky & Víno",
                 "items": [
                     {
                         "name": "Aperol / Hugo Spritz",
@@ -82,118 +177,193 @@
                         "price": "159 Kč"
                     },
                     {
-                        "name": "Gin Tonic",
+                        "name": "Gin tonic",
                         "desc": "Malfy nebo klasika",
                         "price": "159 Kč"
                     },
                     {
-                        "name": "Skinny Bitch",
+                        "name": "Skinny bitch / Miniskinny",
                         "desc": "Vodka, soda, limeta",
-                        "price": "130 Kč"
+                        "price": "130 / 45 Kč"
+                    },
+                    {
+                        "name": "Mojito / Cuba libre",
+                        "desc": "Rumové stálice",
+                        "price": "169 / 159 Kč"
+                    },
+                    {
+                        "name": "Mule / Mimosa",
+                        "desc": "Ostrý zázvor nebo jemné bubliny",
+                        "price": "160 / 125 Kč"
                     },
                     {
                         "name": "Kolárum",
                         "desc": "Náš signature drink",
                         "price": "130 Kč"
+                    },
+                    {
+                        "name": "Víno",
+                        "desc": "Dle aktuální nabídky",
+                        "price": "dle nabídky"
                     }
                 ]
             },
             {
-                "name": "Pinsa Romana",
+                "name": "Nealko",
                 "items": [
                     {
-                        "name": "Margherita",
-                        "desc": "San Marzano, fior di latte, bazalka",
-                        "price": "229 Kč"
+                        "name": "Domácí limonáda 0,4 l",
+                        "desc": "",
+                        "price": "75 Kč"
                     },
                     {
-                        "name": "Salami Picante",
-                        "desc": "Pikantní salám, sýr",
-                        "price": "249 Kč"
+                        "name": "F.H. Prager Kombucha 0,33 l",
+                        "desc": "",
+                        "price": "85 Kč"
                     },
                     {
-                        "name": "Prosciutto",
-                        "desc": "Parmská šunka, rukola",
-                        "price": "255 Kč"
+                        "name": "Coca Cola / Zero 0,33 l",
+                        "desc": "",
+                        "price": "60 Kč"
                     },
                     {
-                        "name": "Formaggi",
-                        "desc": "Výběr sýrů",
-                        "price": "259 Kč"
+                        "name": "Tonic Kinley 0,25 l",
+                        "desc": "",
+                        "price": "60 Kč"
+                    },
+                    {
+                        "name": "Džus (pomeranč, jablko) 0,1 l",
+                        "desc": "",
+                        "price": "20 Kč"
+                    },
+                    {
+                        "name": "Mattoni jemně perlivá",
+                        "desc": "",
+                        "price": "50 Kč"
+                    },
+                    {
+                        "name": "Red Bull 0,25 l",
+                        "desc": "",
+                        "price": "85 Kč"
+                    },
+                    {
+                        "name": "Soda 0,1 l",
+                        "desc": "",
+                        "price": "8 Kč"
                     }
                 ]
             },
             {
-                "name": "K\u00A0vínu a\u00A0pivu",
+                "name": "Káva & Čaj",
                 "items": [
                     {
-                        "name": "Sýrové / Uzenářské prkénko",
-                        "desc": "200g / 300g dle výběru",
-                        "price": "od 239 Kč"
+                        "name": "Espresso / Double",
+                        "desc": "",
+                        "price": "60 / 85 Kč"
                     },
                     {
-                        "name": "Sekačka v\u00A0housce",
-                        "desc": "Domácí sekaná, hořčice",
-                        "price": "169 Kč"
+                        "name": "Cappuccino / Flat white",
+                        "desc": "",
+                        "price": "70 / 90 Kč"
                     },
                     {
-                        "name": "Petrovický nakládaný hermelín",
-                        "desc": "Poctivě uleželý",
-                        "price": "149 Kč"
+                        "name": "Latte / Americano",
+                        "desc": "",
+                        "price": "85 / 65 Kč"
                     },
                     {
-                        "name": "Petrovický utopenec",
-                        "desc": "Klasika s\u00A0cibulí",
-                        "price": "115 Kč"
+                        "name": "Espresso macchiato",
+                        "desc": "",
+                        "price": "65 Kč"
                     },
                     {
-                        "name": "BLT Sandwich",
-                        "desc": "Slanina, salát, rajče",
-                        "price": "165 Kč"
+                        "name": "Čerstvý čaj",
+                        "desc": "Máta / zázvor",
+                        "price": "85 Kč"
+                    },
+                    {
+                        "name": "Sypaný čaj",
+                        "desc": "Dle nabídky",
+                        "price": "85 Kč"
+                    }
+                ]
+            },
+            {
+                "name": "Destiláty & Likéry",
+                "items": [
+                    {
+                        "name": "Pálenky 0,02 l",
+                        "desc": "Slivovice / Meruňkovice / Ořechovka Žufánek, Hruškovice / Malina Baron",
+                        "price": "70 Kč"
+                    },
+                    {
+                        "name": "Rum & Ron 0,04 l",
+                        "desc": "Diplomatico (150), Millonario (140), Cariba (90), Havana 3y (75), Republica (70), Bartida (65)",
+                        "price": "od 65 Kč"
+                    },
+                    {
+                        "name": "Whiskey & Bourbon 0,04 l",
+                        "desc": "Chivas 12yo (140), Jack Daniel's/Honey (110), Wild Turkey (100), Four Roses (90), Tullamore (89), Jameson (85)",
+                        "price": "od 85 Kč"
+                    },
+                    {
+                        "name": "Gin 0,04 l",
+                        "desc": "Citadelle (140), Malfy (125), Beefeater (80)",
+                        "price": "od 80 Kč"
+                    },
+                    {
+                        "name": "Vodka & Tequila 0,04 l",
+                        "desc": "Finlandia (90), Tres Alegres (95)",
+                        "price": "od 90 Kč"
+                    },
+                    {
+                        "name": "Likéry 0,04 l",
+                        "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Vaječňák / Zelená / Griotka (60)",
+                        "price": "od 60 Kč"
                     }
                 ]
             }
         ],
-        "disclaimer": "Celá nabídka vín a\u00A0destilátů je k\u00A0dispozici na baru."
+        "disclaimer": "Informace o alergenech na vyžádání u obsluhy."
     },
     "Salonek": {
         "eyebrow": "Salonek",
         "titleYour": "Tvoje akce.",
         "titleOur": "prostor.",
-        "description": "Nejsme sterilní zasedačka. Máme oddělený salonek s\u00A0projektorem, kde vládne uvolněná atmosféra a\u00A0dobré jídlo a\u00A0pití. Ať už slavíš narozeniny, pořádáš menší firemní večer nebo jen chceš mít svůj stůl pro partu přátel, všechno připravíme na\u00A0míru. O\u00A0malé občerstvení se postaráme sami a\u00A0na větší akce máme spolehlivé parťáky.",
+        "description": "Nejsme sterilní zasedačka. Máme oddělený salonek s projektorem, kde vládne uvolněná atmosféra a dobré jídlo a pití. Ať už slavíš narozeniny, pořádáš menší firemní večer nebo jen chceš mít svůj stůl pro partu přátel, všechno připravíme na míru. O malé občerstvení se postaráme sami a na větší akce máme spolehlivé parťáky.",
         "tagProjector": "Projektor",
         "tagPrivacy": "Soukromí",
-        "tagCustom": "Vše na\u00A0míru",
+        "tagCustom": "Vše na míru",
         "cta": "Domluvit akci"
     },
     "Reviews": {
         "eyebrow": "Recenze",
-        "title": "Co se šušká v\u00A0Mikulandské.",
-        "description": "Separé stojí na\u00A0jednoduchých věcech — dobré pití, příjemná atmosféra a\u00A0lidi, kteří se rádi vrací. Tohle o\u00A0nás píšete vy. Dělá nám to radost.",
-        "ctaPrompt": "Zastavil ses u\u00A0nás a\u00A0bavilo tě to? Budeme rádi za\u00A0recenzi — pomáhá nám to růst.",
+        "title": "Co se šušká v Mikulandské.",
+        "description": "Separé stojí na jednoduchých věcech — dobré pití, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy. Dělá nám to radost.",
+        "ctaPrompt": "Zastavil ses u nás a bavilo tě to? Budeme rádi za recenzi — pomáhá nám to růst.",
         "cta": "Nechat recenzi na Googlu",
         "fallback": {
             "r1": {
                 "name": "Martin K.",
-                "text": "Úžasné místo s\u00A0neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a\u00A0ta zahrada ve dvoře — parádní únik z\u00A0centra. Chodíme sem pravidelně na kvízy.",
-                "date": "před 2\u00A0týdny"
+                "text": "Úžasné místo s neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a ta zahrada ve dvoře — parádní únik z centra. Chodíme sem pravidelně na kvízy.",
+                "date": "před 2 týdny"
             },
             "r2": {
                 "name": "Tereza M.",
-                "text": "Konečně bar, kde se dá normálně posedět bez hluku a\u00A0fronty. Vynikající výběr vín, pet-naty fantastické. Salonek jsme využili na narozeniny a\u00A0bylo to přesně, jak jsme chtěli.",
+                "text": "Konečně bar, kde se dá normálně posedět bez hluku a fronty. Vynikající výběr vín, pet-naty fantastické. Salonek jsme využili na narozeniny a bylo to přesně, jak jsme chtěli.",
                 "date": "před měsícem"
             },
             "r3": {
                 "name": "Jakub P.",
-                "text": "Nejlepší zašívárna v\u00A0Praze. Přijdeš na jedno pivo, odejdeš po třech hodinách s\u00A0novou oblíbenou deskovkou. Obsluha je milá a\u00A0ví, co doporučit. Vrátím se.",
-                "date": "před 3\u00A0týdny"
+                "text": "Nejlepší zašívárna v Praze. Přijdeš na jedno pivo, odejdeš po třech hodinách s novou oblíbenou deskovkou. Obsluha je milá a ví, co doporučit. Vrátím se.",
+                "date": "před 3 týdny"
             }
         }
     },
     "Moodboard": {
         "eyebrow": "Galerie",
         "title": "Zastav se.",
-        "description": "Malý výřez z\u00A0atmosféry Mikulandské. Zbytek je lepší zažít osobně — u\u00A0sklenky vína nebo nad\u00A0deskovkou.",
+        "description": "Malý výřez z atmosféry Mikulandské. Zbytek je lepší zažít osobně — u sklenky vína nebo nad deskovkou.",
         "photos": {
             "p1": "Nalévání vína v teplém světle",
             "p2": "Útulný interiér baru s teplým osvětlením",
@@ -205,42 +375,42 @@
     },
     "Story": {
         "eyebrow": "Příběh místa",
-        "title": "Plán z\u00A0roku 1891. A\u00A0jeden úřední šiml.",
-        "p1": "Náhody neexistují. Když jsme v\u00A0Mikulandské otevírali Separé, netušili jsme, že tenhle dům měl k\u00A0dobrému pití nakročeno už na konci 19.\u00A0století. Až pohled do starých archivů nám ukázal, jak blízko to tehdy bylo.",
-        "p2": "V\u00A0říjnu 1891 si majitel domu, pan J.\u00A0F.\u00A0Tomaschek, zažádal na pražském magistrátu o\u00A0povolení. Měl jasnou vizi: chtěl tu nalévat a\u00A0prodávat víno. Jenže narazil na tvrdou zeď rakousko-uherské byrokracie.",
-        "p3a": "Úřad si vymínil poplatky a\u00A0úmorné podmínky, které tehdy nejspíš nešlo splnit. Na zažloutlém dokumentu z\u00A0roku 1895 totiž stojí stručná, rukou psaná tečka za celým projektem: ",
+        "title": "Plán z roku 1891. A jeden úřední šiml.",
+        "p1": "Náhody neexistují. Když jsme v Mikulandské otevírali Separé, netušili jsme, že tenhle dům měl k dobrému pití nakročeno už na konci 19. století. Až pohled do starých archivů nám ukázal, jak blízko to tehdy bylo.",
+        "p2": "V říjnu 1891 si majitel domu, pan J. F. Tomaschek, zažádal na pražském magistrátu o povolení. Měl jasnou vizi: chtěl tu nalévat a prodávat víno. Jenže narazil na tvrdou zeď rakousko-uherské byrokracie.",
+        "p3a": "Úřad si vymínil poplatky a úmorné podmínky, které tehdy nejspíš nešlo splnit. Na zažloutlém dokumentu z roku 1895 totiž stojí stručná, rukou psaná tečka za celým projektem: ",
         "p3quote": "„Vinárna nebyla zřízena.\"",
-        "p4a": "Trvalo dlouhá desetiletí, než se v\u00A0tomhle domě konečně začalo oficiálně připíjet. A\u00A0i\u00A0když dnes už si na klasickou vinárnu nehrajeme, místo toho čepujeme řemeslná piva, otevíráme divoké pet-naty a\u00A0stoly plníme deskovkami, jsme si jistí jednou věcí. ",
-        "p4highlight": "Pan Tomaschek by z\u00A0téhle zašívárny měl radost.",
-        "epilogue": "Sen z\u00A0roku 1891 jsme zkrátka dotáhli do konce. Jen s\u00A0trochu lepším pitím a\u00A0bez razítka s\u00A0orlicí."
+        "p4a": "Trvalo dlouhá desetiletí, než se v tomhle domě konečně začalo oficiálně připíjet. A i když dnes už si na klasickou vinárnu nehrajeme, místo toho čepujeme řemeslná piva, otevíráme divoké pet-naty a stoly plníme deskovkami, jsme si jistí jednou věcí. ",
+        "p4highlight": "Pan Tomaschek by z téhle zašívárny měl radost.",
+        "epilogue": "Sen z roku 1891 jsme zkrátka dotáhli do konce. Jen s trochu lepším pitím a bez razítka s orlicí."
     },
     "Events": {
         "eyebrow": "Akce",
-        "title": "Středeční kvízy a\u00A0večery plné her",
-        "description": "Separé žije. Jsme ideální základna pro soutěživé povahy, milovníky dobrého pití i\u00A0stratégy.",
+        "title": "Středeční kvízy a večery plné her",
+        "description": "Separé žije. Jsme ideální základna pro soutěživé povahy, milovníky dobrého pití i stratégy.",
         "swipeHint": "Tahem posuňte",
         "blocks": {
             "quiz": {
                 "title": "Hospodské kvízy",
                 "schedule": "Každou středu od 19:00",
-                "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a\u00A0ukažte, co víte. Naše kvízy jsou legendární a\u00A0místa rychle mizí."
+                "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Naše kvízy jsou legendární a místa rychle mizí."
             },
             "games": {
                 "title": "Deskovky k dispozici kdykoliv",
-                "schedule": "Každý den v\u00A0otevírací době",
+                "schedule": "Každý den v otevírací době",
                 "desc": "Přes 30 her od rychlých party kousků po náročnější strategie. Půjčení ke stolu je zdarma."
             },
             "tasting": {
                 "title": "Degustace a vernisáže",
                 "schedule": "Nepravidelně. Sledujte náš program",
-                "desc": "Pravidelně u\u00A0nás ožívá kultura. Přijďte ochutnávat i\u00A0objevovat."
+                "desc": "Pravidelně u nás ožívá kultura. Přijďte ochutnávat i objevovat."
             }
         }
     },
     "Contact": {
         "eyebrow": "Kontakt",
         "title": "Zapadněte do vnitrobloku",
-        "description": "Vstup je přímo z\u00A0ulice. Stačí vzít za kliku a\u00A0ruch města nechat za dveřmi. V\u00A0létě pro vás navíc otevíráme klidnou zahrádku, která je schovaná u\u00A0nás ve vnitrobloku.",
+        "description": "Vstup je přímo z ulice. Stačí vzít za kliku a ruch města nechat za dveřmi. V létě pro vás navíc otevíráme klidnou zahrádku, která je schovaná u nás ve vnitrobloku.",
         "addressLabel": "Adresa",
         "addressLine1": "Separé",
         "addressLine2": "Mikulandská 133/3",
@@ -253,12 +423,12 @@
         "hoursSuTime": "Zavřeno",
         "ctaReserve": "Rezervovat stůl",
         "mapLabel": "Kde nás najdete",
-        "mapDescription": "Jsme jen pár kroků od rušné Národní třídy. Vstupte rovnou z\u00A0ulice do našeho baru a\u00A0zbytek světa nechte venku. V\u00A0létě vás navíc usadíme na naší letní zahrádce schované ve vnitrobloku. Je to bezpečně ta nejklidnější zašívárna v\u00A0Praze."
+        "mapDescription": "Jsme jen pár kroků od rušné Národní třídy. Vstupte rovnou z ulice do našeho baru a zbytek světa nechte venku. V létě vás navíc usadíme na naší letní zahrádce schované ve vnitrobloku. Je to bezpečně ta nejklidnější zašívárna v Praze."
     },
     "Footer": {
         "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"
     },
     "Page": {
-        "spinnerText": "Separé · Mikulandská · Third Place ·\u00A0"
+        "spinnerText": "Separé · Mikulandská · Third Place · "
     }
 }

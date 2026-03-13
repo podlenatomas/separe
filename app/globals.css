@@ -98,15 +98,3 @@ body {
     display: none;
   }
 }
-
-/* Force menu accordion open on desktop (md+) */
-@media (min-width: 768px) {
-  details.menu-accordion:not([open])>*:not(summary) {
-    display: block !important;
-  }
-
-  details.menu-accordion>summary {
-    cursor: default;
-    pointer-events: none;
-  }
-}

@@ -109,37 +109,43 @@ export default function BentoGrid() {
                         {tMenu("description")}
                     </motion.p>
 
-                    {/* 2x2 menu grid — accordion on mobile, expanded on desktop */}
-                    <div className="relative bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-px">
+                    {/* Menu — Universal Accordion list */}
+                    <div className="relative border-b border-border">
+                        <div className="absolute inset-x-0 top-0 h-px bg-border" />
                         {categories.map((cat, ci) => (
                             <motion.details
                                 key={cat.name}
-                                className="menu-accordion group relative p-8 md:p-10 bg-background [&_summary::-webkit-details-marker]:hidden"
-                                open
+                                className="menu-accordion group relative py-6 md:py-8 border-b border-border [&_summary::-webkit-details-marker]:hidden"
+                                open={ci === 0}
                                 initial={{ opacity: 0, y: 18 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-40px" }}
                                 transition={{ duration: 0.45, delay: ci * 0.08 }}
                             >
-                                <summary className="md:pointer-events-none flex justify-between items-center cursor-pointer list-none text-[14px] md:text-[10px] font-black md:font-light uppercase tracking-[0.14em] py-4 md:py-0 md:mb-6 md:pb-3 border-b border-neutral-300">
+                                <summary className="flex justify-between items-center cursor-pointer list-none text-2xl md:text-5xl font-black tracking-tighter hover:text-neutral-500 transition-colors duration-300 outline-none">
                                     {cat.name}
-                                    <span className="md:hidden text-2xl font-normal group-open:rotate-45 transition-transform duration-200 leading-none inline-block">+</span>
+                                    <span className="text-4xl md:text-6xl font-normal leading-none pointer-events-none w-10 text-right">
+                                        <span className="hidden group-open:inline-block">-</span>
+                                        <span className="inline-block group-open:hidden">+</span>
+                                    </span>
                                 </summary>
-                                <div className="mt-4 md:mt-0 transition-all duration-300">
-                                    {cat.items.map((item, idx) => (
-                                        <div
-                                            key={item.name}
-                                            className={`flex justify-between items-baseline gap-4 py-3 -mx-3 px-3 rounded-sm transition-all duration-500 ease-out md:group-hover:opacity-30 md:hover:!opacity-100 cursor-default ${idx > 0 ? "border-t border-neutral-200" : ""}`}
-                                        >
-                                            <div>
-                                                <div className="text-sm font-medium">{item.name}</div>
-                                                <div className="text-[11px] font-light text-muted mt-0.5">{item.desc}</div>
+                                <div className="mt-8 md:mt-12 transition-all duration-300">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
+                                        {cat.items.map((item, idx) => (
+                                            <div
+                                                key={item.name}
+                                                className={`flex justify-between items-baseline gap-4 py-3 border-b border-neutral-200/50 hover:opacity-50 transition-opacity duration-300 cursor-default`}
+                                            >
+                                                <div>
+                                                    <div className="text-base font-medium">{item.name}</div>
+                                                    {item.desc && <div className="text-[13px] font-light text-muted mt-1">{item.desc}</div>}
+                                                </div>
+                                                <span className="font-semibold whitespace-nowrap tabular-nums text-sm md:text-base">
+                                                    {item.price}
+                                                </span>
                                             </div>
-                                            <span className="font-semibold whitespace-nowrap tabular-nums text-sm">
-                                                {item.price}
-                                            </span>
-                                        </div>
-                                    ))}
+                                        ))}
+                                    </div>
                                 </div>
                             </motion.details>
                         ))}
