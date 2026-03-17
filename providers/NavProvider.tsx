@@ -4,7 +4,7 @@ import { createContext, useContext, type ReactNode } from "react";
 import { useScrollTo } from "@/hooks/useScrollTo";
 
 interface SectionScroll {
-    ref: React.RefObject<HTMLElement | null>;
+    registerNode: (node: HTMLElement | null) => void;
     trigger: () => void;
 }
 

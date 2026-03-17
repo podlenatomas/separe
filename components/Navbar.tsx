@@ -16,8 +16,8 @@ const NAV_ITEMS = [
 ];
 
 const overlayVariants = {
-    closed: { y: "-100%", transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
-    open: { y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } },
+    closed: { y: "-100%", transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
+    open: { y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
 };
 
 const itemVariants = {

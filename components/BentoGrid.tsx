@@ -46,7 +46,12 @@ export default function BentoGrid() {
     return (
         <>
             {/* ═══ O NÁS ═══ */}
-            <section ref={oNas.ref} className="border-b border-border" aria-labelledby="h-about">
+            <section
+                // eslint-disable-next-line react-hooks/refs
+                ref={oNas.registerNode}
+                className="border-b border-border"
+                aria-labelledby="h-about"
+            >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                     <motion.p
                         className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
@@ -90,7 +95,12 @@ export default function BentoGrid() {
             </section>
 
             {/* ═══ NABÍDKA ═══ */}
-            <section ref={nabidka.ref} className="border-b border-border" aria-labelledby="h-menu">
+            <section
+                // eslint-disable-next-line react-hooks/refs
+                ref={nabidka.registerNode}
+                className="border-b border-border"
+                aria-labelledby="h-menu"
+            >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32 text-left">
                     <motion.p
                         className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
@@ -131,7 +141,7 @@ export default function BentoGrid() {
                                 </summary>
                                 <div className="mt-8 md:mt-12 transition-all duration-300">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
-                                        {cat.items.map((item, idx) => (
+                                        {cat.items.map((item) => (
                                             <div
                                                 key={item.name}
                                                 className={`flex justify-between items-baseline gap-4 py-3 border-b border-neutral-200/50 hover:opacity-50 transition-opacity duration-300 cursor-default`}

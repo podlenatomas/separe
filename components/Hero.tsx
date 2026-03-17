@@ -11,7 +11,8 @@ export default function Hero() {
 
     return (
         <section
-            ref={hero.ref}
+            // eslint-disable-next-line react-hooks/refs
+            ref={hero.registerNode}
             className="relative min-h-svh flex items-end pt-[72px] overflow-hidden"
             aria-label="Úvod"
         >

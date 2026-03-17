@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useState } from "react";
 
 const HEADER_H = 72;
 
@@ -10,14 +10,13 @@ const HEADER_H = 72;
  * with manual offset for the sticky header.
  */
 export function useScrollTo() {
-    const ref = useRef<HTMLElement>(null);
+    const [node, setNode] = useState<HTMLElement | null>(null);
 
     const trigger = useCallback(() => {
-        const el = ref.current;
-        if (!el) return;
-        const y = el.getBoundingClientRect().top + window.scrollY - HEADER_H;
+        if (!node) return;
+        const y = node.getBoundingClientRect().top + window.scrollY - HEADER_H;
         window.scrollTo({ top: y, behavior: "smooth" });
-    }, []);
+    }, [node]);
 
-    return { ref, trigger } as const;
+    return { registerNode: setNode, trigger } as const;
 }

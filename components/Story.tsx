@@ -17,7 +17,12 @@ export default function Story() {
     const t = useTranslations("Story");
 
     return (
-        <section ref={pribeh.ref} className="relative border-b border-border overflow-hidden" aria-labelledby="h-story">
+        <section
+            // eslint-disable-next-line react-hooks/refs
+            ref={pribeh.registerNode}
+            className="relative border-b border-border overflow-hidden"
+            aria-labelledby="h-story"
+        >
             <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                 {/* Anti-grid watermark — typographic bleed */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none z-[5] flex items-center justify-center">

@@ -17,7 +17,12 @@ export default function Contact() {
     const t = useTranslations("Contact");
 
     return (
-        <section ref={kontakt.ref} className="border-b border-border" aria-labelledby="h-contact">
+        <section
+            // eslint-disable-next-line react-hooks/refs
+            ref={kontakt.registerNode}
+            className="border-b border-border"
+            aria-labelledby="h-contact"
+        >
             <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
                 <motion.p
                     className="text-[10px] font-light uppercase tracking-[0.18em] text-muted mb-2"
