@@ -12,7 +12,7 @@
     "addressBadge": "Mikulandská 133/3, Prague 1",
     "titleCraft": "Craft beer,",
     "titleWine": "sparkling wine",
-    "titlePeace": "board games and joy in the city center",
+    "titlePeace": "board games and no place you'd rather be",
     "subtitle": "Craft bar. Mikulandská, Prague 1. Czech craft beer, pet-nat, board games. Three minutes from Národní třída. Another world.",
     "cta": "Book a table"
   },
@@ -50,6 +50,7 @@
     "categories": [
       {
         "name": "Food & Bar Snacks",
+        "desc": "Honest pub food to go with your drinks. Available all night.",
         "items": [
           {
             "name": "Pinsa Margherita",
@@ -72,7 +73,7 @@
             "price": "259 CZK"
           },
           {
-            "name": "Meatloaf in a Bun",
+            "name": "Czech Meatloaf Slider",
             "desc": "Homemade meatloaf, jalapeño, shallot, mustard",
             "price": "169 CZK"
           },
@@ -140,6 +141,7 @@
       },
       {
         "name": "Beer & Cider",
+        "desc": "Current rotating tap: carefully selected from small Czech breweries. Ask at the bar or follow @separe_mikulandska.",
         "items": [
           {
             "name": "Fabián Hostomice 10°",
