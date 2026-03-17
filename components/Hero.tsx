@@ -22,8 +22,8 @@ export default function Hero() {
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2000"
-          alt="Atmosféra baru separé. Teplé světlo, víno, večerní nálada"
+          src="/images/exterior.jpg"
+          alt="Atmosféra baru separé. Zvenku svítí neon"
           fill
           priority
           className="object-cover"

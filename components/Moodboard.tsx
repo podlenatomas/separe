@@ -20,34 +20,34 @@ interface MoodPhoto {
 
 const photos: MoodPhoto[] = [
     {
-        src: "https://images.unsplash.com/photo-1528823872057-9c018a7a7553?q=80&w=800",
+        src: "/images/cocktail.jpg",
         altKey: "p1",
-        span: "col-span-2 row-span-2 aspect-[4/5]",
+        span: "col-span-2 row-span-2 md:col-span-2 md:row-span-2",
     },
     {
-        src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=800",
+        src: "/images/interior.jpg",
         altKey: "p2",
-        span: "col-span-1 row-span-1 aspect-square",
+        span: "col-span-1 row-span-1 md:col-span-1 md:row-span-1",
     },
     {
-        src: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?q=80&w=800",
+        src: "/images/wine_bottles.jpg",
         altKey: "p3",
-        span: "col-span-1 row-span-1 aspect-square",
+        span: "col-span-1 row-span-1 md:col-span-1 md:row-span-1",
     },
     {
-        src: "https://images.unsplash.com/photo-1632501641765-e568d28b0015?q=80&w=800",
+        src: "/images/exterior.jpg",
         altKey: "p4",
-        span: "col-span-1 row-span-2 aspect-[3/5]",
+        span: "col-span-2 row-span-1 md:col-span-1 md:row-span-2",
     },
     {
-        src: "https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800",
+        src: "/images/candle.jpg",
         altKey: "p5",
-        span: "col-span-1 row-span-1 aspect-[5/3]",
+        span: "col-span-1 row-span-1 md:col-span-1 md:row-span-1",
     },
     {
-        src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800",
+        src: "/images/lightbulb.jpg",
         altKey: "p6",
-        span: "col-span-1 row-span-1 aspect-[5/3]",
+        span: "col-span-1 row-span-1 md:col-span-2 md:row-span-1",
     },
 ];
 
