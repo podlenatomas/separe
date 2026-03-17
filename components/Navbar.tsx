@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import FocusLock from "react-focus-lock";
 
 const NAV_ITEMS = [
   { key: "oNas" as const, labelKey: "about" as const, external: false },
@@ -91,7 +92,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-[72px] flex items-center justify-between">
         <button
           onClick={() => go("hero")}
-          className="text-[1.35rem] font-black tracking-tight text-foreground cursor-pointer bg-transparent border-none relative z-[110]"
+          className="text-[1.35rem] font-black tracking-tight text-foreground cursor-pointer bg-transparent border-none relative z-[110] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground rounded-sm"
           aria-label="separé. na začátek"
         >
           separé
@@ -108,7 +109,7 @@ export default function Navbar() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer relative group"
+                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground rounded-sm px-1 py-0.5"
               >
                 {t(item.labelKey)}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
@@ -117,7 +118,7 @@ export default function Navbar() {
               <button
                 key={item.key}
                 onClick={() => go(item.key as keyof typeof nav)}
-                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer bg-transparent border-none relative group"
+                className="text-[10px] font-light uppercase tracking-[0.14em] text-foreground/80 hover:text-foreground transition-colors duration-150 cursor-pointer bg-transparent border-none relative group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground rounded-sm px-1 py-0.5"
               >
                 {t(item.labelKey)}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground transition-all duration-200 group-hover:w-full" />
@@ -131,7 +132,7 @@ export default function Navbar() {
           <LanguageSwitcher />
 
           <motion.button
-            className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110] cursor-pointer bg-transparent border-none"
+            className="md:hidden w-11 h-11 flex items-center justify-center relative z-[110] cursor-pointer bg-transparent border-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground rounded-md"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Zavřít menu" : "Otevřít menu"}
             aria-expanded={open}
@@ -171,81 +172,83 @@ export default function Navbar() {
 
       <AnimatePresence>
         {open && (
-          <motion.nav
-            id="mobile-nav"
-            className="fixed inset-0 w-full h-screen bg-[#F5F5F0] z-[100] flex flex-col justify-center px-8"
-            variants={overlayVariants}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            aria-label="Mobilní navigace"
-          >
-            <div className="flex flex-col items-start w-full max-w-sm mx-auto">
-              {NAV_ITEMS.map((item, i) => (
-                <div key={item.key} className="overflow-hidden w-full">
-                  {item.external ? (
-                    <motion.div
-                      variants={itemVariants}
-                      initial="closed"
-                      animate="open"
-                      custom={i}
-                      className="w-full"
-                    >
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer hover:text-neutral-600 transition-colors"
-                        onClick={() => setOpen(false)}
-                      >
-                        {t(item.labelKey)}
-                      </a>
-                    </motion.div>
-                  ) : (
-                    <motion.button
-                      className="text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer bg-transparent border-none hover:text-neutral-600 transition-colors"
-                      onClick={() => go(item.key as keyof typeof nav)}
-                      variants={itemVariants}
-                      initial="closed"
-                      animate="open"
-                      custom={i}
-                    >
-                      {t(item.labelKey)}
-                    </motion.button>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* Secondary info at absolute bottom */}
-            <motion.div
-              className="absolute bottom-8 left-8 right-8 flex justify-between items-end border-t border-neutral-300 pt-6"
-              variants={itemVariants}
+          <FocusLock>
+            <motion.nav
+              id="mobile-nav"
+              className="fixed inset-0 w-full h-screen bg-[#F5F5F0] z-[100] flex flex-col justify-center px-8"
+              variants={overlayVariants}
               initial="closed"
               animate="open"
-              custom={NAV_ITEMS.length}
+              exit="closed"
+              aria-label="Mobilní navigace"
             >
-              <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">
-                  {t("followUs")}
-                </span>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-neutral-900 underline underline-offset-4"
-                >
-                  Instagram
-                </a>
+              <div className="flex flex-col items-start w-full max-w-sm mx-auto">
+                {NAV_ITEMS.map((item, i) => (
+                  <div key={item.key} className="overflow-hidden w-full">
+                    {item.external ? (
+                      <motion.div
+                        variants={itemVariants}
+                        initial="closed"
+                        animate="open"
+                        custom={i}
+                        className="w-full"
+                      >
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer hover:text-neutral-600 transition-colors"
+                          onClick={() => setOpen(false)}
+                        >
+                          {t(item.labelKey)}
+                        </a>
+                      </motion.div>
+                    ) : (
+                      <motion.button
+                        className="text-5xl font-black tracking-tighter text-neutral-900 uppercase text-left my-4 w-full cursor-pointer bg-transparent border-none hover:text-neutral-600 transition-colors"
+                        onClick={() => go(item.key as keyof typeof nav)}
+                        variants={itemVariants}
+                        initial="closed"
+                        animate="open"
+                        custom={i}
+                      >
+                        {t(item.labelKey)}
+                      </motion.button>
+                    )}
+                  </div>
+                ))}
               </div>
-              <div className="flex flex-col gap-1 items-end">
-                <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">
-                  {t("address")}
-                </span>
-                <span className="text-sm font-medium text-neutral-900">
-                  Mikulandská 133
-                </span>
-              </div>
-            </motion.div>
-          </motion.nav>
+
+              {/* Secondary info at absolute bottom */}
+              <motion.div
+                className="absolute bottom-8 left-8 right-8 flex justify-between items-end border-t border-neutral-300 pt-6"
+                variants={itemVariants}
+                initial="closed"
+                animate="open"
+                custom={NAV_ITEMS.length}
+              >
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">
+                    {t("followUs")}
+                  </span>
+                  <a
+                    href="#"
+                    className="text-sm font-medium text-neutral-900 underline underline-offset-4"
+                  >
+                    Instagram
+                  </a>
+                </div>
+                <div className="flex flex-col gap-1 items-end">
+                  <span className="text-[10px] uppercase tracking-[0.14em] text-neutral-500 font-medium">
+                    {t("address")}
+                  </span>
+                  <span className="text-sm font-medium text-neutral-900">
+                    Mikulandská 133
+                  </span>
+                </div>
+              </motion.div>
+            </motion.nav>
+          </FocusLock>
         )}
       </AnimatePresence>
     </header>

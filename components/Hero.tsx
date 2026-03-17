@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useNav } from "@/providers/NavProvider";
 import { useTranslations } from "next-intl";
@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 export default function Hero() {
   const { hero, kontakt } = useNav();
   const t = useTranslations("Hero");
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <section
@@ -18,7 +19,7 @@ export default function Hero() {
     >
       <motion.div
         className="absolute inset-0 z-0"
-        animate={{ scale: [1, 1.08, 1] }}
+        animate={{ scale: shouldReduceMotion ? 1 : [1, 1.08, 1] }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
       >
         <Image
@@ -42,7 +43,7 @@ export default function Hero() {
 
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 md:px-12 pb-16 md:pb-24">
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
@@ -54,7 +55,7 @@ export default function Hero() {
 
         <motion.h1
           className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[0.98] text-[#F5F5F0] max-w-2xl mb-6 text-balance"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
         >
@@ -68,7 +69,7 @@ export default function Hero() {
 
         <motion.p
           className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-8 leading-relaxed text-pretty"
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
@@ -77,13 +78,13 @@ export default function Hero() {
 
         <motion.div
           className="mt-8 flex justify-center md:justify-start w-full"
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.65 }}
         >
           <button
             onClick={kontakt.trigger}
-            className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0"
+            className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F5F5F0]/80"
           >
             {t("cta")}
           </button>

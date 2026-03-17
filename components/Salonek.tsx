@@ -77,7 +77,7 @@ export default function Salonek() {
                 "mailto:ahoj@separe.cz?subject=Salonek — soukromá akce",
               )
             }
-            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0"
+            className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-foreground"
             {...fade}
           >
             {t("cta")}
