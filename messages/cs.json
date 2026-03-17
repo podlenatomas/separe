@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "about": "O nás",
+    "about": "O nás",
     "menu": "Nabídka",
     "events": "Akce",
     "contact": "Kontakt",
@@ -13,39 +13,39 @@
     "titleCraft": "Řemeslné pivo,",
     "titleWine": "šumivá vína",
     "titlePeace": "deskovky a radost uprostřed města",
-    "subtitle": "Craft bar. Mikulandská, Praha 1. Řemeslné pivo, pet-nat, deskovky. Tři minuty od Národní třídy. Jiný svět.",
+    "subtitle": "Craft bar. Mikulandská, Praha 1. Řemeslné pivo, pet‑nat, deskovky. Tři minuty od Národní třídy. Jiný svět.",
     "cta": "Rezervovat stůl"
   },
   "LanguageSwitcher": {
     "switchTo": "English"
   },
   "About": {
-    "eyebrow": "O nás",
+    "eyebrow": "O nás",
     "title": "Rodinný bar uprostřed Prahy 1.",
-    "description": "Separé je rodinný craft bar v Mikulandské 133/3, Praha 1. Vzniklo z jednoduché myšlenky: chtěli jsme v centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s naškrobenou obsluhou. Poctivý rodinný podnik, kde se cítíte jako člověk, ne jako host. Milujeme poctivé řemeslo a zajímavé chutě. Průměr přenecháváme jiným. Do lístku pouštíme jen to, za co dáme ruku do ohně.",
+    "description": "Separé je rodinný craft bar v Mikulandské 133/3, Praha 1. Vzniklo z jednoduché myšlenky: chtěli jsme v centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s naškrobenou obsluhou. Poctivý rodinný podnik, kde se cítíte jako člověk, ne jako host. Milujeme poctivé řemeslo a zajímavé chutě. Průměr přenecháváme jiným. Do lístku pouštíme jen to, za co dáme ruku do ohně.",
     "swipeHint": "Tahem posuňte",
     "values": {
       "beer": {
-        "title": "Craft pivo z malých pivovarů.",
-        "text": "Pečlivý výběr rotujícího čepu. Vždy z nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
+        "title": "Craft pivo z malých pivovarů.",
+        "text": "Pečlivý výběr rotujícího čepu. Vždy z nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
       },
       "wine": {
-        "title": "Šumivá vína & Pet-nat.",
-        "text": "Neomezujeme se na italské Prosecco. Nabízíme pet-nat a přírodní vína. Bubliny, které si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
+        "title": "Šumivá vína & Pet‑nat.",
+        "text": "Neomezujeme se na italské Prosecco. Nabízíme pet‑nat a přírodní vína. Bubliny, které si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
       },
       "quality": {
         "title": "Přívlastková česká vína.",
-        "text": "Lokální kvalita od prověřených vinařů. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce. Kategorie, která dělá čest tuzemskému řemeslu."
+        "text": "Specializujeme se na autentická česká a moravská vína. Nejsme žádný snobský chateau, nabízíme poctivý lokální juice (včetně pet‑natů a naturálek)."
       },
       "games": {
         "title": "Deskovky & Kvízy. Každý den, zdarma.",
-        "text": "Přes 30 her k zapůjčení zdarma. Od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A legendární středeční hospodské kvízy. U nás se nezastavuje jen na \u201ejedno\u201c. U nás se zůstává."
+        "text": "Přes 30 her k zapůjčení zdarma. Od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A legendární středeční hospodské kvízy. U nás se nezastavuje jen na „jedno“. U nás se zůstává."
       }
     }
   },
   "Menu": {
     "eyebrow": "Nabídka",
-    "title": "Co má smysl pít a\u00A0jíst",
+    "title": "Co má smysl pít a jíst",
     "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
     "categories": [
       {
@@ -330,7 +330,7 @@
     "eyebrow": "separé prostor",
     "titleYour": "Váš večer.",
     "titleOur": "Náš prostor.",
-    "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme. U menších akcí sami, u větších s prověřenými parťáky.",
+    "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme. U menších akcí sami, u větších s prověřenými parťáky.",
     "tagProjector": "Projektor",
     "tagPrivacy": "Soukromí",
     "tagCustom": "Vše na míru",
@@ -339,8 +339,8 @@
   "Reviews": {
     "eyebrow": "Recenze",
     "title": "Co se šušká v Mikulandské.",
-    "description": "Separé stojí na jednoduchých věcech. Dobré craft pivo, přírodní vína, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy.",
-    "ctaPrompt": "Zastavili jste se u nás a bavilo vás to? Budeme rádi za recenzi, pomáhá nám to růst.",
+    "description": "Separé stojí na jednoduchých věcech. Dobré craft pivo, přírodní vína, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy.",
+    "ctaPrompt": "Zastavili jste se u nás a bavilo vás to? Budeme rádi za recenzi, pomáhá nám to růst.",
     "cta": "Nechat recenzi na Googlu",
     "fallback": {
       "r1": {
@@ -350,12 +350,12 @@
       },
       "r2": {
         "name": "Tereza M.",
-        "text": "Konečně bar, kde se dá normálně posedět bez hluku a fronty. Vynikající výběr vín, pet-naty fantastické. Salonek jsme využili na narozeniny a bylo to přesně, jak jsme chtěli.",
+        "text": "Konečně bar, kde se dá normálně posedět bez hluku a fronty. Vynikající výběr vín, pet‑naty fantastické. Salonek jsme využili na narozeniny a bylo to přesně, jak jsme chtěli.",
         "date": "před měsícem"
       },
       "r3": {
         "name": "Jakub P.",
-        "text": "Nejlepší úkryt před světem v Praze. Přijdete na jedno pivo, odejdete po třech hodinách s novou oblíbenou deskovkou. Obsluha je milá a ví, co doporučit. Vrátím se.",
+        "text": "Nejlepší úkryt před světem v Praze. Přijdete na jedno pivo, odejdete po třech hodinách s novou oblíbenou deskovkou. Obsluha je milá a ví, co doporučit. Vrátím se.",
         "date": "před 3 týdny"
       }
     }
@@ -363,54 +363,54 @@
   "Moodboard": {
     "eyebrow": "Galerie",
     "title": "Zastavte se.",
-    "description": "Malý výřez z atmosféry Mikulandské. Zbytek je lepší zažít osobně. U sklenky vína nebo nad deskovkou.",
+    "description": "Malý výřez z atmosféry Mikulandské. Zbytek je lepší zažít osobně. U sklenky vína nebo nad deskovkou.",
     "photos": {
-      "p1": "Nalévání vína v teplém světle",
-      "p2": "Útulný interiér baru s teplým osvětlením",
-      "p3": "Barový pult s řemeslnými pivy",
+      "p1": "Nalévání vína v teplém světle",
+      "p2": "Útulný interiér baru s teplým osvětlením",
+      "p3": "Barový pult s řemeslnými pivy",
       "p4": "Deskovky rozložené na stole",
-      "p5": "Přátelé u stolu s vínem",
-      "p6": "Sklenice vína v měkkém světle"
+      "p5": "Přátelé u stolu s vínem",
+      "p6": "Sklenice vína v měkkém světle"
     }
   },
   "Story": {
     "eyebrow": "Příběh místa",
-    "title": "Plán z roku 1891. Jeden úřední šiml. A 130 let trpělivosti.",
-    "p1": "Náhody neexistují. Když jsme v Mikulandské otevírali Separé, netušili jsme, že tento dům měl k dobrému pití nakročeno už v roce 1891. Až pohled do starých archivů ukázal, jak blízko to tehdy bylo.",
-    "p2": "V říjnu 1891 si majitel domu, pan J. F. Tomaschek, zažádal na pražském magistrátu o povolení. Chtěl nalévat víno. Narazil na tvrdou zeď rakousko-uherské byrokracie.",
-    "p3a": "Na zažloutlém dokumentu z roku 1895 stojí rukou psaná tečka: ",
-    "p3quote": "\u201eVinárna nebyla zřízena.\u201c",
-    "p4a": "Trvalo dlouhá desetiletí, než se v tomhle domě začalo oficiálně připíjet. Dnes čepujeme craft piva z malých pivovarů, otevíráme divoký pet-nat a stoly plníme deskovkami. ",
-    "p4highlight": "Pan Tomaschek by z téhle výčepní světnice měl radost.",
-    "epilogue": "Sen z roku 1891 jsme dotáhli do konce. Jen s trochu lepším pitím a bez razítka s orlicí."
+    "title": "Plán z roku 1891. Jeden úřední šiml. A 130 let trpělivosti.",
+    "p1": "Náhody neexistují. Když jsme v Mikulandské otevírali Separé, netušili jsme, že tento dům měl k dobrému pití nakročeno už v roce 1891. Až pohled do starých archivů ukázal, jak blízko to tehdy bylo.",
+    "p2": "V říjnu 1891 si majitel domu, pan J. F. Tomaschek, zažádal na pražském magistrátu o povolení. Chtěl nalévat víno. Narazil na tvrdou zeď rakousko‑uherské byrokracie.",
+    "p3a": "Na zažloutlém dokumentu z roku 1895 stojí rukou psaná tečka: ",
+    "p3quote": "„Vinárna nebyla zřízena.“",
+    "p4a": "Trvalo dlouhá desetiletí, než se v tomhle domě začalo oficiálně připíjet. Dnes čepujeme craft piva z malých pivovarů, otevíráme divoký pet‑nat a stoly plníme deskovkami. ",
+    "p4highlight": "Pan Tomaschek by z téhle výčepní světnice měl radost.",
+    "epilogue": "Sen z roku 1891 jsme dotáhli do konce. Jen s trochu lepším pitím a bez razítka s orlicí."
   },
   "Events": {
     "eyebrow": "Akce",
-    "title": "Středeční kvízy a večery plné her.",
-    "description": "Separé žije. Ideální základna pro soutěživé povahy, milovníky craft piva i stratégy.",
+    "title": "Středeční kvízy a večery plné her.",
+    "description": "Separé žije. Ideální základna pro soutěživé povahy, milovníky craft piva i stratégy.",
     "swipeHint": "Tahem posuňte",
     "blocks": {
       "quiz": {
         "title": "Hospodský kvíz. Každou středu od 19:00.",
         "schedule": "Každou středu od 19:00",
-        "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Místa jsou limitovaná a mizí rychle."
+        "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Místa jsou limitovaná a mizí rychle."
       },
       "games": {
-        "title": "Deskovky. Každý den v otevírací době, půjčení zdarma.",
-        "schedule": "Každý den v otevírací době",
+        "title": "Deskovky. Každý den v otevírací době, půjčení zdarma.",
+        "schedule": "Každý den v otevírací době",
         "desc": "Přes 30 her od rychlých party kousků po náročnější strategie. Stačí si říct."
       },
       "tasting": {
-        "title": "Degustace a vernisáže. Nepravidelně.",
+        "title": "Degustace a vernisáže. Nepravidelně.",
         "schedule": "Nepravidelně. Sledujte náš program",
-        "desc": "Pravidelně u nás ožívá kultura. Sledujte program na @separe_mikulandska."
+        "desc": "Pravidelně u nás ožívá kultura. Sledujte program na @separe_mikulandska."
       }
     }
   },
   "Contact": {
     "eyebrow": "Kontakt",
     "title": "Přijďte do vnitrobloku",
-    "description": "Vstup je přímo z ulice. Stačí vzít za kliku a ruch města nechat za dveřmi. V létě pro vás otevíráme zahrádku schovanou ve vnitrobloku.",
+    "description": "Vstup je přímo z ulice. Stačí vzít za kliku a ruch města nechat za dveřmi. V létě pro vás otevíráme zahrádku schovanou ve vnitrobloku.",
     "addressLabel": "Adresa",
     "addressLine1": "Separé",
     "addressLine2": "Mikulandská 133/3",
@@ -423,7 +423,7 @@
     "hoursSuTime": "Zavřeno",
     "ctaReserve": "Rezervovat stůl",
     "mapLabel": "Kde nás najdete",
-    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z Mikulandské. Žádný průjezd, žádný dvůr. Stačí vzít za kliku."
+    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z Mikulandské. Žádný průjezd, žádný dvůr. Stačí vzít za kliku."
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"

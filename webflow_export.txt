@@ -1,0 +1,879 @@
+
+## CZECH COPY (S HTML ENTITAMI)
+{
+  "Navbar": {
+    "about": "O&nbsp;nás",
+    "menu": "Nabídka",
+    "events": "Akce",
+    "contact": "Kontakt",
+    "reservation": "Rezervace",
+    "followUs": "Sledujte nás",
+    "address": "Adresa"
+  },
+  "Hero": {
+    "addressBadge": "Mikulandská 133/3, Praha 1",
+    "titleCraft": "Řemeslné pivo,",
+    "titleWine": "šumivá vína",
+    "titlePeace": "deskovky a&nbsp;radost uprostřed města",
+    "subtitle": "Craft bar. Mikulandská, Praha 1. Řemeslné pivo, pet&#8209;nat, deskovky. Tři minuty od Národní třídy. Jiný svět.",
+    "cta": "Rezervovat stůl"
+  },
+  "LanguageSwitcher": {
+    "switchTo": "English"
+  },
+  "About": {
+    "eyebrow": "O&nbsp;nás",
+    "title": "Rodinný bar uprostřed Prahy 1.",
+    "description": "Separé je rodinný craft bar v&nbsp;Mikulandské 133/3, Praha 1. Vzniklo z&nbsp;jednoduché myšlenky: chtěli jsme v&nbsp;centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s&nbsp;naškrobenou obsluhou. Poctivý rodinný podnik, kde se cítíte jako člověk, ne jako host. Milujeme poctivé řemeslo a&nbsp;zajímavé chutě. Průměr přenecháváme jiným. Do lístku pouštíme jen to, za co dáme ruku do ohně.",
+    "swipeHint": "Tahem posuňte",
+    "values": {
+      "beer": {
+        "title": "Craft pivo z&nbsp;malých pivovarů.",
+        "text": "Pečlivý výběr rotujícího čepu. Vždy z&nbsp;nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
+      },
+      "wine": {
+        "title": "Šumivá vína & Pet&#8209;nat.",
+        "text": "Neomezujeme se na italské Prosecco. Nabízíme pet&#8209;nat a&nbsp;přírodní vína. Bubliny, které si nejvíc užijete, když si s&nbsp;přáteli otevřete rovnou celou lahev."
+      },
+      "quality": {
+        "title": "Přívlastková česká vína.",
+        "text": "Specializujeme se na autentická česká a&nbsp;moravská vína. Nejsme žádný snobský chateau, nabízíme poctivý lokální juice (včetně pet&#8209;natů a&nbsp;naturálek)."
+      },
+      "games": {
+        "title": "Deskovky & Kvízy. Každý den, zdarma.",
+        "text": "Přes 30 her k&nbsp;zapůjčení zdarma. Od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A&nbsp;legendární středeční hospodské kvízy. U&nbsp;nás se nezastavuje jen na „jedno“. U&nbsp;nás se zůstává."
+      }
+    }
+  },
+  "Menu": {
+    "eyebrow": "Nabídka",
+    "title": "Co má smysl pít a&nbsp;jíst",
+    "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
+    "categories": [
+      {
+        "name": "Jídlo & Barovky",
+        "items": [
+          {
+            "name": "Pinsa Salami picante",
+            "desc": "Pikantní italský salám",
+            "price": "249 Kč"
+          },
+          {
+            "name": "Pinsa Prosciutto",
+            "desc": "Parmská šunka, rukola",
+            "price": "255 Kč"
+          },
+          {
+            "name": "Pinsa Formaggi",
+            "desc": "Výběr sýrů",
+            "price": "259 Kč"
+          },
+          {
+            "name": "Sekačka v&nbsp;housce",
+            "desc": "Domácí sekaná, jalapeño, šalotka, hořčice",
+            "price": "169 Kč"
+          },
+          {
+            "name": "BLT sandwich",
+            "desc": "Slanina, salát, rajče, sriracha mayo",
+            "price": "165 Kč"
+          },
+          {
+            "name": "Caesar sandwich / salát",
+            "desc": "Klasika s&nbsp;kuřecím masem",
+            "price": "159 / 149 Kč"
+          },
+          {
+            "name": "Sýrové prkénko",
+            "desc": "200g / 300g výběr",
+            "price": "239 / 359 Kč"
+          },
+          {
+            "name": "Uzenářské prkénko",
+            "desc": "200g / 300g výběr",
+            "price": "239 / 350 Kč"
+          },
+          {
+            "name": "Mix prkénko",
+            "desc": "200g / 300g výběr",
+            "price": "249 / 369 Kč"
+          },
+          {
+            "name": "Vídeňský párek",
+            "desc": "2 nebo 3 nohy, hořčice, křen, chléb",
+            "price": "125 / 175 Kč"
+          },
+          {
+            "name": "Petrovický nakládaný hermelín",
+            "desc": "Poctivě uleželý",
+            "price": "149 Kč"
+          },
+          {
+            "name": "Petrovický utopenec",
+            "desc": "Klasika s&nbsp;cibulí",
+            "price": "115 Kč"
+          },
+          {
+            "name": "Vajíčková / Škvarková pomazánka",
+            "desc": "S&nbsp;čerstvým chlebem",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Olivy zelené 70g",
+            "desc": "",
+            "price": "79 Kč"
+          },
+          {
+            "name": "Čerstvě pražené mandle",
+            "desc": "",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Chipsy / Popcorn",
+            "desc": "",
+            "price": "50 / 75 Kč"
+          }
+        ]
+      },
+      {
+        "name": "Pivo & Cider",
+        "items": [
+          {
+            "name": "Fabián Hostomice 10°",
+            "desc": "0,5 l / 0,3 l",
+            "price": "64 / 40 Kč"
+          },
+          {
+            "name": "Alois Uhříněves 11°",
+            "desc": "0,5 l / 0,3 l",
+            "price": "69 / 43 Kč"
+          },
+          {
+            "name": "Fabián Hostomice 12°",
+            "desc": "0,5 l / 0,3 l",
+            "price": "74 / 46 Kč"
+          },
+          {
+            "name": "Speciál Uhříněves",
+            "desc": "Dle aktuální nabídky",
+            "price": "85 Kč"
+          },
+          {
+            "name": "F.H. Prager Cider",
+            "desc": "Originál / Višeň 0,33 l",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Nealko pivo",
+            "desc": "Dle nabídky",
+            "price": "dle nabídky"
+          }
+        ]
+      },
+      {
+        "name": "Míchačky & Víno",
+        "items": [
+          {
+            "name": "Aperol / Hugo Spritz",
+            "desc": "Osvěžující klasika",
+            "price": "159 Kč"
+          },
+          {
+            "name": "Gin tonic",
+            "desc": "Malfy nebo klasika",
+            "price": "159 Kč"
+          },
+          {
+            "name": "Skinny bitch / Miniskinny",
+            "desc": "Vodka, soda, limeta",
+            "price": "130 / 45 Kč"
+          },
+          {
+            "name": "Mojito / Cuba libre",
+            "desc": "Rumové stálice",
+            "price": "169 / 159 Kč"
+          },
+          {
+            "name": "Mule / Mimosa",
+            "desc": "Ostrý zázvor nebo jemné bubliny",
+            "price": "160 / 125 Kč"
+          },
+          {
+            "name": "Kolárum",
+            "desc": "Náš signature drink",
+            "price": "130 Kč"
+          },
+          {
+            "name": "Víno",
+            "desc": "Dle aktuální nabídky",
+            "price": "dle nabídky"
+          }
+        ]
+      },
+      {
+        "name": "Nealko",
+        "items": [
+          {
+            "name": "Domácí limonáda 0,4 l",
+            "desc": "",
+            "price": "75 Kč"
+          },
+          {
+            "name": "F.H. Prager Kombucha 0,33 l",
+            "desc": "",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Coca Cola / Zero 0,33 l",
+            "desc": "",
+            "price": "60 Kč"
+          },
+          {
+            "name": "Tonic Kinley 0,25 l",
+            "desc": "",
+            "price": "60 Kč"
+          },
+          {
+            "name": "Džus (pomeranč, jablko) 0,1 l",
+            "desc": "",
+            "price": "20 Kč"
+          },
+          {
+            "name": "Mattoni jemně perlivá",
+            "desc": "",
+            "price": "50 Kč"
+          },
+          {
+            "name": "Red Bull 0,25 l",
+            "desc": "",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Soda 0,1 l",
+            "desc": "",
+            "price": "8 Kč"
+          }
+        ]
+      },
+      {
+        "name": "Káva & Čaj",
+        "items": [
+          {
+            "name": "Espresso / Double",
+            "desc": "",
+            "price": "60 / 85 Kč"
+          },
+          {
+            "name": "Cappuccino / Flat white",
+            "desc": "",
+            "price": "70 / 90 Kč"
+          },
+          {
+            "name": "Latte / Americano",
+            "desc": "",
+            "price": "85 / 65 Kč"
+          },
+          {
+            "name": "Espresso macchiato",
+            "desc": "",
+            "price": "65 Kč"
+          },
+          {
+            "name": "Čerstvý čaj",
+            "desc": "Máta / zázvor",
+            "price": "85 Kč"
+          },
+          {
+            "name": "Sypaný čaj",
+            "desc": "Dle nabídky",
+            "price": "85 Kč"
+          }
+        ]
+      },
+      {
+        "name": "Destiláty & Likéry",
+        "items": [
+          {
+            "name": "Pálenky 0,02 l",
+            "desc": "Slivovice / Meruňkovice / Ořechovka Žufánek, Hruškovice / Malina Baron",
+            "price": "70 Kč"
+          },
+          {
+            "name": "Rum & Ron 0,04 l",
+            "desc": "Diplomatico (150), Millonario (140), Cariba (90), Havana 3y (75), Republica (70), Bartida (65)",
+            "price": "od 65 Kč"
+          },
+          {
+            "name": "Whiskey & Bourbon 0,04 l",
+            "desc": "Chivas 12yo (140), Jack Daniel's/Honey (110), Wild Turkey (100), Four Roses (90), Tullamore (89), Jameson (85)",
+            "price": "od 85 Kč"
+          },
+          {
+            "name": "Gin 0,04 l",
+            "desc": "Citadelle (140), Malfy (125), Beefeater (80)",
+            "price": "od 80 Kč"
+          },
+          {
+            "name": "Vodka & Tequila 0,04 l",
+            "desc": "Finlandia (90), Tres Alegres (95)",
+            "price": "od 90 Kč"
+          },
+          {
+            "name": "Likéry 0,04 l",
+            "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Vaječňák / Zelená / Griotka (60)",
+            "price": "od 60 Kč"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Informace o&nbsp;alergenech na vyžádání u&nbsp;obsluhy."
+  },
+  "Salonek": {
+    "eyebrow": "separé prostor",
+    "titleYour": "Váš večer.",
+    "titleOur": "Náš prostor.",
+    "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s&nbsp;projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O&nbsp;občerstvení se postaráme. U&nbsp;menších akcí sami, u&nbsp;větších s&nbsp;prověřenými parťáky.",
+    "tagProjector": "Projektor",
+    "tagPrivacy": "Soukromí",
+    "tagCustom": "Vše na míru",
+    "cta": "Domluvit akci"
+  },
+  "Reviews": {
+    "eyebrow": "Recenze",
+    "title": "Co se šušká v&nbsp;Mikulandské.",
+    "description": "Separé stojí na jednoduchých věcech. Dobré craft pivo, přírodní vína, příjemná atmosféra a&nbsp;lidi, kteří se rádi vrací. Tohle o&nbsp;nás píšete vy.",
+    "ctaPrompt": "Zastavili jste se u&nbsp;nás a&nbsp;bavilo vás to? Budeme rádi za recenzi, pomáhá nám to růst.",
+    "cta": "Nechat recenzi na Googlu",
+    "fallback": {
+      "r1": {
+        "name": "Martin K.",
+        "text": "Úžasné místo s&nbsp;neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a&nbsp;ta zahrada ve dvoře je parádní únik z&nbsp;centra. Chodíme sem pravidelně na kvízy.",
+        "date": "před 2&nbsp;týdny"
+      },
+      "r2": {
+        "name": "Tereza M.",
+        "text": "Konečně bar, kde se dá normálně posedět bez hluku a&nbsp;fronty. Vynikající výběr vín, pet&#8209;naty fantastické. Salonek jsme využili na narozeniny a&nbsp;bylo to přesně, jak jsme chtěli.",
+        "date": "před měsícem"
+      },
+      "r3": {
+        "name": "Jakub P.",
+        "text": "Nejlepší úkryt před světem v&nbsp;Praze. Přijdete na jedno pivo, odejdete po třech hodinách s&nbsp;novou oblíbenou deskovkou. Obsluha je milá a&nbsp;ví, co doporučit. Vrátím se.",
+        "date": "před 3 týdny"
+      }
+    }
+  },
+  "Moodboard": {
+    "eyebrow": "Galerie",
+    "title": "Zastavte se.",
+    "description": "Malý výřez z&nbsp;atmosféry Mikulandské. Zbytek je lepší zažít osobně. U&nbsp;sklenky vína nebo nad deskovkou.",
+    "photos": {
+      "p1": "Nalévání vína v&nbsp;teplém světle",
+      "p2": "Útulný interiér baru s&nbsp;teplým osvětlením",
+      "p3": "Barový pult s&nbsp;řemeslnými pivy",
+      "p4": "Deskovky rozložené na stole",
+      "p5": "Přátelé u&nbsp;stolu s&nbsp;vínem",
+      "p6": "Sklenice vína v&nbsp;měkkém světle"
+    }
+  },
+  "Story": {
+    "eyebrow": "Příběh místa",
+    "title": "Plán z&nbsp;roku 1891. Jeden úřední šiml. A&nbsp;130 let trpělivosti.",
+    "p1": "Náhody neexistují. Když jsme v&nbsp;Mikulandské otevírali Separé, netušili jsme, že tento dům měl k&nbsp;dobrému pití nakročeno už v&nbsp;roce 1891. Až pohled do starých archivů ukázal, jak blízko to tehdy bylo.",
+    "p2": "V&nbsp;říjnu 1891 si majitel domu, pan J. F. Tomaschek, zažádal na pražském magistrátu o&nbsp;povolení. Chtěl nalévat víno. Narazil na tvrdou zeď rakousko&#8209;uherské byrokracie.",
+    "p3a": "Na zažloutlém dokumentu z&nbsp;roku 1895 stojí rukou psaná tečka: ",
+    "p3quote": "„Vinárna nebyla zřízena.“",
+    "p4a": "Trvalo dlouhá desetiletí, než se v&nbsp;tomhle domě začalo oficiálně připíjet. Dnes čepujeme craft piva z&nbsp;malých pivovarů, otevíráme divoký pet&#8209;nat a&nbsp;stoly plníme deskovkami. ",
+    "p4highlight": "Pan Tomaschek by z&nbsp;téhle výčepní světnice měl radost.",
+    "epilogue": "Sen z&nbsp;roku 1891 jsme dotáhli do konce. Jen s&nbsp;trochu lepším pitím a&nbsp;bez razítka s&nbsp;orlicí."
+  },
+  "Events": {
+    "eyebrow": "Akce",
+    "title": "Středeční kvízy a&nbsp;večery plné her.",
+    "description": "Separé žije. Ideální základna pro soutěživé povahy, milovníky craft piva i&nbsp;stratégy.",
+    "swipeHint": "Tahem posuňte",
+    "blocks": {
+      "quiz": {
+        "title": "Hospodský kvíz. Každou středu od 19:00.",
+        "schedule": "Každou středu od 19:00",
+        "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a&nbsp;ukažte, co víte. Místa jsou limitovaná a&nbsp;mizí rychle."
+      },
+      "games": {
+        "title": "Deskovky. Každý den v&nbsp;otevírací době, půjčení zdarma.",
+        "schedule": "Každý den v&nbsp;otevírací době",
+        "desc": "Přes 30 her od rychlých party kousků po náročnější strategie. Stačí si říct."
+      },
+      "tasting": {
+        "title": "Degustace a&nbsp;vernisáže. Nepravidelně.",
+        "schedule": "Nepravidelně. Sledujte náš program",
+        "desc": "Pravidelně u&nbsp;nás ožívá kultura. Sledujte program na @separe_mikulandska."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Kontakt",
+    "title": "Přijďte do vnitrobloku",
+    "description": "Vstup je přímo z&nbsp;ulice. Stačí vzít za kliku a&nbsp;ruch města nechat za dveřmi. V&nbsp;létě pro vás otevíráme zahrádku schovanou ve vnitrobloku.",
+    "addressLabel": "Adresa",
+    "addressLine1": "Separé",
+    "addressLine2": "Mikulandská 133/3",
+    "addressLine3": "110 00 Praha 1, Nové Město",
+    "contactLabel": "Spojení",
+    "hoursLabel": "Otevírací doba",
+    "hoursMoSa": "Pondělí – Sobota",
+    "hoursMoSaTime": "17:00 – 24:00",
+    "hoursSu": "Neděle",
+    "hoursSuTime": "Zavřeno",
+    "ctaReserve": "Rezervovat stůl",
+    "mapLabel": "Kde nás najdete",
+    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z&nbsp;Mikulandské. Žádný průjezd, žádný dvůr. Stačí vzít za kliku."
+  },
+  "Footer": {
+    "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"
+  },
+  "Page": {
+    "spinnerText": "Separé · Mikulandská · Third Place ·&nbsp;"
+  }
+}
+
+## ENGLISH COPY (WITH HTML ENTITIES)
+{
+  "Navbar": {
+    "about": "About",
+    "menu": "Menu",
+    "events": "Events",
+    "contact": "Contact",
+    "reservation": "Reservation",
+    "followUs": "Follow us",
+    "address": "Address"
+  },
+  "Hero": {
+    "addressBadge": "Mikulandská 133/3, Prague 1",
+    "titleCraft": "Craft beer,",
+    "titleWine": "sparkling wine",
+    "titlePeace": "board games and no place you'd rather be",
+    "subtitle": "Craft bar. Mikulandská, Prague 1. Czech craft beer, pet&#8209;nat, board games. Three minutes from Národní třída. Another world.",
+    "cta": "Book a&nbsp;table"
+  },
+  "LanguageSwitcher": {
+    "switchTo": "Česky"
+  },
+  "About": {
+    "eyebrow": "About us",
+    "title": "A&nbsp;family&#8209;run craft bar. Not a&nbsp;tourist bar. In the heart of Prague 1.",
+    "description": "Separé is a&nbsp;family craft bar at Mikulandská 133/3, Prague 1. Born from a&nbsp;simple idea: we wanted to create a&nbsp;spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no tourist traps, no corporate vibe. An honest family business where you feel like a&nbsp;person, not a&nbsp;patron. We're obsessed with real craft and bold local flavours. We leave the average to others. If it's on our menu, we'd stake our reputation on it.",
+    "swipeHint": "Swipe to explore",
+    "values": {
+      "beer": {
+        "title": "Craft beer from small independent Czech breweries.",
+        "text": "A&nbsp;carefully curated rotating tap. Always from small, independent Czech breweries. We update the selection regularly so there's always something new to discover."
+      },
+      "wine": {
+        "title": "Sparkling Wine & Pet&#8209;Nat.",
+        "text": "We go way beyond Italian Prosecco. One of the few natural wine bars in Prague city centre. We pour pet&#8209;nat and natural wines. Bubbles best enjoyed when you crack open a&nbsp;whole bottle with friends."
+      },
+      "quality": {
+        "title": "Premium Czech wines.",
+        "text": "We focus strictly on authentic Czech and Moravian wines. No snobby chateau vibes, just honest local juice, including pet&#8209;nats and low&#8209;intervention wines."
+      },
+      "games": {
+        "title": "Board games & pub quizzes. Every day, free.",
+        "text": "Over 30 games to borrow for free. From quick party classics to deep strategies. Regular game nights. And our legendary Wednesday pub quizzes. You don't just stop by. You stay."
+      }
+    }
+  },
+  "Menu": {
+    "eyebrow": "Menu",
+    "title": "What's worth drinking and eating",
+    "description": "Our complete bar and food menu. From craft beer to honest pub snacks.",
+    "categories": [
+      {
+        "name": "Food & Bar Snacks",
+        "desc": "Honest pub food to go with your drinks. Available all night.",
+        "items": [
+          {
+            "name": "Pinsa Margherita",
+            "desc": "San Marzano, fior di latte, basil",
+            "price": "229 CZK"
+          },
+          {
+            "name": "Pinsa Salami picante",
+            "desc": "Spicy Italian salami",
+            "price": "249 CZK"
+          },
+          {
+            "name": "Pinsa Prosciutto",
+            "desc": "Parma ham, arugula",
+            "price": "255 CZK"
+          },
+          {
+            "name": "Pinsa Formaggi",
+            "desc": "Cheese selection",
+            "price": "259 CZK"
+          },
+          {
+            "name": "Czech Meatloaf Slider",
+            "desc": "Homemade meatloaf, jalapeño, shallot, mustard",
+            "price": "169 CZK"
+          },
+          {
+            "name": "BLT Sandwich",
+            "desc": "Bacon, lettuce, tomato, sriracha mayo",
+            "price": "165 CZK"
+          },
+          {
+            "name": "Caesar Sandwich / Salad",
+            "desc": "Classic with chicken",
+            "price": "159 / 149 CZK"
+          },
+          {
+            "name": "Cheese Board",
+            "desc": "200g / 300g selection",
+            "price": "239 / 359 CZK"
+          },
+          {
+            "name": "Charcuterie Board",
+            "desc": "200g / 300g selection",
+            "price": "239 / 350 CZK"
+          },
+          {
+            "name": "Mixed Board",
+            "desc": "200g / 300g selection",
+            "price": "249 / 369 CZK"
+          },
+          {
+            "name": "Vienna Sausages",
+            "desc": "2 or 3 sausages, mustard, horseradish, bread",
+            "price": "125 / 175 CZK"
+          },
+          {
+            "name": "Pickled Camembert",
+            "desc": "Properly aged Czech classic",
+            "price": "149 CZK"
+          },
+          {
+            "name": "Utopenec (Pickled Sausage)",
+            "desc": "Pub classic with onions",
+            "price": "115 CZK"
+          },
+          {
+            "name": "Egg / Pork Crackling Spread",
+            "desc": "With fresh bread",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Green Olives 70g",
+            "desc": "",
+            "price": "79 CZK"
+          },
+          {
+            "name": "Freshly Roasted Almonds",
+            "desc": "",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Chips / Popcorn",
+            "desc": "",
+            "price": "50 / 75 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Beer & Cider",
+        "desc": "Current rotating tap: carefully selected from small Czech breweries. Ask at the bar or follow @separe_mikulandska.",
+        "items": [
+          {
+            "name": "Fabián Hostomice 10°",
+            "desc": "0.5 l / 0.3 l",
+            "price": "64 / 40 CZK"
+          },
+          {
+            "name": "Alois Uhříněves 11°",
+            "desc": "0.5 l / 0.3 l",
+            "price": "69 / 43 CZK"
+          },
+          {
+            "name": "Fabián Hostomice 12°",
+            "desc": "0.5 l / 0.3 l",
+            "price": "74 / 46 CZK"
+          },
+          {
+            "name": "Uhříněves Craft Special",
+            "desc": "Ask about current tap",
+            "price": "85 CZK"
+          },
+          {
+            "name": "F.H. Prager Cider",
+            "desc": "Original / Sour Cherry 0.33 l",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Non&#8209;alcoholic Beer",
+            "desc": "Ask staff",
+            "price": "Ask staff"
+          }
+        ]
+      },
+      {
+        "name": "Mixed Drinks & Wine",
+        "items": [
+          {
+            "name": "Aperol / Hugo Spritz",
+            "desc": "Refreshing classic",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Gin Tonic",
+            "desc": "Malfy or classic gin",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Skinny bitch / Miniskinny",
+            "desc": "Vodka, soda, lime",
+            "price": "130 / 45 CZK"
+          },
+          {
+            "name": "Mojito / Cuba libre",
+            "desc": "Rum staples",
+            "price": "169 / 159 CZK"
+          },
+          {
+            "name": "Mule / Mimosa",
+            "desc": "Spicy ginger or smooth bubbles",
+            "price": "160 / 125 CZK"
+          },
+          {
+            "name": "Kolárum",
+            "desc": "Our signature drink",
+            "price": "130 CZK"
+          },
+          {
+            "name": "Wine",
+            "desc": "Ask about our current selection",
+            "price": "Ask staff"
+          }
+        ]
+      },
+      {
+        "name": "Non&#8209;alcoholic",
+        "items": [
+          {
+            "name": "Homemade Lemonade 0.4 l",
+            "desc": "",
+            "price": "75 CZK"
+          },
+          {
+            "name": "F.H. Prager Kombucha 0.33 l",
+            "desc": "",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Coca Cola / Zero 0.33 l",
+            "desc": "",
+            "price": "60 CZK"
+          },
+          {
+            "name": "Kinley Tonic 0.25 l",
+            "desc": "",
+            "price": "60 CZK"
+          },
+          {
+            "name": "Juice (Orange, Apple) 0.1 l",
+            "desc": "",
+            "price": "20 CZK"
+          },
+          {
+            "name": "Mattoni Sparkling Water",
+            "desc": "",
+            "price": "50 CZK"
+          },
+          {
+            "name": "Red Bull 0.25 l",
+            "desc": "",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Soda Water 0.1 l",
+            "desc": "",
+            "price": "8 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Coffee & Tea",
+        "items": [
+          {
+            "name": "Espresso / Double",
+            "desc": "",
+            "price": "60 / 85 CZK"
+          },
+          {
+            "name": "Cappuccino / Flat white",
+            "desc": "",
+            "price": "70 / 90 CZK"
+          },
+          {
+            "name": "Latte / Americano",
+            "desc": "",
+            "price": "85 / 65 CZK"
+          },
+          {
+            "name": "Espresso macchiato",
+            "desc": "",
+            "price": "65 CZK"
+          },
+          {
+            "name": "Fresh Tea",
+            "desc": "Mint / Ginger",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Loose Leaf Tea",
+            "desc": "Ask staff",
+            "price": "85 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Spirits & Liqueurs",
+        "items": [
+          {
+            "name": "Fruit Brandies 0.02 l",
+            "desc": "Slivovitz / Apricot / Walnut Žufánek, Pear / Raspberry Baron",
+            "price": "70 CZK"
+          },
+          {
+            "name": "Rum 0.04 l",
+            "desc": "Diplomatico (150), Millonario (140), Cariba (90), Havana 3y (75), Republica (70), Bartida (65)",
+            "price": "from 65 CZK"
+          },
+          {
+            "name": "Whiskey & Bourbon 0.04 l",
+            "desc": "Chivas 12yo (140), Jack Daniel's/Honey (110), Wild Turkey (100), Four Roses (90), Tullamore (89), Jameson (85)",
+            "price": "from 85 CZK"
+          },
+          {
+            "name": "Gin 0.04 l",
+            "desc": "Citadelle (140), Malfy (125), Beefeater (80)",
+            "price": "from 80 CZK"
+          },
+          {
+            "name": "Vodka & Tequila 0.04 l",
+            "desc": "Finlandia (90), Tres Alegres (95)",
+            "price": "from 90 CZK"
+          },
+          {
+            "name": "Liqueurs 0.04 l",
+            "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Advocaat / Mint / Cherry (60)",
+            "price": "from 60 CZK"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Allergen information available upon request."
+  },
+  "Salonek": {
+    "eyebrow": "separé space",
+    "titleYour": "Your evening.",
+    "titleOur": "Our space.",
+    "description": "We're not a&nbsp;sterile boardroom. We have a&nbsp;private space with a&nbsp;projector. Relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, larger parties, or just a&nbsp;table for your crew. We tailor everything. We handle the food. On our own for smaller events, with trusted partners for bigger ones.",
+    "tagProjector": "Projector",
+    "tagPrivacy": "Privacy",
+    "tagCustom": "Fully custom",
+    "cta": "Plan your event"
+  },
+  "Reviews": {
+    "eyebrow": "Reviews",
+    "title": "Word from the courtyard.",
+    "description": "Separé stands on simple things. Good Czech craft beer, natural wines, a&nbsp;warm atmosphere, and people who keep coming back. This is what you write about us.",
+    "ctaPrompt": "Stopped by and had a&nbsp;good time? We'd love a&nbsp;review, it helps us grow.",
+    "cta": "Leave a&nbsp;review on Google",
+    "fallback": {
+      "r1": {
+        "name": "Martin K.",
+        "text": "Amazing place with a&nbsp;one&#8209;of&#8209;a-kind atmosphere. The craft beers are excellent, the staff is friendly, and the courtyard garden is a&nbsp;perfect escape from the city center. We come here regularly for the quizzes.",
+        "date": "2 weeks ago"
+      },
+      "r2": {
+        "name": "Tereza M.",
+        "text": "Finally a&nbsp;bar where you can actually sit down without noise and queues. Outstanding wine selection, the pet&#8209;nats are fantastic. We used the private room for a&nbsp;birthday and it was exactly what we wanted.",
+        "date": "a&nbsp;month ago"
+      },
+      "r3": {
+        "name": "Jakub P.",
+        "text": "The best urban hideout in Prague. You come for one beer, you leave three hours later with a&nbsp;new favorite board game. The staff is lovely and knows what to recommend. I'll be back.",
+        "date": "3 weeks ago"
+      }
+    }
+  },
+  "Moodboard": {
+    "eyebrow": "Gallery",
+    "title": "Drop in.",
+    "description": "A&nbsp;small slice of the Mikulandská atmosphere. The rest is better experienced in person. Over a&nbsp;glass of wine or a&nbsp;board game.",
+    "photos": {
+      "p1": "Pouring wine in warm light",
+      "p2": "Cozy bar interior with warm lighting",
+      "p3": "Bar counter with craft beers",
+      "p4": "Board games spread across the table",
+      "p5": "Friends at a&nbsp;table with wine",
+      "p6": "Glass of wine in soft light"
+    }
+  },
+  "Story": {
+    "eyebrow": "The Story",
+    "title": "The 1891 blueprint. A&nbsp;touch of bureaucracy. And 130 years of patience.",
+    "p1": "Coincidences don't exist. When we opened Separé in Mikulandská, we had no idea this building had been destined for good drinking since 1891. It took a&nbsp;trip to the old archives to reveal just how close it once came.",
+    "p2": "In October 1891, the building owner, Mr. J. F. Tomaschek, filed a&nbsp;permit with the Prague magistrate. He wanted to pour wine. But he ran straight into the brick wall of Austro&#8209;Hungarian bureaucracy.",
+    "p3a": "On a&nbsp;yellowed document from 1895, a&nbsp;brief, handwritten full stop closes the entire project: ",
+    "p3quote": "“The wine bar was never established.”",
+    "p4a": "It took long decades before a&nbsp;proper toast was finally raised in this building. Today we pour craft beers from small breweries, open wild pet&#8209;nats, and fill our tables with board games. ",
+    "p4highlight": "Mr. Tomaschek would have loved this little place.",
+    "epilogue": "We finished what started in 1891. Just with slightly better drinks. And without the imperial stamp."
+  },
+  "Events": {
+    "eyebrow": "Events",
+    "title": "Wednesday quizzes and evenings full of games.",
+    "description": "Separé is alive. The perfect base for competitive minds, lovers of Czech craft beer, and strategists alike.",
+    "swipeHint": "Swipe to explore",
+    "blocks": {
+      "quiz": {
+        "title": "Pub Quiz. Every Wednesday from 7 PM.",
+        "schedule": "Every Wednesday from 7 PM",
+        "desc": "Sign up your team, order a&nbsp;few bottles of wine, and show what you know. Seats are limited. Book in advance."
+      },
+      "games": {
+        "title": "Board games. Every day during opening hours, free.",
+        "schedule": "Every day during opening hours",
+        "desc": "Over 30 games from quick party classics to deep strategies. Just ask."
+      },
+      "tasting": {
+        "title": "Tastings & Vernissages. Occasional.",
+        "schedule": "Irregular. Check our program",
+        "desc": "Culture comes alive here regularly. Follow our program at @separe_mikulandska."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Come find us in the courtyard.",
+    "description": "The entrance is right off the street. Just grab the handle and leave the city noise behind. In summer, we open a&nbsp;quiet courtyard garden hidden in our inner yard. A&nbsp;calm escape in the heart of Prague 1.",
+    "addressLabel": "Address",
+    "addressLine1": "Separé",
+    "addressLine2": "Mikulandská 133/3",
+    "addressLine3": "110 00 Prague 1, Nové Město",
+    "contactLabel": "Get in touch",
+    "hoursLabel": "Opening hours",
+    "hoursMoSa": "Monday – Saturday",
+    "hoursMoSaTime": "5:00 PM – Midnight",
+    "hoursSu": "Sunday",
+    "hoursSuTime": "Closed",
+    "ctaReserve": "Book a&nbsp;table",
+    "mapLabel": "How to find us",
+    "mapDescription": "A&nbsp;3&#8209;minute walk from Národní třída tram stop and metro (Line B). Entrance directly from Mikulandská. No passage, no courtyard. Just grab the handle."
+  },
+  "Footer": {
+    "copyright": "© 2026 separé · Mikulandská 133/3, Prague 1"
+  },
+  "Page": {
+    "spinnerText": "Separé · Mikulandská · Third Place ·&nbsp;"
+  }
+}
