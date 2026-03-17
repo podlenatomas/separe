@@ -21,25 +21,25 @@
   },
   "About": {
     "eyebrow": "About us",
-    "title": "A family-run craft bar — not a tourist bar — in the heart of Prague 1.",
-    "description": "Separé is a family craft bar at Mikulandská 133/3, Prague 1. Born from a simple idea: we wanted to create a spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no tourist traps, no corporate vibe. An honest family business where you feel like a person, not a patron. We're obsessed with real craft and bold local flavours. We leave the average to others — if it's on our menu, we'd stake our reputation on it.",
+    "title": "A family-run craft bar. Not a tourist bar. In the heart of Prague 1.",
+    "description": "Separé is a family craft bar at Mikulandská 133/3, Prague 1. Born from a simple idea: we wanted to create a spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no tourist traps, no corporate vibe. An honest family business where you feel like a person, not a patron. We're obsessed with real craft and bold local flavours. We leave the average to others. If it's on our menu, we'd stake our reputation on it.",
     "swipeHint": "Swipe to explore",
     "values": {
       "beer": {
         "title": "Craft beer from small independent Czech breweries.",
-        "text": "A carefully curated rotating tap — always from small, independent Czech breweries. We update the selection regularly so there's always something new to discover."
+        "text": "A carefully curated rotating tap. Always from small, independent Czech breweries. We update the selection regularly so there's always something new to discover."
       },
       "wine": {
         "title": "Sparkling Wine & Pet-Nat.",
-        "text": "We go way beyond Italian Prosecco. One of the few natural wine bars in Prague city centre. We pour pet-nat and natural wines — bubbles best enjoyed when you crack open a whole bottle with friends."
+        "text": "We go way beyond Italian Prosecco. One of the few natural wine bars in Prague city centre. We pour pet-nat and natural wines. Bubbles best enjoyed when you crack open a whole bottle with friends."
       },
       "quality": {
         "title": "Premium Czech wines.",
-        "text": "Local excellence from trusted winemakers. Premium single-vineyard Czech wines carefully guarded in our collection — a category that does justice to the Czech craft."
+        "text": "Local excellence from trusted winemakers. Premium single-vineyard Czech wines carefully guarded in our collection. A category that does justice to the Czech craft."
       },
       "games": {
-        "title": "Board games & pub quizzes — every day, free.",
-        "text": "Over 30 games to borrow for free — from quick party classics to deep strategies. Regular game nights. And our legendary Wednesday pub quizzes. You don't just stop by — you stay."
+        "title": "Board games & pub quizzes. Every day, free.",
+        "text": "Over 30 games to borrow for free. From quick party classics to deep strategies. Regular game nights. And our legendary Wednesday pub quizzes. You don't just stop by. You stay."
       }
     }
   },
@@ -337,7 +337,7 @@
     "eyebrow": "separé space",
     "titleYour": "Your evening.",
     "titleOur": "Our space.",
-    "description": "We're not a sterile boardroom. We have a private space with a projector — relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, group trips, or just a table for your crew. We tailor everything. We handle the food — on our own for smaller events, with trusted partners for bigger ones.",
+    "description": "We're not a sterile boardroom. We have a private space with a projector. Relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, larger parties, or just a table for your crew. We tailor everything. We handle the food. On our own for smaller events, with trusted partners for bigger ones.",
     "tagProjector": "Projector",
     "tagPrivacy": "Privacy",
     "tagCustom": "Fully custom",
@@ -346,13 +346,13 @@
   "Reviews": {
     "eyebrow": "Reviews",
     "title": "Word from the courtyard.",
-    "description": "Separé stands on simple things — good Czech craft beer, natural wines, a warm atmosphere, and people who keep coming back. This is what you write about us.",
+    "description": "Separé stands on simple things. Good Czech craft beer, natural wines, a warm atmosphere, and people who keep coming back. This is what you write about us.",
     "ctaPrompt": "Stopped by and had a good time? We'd love a review, it helps us grow.",
     "cta": "Leave a review on Google",
     "fallback": {
       "r1": {
         "name": "Martin K.",
-        "text": "Amazing place with a one-of-a-kind atmosphere. The craft beers are excellent, the staff is friendly, and the courtyard garden — a perfect escape from the city center. We come here regularly for the quizzes.",
+        "text": "Amazing place with a one-of-a-kind atmosphere. The craft beers are excellent, the staff is friendly, and the courtyard garden is a perfect escape from the city center. We come here regularly for the quizzes.",
         "date": "2 weeks ago"
       },
       "r2": {
@@ -370,7 +370,7 @@
   "Moodboard": {
     "eyebrow": "Gallery",
     "title": "Drop in.",
-    "description": "A small slice of the Mikulandská atmosphere. The rest is better experienced in person — over a glass of wine or a board game.",
+    "description": "A small slice of the Mikulandská atmosphere. The rest is better experienced in person. Over a glass of wine or a board game.",
     "photos": {
       "p1": "Pouring wine in warm light",
       "p2": "Cozy bar interior with warm lighting",
@@ -389,7 +389,7 @@
     "p3quote": "“The wine bar was never established.”",
     "p4a": "It took long decades before a proper toast was finally raised in this building. Today we pour craft beers from small breweries, open wild pet-nats, and fill our tables with board games. ",
     "p4highlight": "Mr. Tomaschek would have loved this little place.",
-    "epilogue": "We finished what started in 1891. Just with slightly better drinks — and without the imperial stamp."
+    "epilogue": "We finished what started in 1891. Just with slightly better drinks. And without the imperial stamp."
   },
   "Events": {
     "eyebrow": "Events",
@@ -398,17 +398,17 @@
     "swipeHint": "Swipe to explore",
     "blocks": {
       "quiz": {
-        "title": "Pub Quiz — every Wednesday from 7 PM.",
+        "title": "Pub Quiz. Every Wednesday from 7 PM.",
         "schedule": "Every Wednesday from 7 PM",
-        "desc": "Sign up your team, order a few bottles of wine, and show what you know. Seats are limited — book in advance."
+        "desc": "Sign up your team, order a few bottles of wine, and show what you know. Seats are limited. Book in advance."
       },
       "games": {
-        "title": "Board games — every day during opening hours, free.",
+        "title": "Board games. Every day during opening hours, free.",
         "schedule": "Every day during opening hours",
         "desc": "Over 30 games from quick party classics to deep strategies. Just ask."
       },
       "tasting": {
-        "title": "Tastings & Vernissages — occasional.",
+        "title": "Tastings & Vernissages. Occasional.",
         "schedule": "Irregular. Check our program",
         "desc": "Culture comes alive here regularly. Follow our program at @separe_mikulandska."
       }
@@ -417,7 +417,7 @@
   "Contact": {
     "eyebrow": "Contact",
     "title": "Come find us in the courtyard.",
-    "description": "The entrance is right off the street. Just grab the handle and leave the city noise behind. In summer, we open a quiet courtyard garden hidden in our inner yard — a calm escape in the heart of Prague 1.",
+    "description": "The entrance is right off the street. Just grab the handle and leave the city noise behind. In summer, we open a quiet courtyard garden hidden in our inner yard. A calm escape in the heart of Prague 1.",
     "addressLabel": "Address",
     "addressLine1": "Separé",
     "addressLine2": "Mikulandská 133/3",
@@ -430,7 +430,7 @@
     "hoursSuTime": "Closed",
     "ctaReserve": "Book a table",
     "mapLabel": "How to find us",
-    "mapDescription": "The entrance is right off the street. Just grab the handle and leave the city noise behind. In summer, we open a quiet courtyard garden hidden in our inner yard — a calm escape in the heart of Prague 1."
+    "mapDescription": "A 3-minute walk from Národní třída tram stop and metro (Line B). Entrance directly from Mikulandská. No passage, no courtyard. Just grab the handle."
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Prague 1"

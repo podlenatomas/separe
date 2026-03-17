@@ -27,19 +27,19 @@
     "values": {
       "beer": {
         "title": "Craft pivo z malých pivovarů.",
-        "text": "Pečlivý výběr rotujícího čepu — vždy z nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
+        "text": "Pečlivý výběr rotujícího čepu. Vždy z nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
       },
       "wine": {
         "title": "Šumivá vína & Pet-nat.",
-        "text": "Neomezujeme se na italské Prosecco. Nabízíme pet-nat a přírodní vína — bubliny, které si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
+        "text": "Neomezujeme se na italské Prosecco. Nabízíme pet-nat a přírodní vína. Bubliny, které si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
       },
       "quality": {
         "title": "Přívlastková česká vína.",
-        "text": "Lokální kvalita od prověřených vinařů. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce — kategorie, která dělá čest tuzemskému řemeslu."
+        "text": "Lokální kvalita od prověřených vinařů. Špičková česká přívlastková vína pečlivě střežená v naší vinotéce. Kategorie, která dělá čest tuzemskému řemeslu."
       },
       "games": {
-        "title": "Deskovky & Kvízy — každý den, zdarma.",
-        "text": "Přes 30 her k zapůjčení zdarma — od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A legendární středeční hospodské kvízy. U nás se nezastavuje jen na \u201ejedno\u201c — u nás se zůstává."
+        "title": "Deskovky & Kvízy. Každý den, zdarma.",
+        "text": "Přes 30 her k zapůjčení zdarma. Od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A legendární středeční hospodské kvízy. U nás se nezastavuje jen na \u201ejedno\u201c. U nás se zůstává."
       }
     }
   },
@@ -330,7 +330,7 @@
     "eyebrow": "separé prostor",
     "titleYour": "Váš večer.",
     "titleOur": "Náš prostor.",
-    "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem — uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme — u menších akcí sami, u větších s prověřenými parťáky.",
+    "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme. U menších akcí sami, u větších s prověřenými parťáky.",
     "tagProjector": "Projektor",
     "tagPrivacy": "Soukromí",
     "tagCustom": "Vše na míru",
@@ -339,13 +339,13 @@
   "Reviews": {
     "eyebrow": "Recenze",
     "title": "Co se šušká v Mikulandské.",
-    "description": "Separé stojí na jednoduchých věcech — dobré craft pivo, přírodní vína, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy.",
+    "description": "Separé stojí na jednoduchých věcech. Dobré craft pivo, přírodní vína, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy.",
     "ctaPrompt": "Zastavili jste se u nás a bavilo vás to? Budeme rádi za recenzi, pomáhá nám to růst.",
     "cta": "Nechat recenzi na Googlu",
     "fallback": {
       "r1": {
         "name": "Martin K.",
-        "text": "Úžasné místo s neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a ta zahrada ve dvoře — parádní únik z centra. Chodíme sem pravidelně na kvízy.",
+        "text": "Úžasné místo s neopakovatelnou atmosférou. Řemeslná piva jsou skvělá, personál přátelský a ta zahrada ve dvoře je parádní únik z centra. Chodíme sem pravidelně na kvízy.",
         "date": "před 2 týdny"
       },
       "r2": {
@@ -391,17 +391,17 @@
     "swipeHint": "Tahem posuňte",
     "blocks": {
       "quiz": {
-        "title": "Hospodský kvíz — každou středu od 19:00.",
+        "title": "Hospodský kvíz. Každou středu od 19:00.",
         "schedule": "Každou středu od 19:00",
         "desc": "Přihlaste tým, objednejte si na stůl pár lahví vína a ukažte, co víte. Místa jsou limitovaná a mizí rychle."
       },
       "games": {
-        "title": "Deskovky — každý den v otevírací době, půjčení zdarma.",
+        "title": "Deskovky. Každý den v otevírací době, půjčení zdarma.",
         "schedule": "Každý den v otevírací době",
         "desc": "Přes 30 her od rychlých party kousků po náročnější strategie. Stačí si říct."
       },
       "tasting": {
-        "title": "Degustace a vernisáže — nepravidelně.",
+        "title": "Degustace a vernisáže. Nepravidelně.",
         "schedule": "Nepravidelně. Sledujte náš program",
         "desc": "Pravidelně u nás ožívá kultura. Sledujte program na @separe_mikulandska."
       }
@@ -423,7 +423,7 @@
     "hoursSuTime": "Zavřeno",
     "ctaReserve": "Rezervovat stůl",
     "mapLabel": "Kde nás najdete",
-    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z Mikulandské — žádný průjezd, žádný dvůr. Stačí vzít za kliku."
+    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z Mikulandské. Žádný průjezd, žádný dvůr. Stačí vzít za kliku."
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"
