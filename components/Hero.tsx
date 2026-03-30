@@ -27,6 +27,7 @@ export default function Hero() {
           alt="Atmosféra baru separé. Zvenku svítí neon"
           fill
           priority
+          quality={90}
           className="object-cover"
           sizes="100vw"
         />
