@@ -49,157 +49,192 @@
     "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
     "categories": [
       {
-        "name": "Jídlo & Barovky",
+        "name": "Pinsa Romana",
         "items": [
           {
-            "name": "Pinsa Salami picante",
-            "desc": "Pikantní italský salám",
-            "price": "249 Kč"
+            "name": "Margherita",
+            "desc": "Sugo, mozzarella, bazalka, olivový olej",
+            "price": "229,-"
           },
           {
-            "name": "Pinsa Prosciutto",
-            "desc": "Parmská šunka, rukola",
-            "price": "255 Kč"
+            "name": "Salami picante",
+            "desc": "Sugo, mozzarella, pikantní salám, chilli olej",
+            "price": "249,-"
           },
           {
-            "name": "Pinsa Formaggi",
-            "desc": "Výběr sýrů",
-            "price": "259 Kč"
+            "name": "Prosciutto",
+            "desc": "Sugo, mozzarella, prosciutto crudo, rukola",
+            "price": "255,-"
           },
           {
-            "name": "Sekačka v housce",
-            "desc": "Domácí sekaná, jalapeño, šalotka, hořčice",
-            "price": "169 Kč"
+            "name": "Formaggi",
+            "desc": "Mozzarella, parmigiano, cheddar, bazalka",
+            "price": "259,-"
+          }
+        ]
+      },
+      {
+        "name": "Sandwiche a saláty",
+        "items": [
+          {
+            "name": "Caesar salát",
+            "desc": "Římský salát, caesar dressing, krutony, parmezán",
+            "price": "149,-"
+          },
+          {
+            "name": "Caesar sandwich",
+            "desc": "Římský salát, slanina, caesar dressing, parmezán",
+            "price": "159,-"
           },
           {
             "name": "BLT sandwich",
-            "desc": "Slanina, salát, rajče, sriracha mayo",
-            "price": "165 Kč"
+            "desc": "Křupavá slanina, lollo biondo, rajče, sriracha mayo",
+            "price": "165,-"
           },
           {
-            "name": "Caesar sandwich / salát",
-            "desc": "Klasika s kuřecím masem",
-            "price": "159 / 149 Kč"
+            "name": "Sekačka v housce",
+            "desc": "Od Dolejších, hořčice, jalapeño, červená cibule",
+            "price": "169,-"
           },
           {
-            "name": "Sýrové prkénko",
-            "desc": "200g / 300g výběr",
-            "price": "239 / 359 Kč"
+            "name": "Tátova sekaná v housce",
+            "desc": "Od Dolejších, hořčice, jalapeño, cibule, kyselá okurka",
+            "price": "169,-"
+          }
+        ]
+      },
+      {
+        "name": "České klasiky",
+        "items": [
+          {
+            "name": "Vajíčková pomazánka",
+            "desc": "Klasická vajíčková s pažitkou (podáváme s chlebem)",
+            "price": "85,-"
           },
           {
-            "name": "Uzenářské prkénko",
-            "desc": "200g / 300g výběr",
-            "price": "239 / 350 Kč"
-          },
-          {
-            "name": "Mix prkénko",
-            "desc": "200g / 300g výběr",
-            "price": "249 / 369 Kč"
-          },
-          {
-            "name": "Vídeňský párek",
-            "desc": "2 nebo 3 nohy, hořčice, křen, chléb",
-            "price": "125 / 175 Kč"
-          },
-          {
-            "name": "Petrovický nakládaný hermelín",
-            "desc": "Poctivě uleželý",
-            "price": "149 Kč"
+            "name": "Škvarková pomazánka",
+            "desc": "Škvarková s cibulkou (podáváme s chlebem)",
+            "price": "85,-"
           },
           {
             "name": "Petrovický utopenec",
-            "desc": "Klasika s cibulí",
-            "price": "115 Kč"
+            "desc": "Utopence, cibule, paprika (podáváme s chlebem)",
+            "price": "115,-"
           },
           {
-            "name": "Vajíčková / Škvarková pomazánka",
-            "desc": "S čerstvým chlebem",
-            "price": "85 Kč"
+            "name": "Nakládaný hermelín",
+            "desc": "Hermelín v oleji s pepřem a feferonkou (podáváme s chlebem)",
+            "price": "149,-"
           },
           {
-            "name": "Olivy zelené 70g",
+            "name": "Vídeňský párek 2 / 3 nohy",
+            "desc": "Velký vídeňský párek, křemžská hořčice, křen (s chlebem)",
+            "price": "125 / 175,-"
+          },
+          {
+            "name": "Chléb navíc",
             "desc": "",
-            "price": "79 Kč"
-          },
-          {
-            "name": "Čerstvě pražené mandle",
-            "desc": "",
-            "price": "85 Kč"
-          },
-          {
-            "name": "Chipsy / Popcorn",
-            "desc": "",
-            "price": "50 / 75 Kč"
+            "price": "29,-"
           }
         ]
       },
       {
-        "name": "Pivo & Cider",
+        "name": "Prkénka (200 / 300 g)",
+        "items": [
+          {
+            "name": "Sýrové prkénko",
+            "desc": "Výběr sýrů",
+            "price": "239 / 359,-"
+          },
+          {
+            "name": "Uzenářské prkénko",
+            "desc": "Výběr uzenin",
+            "price": "239 / 359,-"
+          },
+          {
+            "name": "Mix prkénko",
+            "desc": "Výběr sýrů a uzenin",
+            "price": "249 / 369,-"
+          }
+        ]
+      },
+      {
+        "name": "K pivu a vínu",
+        "items": [
+          {
+            "name": "Chipsy solené 50 g",
+            "desc": "",
+            "price": "50,-"
+          },
+          {
+            "name": "Olivy zelené 70 g",
+            "desc": "",
+            "price": "79,-"
+          },
+          {
+            "name": "Pražené mandle se solí 60 g",
+            "desc": "",
+            "price": "85,-"
+          },
+          {
+            "name": "Nachos",
+            "desc": "S chedarovým dipem a chilli",
+            "price": "125,-"
+          },
+          {
+            "name": "Popcorn",
+            "desc": "Slaný / máslový / sýrový",
+            "price": "75,-"
+          }
+        ]
+      },
+      {
+        "name": "Pivo 0,5 / 0,3 L",
         "items": [
           {
             "name": "Fabián Hostomice 10°",
-            "desc": "0,5 l / 0,3 l",
-            "price": "64 / 40 Kč"
+            "desc": "Sladové, lehce chmelené",
+            "price": "64 / 40,-"
           },
           {
             "name": "Alois Uhříněves 11°",
-            "desc": "0,5 l / 0,3 l",
-            "price": "69 / 43 Kč"
+            "desc": "Plzeňský typ, výrazná hořkost, suchý finiš",
+            "price": "69 / 43,-"
           },
           {
             "name": "Fabián Hostomice 12°",
-            "desc": "0,5 l / 0,3 l",
-            "price": "74 / 46 Kč"
+            "desc": "Světlý ležák, plné tělo, čistá hořkost",
+            "price": "74 / 46,-"
           },
           {
             "name": "Speciál Uhříněves",
-            "desc": "Dle aktuální nabídky",
-            "price": "85 Kč"
-          },
-          {
-            "name": "F.H. Prager Cider",
-            "desc": "Originál / Višeň 0,33 l",
-            "price": "85 Kč"
+            "desc": "Rotující speciál - zeptejte se obsluhy",
+            "price": "dle nabídky"
           },
           {
             "name": "Nealko pivo",
-            "desc": "Dle nabídky",
-            "price": "dle nabídky"
+            "desc": "",
+            "price": "63,-"
           }
         ]
       },
       {
-        "name": "Míchačky",
+        "name": "Cider 0,33 L",
         "items": [
           {
-            "name": "Aperol / Hugo Spritz",
-            "desc": "Osvěžující klasika",
-            "price": "159 Kč"
+            "name": "F.H. Prager originál",
+            "desc": "Suchý jablečný cider",
+            "price": "85,-"
           },
           {
-            "name": "Gin tonic",
-            "desc": "Malfy nebo klasika",
-            "price": "159 Kč"
+            "name": "F.H. Prager višeň",
+            "desc": "Polosuchý, s višňovou kyselostí",
+            "price": "85,-"
           },
           {
-            "name": "Skinny bitch / Miniskinny",
-            "desc": "Vodka, soda, limeta",
-            "price": "130 / 45 Kč"
-          },
-          {
-            "name": "Mojito / Cuba libre",
-            "desc": "Rumové stálice",
-            "price": "169 / 159 Kč"
-          },
-          {
-            "name": "Mule / Mimosa",
-            "desc": "Ostrý zázvor nebo jemné bubliny",
-            "price": "160 / 125 Kč"
-          },
-          {
-            "name": "Kolárum",
-            "desc": "Náš signature drink",
-            "price": "130 Kč"
+            "name": "F.H. Prager non‑alcoholic",
+            "desc": "Nealkoholická verze cideru",
+            "price": "85,-"
           }
         ]
       },
@@ -207,44 +242,49 @@
         "name": "Nealko",
         "items": [
           {
-            "name": "Domácí limonáda 0,4 l",
+            "name": "Soda 0,1 l",
             "desc": "",
-            "price": "75 Kč"
+            "price": "8,-"
           },
           {
-            "name": "F.H. Prager Kombucha 0,33 l",
+            "name": "Džus (pomeranč / jablko) 0,1 l",
             "desc": "",
-            "price": "85 Kč"
+            "price": "20,-"
           },
           {
-            "name": "Coca Cola / Zero 0,33 l",
+            "name": "Karafa vody 0,5 / 1 l",
             "desc": "",
-            "price": "60 Kč"
-          },
-          {
-            "name": "Tonic Kinley 0,25 l",
-            "desc": "",
-            "price": "60 Kč"
-          },
-          {
-            "name": "Džus (pomeranč, jablko) 0,1 l",
-            "desc": "",
-            "price": "20 Kč"
+            "price": "30 / 50,-"
           },
           {
             "name": "Mattoni jemně perlivá",
             "desc": "",
-            "price": "50 Kč"
+            "price": "50,-"
+          },
+          {
+            "name": "Coca‑Cola / Cola Zero 0,33 l",
+            "desc": "",
+            "price": "60,-"
+          },
+          {
+            "name": "Tonic Kinley 0,25 l",
+            "desc": "",
+            "price": "60,-"
+          },
+          {
+            "name": "Domácí limonáda 0,4 l",
+            "desc": "Bezinka / malina / jahoda",
+            "price": "75,-"
+          },
+          {
+            "name": "F.H. Prager Kombucha 0,33 l",
+            "desc": "",
+            "price": "85,-"
           },
           {
             "name": "Red Bull 0,25 l",
             "desc": "",
-            "price": "85 Kč"
-          },
-          {
-            "name": "Soda 0,1 l",
-            "desc": "",
-            "price": "8 Kč"
+            "price": "85,-"
           }
         ]
       },
@@ -252,69 +292,159 @@
         "name": "Káva & Čaj",
         "items": [
           {
-            "name": "Espresso / Double",
+            "name": "Espresso / Macchiato / Americano",
             "desc": "",
-            "price": "60 / 85 Kč"
+            "price": "60 / 65 / 65,-"
           },
           {
             "name": "Cappuccino / Flat white",
             "desc": "",
-            "price": "70 / 90 Kč"
+            "price": "70 / 90,-"
           },
           {
-            "name": "Latte / Americano",
+            "name": "Latte / Double espresso",
             "desc": "",
-            "price": "85 / 65 Kč"
+            "price": "85 / 85,-"
           },
           {
-            "name": "Espresso macchiato",
+            "name": "Extra shot kávy",
             "desc": "",
-            "price": "65 Kč"
+            "price": "+20,-"
           },
           {
             "name": "Čerstvý čaj",
             "desc": "Máta / zázvor",
-            "price": "85 Kč"
+            "price": "85,-"
           },
           {
             "name": "Sypaný čaj",
             "desc": "Dle nabídky",
-            "price": "85 Kč"
+            "price": "85,-"
           }
         ]
       },
       {
-        "name": "Destiláty & Likéry",
+        "name": "Míchačky",
         "items": [
           {
-            "name": "Pálenky 0,02 l",
-            "desc": "Slivovice / Meruňkovice / Ořechovka Žufánek, Hruškovice / Malina Baron",
-            "price": "70 Kč"
+            "name": "Miniskinny",
+            "desc": "Vodka, limeta",
+            "price": "45,-"
           },
           {
-            "name": "Rum & Ron 0,04 l",
-            "desc": "Diplomatico (150), Millonario (140), Cariba (90), Havana 3y (75), Republica (70), Bartida (65)",
-            "price": "od 65 Kč"
+            "name": "Mimosa",
+            "desc": "Prosecco, pomerančový džus",
+            "price": "125,-"
           },
           {
-            "name": "Whiskey & Bourbon 0,04 l",
-            "desc": "Chivas 12yo (140), Jack Daniel's/Honey (110), Wild Turkey (100), Four Roses (90), Tullamore (89), Jameson (85)",
-            "price": "od 85 Kč"
+            "name": "Skinny bitch",
+            "desc": "Vodka, soda, limetka",
+            "price": "130,-"
           },
           {
-            "name": "Gin 0,04 l",
-            "desc": "Citadelle (140), Malfy (125), Beefeater (80)",
-            "price": "od 80 Kč"
+            "name": "Kolárum",
+            "desc": "Bartida Original, cola",
+            "price": "130,-"
           },
           {
-            "name": "Vodka & Tequila 0,04 l",
-            "desc": "Finlandia (90), Tres Alegres (95)",
-            "price": "od 90 Kč"
+            "name": "Aperol spritz",
+            "desc": "Aperol, prosecco, soda, plátek pomeranče",
+            "price": "159,-"
           },
           {
-            "name": "Likéry 0,04 l",
-            "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Vaječňák / Zelená / Griotka (60)",
-            "price": "od 60 Kč"
+            "name": "Hugo spritz",
+            "desc": "Bezový sirup, prosecco, soda, máta, limetka",
+            "price": "159,-"
+          },
+          {
+            "name": "Gin tonic",
+            "desc": "Beefeater, Kinley tonic, limetka",
+            "price": "159,-"
+          },
+          {
+            "name": "Cuba libre",
+            "desc": "Havana Club, cola, limetka",
+            "price": "159,-"
+          },
+          {
+            "name": "Mule",
+            "desc": "Vodka, zázvorové pivo, limetka",
+            "price": "160,-"
+          },
+          {
+            "name": "Mojito",
+            "desc": "Havana Club, limetka, máta, třtinový cukr, soda",
+            "price": "169,-"
+          }
+        ]
+      },
+      {
+        "name": "Tvrdý alkohol (Panáky)",
+        "items": [
+          {
+            "name": "Griotka / Zelená (Bartida)",
+            "desc": "0,04 l",
+            "price": "60,-"
+          },
+          {
+            "name": "Vaječňák / Chilli višeň / Koniferum",
+            "desc": "0,04 l",
+            "price": "70,-"
+          },
+          {
+            "name": "Slivovice / Meruňkovice / Ořechovka Žufánek",
+            "desc": "0,02 l",
+            "price": "70,-"
+          },
+          {
+            "name": "Hruškovice / Malina Baron",
+            "desc": "0,02 l",
+            "price": "70,-"
+          },
+          {
+            "name": "Fernet Stock / Becherovka / Jägermeister",
+            "desc": "0,04 l",
+            "price": "80 / 85 / 89,-"
+          },
+          {
+            "name": "Beefeater / Malfy / Citadelle Gin",
+            "desc": "0,04 l",
+            "price": "80 / 125 / 140,-"
+          },
+          {
+            "name": "Jameson / Tullamore / Four Roses",
+            "desc": "0,04 l",
+            "price": "85 / 89 / 90,-"
+          },
+          {
+            "name": "Wild Turkey 101 / Jack Daniel's",
+            "desc": "0,04 l",
+            "price": "100 / 110,-"
+          },
+          {
+            "name": "Chivas Regal 12yo",
+            "desc": "0,04 l",
+            "price": "140,-"
+          },
+          {
+            "name": "Finlandia / Tres Alegres Reposado",
+            "desc": "Vodka / Tequila 0,04 l",
+            "price": "90 / 95,-"
+          },
+          {
+            "name": "Original Bartida / Republica / Havana Club 3y",
+            "desc": "Rum 0,04 l",
+            "price": "65 / 70 / 75,-"
+          },
+          {
+            "name": "Ron Cariba / Millonario / Diplomatico",
+            "desc": "Rum 0,04 l",
+            "price": "90 / 140 / 150,-"
+          },
+          {
+            "name": "Kontušovka Žufánek",
+            "desc": "0,04 l",
+            "price": "130,-"
           }
         ]
       },

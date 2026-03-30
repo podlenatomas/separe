@@ -49,182 +49,220 @@
     "description": "Our complete bar and food menu. From craft beer to honest pub snacks.",
     "categories": [
       {
-        "name": "Food & Bar Snacks",
-        "desc": "Honest pub food to go with your drinks. Available all night.",
+        "name": "Pinsa Romana",
         "items": [
           {
-            "name": "Pinsa Margherita",
-            "desc": "San Marzano, fior di latte, basil",
+            "name": "Margherita",
+            "desc": "Sugo, mozzarella, basil, olive oil",
             "price": "229 CZK"
           },
           {
-            "name": "Pinsa Salami picante",
-            "desc": "Spicy Italian salami",
+            "name": "Salami picante",
+            "desc": "Sugo, mozzarella, spicy salami, chilli oil",
             "price": "249 CZK"
           },
           {
-            "name": "Pinsa Prosciutto",
-            "desc": "Parma ham, arugula",
+            "name": "Prosciutto",
+            "desc": "Sugo, mozzarella, prosciutto crudo, arugula",
             "price": "255 CZK"
           },
           {
-            "name": "Pinsa Formaggi",
-            "desc": "Cheese selection",
+            "name": "Formaggi",
+            "desc": "Mozzarella, parmigiano, cheddar, basil",
             "price": "259 CZK"
-          },
+          }
+        ]
+      },
+      {
+        "name": "Sandwiches & Salads",
+        "items": [
           {
-            "name": "Czech Meatloaf Slider",
-            "desc": "Homemade meatloaf, jalapeño, shallot, mustard",
-            "price": "169 CZK"
-          },
-          {
-            "name": "BLT Sandwich",
-            "desc": "Bacon, lettuce, tomato, sriracha mayo",
-            "price": "165 CZK"
-          },
-          {
-            "name": "Caesar Sandwich / Salad",
-            "desc": "Classic with chicken",
-            "price": "159 / 149 CZK"
-          },
-          {
-            "name": "Cheese Board",
-            "desc": "200g / 300g selection",
-            "price": "239 / 359 CZK"
-          },
-          {
-            "name": "Charcuterie Board",
-            "desc": "200g / 300g selection",
-            "price": "239 / 350 CZK"
-          },
-          {
-            "name": "Mixed Board",
-            "desc": "200g / 300g selection",
-            "price": "249 / 369 CZK"
-          },
-          {
-            "name": "Vienna Sausages",
-            "desc": "2 or 3 sausages, mustard, horseradish, bread",
-            "price": "125 / 175 CZK"
-          },
-          {
-            "name": "Pickled Camembert",
-            "desc": "Properly aged Czech classic",
+            "name": "Caesar salad",
+            "desc": "Romaine lettuce, caesar dressing, croutons, parmesan",
             "price": "149 CZK"
           },
           {
-            "name": "Utopenec (Pickled Sausage)",
-            "desc": "Pub classic with onions",
-            "price": "115 CZK"
+            "name": "Caesar sandwich",
+            "desc": "Romaine lettuce, bacon, caesar dressing, parmesan",
+            "price": "159 CZK"
           },
           {
-            "name": "Egg / Pork Crackling Spread",
-            "desc": "With fresh bread",
+            "name": "BLT sandwich",
+            "desc": "Crispy bacon, lollo biondo, tomato, sriracha mayo",
+            "price": "165 CZK"
+          },
+          {
+            "name": "Meatloaf slider",
+            "desc": "Local meatloaf, mustard, jalapeño, red onion",
+            "price": "169 CZK"
+          },
+          {
+            "name": "Dad's meatloaf slider",
+            "desc": "Local meatloaf, mustard, jalapeño, onion, pickles",
+            "price": "169 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Czech Classics",
+        "items": [
+          {
+            "name": "Egg spread",
+            "desc": "Classic egg spread with chives (served with bread)",
             "price": "85 CZK"
           },
           {
-            "name": "Green Olives 70g",
+            "name": "Pork crackling spread",
+            "desc": "Crackling spread with onion (served with bread)",
+            "price": "85 CZK"
+          },
+          {
+            "name": "Pickled sausage (Utopenec)",
+            "desc": "Sausage, onion, bell pepper (served with bread)",
+            "price": "115 CZK"
+          },
+          {
+            "name": "Pickled Camembert",
+            "desc": "Camembert in oil with pepper and chilli (with bread)",
+            "price": "149 CZK"
+          },
+          {
+            "name": "Viennese sausage 2 / 3 pcs",
+            "desc": "Large Viennese sausage, mustard, horseradish (with bread)",
+            "price": "125 / 175 CZK"
+          },
+          {
+            "name": "Extra bread",
+            "desc": "",
+            "price": "29 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Boards (200 / 300 g)",
+        "items": [
+          {
+            "name": "Cheese board",
+            "desc": "Selection of cheeses",
+            "price": "239 / 359 CZK"
+          },
+          {
+            "name": "Meat board",
+            "desc": "Selection of cold cuts",
+            "price": "239 / 359 CZK"
+          },
+          {
+            "name": "Mixed board",
+            "desc": "Selection of cheeses and cold cuts",
+            "price": "249 / 369 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Bar Snacks",
+        "items": [
+          {
+            "name": "Salted chips 50 g",
+            "desc": "",
+            "price": "50 CZK"
+          },
+          {
+            "name": "Green olives 70 g",
             "desc": "",
             "price": "79 CZK"
           },
           {
-            "name": "Freshly Roasted Almonds",
+            "name": "Roasted salted almonds 60 g",
             "desc": "",
             "price": "85 CZK"
           },
           {
-            "name": "Chips / Popcorn",
-            "desc": "",
-            "price": "50 / 75 CZK"
+            "name": "Nachos",
+            "desc": "With cheddar dip and chilli",
+            "price": "125 CZK"
+          },
+          {
+            "name": "Popcorn",
+            "desc": "Salted / butter / cheese",
+            "price": "75 CZK"
           }
         ]
       },
       {
-        "name": "Beer & Cider",
-        "desc": "Current rotating tap: carefully selected from small Czech breweries. Ask at the bar or follow @separe_mikulandska.",
+        "name": "Beer 0.5 / 0.3 L",
         "items": [
           {
             "name": "Fabián Hostomice 10°",
-            "desc": "0.5 l / 0.3 l",
+            "desc": "Malty, lightly hopped",
             "price": "64 / 40 CZK"
           },
           {
             "name": "Alois Uhříněves 11°",
-            "desc": "0.5 l / 0.3 l",
+            "desc": "Pilsner type, distinct bitterness, dry finish",
             "price": "69 / 43 CZK"
           },
           {
             "name": "Fabián Hostomice 12°",
-            "desc": "0.5 l / 0.3 l",
+            "desc": "Pale lager, full body, clean bitterness",
             "price": "74 / 46 CZK"
           },
           {
-            "name": "Uhříněves Craft Special",
-            "desc": "Ask about current tap",
-            "price": "85 CZK"
+            "name": "Special Uhříněves",
+            "desc": "Rotating special - ask the staff",
+            "price": "ask staff"
           },
           {
-            "name": "F.H. Prager Cider",
-            "desc": "Original / Sour Cherry 0.33 l",
-            "price": "85 CZK"
-          },
-          {
-            "name": "Non‑alcoholic Beer",
-            "desc": "Ask staff",
-            "price": "Ask staff"
+            "name": "Non‑alcoholic beer",
+            "desc": "",
+            "price": "63 CZK"
           }
         ]
       },
       {
-        "name": "Mixed Drinks",
+        "name": "Cider 0.33 L",
         "items": [
           {
-            "name": "Aperol / Hugo Spritz",
-            "desc": "Refreshing classic",
-            "price": "159 CZK"
+            "name": "F.H. Prager original",
+            "desc": "Dry apple cider",
+            "price": "85 CZK"
           },
           {
-            "name": "Gin Tonic",
-            "desc": "Malfy or classic gin",
-            "price": "159 CZK"
+            "name": "F.H. Prager sour cherry",
+            "desc": "Semi‑dry, with sour cherry acidity",
+            "price": "85 CZK"
           },
           {
-            "name": "Skinny bitch / Miniskinny",
-            "desc": "Vodka, soda, lime",
-            "price": "130 / 45 CZK"
-          },
-          {
-            "name": "Mojito / Cuba libre",
-            "desc": "Rum staples",
-            "price": "169 / 159 CZK"
-          },
-          {
-            "name": "Mule / Mimosa",
-            "desc": "Spicy ginger or smooth bubbles",
-            "price": "160 / 125 CZK"
-          },
-          {
-            "name": "Kolárum",
-            "desc": "Our signature drink",
-            "price": "130 CZK"
+            "name": "F.H. Prager non‑alcoholic",
+            "desc": "Non‑alcoholic version of cider",
+            "price": "85 CZK"
           }
         ]
       },
       {
-        "name": "Non‑alcoholic",
+        "name": "Non‑Alcoholic",
         "items": [
           {
-            "name": "Homemade Lemonade 0.4 l",
+            "name": "Soda 0.1 l",
             "desc": "",
-            "price": "75 CZK"
+            "price": "8 CZK"
           },
           {
-            "name": "F.H. Prager Kombucha 0.33 l",
+            "name": "Juice (orange / apple) 0.1 l",
             "desc": "",
-            "price": "85 CZK"
+            "price": "20 CZK"
           },
           {
-            "name": "Coca Cola / Zero 0.33 l",
+            "name": "Carafe of water 0.5 / 1 l",
+            "desc": "",
+            "price": "30 / 50 CZK"
+          },
+          {
+            "name": "Mattoni sparkling water",
+            "desc": "",
+            "price": "50 CZK"
+          },
+          {
+            "name": "Coca‑Cola / Cola Zero 0.33 l",
             "desc": "",
             "price": "60 CZK"
           },
@@ -234,24 +272,19 @@
             "price": "60 CZK"
           },
           {
-            "name": "Juice (Orange, Apple) 0.1 l",
-            "desc": "",
-            "price": "20 CZK"
+            "name": "Homemade lemonade 0.4 l",
+            "desc": "Elderflower / raspberry / strawberry",
+            "price": "75 CZK"
           },
           {
-            "name": "Mattoni Sparkling Water",
+            "name": "F.H. Prager Kombucha 0.33 l",
             "desc": "",
-            "price": "50 CZK"
+            "price": "85 CZK"
           },
           {
             "name": "Red Bull 0.25 l",
             "desc": "",
             "price": "85 CZK"
-          },
-          {
-            "name": "Soda Water 0.1 l",
-            "desc": "",
-            "price": "8 CZK"
           }
         ]
       },
@@ -259,9 +292,9 @@
         "name": "Coffee & Tea",
         "items": [
           {
-            "name": "Espresso / Double",
+            "name": "Espresso / Macchiato / Americano",
             "desc": "",
-            "price": "60 / 85 CZK"
+            "price": "60 / 65 / 65 CZK"
           },
           {
             "name": "Cappuccino / Flat white",
@@ -269,59 +302,149 @@
             "price": "70 / 90 CZK"
           },
           {
-            "name": "Latte / Americano",
+            "name": "Latte / Double espresso",
             "desc": "",
-            "price": "85 / 65 CZK"
+            "price": "85 / 85 CZK"
           },
           {
-            "name": "Espresso macchiato",
+            "name": "Extra coffee shot",
             "desc": "",
-            "price": "65 CZK"
+            "price": "+20 CZK"
           },
           {
-            "name": "Fresh Tea",
-            "desc": "Mint / Ginger",
+            "name": "Fresh tea",
+            "desc": "Mint / ginger",
             "price": "85 CZK"
           },
           {
-            "name": "Loose Leaf Tea",
-            "desc": "Ask staff",
+            "name": "Loose leaf tea",
+            "desc": "Ask for current selection",
             "price": "85 CZK"
           }
         ]
       },
       {
-        "name": "Spirits & Liqueurs",
+        "name": "Mixed Drinks",
         "items": [
           {
-            "name": "Fruit Brandies 0.02 l",
-            "desc": "Slivovitz / Apricot / Walnut Žufánek, Pear / Raspberry Baron",
+            "name": "Miniskinny",
+            "desc": "Vodka, lime",
+            "price": "45 CZK"
+          },
+          {
+            "name": "Mimosa",
+            "desc": "Prosecco, orange juice",
+            "price": "125 CZK"
+          },
+          {
+            "name": "Skinny bitch",
+            "desc": "Vodka, soda, lime",
+            "price": "130 CZK"
+          },
+          {
+            "name": "Kolárum",
+            "desc": "Bartida Original, cola",
+            "price": "130 CZK"
+          },
+          {
+            "name": "Aperol spritz",
+            "desc": "Aperol, prosecco, soda, orange slice",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Hugo spritz",
+            "desc": "Elderflower syrup, prosecco, soda, mint, lime",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Gin tonic",
+            "desc": "Beefeater, Kinley tonic, lime",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Cuba libre",
+            "desc": "Havana Club, cola, lime",
+            "price": "159 CZK"
+          },
+          {
+            "name": "Mule",
+            "desc": "Vodka, ginger beer, lime",
+            "price": "160 CZK"
+          },
+          {
+            "name": "Mojito",
+            "desc": "Havana Club, lime, mint, cane sugar, soda",
+            "price": "169 CZK"
+          }
+        ]
+      },
+      {
+        "name": "Spirits & Shots",
+        "items": [
+          {
+            "name": "Griotka / Zelená (Bartida)",
+            "desc": "0.04 l",
+            "price": "60 CZK"
+          },
+          {
+            "name": "Eggnog / Chilli sour cherry / Koniferum",
+            "desc": "0.04 l",
             "price": "70 CZK"
           },
           {
-            "name": "Rum 0.04 l",
-            "desc": "Diplomatico (150), Millonario (140), Cariba (90), Havana 3y (75), Republica (70), Bartida (65)",
-            "price": "from 65 CZK"
+            "name": "Slivovitz / Apricot / Walnut (Žufánek)",
+            "desc": "0.02 l",
+            "price": "70 CZK"
           },
           {
-            "name": "Whiskey & Bourbon 0.04 l",
-            "desc": "Chivas 12yo (140), Jack Daniel's/Honey (110), Wild Turkey (100), Four Roses (90), Tullamore (89), Jameson (85)",
-            "price": "from 85 CZK"
+            "name": "Pear / Raspberry (Baron)",
+            "desc": "0.02 l",
+            "price": "70 CZK"
           },
           {
-            "name": "Gin 0.04 l",
-            "desc": "Citadelle (140), Malfy (125), Beefeater (80)",
-            "price": "from 80 CZK"
+            "name": "Fernet Stock / Becherovka / Jägermeister",
+            "desc": "0.04 l",
+            "price": "80 / 85 / 89 CZK"
           },
           {
-            "name": "Vodka & Tequila 0.04 l",
-            "desc": "Finlandia (90), Tres Alegres (95)",
-            "price": "from 90 CZK"
+            "name": "Beefeater / Malfy / Citadelle Gin",
+            "desc": "0.04 l",
+            "price": "80 / 125 / 140 CZK"
           },
           {
-            "name": "Liqueurs 0.04 l",
-            "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Advocaat / Mint / Cherry (60)",
-            "price": "from 60 CZK"
+            "name": "Jameson / Tullamore / Four Roses",
+            "desc": "0.04 l",
+            "price": "85 / 89 / 90 CZK"
+          },
+          {
+            "name": "Wild Turkey 101 / Jack Daniel's",
+            "desc": "0.04 l",
+            "price": "100 / 110 CZK"
+          },
+          {
+            "name": "Chivas Regal 12yo",
+            "desc": "0.04 l",
+            "price": "140 CZK"
+          },
+          {
+            "name": "Finlandia / Tres Alegres Reposado",
+            "desc": "Vodka / Tequila 0.04 l",
+            "price": "90 / 95 CZK"
+          },
+          {
+            "name": "Original Bartida / Republica / Havana Club 3y",
+            "desc": "Rum 0.04 l",
+            "price": "65 / 70 / 75 CZK"
+          },
+          {
+            "name": "Ron Cariba / Millonario / Diplomatico",
+            "desc": "Rum 0.04 l",
+            "price": "90 / 140 / 150 CZK"
+          },
+          {
+            "name": "Kontušovka Žufánek",
+            "desc": "0.04 l",
+            "price": "130 CZK"
           }
         ]
       },
