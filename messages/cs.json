@@ -169,7 +169,7 @@
         ]
       },
       {
-        "name": "Míchačky & Víno",
+        "name": "Míchačky",
         "items": [
           {
             "name": "Aperol / Hugo Spritz",
@@ -200,11 +200,6 @@
             "name": "Kolárum",
             "desc": "Náš signature drink",
             "price": "130 Kč"
-          },
-          {
-            "name": "Víno",
-            "desc": "Dle aktuální nabídky",
-            "price": "dle nabídky"
           }
         ]
       },
@@ -320,6 +315,161 @@
             "name": "Likéry 0,04 l",
             "desc": "Kontušovka (130), Jäger (89), Becherovka (85), Fernet (80), Koniferum (70), Vaječňák / Zelená / Griotka (60)",
             "price": "od 60 Kč"
+          }
+        ]
+      },
+      {
+        "name": "Rozlévaná vína (Bílá & Růžová)",
+        "items": [
+          {
+            "name": "Rulandské bílé (Vinařství Vajbar)",
+            "desc": "Zemské víno - suché. Vůně: Jablka, zralé citrusové plody a sušené bylinky. Chuť: Barvitá, svěží a šťavnatá.",
+            "price": "45,-/dcl"
+          },
+          {
+            "name": "Ryzlink Vlašský (Vinařství Mitoma)",
+            "desc": "Zemské víno - suché. Vůně: Pevná, plná a dynamická. Chuť: Oblá a hladká, příjemně šťavnatá.",
+            "price": "45,-/dcl"
+          },
+          {
+            "name": "Tramín červený (Vinařství Mitoma)",
+            "desc": "Zemské víno - polosuché. Vůně: Velmi bohatá, květoucí růže, med. Chuť: Jemně nasládlá, kořenitá.",
+            "price": "45,-/dcl"
+          },
+          {
+            "name": "Pálava (Vinařství Mitoma)",
+            "desc": "Zemské víno - polosladké. Vůně: Bohatá a svěží, bílé růže. Chuť: Domácí marmeládové ovoce.",
+            "price": "48,-/dcl"
+          },
+          {
+            "name": "Zweigeltrebe rosé",
+            "desc": "Růžové - polosuché. Vůně: Bohatá a svěží, červené ovoce, koření. Chuť: Svěží, dynamická, čerstvá.",
+            "price": "45,-/dcl"
+          }
+        ]
+      },
+      {
+        "name": "Rozlévaná vína (Červená)",
+        "items": [
+          {
+            "name": "Dornfelder",
+            "desc": "Zemské víno - suché. Vůně: Zralá a plná, svěže višňová. Chuť: Oblá, jemné tóny višní, brusinek.",
+            "price": "50,-/dcl"
+          },
+          {
+            "name": "Primitivo Salento IGP (Itálie)",
+            "desc": "Suché. Vůně: Intenzivní a zralá, švestky, tóny koření a tmavé čokolády. Chuť: Ovocně plná, vyvážená.",
+            "price": "60,-/dcl"
+          }
+        ]
+      },
+      {
+        "name": "Šumivá vína",
+        "items": [
+          {
+            "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
+            "desc": "Prosecco Spumante - brut nature. Vůně: Jablka, hrušky a bílé květy. Chuť: Čistá a suchá, s dlouhou dochutí.",
+            "price": "125,- / 695,-"
+          },
+          {
+            "name": "Rebuli Brut (Treviso DOC)",
+            "desc": "Prosecco Spumante - vegan. Vůně: Citrusové ovoce, stopa cedru a minerality. Chuť: Suchá, ovocná struktura.",
+            "price": "125,- / 695,-"
+          },
+          {
+            "name": "Perlage Ottantacinque Bio",
+            "desc": "Cuvée Vino Spumante - brut. Vůně: Exotické mango, ananas, bílé květy. Chuť: Vyvážená, dlouhá, snadno pitná.",
+            "price": "125,- / 695,-"
+          },
+          {
+            "name": "Integrale Bio",
+            "desc": "Organic Vino Rosé Frizzante - nefiltrované. Vůně: Tóny rybízu, třešní. Chuť: Svěží a ovocná.",
+            "price": "125,- / 695,-"
+          },
+          {
+            "name": "Mionetto (Treviso DOC)",
+            "desc": "Prosecco Frizzante - brut. Vůně: Svěží a bohaté ovocné aroma. Chuť: Harmonická s medovými tóny.",
+            "price": "360,- lah."
+          },
+          {
+            "name": "Sekt Pinot Blanc (Pavlovín)",
+            "desc": "Brut. Vůně: Květinová s tóny hrušek a jablíček. Chuť: Elegantní, minerální s jemnou kyselinkou.",
+            "price": "695,- lah."
+          },
+          {
+            "name": "Bianco Spumante Alcohol Free",
+            "desc": "Nealkoholické. Vůně: Zelená jablka, hrušky. Chuť: Harmonická, svěží s jemnou perláží.",
+            "price": "495,- lah."
+          }
+        ]
+      },
+      {
+        "name": "Lahvová vína (Bílá & Oranžová)",
+        "items": [
+          {
+            "name": "Sylvánské zelené (Vinařství Mádl)",
+            "desc": "Bílé, pozdní sběr - suché. Vůně: Kvetoucí bílé květy. Chuť: Svěží dochuť čerstvých rynglí.",
+            "price": "495,-"
+          },
+          {
+            "name": "Sauvignon (Vinařství Mádl)",
+            "desc": "Bílé, pozdní sběr - suché. Vůně: Černý rybíz, lipový květ. Chuť: Broskev a angrešt, svěží kyselinka.",
+            "price": "545,-"
+          },
+          {
+            "name": "Hibernal (Vinařství Mádl)",
+            "desc": "Bílé, pozdní sběr - polosuché. Vůně: Meruňka a máta. Chuť: Zralé broskve s dlouhou perzistencí.",
+            "price": "495,-"
+          },
+          {
+            "name": "Ryzlink rýnský (Vinařství V. Tetur)",
+            "desc": "Bílé, pozdní sběr - polosuché. Vůně: Lipový květ, sušené meruňky. Chuť: Harmonická, pikantní kyselina.",
+            "price": "545,-"
+          },
+          {
+            "name": "Chardonnay Remake (Vinařství V. Tetur)",
+            "desc": "Bílé, pozdní sběr - suché. Vůně: Kořenitá s nádechem jablek. Chuť: Žlutý meloun, svěží kyselina.",
+            "price": "595,-"
+          },
+          {
+            "name": "Rrrr cuvée (Vinařství Maděřič)",
+            "desc": "Bílé (Akátové sudy) - suché. Vůně: Bylinková s tóny propolisu. Chuť: Výrazně minerální, krémová.",
+            "price": "595,-"
+          },
+          {
+            "name": "Pálava Orange (Vinařství Maděřič)",
+            "desc": "Oranžové víno - suché. Vůně: Exotické ovoce, čajové růže. Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
+            "price": "645,-"
+          }
+        ]
+      },
+      {
+        "name": "Lahvová vína (Červená & Růžová)",
+        "items": [
+          {
+            "name": "Cabernet Sauvignon (Vinařství V. HORT)",
+            "desc": "Červené - suché. Vůně: Černé ovoce, černý rybíz. Chuť: Výrazná tříslovina s hladkou kyselinou.",
+            "price": "495,-"
+          },
+          {
+            "name": "Pinot Noir rosé (Vinařství V. HORT)",
+            "desc": "Růžové, pozdní sběr - suché. Vůně: Červené třešně, lesní jahody. Chuť: Harmonická chuť jahod a medu.",
+            "price": "490,-"
+          },
+          {
+            "name": "Frankovka VOC Modré Hory (Vinařství Mitoma)",
+            "desc": "Červené - suché. Vůně: Čerstvá višeň, lehké tóny dřeva. Chuť: Plnější, oblá s příjemnou tříslovinou.",
+            "price": "520,-"
+          },
+          {
+            "name": "Bellegrado Barrique Cuvée (Zapletal)",
+            "desc": "Červené, Barikové - suché. Vůně: Ostružiny, vanilka z bariku. Chuť: Lahodná s jemnými tříslovinami.",
+            "price": "895,-"
+          },
+          {
+            "name": "Primitivo di Manduria DOC (Itálie)",
+            "desc": "Červené - suché. Vůně: Rybíz, švestkový džem, kakao. Chuť: Plná a kulatá, tóny koření a kávy.",
+            "price": "795,-"
           }
         ]
       }
