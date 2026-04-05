@@ -44,7 +44,7 @@ export async function generateMetadata({
   };
 
   return {
-    metadataBase: new URL("https://separe.cz"),
+    metadataBase: new URL("https://separe-mikulandska.cz"),
     title: {
       template: "%s | Separé",
       default: titles[locale] || titles.cs,
@@ -75,7 +75,7 @@ export async function generateMetadata({
           alt: "Interiér a bar Separé na Mikulandské",
         },
       ],
-      url: "https://separe.cz",
+      url: "https://separe-mikulandska.cz",
     },
     twitter: {
       card: "summary_large_image",
@@ -117,8 +117,8 @@ export default async function LocaleLayout({ children, params }: Props) {
               "@context": "https://schema.org",
               "@type": "BarOrPub",
               name: "Separé",
-              image: "https://separe.cz/images/exterior.jpg",
-              url: "https://separe.cz",
+              image: "https://separe-mikulandska.cz/images/exterior.jpg",
+              url: "https://separe-mikulandska.cz",
               telephone: "+420722339488",
               address: {
                 "@type": "PostalAddress",

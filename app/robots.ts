@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://separe.cz/sitemap.xml",
+    sitemap: "https://separe-mikulandska.cz/sitemap.xml",
   };
 }

@@ -49,557 +49,577 @@
     "description": "Our complete bar and food menu. From craft beer to honest pub snacks.",
     "categories": [
       {
-        "name": "Pinsa Romana",
-        "items": [
+        "name": "Food",
+        "subcategories": [
           {
-            "name": "Margherita",
-            "desc": "Sugo, mozzarella, basil, olive oil",
-            "price": "229 CZK"
+            "name": "Pinsa Romana",
+            "items": [
+              {
+                "name": "Margherita",
+                "desc": "Sugo, mozzarella, basil, olive oil",
+                "price": "229 CZK"
+              },
+              {
+                "name": "Salami picante",
+                "desc": "Sugo, mozzarella, spicy salami, chilli oil",
+                "price": "249 CZK"
+              },
+              {
+                "name": "Prosciutto",
+                "desc": "Sugo, mozzarella, prosciutto crudo, arugula",
+                "price": "255 CZK"
+              },
+              {
+                "name": "Formaggi",
+                "desc": "Mozzarella, parmigiano, cheddar, basil",
+                "price": "259 CZK"
+              }
+            ]
           },
           {
-            "name": "Salami picante",
-            "desc": "Sugo, mozzarella, spicy salami, chilli oil",
-            "price": "249 CZK"
+            "name": "Sandwiches & Salads",
+            "items": [
+              {
+                "name": "Caesar salad",
+                "desc": "Romaine lettuce, caesar dressing, croutons, parmesan",
+                "price": "149 CZK"
+              },
+              {
+                "name": "Caesar sandwich",
+                "desc": "Romaine lettuce, bacon, caesar dressing, parmesan",
+                "price": "159 CZK"
+              },
+              {
+                "name": "BLT sandwich",
+                "desc": "Crispy bacon, lollo biondo, tomato, sriracha mayo",
+                "price": "165 CZK"
+              },
+              {
+                "name": "Meatloaf slider",
+                "desc": "Local meatloaf, mustard, jalapeño, red onion",
+                "price": "169 CZK"
+              },
+              {
+                "name": "Dad's meatloaf slider",
+                "desc": "Local meatloaf, mustard, jalapeño, onion, pickles",
+                "price": "169 CZK"
+              }
+            ]
           },
           {
-            "name": "Prosciutto",
-            "desc": "Sugo, mozzarella, prosciutto crudo, arugula",
-            "price": "255 CZK"
+            "name": "Czech Classics",
+            "items": [
+              {
+                "name": "Egg spread",
+                "desc": "Classic egg spread with chives (served with bread)",
+                "price": "85 CZK"
+              },
+              {
+                "name": "Pork crackling spread",
+                "desc": "Crackling spread with onion (served with bread)",
+                "price": "85 CZK"
+              },
+              {
+                "name": "Pickled sausage (Utopenec)",
+                "desc": "Sausage, onion, bell pepper (served with bread)",
+                "price": "115 CZK"
+              },
+              {
+                "name": "Pickled Camembert",
+                "desc": "Camembert in oil with pepper and chilli (with bread)",
+                "price": "149 CZK"
+              },
+              {
+                "name": "Viennese sausage 2 / 3 pcs",
+                "desc": "Large Viennese sausage, mustard, horseradish (with bread)",
+                "price": "125 / 175 CZK"
+              },
+              {
+                "name": "Extra bread",
+                "desc": "",
+                "price": "29 CZK"
+              }
+            ]
           },
           {
-            "name": "Formaggi",
-            "desc": "Mozzarella, parmigiano, cheddar, basil",
-            "price": "259 CZK"
+            "name": "Boards (200 / 300 g)",
+            "items": [
+              {
+                "name": "Cheese board",
+                "desc": "Selection of cheeses",
+                "price": "239 / 359 CZK"
+              },
+              {
+                "name": "Meat board",
+                "desc": "Selection of cold cuts",
+                "price": "239 / 359 CZK"
+              },
+              {
+                "name": "Mixed board",
+                "desc": "Selection of cheeses and cold cuts",
+                "price": "249 / 369 CZK"
+              }
+            ]
+          },
+          {
+            "name": "Bar Snacks",
+            "items": [
+              {
+                "name": "Salted chips 50 g",
+                "desc": "",
+                "price": "50 CZK"
+              },
+              {
+                "name": "Green olives 70 g",
+                "desc": "",
+                "price": "79 CZK"
+              },
+              {
+                "name": "Roasted salted almonds 60 g",
+                "desc": "",
+                "price": "85 CZK"
+              },
+              {
+                "name": "Nachos",
+                "desc": "With cheddar dip and chilli",
+                "price": "125 CZK"
+              },
+              {
+                "name": "Popcorn",
+                "desc": "Salted / butter / cheese",
+                "price": "75 CZK"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Sandwiches & Salads",
-        "items": [
+        "name": "Drinks",
+        "subcategories": [
           {
-            "name": "Caesar salad",
-            "desc": "Romaine lettuce, caesar dressing, croutons, parmesan",
-            "price": "149 CZK"
+            "name": "Beer 0.5 / 0.3 L",
+            "items": [
+              {
+                "name": "Fabián Hostomice 10°",
+                "desc": "Malty, lightly hopped",
+                "price": "64 / 40 CZK"
+              },
+              {
+                "name": "Alois Uhříněves 11°",
+                "desc": "Pilsner type, distinct bitterness, dry finish",
+                "price": "69 / 43 CZK"
+              },
+              {
+                "name": "Fabián Hostomice 12°",
+                "desc": "Pale lager, full body, clean bitterness",
+                "price": "74 / 46 CZK"
+              },
+              {
+                "name": "Special Uhříněves",
+                "desc": "Rotating special - ask the staff",
+                "price": "ask staff"
+              },
+              {
+                "name": "Non‑alcoholic beer",
+                "desc": "",
+                "price": "63 CZK"
+              }
+            ]
           },
           {
-            "name": "Caesar sandwich",
-            "desc": "Romaine lettuce, bacon, caesar dressing, parmesan",
-            "price": "159 CZK"
+            "name": "Cider 0.33 L",
+            "items": [
+              {
+                "name": "F.H. Prager original",
+                "desc": "Dry apple cider",
+                "price": "85 CZK"
+              },
+              {
+                "name": "F.H. Prager sour cherry",
+                "desc": "Semi‑dry, with sour cherry acidity",
+                "price": "85 CZK"
+              },
+              {
+                "name": "F.H. Prager non‑alcoholic",
+                "desc": "Non‑alcoholic version of cider",
+                "price": "85 CZK"
+              }
+            ]
           },
           {
-            "name": "BLT sandwich",
-            "desc": "Crispy bacon, lollo biondo, tomato, sriracha mayo",
-            "price": "165 CZK"
+            "name": "Non‑Alcoholic",
+            "items": [
+              {
+                "name": "Soda 0.1 l",
+                "desc": "",
+                "price": "8 CZK"
+              },
+              {
+                "name": "Juice (orange / apple) 0.1 l",
+                "desc": "",
+                "price": "20 CZK"
+              },
+              {
+                "name": "Carafe of water 0.5 / 1 l",
+                "desc": "",
+                "price": "30 / 50 CZK"
+              },
+              {
+                "name": "Mattoni sparkling water",
+                "desc": "",
+                "price": "50 CZK"
+              },
+              {
+                "name": "Coca‑Cola / Cola Zero 0.33 l",
+                "desc": "",
+                "price": "60 CZK"
+              },
+              {
+                "name": "Kinley Tonic 0.25 l",
+                "desc": "",
+                "price": "60 CZK"
+              },
+              {
+                "name": "Homemade lemonade 0.4 l",
+                "desc": "Elderflower / raspberry / strawberry",
+                "price": "75 CZK"
+              },
+              {
+                "name": "F.H. Prager Kombucha 0.33 l",
+                "desc": "",
+                "price": "85 CZK"
+              },
+              {
+                "name": "Red Bull 0.25 l",
+                "desc": "",
+                "price": "85 CZK"
+              }
+            ]
           },
           {
-            "name": "Meatloaf slider",
-            "desc": "Local meatloaf, mustard, jalapeño, red onion",
-            "price": "169 CZK"
-          },
-          {
-            "name": "Dad's meatloaf slider",
-            "desc": "Local meatloaf, mustard, jalapeño, onion, pickles",
-            "price": "169 CZK"
+            "name": "Coffee & Tea",
+            "items": [
+              {
+                "name": "Espresso / Macchiato / Americano",
+                "desc": "",
+                "price": "60 / 65 / 65 CZK"
+              },
+              {
+                "name": "Cappuccino / Flat white",
+                "desc": "",
+                "price": "70 / 90 CZK"
+              },
+              {
+                "name": "Latte / Double espresso",
+                "desc": "",
+                "price": "85 / 85 CZK"
+              },
+              {
+                "name": "Extra coffee shot",
+                "desc": "",
+                "price": "+20 CZK"
+              },
+              {
+                "name": "Fresh tea",
+                "desc": "Mint / ginger",
+                "price": "85 CZK"
+              },
+              {
+                "name": "Loose leaf tea",
+                "desc": "Ask for current selection",
+                "price": "85 CZK"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Czech Classics",
-        "items": [
+        "name": "Cocktails & Spirits",
+        "subcategories": [
           {
-            "name": "Egg spread",
-            "desc": "Classic egg spread with chives (served with bread)",
-            "price": "85 CZK"
+            "name": "Mixed Drinks",
+            "items": [
+              {
+                "name": "Miniskinny",
+                "desc": "Vodka, lime",
+                "price": "45 CZK"
+              },
+              {
+                "name": "Mimosa",
+                "desc": "Prosecco, orange juice",
+                "price": "125 CZK"
+              },
+              {
+                "name": "Skinny bitch",
+                "desc": "Vodka, soda, lime",
+                "price": "130 CZK"
+              },
+              {
+                "name": "Kolárum",
+                "desc": "Bartida Original, cola",
+                "price": "130 CZK"
+              },
+              {
+                "name": "Aperol spritz",
+                "desc": "Aperol, prosecco, soda, orange slice",
+                "price": "159 CZK"
+              },
+              {
+                "name": "Hugo spritz",
+                "desc": "Elderflower syrup, prosecco, soda, mint, lime",
+                "price": "159 CZK"
+              },
+              {
+                "name": "Gin tonic",
+                "desc": "Beefeater, Kinley tonic, lime",
+                "price": "159 CZK"
+              },
+              {
+                "name": "Cuba libre",
+                "desc": "Havana Club, cola, lime",
+                "price": "159 CZK"
+              },
+              {
+                "name": "Mule",
+                "desc": "Vodka, ginger beer, lime",
+                "price": "160 CZK"
+              },
+              {
+                "name": "Mojito",
+                "desc": "Havana Club, lime, mint, cane sugar, soda",
+                "price": "169 CZK"
+              }
+            ]
           },
           {
-            "name": "Pork crackling spread",
-            "desc": "Crackling spread with onion (served with bread)",
-            "price": "85 CZK"
-          },
-          {
-            "name": "Pickled sausage (Utopenec)",
-            "desc": "Sausage, onion, bell pepper (served with bread)",
-            "price": "115 CZK"
-          },
-          {
-            "name": "Pickled Camembert",
-            "desc": "Camembert in oil with pepper and chilli (with bread)",
-            "price": "149 CZK"
-          },
-          {
-            "name": "Viennese sausage 2 / 3 pcs",
-            "desc": "Large Viennese sausage, mustard, horseradish (with bread)",
-            "price": "125 / 175 CZK"
-          },
-          {
-            "name": "Extra bread",
-            "desc": "",
-            "price": "29 CZK"
+            "name": "Spirits & Shots",
+            "items": [
+              {
+                "name": "Griotka / Zelená (Bartida)",
+                "desc": "0.04 l",
+                "price": "60 CZK"
+              },
+              {
+                "name": "Eggnog / Chilli sour cherry / Koniferum",
+                "desc": "0.04 l",
+                "price": "70 CZK"
+              },
+              {
+                "name": "Slivovitz / Apricot / Walnut (Žufánek)",
+                "desc": "0.02 l",
+                "price": "70 CZK"
+              },
+              {
+                "name": "Pear / Raspberry (Baron)",
+                "desc": "0.02 l",
+                "price": "70 CZK"
+              },
+              {
+                "name": "Fernet Stock / Becherovka / Jägermeister",
+                "desc": "0.04 l",
+                "price": "80 / 85 / 89 CZK"
+              },
+              {
+                "name": "Beefeater / Malfy / Citadelle Gin",
+                "desc": "0.04 l",
+                "price": "80 / 125 / 140 CZK"
+              },
+              {
+                "name": "Jameson / Tullamore / Four Roses",
+                "desc": "0.04 l",
+                "price": "85 / 89 / 90 CZK"
+              },
+              {
+                "name": "Wild Turkey 101 / Jack Daniel's",
+                "desc": "0.04 l",
+                "price": "100 / 110 CZK"
+              },
+              {
+                "name": "Chivas Regal 12yo",
+                "desc": "0.04 l",
+                "price": "140 CZK"
+              },
+              {
+                "name": "Finlandia / Tres Alegres Reposado",
+                "desc": "Vodka / Tequila 0.04 l",
+                "price": "90 / 95 CZK"
+              },
+              {
+                "name": "Original Bartida / Republica / Havana Club 3y",
+                "desc": "Rum 0.04 l",
+                "price": "65 / 70 / 75 CZK"
+              },
+              {
+                "name": "Ron Cariba / Millonario / Diplomatico",
+                "desc": "Rum 0.04 l",
+                "price": "90 / 140 / 150 CZK"
+              },
+              {
+                "name": "Kontušovka Žufánek",
+                "desc": "0.04 l",
+                "price": "130 CZK"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Boards (200 / 300 g)",
-        "items": [
-          {
-            "name": "Cheese board",
-            "desc": "Selection of cheeses",
-            "price": "239 / 359 CZK"
-          },
-          {
-            "name": "Meat board",
-            "desc": "Selection of cold cuts",
-            "price": "239 / 359 CZK"
-          },
-          {
-            "name": "Mixed board",
-            "desc": "Selection of cheeses and cold cuts",
-            "price": "249 / 369 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Bar Snacks",
-        "items": [
-          {
-            "name": "Salted chips 50 g",
-            "desc": "",
-            "price": "50 CZK"
-          },
-          {
-            "name": "Green olives 70 g",
-            "desc": "",
-            "price": "79 CZK"
-          },
-          {
-            "name": "Roasted salted almonds 60 g",
-            "desc": "",
-            "price": "85 CZK"
-          },
-          {
-            "name": "Nachos",
-            "desc": "With cheddar dip and chilli",
-            "price": "125 CZK"
-          },
-          {
-            "name": "Popcorn",
-            "desc": "Salted / butter / cheese",
-            "price": "75 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Beer 0.5 / 0.3 L",
-        "items": [
-          {
-            "name": "Fabián Hostomice 10°",
-            "desc": "Malty, lightly hopped",
-            "price": "64 / 40 CZK"
-          },
-          {
-            "name": "Alois Uhříněves 11°",
-            "desc": "Pilsner type, distinct bitterness, dry finish",
-            "price": "69 / 43 CZK"
-          },
-          {
-            "name": "Fabián Hostomice 12°",
-            "desc": "Pale lager, full body, clean bitterness",
-            "price": "74 / 46 CZK"
-          },
-          {
-            "name": "Special Uhříněves",
-            "desc": "Rotating special - ask the staff",
-            "price": "ask staff"
-          },
-          {
-            "name": "Non‑alcoholic beer",
-            "desc": "",
-            "price": "63 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Cider 0.33 L",
-        "items": [
-          {
-            "name": "F.H. Prager original",
-            "desc": "Dry apple cider",
-            "price": "85 CZK"
-          },
-          {
-            "name": "F.H. Prager sour cherry",
-            "desc": "Semi‑dry, with sour cherry acidity",
-            "price": "85 CZK"
-          },
-          {
-            "name": "F.H. Prager non‑alcoholic",
-            "desc": "Non‑alcoholic version of cider",
-            "price": "85 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Non‑Alcoholic",
-        "items": [
-          {
-            "name": "Soda 0.1 l",
-            "desc": "",
-            "price": "8 CZK"
-          },
-          {
-            "name": "Juice (orange / apple) 0.1 l",
-            "desc": "",
-            "price": "20 CZK"
-          },
-          {
-            "name": "Carafe of water 0.5 / 1 l",
-            "desc": "",
-            "price": "30 / 50 CZK"
-          },
-          {
-            "name": "Mattoni sparkling water",
-            "desc": "",
-            "price": "50 CZK"
-          },
-          {
-            "name": "Coca‑Cola / Cola Zero 0.33 l",
-            "desc": "",
-            "price": "60 CZK"
-          },
-          {
-            "name": "Kinley Tonic 0.25 l",
-            "desc": "",
-            "price": "60 CZK"
-          },
-          {
-            "name": "Homemade lemonade 0.4 l",
-            "desc": "Elderflower / raspberry / strawberry",
-            "price": "75 CZK"
-          },
-          {
-            "name": "F.H. Prager Kombucha 0.33 l",
-            "desc": "",
-            "price": "85 CZK"
-          },
-          {
-            "name": "Red Bull 0.25 l",
-            "desc": "",
-            "price": "85 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Coffee & Tea",
-        "items": [
-          {
-            "name": "Espresso / Macchiato / Americano",
-            "desc": "",
-            "price": "60 / 65 / 65 CZK"
-          },
-          {
-            "name": "Cappuccino / Flat white",
-            "desc": "",
-            "price": "70 / 90 CZK"
-          },
-          {
-            "name": "Latte / Double espresso",
-            "desc": "",
-            "price": "85 / 85 CZK"
-          },
-          {
-            "name": "Extra coffee shot",
-            "desc": "",
-            "price": "+20 CZK"
-          },
-          {
-            "name": "Fresh tea",
-            "desc": "Mint / ginger",
-            "price": "85 CZK"
-          },
-          {
-            "name": "Loose leaf tea",
-            "desc": "Ask for current selection",
-            "price": "85 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Mixed Drinks",
-        "items": [
-          {
-            "name": "Miniskinny",
-            "desc": "Vodka, lime",
-            "price": "45 CZK"
-          },
-          {
-            "name": "Mimosa",
-            "desc": "Prosecco, orange juice",
-            "price": "125 CZK"
-          },
-          {
-            "name": "Skinny bitch",
-            "desc": "Vodka, soda, lime",
-            "price": "130 CZK"
-          },
-          {
-            "name": "Kolárum",
-            "desc": "Bartida Original, cola",
-            "price": "130 CZK"
-          },
-          {
-            "name": "Aperol spritz",
-            "desc": "Aperol, prosecco, soda, orange slice",
-            "price": "159 CZK"
-          },
-          {
-            "name": "Hugo spritz",
-            "desc": "Elderflower syrup, prosecco, soda, mint, lime",
-            "price": "159 CZK"
-          },
-          {
-            "name": "Gin tonic",
-            "desc": "Beefeater, Kinley tonic, lime",
-            "price": "159 CZK"
-          },
-          {
-            "name": "Cuba libre",
-            "desc": "Havana Club, cola, lime",
-            "price": "159 CZK"
-          },
-          {
-            "name": "Mule",
-            "desc": "Vodka, ginger beer, lime",
-            "price": "160 CZK"
-          },
-          {
-            "name": "Mojito",
-            "desc": "Havana Club, lime, mint, cane sugar, soda",
-            "price": "169 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Spirits & Shots",
-        "items": [
-          {
-            "name": "Griotka / Zelená (Bartida)",
-            "desc": "0.04 l",
-            "price": "60 CZK"
-          },
-          {
-            "name": "Eggnog / Chilli sour cherry / Koniferum",
-            "desc": "0.04 l",
-            "price": "70 CZK"
-          },
-          {
-            "name": "Slivovitz / Apricot / Walnut (Žufánek)",
-            "desc": "0.02 l",
-            "price": "70 CZK"
-          },
-          {
-            "name": "Pear / Raspberry (Baron)",
-            "desc": "0.02 l",
-            "price": "70 CZK"
-          },
-          {
-            "name": "Fernet Stock / Becherovka / Jägermeister",
-            "desc": "0.04 l",
-            "price": "80 / 85 / 89 CZK"
-          },
-          {
-            "name": "Beefeater / Malfy / Citadelle Gin",
-            "desc": "0.04 l",
-            "price": "80 / 125 / 140 CZK"
-          },
-          {
-            "name": "Jameson / Tullamore / Four Roses",
-            "desc": "0.04 l",
-            "price": "85 / 89 / 90 CZK"
-          },
-          {
-            "name": "Wild Turkey 101 / Jack Daniel's",
-            "desc": "0.04 l",
-            "price": "100 / 110 CZK"
-          },
-          {
-            "name": "Chivas Regal 12yo",
-            "desc": "0.04 l",
-            "price": "140 CZK"
-          },
-          {
-            "name": "Finlandia / Tres Alegres Reposado",
-            "desc": "Vodka / Tequila 0.04 l",
-            "price": "90 / 95 CZK"
-          },
-          {
-            "name": "Original Bartida / Republica / Havana Club 3y",
-            "desc": "Rum 0.04 l",
-            "price": "65 / 70 / 75 CZK"
-          },
-          {
-            "name": "Ron Cariba / Millonario / Diplomatico",
-            "desc": "Rum 0.04 l",
-            "price": "90 / 140 / 150 CZK"
-          },
-          {
-            "name": "Kontušovka Žufánek",
-            "desc": "0.04 l",
-            "price": "130 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Wines by the Glass (White & Rosé)",
-        "items": [
-          {
-            "name": "Pinot Blanc (Vajbar Winery)",
-            "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs. Taste: Colorful, fresh and juicy. Subtle oak traces.",
-            "price": "45 CZK / dcl"
-          },
-          {
-            "name": "Welschriesling (Mitoma Winery)",
-            "desc": "Dry. Aroma: Firm, full and dynamic. Taste: Round, smooth, pleasantly juicy.",
-            "price": "45 CZK / dcl"
-          },
-          {
-            "name": "Gewürztraminer (Mitoma Winery)",
-            "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey. Taste: Mildly sweet, perfectly matching the aroma.",
-            "price": "45 CZK / dcl"
-          },
-          {
-            "name": "Pálava (Mitoma Winery)",
-            "desc": "Semi‑sweet. Aroma: Rich and fresh white roses. Taste: Homemade marmalade fruit, long aftertaste.",
-            "price": "48 CZK / dcl"
-          },
-          {
-            "name": "Zweigeltrebe rosé",
-            "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices. Taste: Dynamic, crisp cherries and currants.",
-            "price": "45 CZK / dcl"
-          }
-        ]
-      },
-      {
-        "name": "Wines by the Glass (Red)",
-        "items": [
-          {
-            "name": "Dornfelder",
-            "desc": "Dry. Aroma: Ripe and full, fresh sour cherry. Taste: Round, subtle tones of cherries and cranberries.",
-            "price": "50 CZK / dcl"
-          },
-          {
-            "name": "Primitivo Salento IGP (Italy)",
-            "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate. Taste: Fruity, balanced with pepper and coffee.",
-            "price": "60 CZK / dcl"
-          }
-        ]
-      },
-      {
-        "name": "Sparkling Wines",
-        "items": [
-          {
-            "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
-            "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers. Taste: Clean and dry.",
-            "price": "125 / 695 CZK"
-          },
-          {
-            "name": "Rebuli Brut (Treviso DOC)",
-            "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar. Taste: Dry, fruity structure.",
-            "price": "125 / 695 CZK"
-          },
-          {
-            "name": "Perlage Ottantacinque Bio",
-            "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple. Taste: Balanced, long, easy to drink.",
-            "price": "125 / 695 CZK"
-          },
-          {
-            "name": "Integrale Bio",
-            "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries. Taste: Fresh and fruity.",
-            "price": "125 / 695 CZK"
-          },
-          {
-            "name": "Mionetto (Treviso DOC)",
-            "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit. Taste: Harmonious with honey notes.",
-            "price": "360 CZK / btl"
-          },
-          {
-            "name": "Sekt Pinot Blanc (Pavlovín)",
-            "desc": "Brut. Aroma: Floral with pears. Taste: Elegant, mineral with fine acidity.",
-            "price": "695 CZK / btl"
-          },
-          {
-            "name": "Bianco Spumante Alcohol Free",
-            "desc": "Non‑alcoholic. Aroma: Green apples. Taste: Harmonious, fresh, balanced sweet and sour.",
-            "price": "495 CZK / btl"
-          }
-        ]
-      },
-      {
-        "name": "Bottled Wines (White & Orange)",
-        "items": [
-          {
-            "name": "Silvaner (Mádl Winery)",
-            "desc": "White - dry. Aroma: Subtle white flowers. Taste: Fresh aftertaste of greengages.",
-            "price": "495 CZK"
-          },
-          {
-            "name": "Sauvignon Blanc (Mádl Winery)",
-            "desc": "White - dry. Aroma: Blackcurrant, linden flower. Taste: Juicy peach and gooseberry.",
-            "price": "545 CZK"
-          },
-          {
-            "name": "Hibernal (Mádl Winery)",
-            "desc": "White - semi‑dry. Aroma: Apricot and mint. Taste: Ripe peaches with long persistence.",
-            "price": "495 CZK"
-          },
-          {
-            "name": "Riesling (V. Tetur Winery)",
-            "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots. Taste: Harmonious, spicy acidity.",
-            "price": "545 CZK"
-          },
-          {
-            "name": "Chardonnay Remake (V. Tetur Winery)",
-            "desc": "White - dry. Aroma: Spicy yellow melon. Taste: Full, fresh citrus acidity.",
-            "price": "595 CZK"
-          },
-          {
-            "name": "Rrrr cuvée (Maděřič Winery)",
-            "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis. Taste: Distinctly mineral, creamy.",
-            "price": "595 CZK"
-          },
-          {
-            "name": "Pálava Orange (Maděřič Winery)",
-            "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots. Taste: Juicy, fine tannins.",
-            "price": "645 CZK"
-          }
-        ]
-      },
-      {
-        "name": "Bottled Wines (Red & Rosé)",
-        "items": [
-          {
-            "name": "Cabernet Sauvignon (V. HORT Winery)",
-            "desc": "Red - dry. Aroma: Black fruit, blackcurrant. Taste: Distinct tannins with smooth acidity.",
-            "price": "495 CZK"
-          },
-          {
-            "name": "Pinot Noir rosé (V. HORT Winery)",
-            "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries. Taste: Harmonious strawberry and honey.",
-            "price": "490 CZK"
-          },
-          {
-            "name": "Blaufränkisch VOC (Mitoma Winery)",
-            "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood. Taste: Fuller, round with pleasant tannins.",
-            "price": "520 CZK"
-          },
-          {
-            "name": "Bellegrado Barrique Cuvée (Zapletal)",
-            "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel. Taste: Delicious fine tannins.",
-            "price": "895 CZK"
-          },
-          {
-            "name": "Primitivo di Manduria DOC (Italy)",
-            "desc": "Red - dry. Aroma: Currants, plum jam, cocoa. Taste: Full and round, spice and coffee notes.",
-            "price": "795 CZK"
+        "name": "Wine List",
+        "subcategories": [
+          {
+            "name": "Wines by the Glass (White & Rosé)",
+            "items": [
+              {
+                "name": "Pinot Blanc (Vajbar Winery)",
+                "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs. Taste: Colorful, fresh and juicy. Subtle oak traces.",
+                "price": "45 CZK / dcl"
+              },
+              {
+                "name": "Welschriesling (Mitoma Winery)",
+                "desc": "Dry. Aroma: Firm, full and dynamic. Taste: Round, smooth, pleasantly juicy.",
+                "price": "45 CZK / dcl"
+              },
+              {
+                "name": "Gewürztraminer (Mitoma Winery)",
+                "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey. Taste: Mildly sweet, perfectly matching the aroma.",
+                "price": "45 CZK / dcl"
+              },
+              {
+                "name": "Pálava (Mitoma Winery)",
+                "desc": "Semi‑sweet. Aroma: Rich and fresh white roses. Taste: Homemade marmalade fruit, long aftertaste.",
+                "price": "48 CZK / dcl"
+              },
+              {
+                "name": "Zweigeltrebe rosé",
+                "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices. Taste: Dynamic, crisp cherries and currants.",
+                "price": "45 CZK / dcl"
+              }
+            ]
+          },
+          {
+            "name": "Wines by the Glass (Red)",
+            "items": [
+              {
+                "name": "Dornfelder",
+                "desc": "Dry. Aroma: Ripe and full, fresh sour cherry. Taste: Round, subtle tones of cherries and cranberries.",
+                "price": "50 CZK / dcl"
+              },
+              {
+                "name": "Primitivo Salento IGP (Italy)",
+                "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate. Taste: Fruity, balanced with pepper and coffee.",
+                "price": "60 CZK / dcl"
+              }
+            ]
+          },
+          {
+            "name": "Sparkling Wines",
+            "items": [
+              {
+                "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
+                "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers. Taste: Clean and dry.",
+                "price": "125 / 695 CZK"
+              },
+              {
+                "name": "Rebuli Brut (Treviso DOC)",
+                "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar. Taste: Dry, fruity structure.",
+                "price": "125 / 695 CZK"
+              },
+              {
+                "name": "Perlage Ottantacinque Bio",
+                "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple. Taste: Balanced, long, easy to drink.",
+                "price": "125 / 695 CZK"
+              },
+              {
+                "name": "Integrale Bio",
+                "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries. Taste: Fresh and fruity.",
+                "price": "125 / 695 CZK"
+              },
+              {
+                "name": "Mionetto (Treviso DOC)",
+                "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit. Taste: Harmonious with honey notes.",
+                "price": "360 CZK / btl"
+              },
+              {
+                "name": "Sekt Pinot Blanc (Pavlovín)",
+                "desc": "Brut. Aroma: Floral with pears. Taste: Elegant, mineral with fine acidity.",
+                "price": "695 CZK / btl"
+              },
+              {
+                "name": "Bianco Spumante Alcohol Free",
+                "desc": "Non‑alcoholic. Aroma: Green apples. Taste: Harmonious, fresh, balanced sweet and sour.",
+                "price": "495 CZK / btl"
+              }
+            ]
+          },
+          {
+            "name": "Bottled Wines (White & Orange)",
+            "items": [
+              {
+                "name": "Silvaner (Mádl Winery)",
+                "desc": "White - dry. Aroma: Subtle white flowers. Taste: Fresh aftertaste of greengages.",
+                "price": "495 CZK"
+              },
+              {
+                "name": "Sauvignon Blanc (Mádl Winery)",
+                "desc": "White - dry. Aroma: Blackcurrant, linden flower. Taste: Juicy peach and gooseberry.",
+                "price": "545 CZK"
+              },
+              {
+                "name": "Hibernal (Mádl Winery)",
+                "desc": "White - semi‑dry. Aroma: Apricot and mint. Taste: Ripe peaches with long persistence.",
+                "price": "495 CZK"
+              },
+              {
+                "name": "Riesling (V. Tetur Winery)",
+                "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots. Taste: Harmonious, spicy acidity.",
+                "price": "545 CZK"
+              },
+              {
+                "name": "Chardonnay Remake (V. Tetur Winery)",
+                "desc": "White - dry. Aroma: Spicy yellow melon. Taste: Full, fresh citrus acidity.",
+                "price": "595 CZK"
+              },
+              {
+                "name": "Rrrr cuvée (Maděřič Winery)",
+                "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis. Taste: Distinctly mineral, creamy.",
+                "price": "595 CZK"
+              },
+              {
+                "name": "Pálava Orange (Maděřič Winery)",
+                "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots. Taste: Juicy, fine tannins.",
+                "price": "645 CZK"
+              }
+            ]
+          },
+          {
+            "name": "Bottled Wines (Red & Rosé)",
+            "items": [
+              {
+                "name": "Cabernet Sauvignon (V. HORT Winery)",
+                "desc": "Red - dry. Aroma: Black fruit, blackcurrant. Taste: Distinct tannins with smooth acidity.",
+                "price": "495 CZK"
+              },
+              {
+                "name": "Pinot Noir rosé (V. HORT Winery)",
+                "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries. Taste: Harmonious strawberry and honey.",
+                "price": "490 CZK"
+              },
+              {
+                "name": "Blaufränkisch VOC (Mitoma Winery)",
+                "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood. Taste: Fuller, round with pleasant tannins.",
+                "price": "520 CZK"
+              },
+              {
+                "name": "Bellegrado Barrique Cuvée (Zapletal)",
+                "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel. Taste: Delicious fine tannins.",
+                "price": "895 CZK"
+              },
+              {
+                "name": "Primitivo di Manduria DOC (Italy)",
+                "desc": "Red - dry. Aroma: Currants, plum jam, cocoa. Taste: Full and round, spice and coffee notes.",
+                "price": "795 CZK"
+              }
+            ]
           }
         ]
       }

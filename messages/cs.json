@@ -49,557 +49,577 @@
     "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
     "categories": [
       {
-        "name": "Pinsa Romana",
-        "items": [
+        "name": "Jídlo",
+        "subcategories": [
           {
-            "name": "Margherita",
-            "desc": "Sugo, mozzarella, bazalka, olivový olej",
-            "price": "229,-"
+            "name": "Pinsa Romana",
+            "items": [
+              {
+                "name": "Margherita",
+                "desc": "Sugo, mozzarella, bazalka, olivový olej",
+                "price": "229,-"
+              },
+              {
+                "name": "Salami picante",
+                "desc": "Sugo, mozzarella, pikantní salám, chilli olej",
+                "price": "249,-"
+              },
+              {
+                "name": "Prosciutto",
+                "desc": "Sugo, mozzarella, prosciutto crudo, rukola",
+                "price": "255,-"
+              },
+              {
+                "name": "Formaggi",
+                "desc": "Mozzarella, parmigiano, cheddar, bazalka",
+                "price": "259,-"
+              }
+            ]
           },
           {
-            "name": "Salami picante",
-            "desc": "Sugo, mozzarella, pikantní salám, chilli olej",
-            "price": "249,-"
+            "name": "Sandwiche a saláty",
+            "items": [
+              {
+                "name": "Caesar salát",
+                "desc": "Římský salát, caesar dressing, krutony, parmezán",
+                "price": "149,-"
+              },
+              {
+                "name": "Caesar sandwich",
+                "desc": "Římský salát, slanina, caesar dressing, parmezán",
+                "price": "159,-"
+              },
+              {
+                "name": "BLT sandwich",
+                "desc": "Křupavá slanina, lollo biondo, rajče, sriracha mayo",
+                "price": "165,-"
+              },
+              {
+                "name": "Sekačka v housce",
+                "desc": "Od Dolejších, hořčice, jalapeño, červená cibule",
+                "price": "169,-"
+              },
+              {
+                "name": "Tátova sekaná v housce",
+                "desc": "Od Dolejších, hořčice, jalapeño, cibule, kyselá okurka",
+                "price": "169,-"
+              }
+            ]
           },
           {
-            "name": "Prosciutto",
-            "desc": "Sugo, mozzarella, prosciutto crudo, rukola",
-            "price": "255,-"
+            "name": "České klasiky",
+            "items": [
+              {
+                "name": "Vajíčková pomazánka",
+                "desc": "Klasická vajíčková s pažitkou (podáváme s chlebem)",
+                "price": "85,-"
+              },
+              {
+                "name": "Škvarková pomazánka",
+                "desc": "Škvarková s cibulkou (podáváme s chlebem)",
+                "price": "85,-"
+              },
+              {
+                "name": "Petrovický utopenec",
+                "desc": "Utopence, cibule, paprika (podáváme s chlebem)",
+                "price": "115,-"
+              },
+              {
+                "name": "Nakládaný hermelín",
+                "desc": "Hermelín v oleji s pepřem a feferonkou (podáváme s chlebem)",
+                "price": "149,-"
+              },
+              {
+                "name": "Vídeňský párek 2 / 3 nohy",
+                "desc": "Velký vídeňský párek, křemžská hořčice, křen (s chlebem)",
+                "price": "125 / 175,-"
+              },
+              {
+                "name": "Chléb navíc",
+                "desc": "",
+                "price": "29,-"
+              }
+            ]
           },
           {
-            "name": "Formaggi",
-            "desc": "Mozzarella, parmigiano, cheddar, bazalka",
-            "price": "259,-"
+            "name": "Prkénka (200 / 300 g)",
+            "items": [
+              {
+                "name": "Sýrové prkénko",
+                "desc": "Výběr sýrů",
+                "price": "239 / 359,-"
+              },
+              {
+                "name": "Uzenářské prkénko",
+                "desc": "Výběr uzenin",
+                "price": "239 / 359,-"
+              },
+              {
+                "name": "Mix prkénko",
+                "desc": "Výběr sýrů a uzenin",
+                "price": "249 / 369,-"
+              }
+            ]
+          },
+          {
+            "name": "K pivu a vínu",
+            "items": [
+              {
+                "name": "Chipsy solené 50 g",
+                "desc": "",
+                "price": "50,-"
+              },
+              {
+                "name": "Olivy zelené 70 g",
+                "desc": "",
+                "price": "79,-"
+              },
+              {
+                "name": "Pražené mandle se solí 60 g",
+                "desc": "",
+                "price": "85,-"
+              },
+              {
+                "name": "Nachos",
+                "desc": "S chedarovým dipem a chilli",
+                "price": "125,-"
+              },
+              {
+                "name": "Popcorn",
+                "desc": "Slaný / máslový / sýrový",
+                "price": "75,-"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Sandwiche a saláty",
-        "items": [
+        "name": "Nápoje",
+        "subcategories": [
           {
-            "name": "Caesar salát",
-            "desc": "Římský salát, caesar dressing, krutony, parmezán",
-            "price": "149,-"
+            "name": "Pivo 0,5 / 0,3 L",
+            "items": [
+              {
+                "name": "Fabián Hostomice 10°",
+                "desc": "Sladové, lehce chmelené",
+                "price": "64 / 40,-"
+              },
+              {
+                "name": "Alois Uhříněves 11°",
+                "desc": "Plzeňský typ, výrazná hořkost, suchý finiš",
+                "price": "69 / 43,-"
+              },
+              {
+                "name": "Fabián Hostomice 12°",
+                "desc": "Světlý ležák, plné tělo, čistá hořkost",
+                "price": "74 / 46,-"
+              },
+              {
+                "name": "Speciál Uhříněves",
+                "desc": "Rotující speciál - zeptejte se obsluhy",
+                "price": "dle nabídky"
+              },
+              {
+                "name": "Nealko pivo",
+                "desc": "",
+                "price": "63,-"
+              }
+            ]
           },
           {
-            "name": "Caesar sandwich",
-            "desc": "Římský salát, slanina, caesar dressing, parmezán",
-            "price": "159,-"
+            "name": "Cider 0,33 L",
+            "items": [
+              {
+                "name": "F.H. Prager originál",
+                "desc": "Suchý jablečný cider",
+                "price": "85,-"
+              },
+              {
+                "name": "F.H. Prager višeň",
+                "desc": "Polosuchý, s višňovou kyselostí",
+                "price": "85,-"
+              },
+              {
+                "name": "F.H. Prager non‑alcoholic",
+                "desc": "Nealkoholická verze cideru",
+                "price": "85,-"
+              }
+            ]
           },
           {
-            "name": "BLT sandwich",
-            "desc": "Křupavá slanina, lollo biondo, rajče, sriracha mayo",
-            "price": "165,-"
+            "name": "Nealko",
+            "items": [
+              {
+                "name": "Soda 0,1 l",
+                "desc": "",
+                "price": "8,-"
+              },
+              {
+                "name": "Džus (pomeranč / jablko) 0,1 l",
+                "desc": "",
+                "price": "20,-"
+              },
+              {
+                "name": "Karafa vody 0,5 / 1 l",
+                "desc": "",
+                "price": "30 / 50,-"
+              },
+              {
+                "name": "Mattoni jemně perlivá",
+                "desc": "",
+                "price": "50,-"
+              },
+              {
+                "name": "Coca‑Cola / Cola Zero 0,33 l",
+                "desc": "",
+                "price": "60,-"
+              },
+              {
+                "name": "Tonic Kinley 0,25 l",
+                "desc": "",
+                "price": "60,-"
+              },
+              {
+                "name": "Domácí limonáda 0,4 l",
+                "desc": "Bezinka / malina / jahoda",
+                "price": "75,-"
+              },
+              {
+                "name": "F.H. Prager Kombucha 0,33 l",
+                "desc": "",
+                "price": "85,-"
+              },
+              {
+                "name": "Red Bull 0,25 l",
+                "desc": "",
+                "price": "85,-"
+              }
+            ]
           },
           {
-            "name": "Sekačka v housce",
-            "desc": "Od Dolejších, hořčice, jalapeño, červená cibule",
-            "price": "169,-"
-          },
-          {
-            "name": "Tátova sekaná v housce",
-            "desc": "Od Dolejších, hořčice, jalapeño, cibule, kyselá okurka",
-            "price": "169,-"
+            "name": "Káva & Čaj",
+            "items": [
+              {
+                "name": "Espresso / Macchiato / Americano",
+                "desc": "",
+                "price": "60 / 65 / 65,-"
+              },
+              {
+                "name": "Cappuccino / Flat white",
+                "desc": "",
+                "price": "70 / 90,-"
+              },
+              {
+                "name": "Latte / Double espresso",
+                "desc": "",
+                "price": "85 / 85,-"
+              },
+              {
+                "name": "Extra shot kávy",
+                "desc": "",
+                "price": "+20,-"
+              },
+              {
+                "name": "Čerstvý čaj",
+                "desc": "Máta / zázvor",
+                "price": "85,-"
+              },
+              {
+                "name": "Sypaný čaj",
+                "desc": "Dle nabídky",
+                "price": "85,-"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "České klasiky",
-        "items": [
+        "name": "Koktejly & Destiláty",
+        "subcategories": [
           {
-            "name": "Vajíčková pomazánka",
-            "desc": "Klasická vajíčková s pažitkou (podáváme s chlebem)",
-            "price": "85,-"
+            "name": "Míchačky",
+            "items": [
+              {
+                "name": "Miniskinny",
+                "desc": "Vodka, limeta",
+                "price": "45,-"
+              },
+              {
+                "name": "Mimosa",
+                "desc": "Prosecco, pomerančový džus",
+                "price": "125,-"
+              },
+              {
+                "name": "Skinny bitch",
+                "desc": "Vodka, soda, limetka",
+                "price": "130,-"
+              },
+              {
+                "name": "Kolárum",
+                "desc": "Bartida Original, cola",
+                "price": "130,-"
+              },
+              {
+                "name": "Aperol spritz",
+                "desc": "Aperol, prosecco, soda, plátek pomeranče",
+                "price": "159,-"
+              },
+              {
+                "name": "Hugo spritz",
+                "desc": "Bezový sirup, prosecco, soda, máta, limetka",
+                "price": "159,-"
+              },
+              {
+                "name": "Gin tonic",
+                "desc": "Beefeater, Kinley tonic, limetka",
+                "price": "159,-"
+              },
+              {
+                "name": "Cuba libre",
+                "desc": "Havana Club, cola, limetka",
+                "price": "159,-"
+              },
+              {
+                "name": "Mule",
+                "desc": "Vodka, zázvorové pivo, limetka",
+                "price": "160,-"
+              },
+              {
+                "name": "Mojito",
+                "desc": "Havana Club, limetka, máta, třtinový cukr, soda",
+                "price": "169,-"
+              }
+            ]
           },
           {
-            "name": "Škvarková pomazánka",
-            "desc": "Škvarková s cibulkou (podáváme s chlebem)",
-            "price": "85,-"
-          },
-          {
-            "name": "Petrovický utopenec",
-            "desc": "Utopence, cibule, paprika (podáváme s chlebem)",
-            "price": "115,-"
-          },
-          {
-            "name": "Nakládaný hermelín",
-            "desc": "Hermelín v oleji s pepřem a feferonkou (podáváme s chlebem)",
-            "price": "149,-"
-          },
-          {
-            "name": "Vídeňský párek 2 / 3 nohy",
-            "desc": "Velký vídeňský párek, křemžská hořčice, křen (s chlebem)",
-            "price": "125 / 175,-"
-          },
-          {
-            "name": "Chléb navíc",
-            "desc": "",
-            "price": "29,-"
+            "name": "Tvrdý alkohol (Panáky)",
+            "items": [
+              {
+                "name": "Griotka / Zelená (Bartida)",
+                "desc": "0,04 l",
+                "price": "60,-"
+              },
+              {
+                "name": "Vaječňák / Chilli višeň / Koniferum",
+                "desc": "0,04 l",
+                "price": "70,-"
+              },
+              {
+                "name": "Slivovice / Meruňkovice / Ořechovka Žufánek",
+                "desc": "0,02 l",
+                "price": "70,-"
+              },
+              {
+                "name": "Hruškovice / Malina Baron",
+                "desc": "0,02 l",
+                "price": "70,-"
+              },
+              {
+                "name": "Fernet Stock / Becherovka / Jägermeister",
+                "desc": "0,04 l",
+                "price": "80 / 85 / 89,-"
+              },
+              {
+                "name": "Beefeater / Malfy / Citadelle Gin",
+                "desc": "0,04 l",
+                "price": "80 / 125 / 140,-"
+              },
+              {
+                "name": "Jameson / Tullamore / Four Roses",
+                "desc": "0,04 l",
+                "price": "85 / 89 / 90,-"
+              },
+              {
+                "name": "Wild Turkey 101 / Jack Daniel's",
+                "desc": "0,04 l",
+                "price": "100 / 110,-"
+              },
+              {
+                "name": "Chivas Regal 12yo",
+                "desc": "0,04 l",
+                "price": "140,-"
+              },
+              {
+                "name": "Finlandia / Tres Alegres Reposado",
+                "desc": "Vodka / Tequila 0,04 l",
+                "price": "90 / 95,-"
+              },
+              {
+                "name": "Original Bartida / Republica / Havana Club 3y",
+                "desc": "Rum 0,04 l",
+                "price": "65 / 70 / 75,-"
+              },
+              {
+                "name": "Ron Cariba / Millonario / Diplomatico",
+                "desc": "Rum 0,04 l",
+                "price": "90 / 140 / 150,-"
+              },
+              {
+                "name": "Kontušovka Žufánek",
+                "desc": "0,04 l",
+                "price": "130,-"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Prkénka (200 / 300 g)",
-        "items": [
-          {
-            "name": "Sýrové prkénko",
-            "desc": "Výběr sýrů",
-            "price": "239 / 359,-"
-          },
-          {
-            "name": "Uzenářské prkénko",
-            "desc": "Výběr uzenin",
-            "price": "239 / 359,-"
-          },
-          {
-            "name": "Mix prkénko",
-            "desc": "Výběr sýrů a uzenin",
-            "price": "249 / 369,-"
-          }
-        ]
-      },
-      {
-        "name": "K pivu a vínu",
-        "items": [
-          {
-            "name": "Chipsy solené 50 g",
-            "desc": "",
-            "price": "50,-"
-          },
-          {
-            "name": "Olivy zelené 70 g",
-            "desc": "",
-            "price": "79,-"
-          },
-          {
-            "name": "Pražené mandle se solí 60 g",
-            "desc": "",
-            "price": "85,-"
-          },
-          {
-            "name": "Nachos",
-            "desc": "S chedarovým dipem a chilli",
-            "price": "125,-"
-          },
-          {
-            "name": "Popcorn",
-            "desc": "Slaný / máslový / sýrový",
-            "price": "75,-"
-          }
-        ]
-      },
-      {
-        "name": "Pivo 0,5 / 0,3 L",
-        "items": [
-          {
-            "name": "Fabián Hostomice 10°",
-            "desc": "Sladové, lehce chmelené",
-            "price": "64 / 40,-"
-          },
-          {
-            "name": "Alois Uhříněves 11°",
-            "desc": "Plzeňský typ, výrazná hořkost, suchý finiš",
-            "price": "69 / 43,-"
-          },
-          {
-            "name": "Fabián Hostomice 12°",
-            "desc": "Světlý ležák, plné tělo, čistá hořkost",
-            "price": "74 / 46,-"
-          },
-          {
-            "name": "Speciál Uhříněves",
-            "desc": "Rotující speciál - zeptejte se obsluhy",
-            "price": "dle nabídky"
-          },
-          {
-            "name": "Nealko pivo",
-            "desc": "",
-            "price": "63,-"
-          }
-        ]
-      },
-      {
-        "name": "Cider 0,33 L",
-        "items": [
-          {
-            "name": "F.H. Prager originál",
-            "desc": "Suchý jablečný cider",
-            "price": "85,-"
-          },
-          {
-            "name": "F.H. Prager višeň",
-            "desc": "Polosuchý, s višňovou kyselostí",
-            "price": "85,-"
-          },
-          {
-            "name": "F.H. Prager non‑alcoholic",
-            "desc": "Nealkoholická verze cideru",
-            "price": "85,-"
-          }
-        ]
-      },
-      {
-        "name": "Nealko",
-        "items": [
-          {
-            "name": "Soda 0,1 l",
-            "desc": "",
-            "price": "8,-"
-          },
-          {
-            "name": "Džus (pomeranč / jablko) 0,1 l",
-            "desc": "",
-            "price": "20,-"
-          },
-          {
-            "name": "Karafa vody 0,5 / 1 l",
-            "desc": "",
-            "price": "30 / 50,-"
-          },
-          {
-            "name": "Mattoni jemně perlivá",
-            "desc": "",
-            "price": "50,-"
-          },
-          {
-            "name": "Coca‑Cola / Cola Zero 0,33 l",
-            "desc": "",
-            "price": "60,-"
-          },
-          {
-            "name": "Tonic Kinley 0,25 l",
-            "desc": "",
-            "price": "60,-"
-          },
-          {
-            "name": "Domácí limonáda 0,4 l",
-            "desc": "Bezinka / malina / jahoda",
-            "price": "75,-"
-          },
-          {
-            "name": "F.H. Prager Kombucha 0,33 l",
-            "desc": "",
-            "price": "85,-"
-          },
-          {
-            "name": "Red Bull 0,25 l",
-            "desc": "",
-            "price": "85,-"
-          }
-        ]
-      },
-      {
-        "name": "Káva & Čaj",
-        "items": [
-          {
-            "name": "Espresso / Macchiato / Americano",
-            "desc": "",
-            "price": "60 / 65 / 65,-"
-          },
-          {
-            "name": "Cappuccino / Flat white",
-            "desc": "",
-            "price": "70 / 90,-"
-          },
-          {
-            "name": "Latte / Double espresso",
-            "desc": "",
-            "price": "85 / 85,-"
-          },
-          {
-            "name": "Extra shot kávy",
-            "desc": "",
-            "price": "+20,-"
-          },
-          {
-            "name": "Čerstvý čaj",
-            "desc": "Máta / zázvor",
-            "price": "85,-"
-          },
-          {
-            "name": "Sypaný čaj",
-            "desc": "Dle nabídky",
-            "price": "85,-"
-          }
-        ]
-      },
-      {
-        "name": "Míchačky",
-        "items": [
-          {
-            "name": "Miniskinny",
-            "desc": "Vodka, limeta",
-            "price": "45,-"
-          },
-          {
-            "name": "Mimosa",
-            "desc": "Prosecco, pomerančový džus",
-            "price": "125,-"
-          },
-          {
-            "name": "Skinny bitch",
-            "desc": "Vodka, soda, limetka",
-            "price": "130,-"
-          },
-          {
-            "name": "Kolárum",
-            "desc": "Bartida Original, cola",
-            "price": "130,-"
-          },
-          {
-            "name": "Aperol spritz",
-            "desc": "Aperol, prosecco, soda, plátek pomeranče",
-            "price": "159,-"
-          },
-          {
-            "name": "Hugo spritz",
-            "desc": "Bezový sirup, prosecco, soda, máta, limetka",
-            "price": "159,-"
-          },
-          {
-            "name": "Gin tonic",
-            "desc": "Beefeater, Kinley tonic, limetka",
-            "price": "159,-"
-          },
-          {
-            "name": "Cuba libre",
-            "desc": "Havana Club, cola, limetka",
-            "price": "159,-"
-          },
-          {
-            "name": "Mule",
-            "desc": "Vodka, zázvorové pivo, limetka",
-            "price": "160,-"
-          },
-          {
-            "name": "Mojito",
-            "desc": "Havana Club, limetka, máta, třtinový cukr, soda",
-            "price": "169,-"
-          }
-        ]
-      },
-      {
-        "name": "Tvrdý alkohol (Panáky)",
-        "items": [
-          {
-            "name": "Griotka / Zelená (Bartida)",
-            "desc": "0,04 l",
-            "price": "60,-"
-          },
-          {
-            "name": "Vaječňák / Chilli višeň / Koniferum",
-            "desc": "0,04 l",
-            "price": "70,-"
-          },
-          {
-            "name": "Slivovice / Meruňkovice / Ořechovka Žufánek",
-            "desc": "0,02 l",
-            "price": "70,-"
-          },
-          {
-            "name": "Hruškovice / Malina Baron",
-            "desc": "0,02 l",
-            "price": "70,-"
-          },
-          {
-            "name": "Fernet Stock / Becherovka / Jägermeister",
-            "desc": "0,04 l",
-            "price": "80 / 85 / 89,-"
-          },
-          {
-            "name": "Beefeater / Malfy / Citadelle Gin",
-            "desc": "0,04 l",
-            "price": "80 / 125 / 140,-"
-          },
-          {
-            "name": "Jameson / Tullamore / Four Roses",
-            "desc": "0,04 l",
-            "price": "85 / 89 / 90,-"
-          },
-          {
-            "name": "Wild Turkey 101 / Jack Daniel's",
-            "desc": "0,04 l",
-            "price": "100 / 110,-"
-          },
-          {
-            "name": "Chivas Regal 12yo",
-            "desc": "0,04 l",
-            "price": "140,-"
-          },
-          {
-            "name": "Finlandia / Tres Alegres Reposado",
-            "desc": "Vodka / Tequila 0,04 l",
-            "price": "90 / 95,-"
-          },
-          {
-            "name": "Original Bartida / Republica / Havana Club 3y",
-            "desc": "Rum 0,04 l",
-            "price": "65 / 70 / 75,-"
-          },
-          {
-            "name": "Ron Cariba / Millonario / Diplomatico",
-            "desc": "Rum 0,04 l",
-            "price": "90 / 140 / 150,-"
-          },
-          {
-            "name": "Kontušovka Žufánek",
-            "desc": "0,04 l",
-            "price": "130,-"
-          }
-        ]
-      },
-      {
-        "name": "Rozlévaná vína (Bílá & Růžová)",
-        "items": [
-          {
-            "name": "Rulandské bílé (Vinařství Vajbar)",
-            "desc": "Zemské víno - suché. Vůně: Jablka, zralé citrusové plody a sušené bylinky. Chuť: Barvitá, svěží a šťavnatá.",
-            "price": "45,-/dcl"
-          },
-          {
-            "name": "Ryzlink Vlašský (Vinařství Mitoma)",
-            "desc": "Zemské víno - suché. Vůně: Pevná, plná a dynamická. Chuť: Oblá a hladká, příjemně šťavnatá.",
-            "price": "45,-/dcl"
-          },
-          {
-            "name": "Tramín červený (Vinařství Mitoma)",
-            "desc": "Zemské víno - polosuché. Vůně: Velmi bohatá, květoucí růže, med. Chuť: Jemně nasládlá, kořenitá.",
-            "price": "45,-/dcl"
-          },
-          {
-            "name": "Pálava (Vinařství Mitoma)",
-            "desc": "Zemské víno - polosladké. Vůně: Bohatá a svěží, bílé růže. Chuť: Domácí marmeládové ovoce.",
-            "price": "48,-/dcl"
-          },
-          {
-            "name": "Zweigeltrebe rosé",
-            "desc": "Růžové - polosuché. Vůně: Bohatá a svěží, červené ovoce, koření. Chuť: Svěží, dynamická, čerstvá.",
-            "price": "45,-/dcl"
-          }
-        ]
-      },
-      {
-        "name": "Rozlévaná vína (Červená)",
-        "items": [
-          {
-            "name": "Dornfelder",
-            "desc": "Zemské víno - suché. Vůně: Zralá a plná, svěže višňová. Chuť: Oblá, jemné tóny višní, brusinek.",
-            "price": "50,-/dcl"
-          },
-          {
-            "name": "Primitivo Salento IGP (Itálie)",
-            "desc": "Suché. Vůně: Intenzivní a zralá, švestky, tóny koření a tmavé čokolády. Chuť: Ovocně plná, vyvážená.",
-            "price": "60,-/dcl"
-          }
-        ]
-      },
-      {
-        "name": "Šumivá vína",
-        "items": [
-          {
-            "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
-            "desc": "Prosecco Spumante - brut nature. Vůně: Jablka, hrušky a bílé květy. Chuť: Čistá a suchá, s dlouhou dochutí.",
-            "price": "125,- / 695,-"
-          },
-          {
-            "name": "Rebuli Brut (Treviso DOC)",
-            "desc": "Prosecco Spumante - vegan. Vůně: Citrusové ovoce, stopa cedru a minerality. Chuť: Suchá, ovocná struktura.",
-            "price": "125,- / 695,-"
-          },
-          {
-            "name": "Perlage Ottantacinque Bio",
-            "desc": "Cuvée Vino Spumante - brut. Vůně: Exotické mango, ananas, bílé květy. Chuť: Vyvážená, dlouhá, snadno pitná.",
-            "price": "125,- / 695,-"
-          },
-          {
-            "name": "Integrale Bio",
-            "desc": "Organic Vino Rosé Frizzante - nefiltrované. Vůně: Tóny rybízu, třešní. Chuť: Svěží a ovocná.",
-            "price": "125,- / 695,-"
-          },
-          {
-            "name": "Mionetto (Treviso DOC)",
-            "desc": "Prosecco Frizzante - brut. Vůně: Svěží a bohaté ovocné aroma. Chuť: Harmonická s medovými tóny.",
-            "price": "360,- lah."
-          },
-          {
-            "name": "Sekt Pinot Blanc (Pavlovín)",
-            "desc": "Brut. Vůně: Květinová s tóny hrušek a jablíček. Chuť: Elegantní, minerální s jemnou kyselinkou.",
-            "price": "695,- lah."
-          },
-          {
-            "name": "Bianco Spumante Alcohol Free",
-            "desc": "Nealkoholické. Vůně: Zelená jablka, hrušky. Chuť: Harmonická, svěží s jemnou perláží.",
-            "price": "495,- lah."
-          }
-        ]
-      },
-      {
-        "name": "Lahvová vína (Bílá & Oranžová)",
-        "items": [
-          {
-            "name": "Sylvánské zelené (Vinařství Mádl)",
-            "desc": "Bílé, pozdní sběr - suché. Vůně: Kvetoucí bílé květy. Chuť: Svěží dochuť čerstvých rynglí.",
-            "price": "495,-"
-          },
-          {
-            "name": "Sauvignon (Vinařství Mádl)",
-            "desc": "Bílé, pozdní sběr - suché. Vůně: Černý rybíz, lipový květ. Chuť: Broskev a angrešt, svěží kyselinka.",
-            "price": "545,-"
-          },
-          {
-            "name": "Hibernal (Vinařství Mádl)",
-            "desc": "Bílé, pozdní sběr - polosuché. Vůně: Meruňka a máta. Chuť: Zralé broskve s dlouhou perzistencí.",
-            "price": "495,-"
-          },
-          {
-            "name": "Ryzlink rýnský (Vinařství V. Tetur)",
-            "desc": "Bílé, pozdní sběr - polosuché. Vůně: Lipový květ, sušené meruňky. Chuť: Harmonická, pikantní kyselina.",
-            "price": "545,-"
-          },
-          {
-            "name": "Chardonnay Remake (Vinařství V. Tetur)",
-            "desc": "Bílé, pozdní sběr - suché. Vůně: Kořenitá s nádechem jablek. Chuť: Žlutý meloun, svěží kyselina.",
-            "price": "595,-"
-          },
-          {
-            "name": "Rrrr cuvée (Vinařství Maděřič)",
-            "desc": "Bílé (Akátové sudy) - suché. Vůně: Bylinková s tóny propolisu. Chuť: Výrazně minerální, krémová.",
-            "price": "595,-"
-          },
-          {
-            "name": "Pálava Orange (Vinařství Maděřič)",
-            "desc": "Oranžové víno - suché. Vůně: Exotické ovoce, čajové růže. Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
-            "price": "645,-"
-          }
-        ]
-      },
-      {
-        "name": "Lahvová vína (Červená & Růžová)",
-        "items": [
-          {
-            "name": "Cabernet Sauvignon (Vinařství V. HORT)",
-            "desc": "Červené - suché. Vůně: Černé ovoce, černý rybíz. Chuť: Výrazná tříslovina s hladkou kyselinou.",
-            "price": "495,-"
-          },
-          {
-            "name": "Pinot Noir rosé (Vinařství V. HORT)",
-            "desc": "Růžové, pozdní sběr - suché. Vůně: Červené třešně, lesní jahody. Chuť: Harmonická chuť jahod a medu.",
-            "price": "490,-"
-          },
-          {
-            "name": "Frankovka VOC Modré Hory (Vinařství Mitoma)",
-            "desc": "Červené - suché. Vůně: Čerstvá višeň, lehké tóny dřeva. Chuť: Plnější, oblá s příjemnou tříslovinou.",
-            "price": "520,-"
-          },
-          {
-            "name": "Bellegrado Barrique Cuvée (Zapletal)",
-            "desc": "Červené, Barikové - suché. Vůně: Ostružiny, vanilka z bariku. Chuť: Lahodná s jemnými tříslovinami.",
-            "price": "895,-"
-          },
-          {
-            "name": "Primitivo di Manduria DOC (Itálie)",
-            "desc": "Červené - suché. Vůně: Rybíz, švestkový džem, kakao. Chuť: Plná a kulatá, tóny koření a kávy.",
-            "price": "795,-"
+        "name": "Vinný lístek",
+        "subcategories": [
+          {
+            "name": "Rozlévaná vína (Bílá & Růžová)",
+            "items": [
+              {
+                "name": "Rulandské bílé (Vinařství Vajbar)",
+                "desc": "Zemské víno - suché. Vůně: Jablka, zralé citrusové plody a sušené bylinky. Chuť: Barvitá, svěží a šťavnatá.",
+                "price": "45,-/dcl"
+              },
+              {
+                "name": "Ryzlink Vlašský (Vinařství Mitoma)",
+                "desc": "Zemské víno - suché. Vůně: Pevná, plná a dynamická. Chuť: Oblá a hladká, příjemně šťavnatá.",
+                "price": "45,-/dcl"
+              },
+              {
+                "name": "Tramín červený (Vinařství Mitoma)",
+                "desc": "Zemské víno - polosuché. Vůně: Velmi bohatá, květoucí růže, med. Chuť: Jemně nasládlá, kořenitá.",
+                "price": "45,-/dcl"
+              },
+              {
+                "name": "Pálava (Vinařství Mitoma)",
+                "desc": "Zemské víno - polosladké. Vůně: Bohatá a svěží, bílé růže. Chuť: Domácí marmeládové ovoce.",
+                "price": "48,-/dcl"
+              },
+              {
+                "name": "Zweigeltrebe rosé",
+                "desc": "Růžové - polosuché. Vůně: Bohatá a svěží, červené ovoce, koření. Chuť: Svěží, dynamická, čerstvá.",
+                "price": "45,-/dcl"
+              }
+            ]
+          },
+          {
+            "name": "Rozlévaná vína (Červená)",
+            "items": [
+              {
+                "name": "Dornfelder",
+                "desc": "Zemské víno - suché. Vůně: Zralá a plná, svěže višňová. Chuť: Oblá, jemné tóny višní, brusinek.",
+                "price": "50,-/dcl"
+              },
+              {
+                "name": "Primitivo Salento IGP (Itálie)",
+                "desc": "Suché. Vůně: Intenzivní a zralá, švestky, tóny koření a tmavé čokolády. Chuť: Ovocně plná, vyvážená.",
+                "price": "60,-/dcl"
+              }
+            ]
+          },
+          {
+            "name": "Šumivá vína",
+            "items": [
+              {
+                "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
+                "desc": "Prosecco Spumante - brut nature. Vůně: Jablka, hrušky a bílé květy. Chuť: Čistá a suchá, s dlouhou dochutí.",
+                "price": "125,- / 695,-"
+              },
+              {
+                "name": "Rebuli Brut (Treviso DOC)",
+                "desc": "Prosecco Spumante - vegan. Vůně: Citrusové ovoce, stopa cedru a minerality. Chuť: Suchá, ovocná struktura.",
+                "price": "125,- / 695,-"
+              },
+              {
+                "name": "Perlage Ottantacinque Bio",
+                "desc": "Cuvée Vino Spumante - brut. Vůně: Exotické mango, ananas, bílé květy. Chuť: Vyvážená, dlouhá, snadno pitná.",
+                "price": "125,- / 695,-"
+              },
+              {
+                "name": "Integrale Bio",
+                "desc": "Organic Vino Rosé Frizzante - nefiltrované. Vůně: Tóny rybízu, třešní. Chuť: Svěží a ovocná.",
+                "price": "125,- / 695,-"
+              },
+              {
+                "name": "Mionetto (Treviso DOC)",
+                "desc": "Prosecco Frizzante - brut. Vůně: Svěží a bohaté ovocné aroma. Chuť: Harmonická s medovými tóny.",
+                "price": "360,- lah."
+              },
+              {
+                "name": "Sekt Pinot Blanc (Pavlovín)",
+                "desc": "Brut. Vůně: Květinová s tóny hrušek a jablíček. Chuť: Elegantní, minerální s jemnou kyselinkou.",
+                "price": "695,- lah."
+              },
+              {
+                "name": "Bianco Spumante Alcohol Free",
+                "desc": "Nealkoholické. Vůně: Zelená jablka, hrušky. Chuť: Harmonická, svěží s jemnou perláží.",
+                "price": "495,- lah."
+              }
+            ]
+          },
+          {
+            "name": "Lahvová vína (Bílá & Oranžová)",
+            "items": [
+              {
+                "name": "Sylvánské zelené (Vinařství Mádl)",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Kvetoucí bílé květy. Chuť: Svěží dochuť čerstvých rynglí.",
+                "price": "495,-"
+              },
+              {
+                "name": "Sauvignon (Vinařství Mádl)",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Černý rybíz, lipový květ. Chuť: Broskev a angrešt, svěží kyselinka.",
+                "price": "545,-"
+              },
+              {
+                "name": "Hibernal (Vinařství Mádl)",
+                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Meruňka a máta. Chuť: Zralé broskve s dlouhou perzistencí.",
+                "price": "495,-"
+              },
+              {
+                "name": "Ryzlink rýnský (Vinařství V. Tetur)",
+                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Lipový květ, sušené meruňky. Chuť: Harmonická, pikantní kyselina.",
+                "price": "545,-"
+              },
+              {
+                "name": "Chardonnay Remake (Vinařství V. Tetur)",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Kořenitá s nádechem jablek. Chuť: Žlutý meloun, svěží kyselina.",
+                "price": "595,-"
+              },
+              {
+                "name": "Rrrr cuvée (Vinařství Maděřič)",
+                "desc": "Bílé (Akátové sudy) - suché. Vůně: Bylinková s tóny propolisu. Chuť: Výrazně minerální, krémová.",
+                "price": "595,-"
+              },
+              {
+                "name": "Pálava Orange (Vinařství Maděřič)",
+                "desc": "Oranžové víno - suché. Vůně: Exotické ovoce, čajové růže. Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
+                "price": "645,-"
+              }
+            ]
+          },
+          {
+            "name": "Lahvová vína (Červená & Růžová)",
+            "items": [
+              {
+                "name": "Cabernet Sauvignon (Vinařství V. HORT)",
+                "desc": "Červené - suché. Vůně: Černé ovoce, černý rybíz. Chuť: Výrazná tříslovina s hladkou kyselinou.",
+                "price": "495,-"
+              },
+              {
+                "name": "Pinot Noir rosé (Vinařství V. HORT)",
+                "desc": "Růžové, pozdní sběr - suché. Vůně: Červené třešně, lesní jahody. Chuť: Harmonická chuť jahod a medu.",
+                "price": "490,-"
+              },
+              {
+                "name": "Frankovka VOC Modré Hory (Vinařství Mitoma)",
+                "desc": "Červené - suché. Vůně: Čerstvá višeň, lehké tóny dřeva. Chuť: Plnější, oblá s příjemnou tříslovinou.",
+                "price": "520,-"
+              },
+              {
+                "name": "Bellegrado Barrique Cuvée (Zapletal)",
+                "desc": "Červené, Barikové - suché. Vůně: Ostružiny, vanilka z bariku. Chuť: Lahodná s jemnými tříslovinami.",
+                "price": "895,-"
+              },
+              {
+                "name": "Primitivo di Manduria DOC (Itálie)",
+                "desc": "Červené - suché. Vůně: Rybíz, švestkový džem, kakao. Chuť: Plná a kulatá, tóny koření a kávy.",
+                "price": "795,-"
+              }
+            ]
           }
         ]
       }

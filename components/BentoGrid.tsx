@@ -29,9 +29,13 @@ interface MenuItem {
   desc: string;
   price: string;
 }
-interface MenuCategory {
+interface MenuSubcategory {
   name: string;
   items: MenuItem[];
+}
+interface MenuCategory {
+  name: string;
+  subcategories: MenuSubcategory[];
 }
 
 /* ─── Component ─── */
@@ -136,7 +140,7 @@ export default function BentoGrid() {
             {tMenu("description")}
           </motion.p>
 
-          {/* Menu — Universal Accordion list */}
+          {/* Menu — Parent Accordion with Subcategory Sections */}
           <div className="relative border-b border-border">
             <div className="absolute inset-x-0 top-0 h-px bg-border" />
             {categories.map((cat, ci) => (
@@ -157,28 +161,38 @@ export default function BentoGrid() {
                   </span>
                 </summary>
                 <div className="mt-8 md:mt-12 transition-all duration-300">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
-                    {cat.items.map((item) => (
-                      <div
-                        key={item.name}
-                        className={`flex justify-between items-baseline gap-4 py-3 border-b border-neutral-200/50 hover:opacity-50 transition-opacity duration-300 cursor-default`}
-                      >
-                        <div>
-                          <div className="text-base font-medium">
-                            {item.name}
-                          </div>
-                          {item.desc && (
-                            <div className="text-[13px] font-light text-muted mt-1">
-                              {item.desc}
+                  {cat.subcategories.map((sub, si) => (
+                    <div
+                      key={sub.name}
+                      className={si > 0 ? "mt-10 md:mt-14" : ""}
+                    >
+                      <h4 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-neutral-400 mb-5 pb-2 border-b border-neutral-300/60">
+                        {sub.name}
+                      </h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2">
+                        {sub.items.map((item) => (
+                          <div
+                            key={item.name}
+                            className="flex justify-between items-baseline gap-4 py-3 border-b border-neutral-200/50 hover:opacity-50 transition-opacity duration-300 cursor-default"
+                          >
+                            <div>
+                              <div className="text-base font-medium">
+                                {item.name}
+                              </div>
+                              {item.desc && (
+                                <div className="text-[13px] font-light text-muted mt-1">
+                                  {item.desc}
+                                </div>
+                              )}
                             </div>
-                          )}
-                        </div>
-                        <span className="font-semibold whitespace-nowrap tabular-nums text-sm md:text-base">
-                          {item.price}
-                        </span>
+                            <span className="font-semibold whitespace-nowrap tabular-nums text-sm md:text-base">
+                              {item.price}
+                            </span>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </motion.details>
             ))}

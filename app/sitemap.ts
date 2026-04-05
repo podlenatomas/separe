@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://separe.cz";
+  const baseUrl = "https://separe-mikulandska.cz";
 
   // locales defined in your routing
   const locales = ["cs", "en"];
