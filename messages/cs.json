@@ -12,8 +12,8 @@
     "addressBadge": "Mikulandská 133/3, Praha 1",
     "titleCraft": "Řemeslné pivo,",
     "titleWine": "šumivá vína",
-    "titlePeace": "deskovky a radost uprostřed města",
-    "subtitle": "Craft bar. Mikulandská, Praha 1. Řemeslné pivo, pet‑nat, deskovky. Tři minuty od Národní třídy. Jiný svět.",
+    "titlePeace": "deskovky a radost uprostřed města",
+    "subtitle": "Craft bar v centru Prahy 1. Řemeslné pivo z malých pivovarů, naturální vína, pet-nat a deskové hry. Vše tři minuty od Národní třídy.",
     "cta": "Rezervovat stůl"
   },
   "LanguageSwitcher": {
@@ -35,18 +35,18 @@
       },
       "quality": {
         "title": "Přívlastková česká vína.",
-        "text": "Specializujeme se na autentická česká a moravská vína. Nejsme žádný snobský chateau, nabízíme poctivý lokální juice (včetně pet‑natů a naturálek)."
+        "text": "Specializujeme se na autentická moravská a evropská vína. Vybíráme kvalitní lahve z menších vinařství – od svěžích pet-natů až po čistá naturální vína bez zbytečných zásahů."
       },
       "games": {
-        "title": "Deskovky & Kvízy. Každý den, zdarma.",
-        "text": "Přes 30 her k zapůjčení zdarma. Od rychlých party kousků po náročnější strategie. Pravidelné herní večery. A legendární středeční hospodské kvízy. U nás se nezastavuje jen na „jedno“. U nás se zůstává."
+        "title": "Deskovky zdarma & pravidelné kvízy.",
+        "text": "Přes 30 deskových her volně k zapůjčení – od rychlých karetek po propracované strategie. K tomu navíc pořádáme pravidelné herní večery a středeční pub kvízy."
       }
     }
   },
   "Menu": {
     "eyebrow": "Nabídka",
-    "title": "Co má smysl pít a jíst",
-    "description": "Kompletní nabídka našeho baru. Od řemeslného piva až po poctivé barovky.",
+    "title": "Co má smysl pít a jíst",
+    "description": "Kompletní nabídka našeho baru. Od řemeslného piva z českých minipivovarů přes naturální vína až po studené a teplé občerstvení.",
     "categories": [
       {
         "name": "Jídlo",
@@ -623,13 +623,12 @@
           }
         ]
       }
-    ],
-    "disclaimer": "Informace o alergenech na vyžádání u obsluhy."
+    ]
   },
   "Salonek": {
     "eyebrow": "separé prostor",
     "titleYour": "Váš večer.",
-    "titleOur": "Náš prostor.",
+    "titleOur": "– Separé prostor.",
     "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme. U menších akcí sami, u větších s prověřenými parťáky.",
     "tagProjector": "Projektor",
     "tagPrivacy": "Soukromí",
@@ -638,7 +637,7 @@
   },
   "Reviews": {
     "eyebrow": "Recenze",
-    "title": "Co se šušká v Mikulandské.",
+    "title": "Hodnocení našich hostů.",
     "description": "Separé stojí na jednoduchých věcech. Dobré craft pivo, přírodní vína, příjemná atmosféra a lidi, kteří se rádi vrací. Tohle o nás píšete vy.",
     "ctaPrompt": "Zastavili jste se u nás a bavilo vás to? Budeme rádi za recenzi, pomáhá nám to růst.",
     "cta": "Nechat recenzi na Googlu",
@@ -709,8 +708,8 @@
   },
   "Contact": {
     "eyebrow": "Kontakt",
-    "title": "Přijďte do vnitrobloku",
-    "description": "Vstup je přímo z ulice. Stačí vzít za kliku a ruch města nechat za dveřmi. V létě pro vás otevíráme zahrádku schovanou ve vnitrobloku.",
+    "title": "Přijďte do Separé",
+    "description": "Vstup je přímo z ulice. V létě pro vás otevíráme klidnou zahrádku ve vnitrobloku, ideální únik před ruchem centra Prahy.",
     "addressLabel": "Adresa",
     "addressLine1": "Separé",
     "addressLine2": "Mikulandská 133/3",
@@ -723,7 +722,7 @@
     "hoursSuTime": "Zavřeno",
     "ctaReserve": "Rezervovat stůl",
     "mapLabel": "Kde nás najdete",
-    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup přímo z Mikulandské. Žádný průjezd, žádný dvůr. Stačí vzít za kliku."
+    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup je přímo z ulice Mikulandská."
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"

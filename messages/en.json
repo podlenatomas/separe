@@ -13,7 +13,7 @@
     "titleCraft": "Craft beer,",
     "titleWine": "sparkling wine",
     "titlePeace": "board games and no place you'd rather be",
-    "subtitle": "Craft bar. Mikulandská, Prague 1. Czech craft beer, pet‑nat, board games. Three minutes from Národní třída. Another world.",
+    "subtitle": "Craft bar in the center of Prague 1. Czech craft beer, natural wine, pet-nat, and board games. Three minutes from Národní třída.",
     "cta": "Book a table"
   },
   "LanguageSwitcher": {
@@ -35,18 +35,18 @@
       },
       "quality": {
         "title": "Premium Czech wines.",
-        "text": "We focus strictly on authentic Czech and Moravian wines. No snobby chateau vibes, just honest local juice, including pet‑nats and low‑intervention wines."
+        "text": "We specialize in authentic Moravian and European wines. Carefully selected bottles from independent winemakers – from fresh pet-nats to pure natural wines."
       },
       "games": {
-        "title": "Board games & pub quizzes. Every day, free.",
-        "text": "Over 30 games to borrow for free. From quick party classics to deep strategies. Regular game nights. And our legendary Wednesday pub quizzes. You don't just stop by. You stay."
+        "title": "Free board games & regular pub quizzes.",
+        "text": "Over 30 board games available to play for free – from quick card games to complex strategies. We also host regular game nights and Wednesday pub quizzes."
       }
     }
   },
   "Menu": {
     "eyebrow": "Menu",
     "title": "What's worth drinking and eating",
-    "description": "Our complete bar and food menu. From craft beer to honest pub snacks.",
+    "description": "Our complete bar menu. Featuring craft beers from Czech microbreweries, natural wines, and traditional hot and cold bar food.",
     "categories": [
       {
         "name": "Food",
@@ -623,13 +623,12 @@
           }
         ]
       }
-    ],
-    "disclaimer": "Allergen information available upon request."
+    ]
   },
   "Salonek": {
     "eyebrow": "separé space",
     "titleYour": "Your evening.",
-    "titleOur": "Our space.",
+    "titleOur": "– Separé space.",
     "description": "We're not a sterile boardroom. We have a private space with a projector. Relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, larger parties, or just a table for your crew. We tailor everything. We handle the food. On our own for smaller events, with trusted partners for bigger ones.",
     "tagProjector": "Projector",
     "tagPrivacy": "Privacy",
@@ -638,7 +637,7 @@
   },
   "Reviews": {
     "eyebrow": "Reviews",
-    "title": "Word from the courtyard.",
+    "title": "Reviews from our guests.",
     "description": "Separé stands on simple things. Good Czech craft beer, natural wines, a warm atmosphere, and people who keep coming back. This is what you write about us.",
     "ctaPrompt": "Stopped by and had a good time? We'd love a review, it helps us grow.",
     "cta": "Leave a review on Google",
@@ -709,8 +708,8 @@
   },
   "Contact": {
     "eyebrow": "Contact",
-    "title": "Come find us in the courtyard.",
-    "description": "The entrance is right off the street. Just grab the handle and leave the city noise behind. In summer, we open a quiet courtyard garden hidden in our inner yard. A calm escape in the heart of Prague 1.",
+    "title": "Visit Separé",
+    "description": "The entrance is right off the street. In the summer, we open a peaceful courtyard garden—a quiet escape in the center of Prague.",
     "addressLabel": "Address",
     "addressLine1": "Separé",
     "addressLine2": "Mikulandská 133/3",
@@ -723,7 +722,7 @@
     "hoursSuTime": "Closed",
     "ctaReserve": "Book a table",
     "mapLabel": "How to find us",
-    "mapDescription": "A 3‑minute walk from Národní třída tram stop and metro (Line B). Entrance directly from Mikulandská. No passage, no courtyard. Just grab the handle."
+    "mapDescription": "A 3‑minute walk from the Národní třída metro station (Line B). Entrance directly from Mikulandská street."
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Prague 1"
