@@ -139,7 +139,7 @@ export default function Contact() {
             </p>
             <div className="w-full h-60 md:h-72 rounded-sm overflow-hidden">
               <iframe
-                src={process.env.NEXT_PUBLIC_MAP_EMBED_URL}
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBlCTROrJjIQ7Zjd9En89rNlyU2Al5HHrw&q=separ%C3%A9%20Mikulandsk%C3%A1%20133%2F3%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto"
                 title="Mapa. Separé, Mikulandská 133/3, Praha 1"
                 className="w-full h-full grayscale contrast-75 opacity-80 mix-blend-multiply hover:grayscale-0 hover:contrast-100 hover:opacity-100 transition-all duration-500"
                 style={{
