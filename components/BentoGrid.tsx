@@ -180,7 +180,7 @@ export default function BentoGrid() {
                                 {item.name}
                               </div>
                               {item.desc && (
-                                <div className="text-[13px] font-light text-muted mt-1">
+                                <div className="text-[13px] font-light text-muted mt-1 whitespace-pre-line">
                                   {item.desc}
                                 </div>
                               )}

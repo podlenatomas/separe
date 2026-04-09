@@ -13,7 +13,7 @@
     "titleCraft": "Craft beer,",
     "titleWine": "sparkling wine",
     "titlePeace": "board games and no place you'd rather be",
-    "subtitle": "Craft bar in the center of Prague 1. Czech craft beer, natural wine, pet-nat, and board games. Three minutes from Národní třída.",
+    "subtitle": "Craft bar in the center of Prague 1. Craft beer, natural wines, pet-nat and board games, all just a minute from Národní třída.",
     "cta": "Book a table"
   },
   "LanguageSwitcher": {
@@ -22,7 +22,7 @@
   "About": {
     "eyebrow": "About us",
     "title": "A family‑run craft bar. Not a tourist bar. In the heart of Prague 1.",
-    "description": "Separé is a family craft bar at Mikulandská 133/3, Prague 1. Born from a simple idea: we wanted to create a spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no tourist traps, no corporate vibe. An honest family business where you feel like a person, not a patron. We're obsessed with real craft and bold local flavours. We leave the average to others. If it's on our menu, we'd stake our reputation on it.",
+    "description": "Separé is a family craft bar at Mikulandská 133/3, Prague 1. Born from a simple idea: we wanted to create a spot in the heart of Prague where we'd actually want to hang out ourselves. No stiff service, no tourist traps, no corporate vibe. An honest family business where you feel like a person, not a patron. We're obsessed with real craft and bold local flavours. If it's on our menu, we'd stake our reputation on it.",
     "swipeHint": "Swipe to explore",
     "values": {
       "beer": {
@@ -471,27 +471,32 @@
             "items": [
               {
                 "name": "Pinot Blanc (Vajbar Winery)",
-                "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs. Taste: Colorful, fresh and juicy. Subtle oak traces.",
+                "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs.
+Taste: Colorful, fresh and juicy. Subtle oak traces.",
                 "price": "45 CZK / dcl"
               },
               {
                 "name": "Welschriesling (Mitoma Winery)",
-                "desc": "Dry. Aroma: Firm, full and dynamic. Taste: Round, smooth, pleasantly juicy.",
+                "desc": "Dry. Aroma: Firm, full and dynamic.
+Taste: Round, smooth, pleasantly juicy.",
                 "price": "45 CZK / dcl"
               },
               {
                 "name": "Gewürztraminer (Mitoma Winery)",
-                "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey. Taste: Mildly sweet, perfectly matching the aroma.",
+                "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey.
+Taste: Mildly sweet, perfectly matching the aroma.",
                 "price": "45 CZK / dcl"
               },
               {
                 "name": "Pálava (Mitoma Winery)",
-                "desc": "Semi‑sweet. Aroma: Rich and fresh white roses. Taste: Homemade marmalade fruit, long aftertaste.",
+                "desc": "Semi‑sweet. Aroma: Rich and fresh white roses.
+Taste: Homemade marmalade fruit, long aftertaste.",
                 "price": "48 CZK / dcl"
               },
               {
                 "name": "Zweigeltrebe rosé",
-                "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices. Taste: Dynamic, crisp cherries and currants.",
+                "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices.
+Taste: Dynamic, crisp cherries and currants.",
                 "price": "45 CZK / dcl"
               }
             ]
@@ -501,12 +506,14 @@
             "items": [
               {
                 "name": "Dornfelder",
-                "desc": "Dry. Aroma: Ripe and full, fresh sour cherry. Taste: Round, subtle tones of cherries and cranberries.",
+                "desc": "Dry. Aroma: Ripe and full, fresh sour cherry.
+Taste: Round, subtle tones of cherries and cranberries.",
                 "price": "50 CZK / dcl"
               },
               {
                 "name": "Primitivo Salento IGP (Italy)",
-                "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate. Taste: Fruity, balanced with pepper and coffee.",
+                "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate.
+Taste: Fruity, balanced with pepper and coffee.",
                 "price": "60 CZK / dcl"
               }
             ]
@@ -516,37 +523,44 @@
             "items": [
               {
                 "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
-                "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers. Taste: Clean and dry.",
+                "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers.
+Taste: Clean and dry.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Rebuli Brut (Treviso DOC)",
-                "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar. Taste: Dry, fruity structure.",
+                "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar.
+Taste: Dry, fruity structure.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Perlage Ottantacinque Bio",
-                "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple. Taste: Balanced, long, easy to drink.",
+                "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple.
+Taste: Balanced, long, easy to drink.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Integrale Bio",
-                "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries. Taste: Fresh and fruity.",
+                "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries.
+Taste: Fresh and fruity.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Mionetto (Treviso DOC)",
-                "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit. Taste: Harmonious with honey notes.",
+                "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit.
+Taste: Harmonious with honey notes.",
                 "price": "360 CZK / btl"
               },
               {
                 "name": "Sekt Pinot Blanc (Pavlovín)",
-                "desc": "Brut. Aroma: Floral with pears. Taste: Elegant, mineral with fine acidity.",
+                "desc": "Brut. Aroma: Floral with pears.
+Taste: Elegant, mineral with fine acidity.",
                 "price": "695 CZK / btl"
               },
               {
                 "name": "Bianco Spumante Alcohol Free",
-                "desc": "Non‑alcoholic. Aroma: Green apples. Taste: Harmonious, fresh, balanced sweet and sour.",
+                "desc": "Non‑alcoholic. Aroma: Green apples.
+Taste: Harmonious, fresh, balanced sweet and sour.",
                 "price": "495 CZK / btl"
               }
             ]
@@ -556,37 +570,44 @@
             "items": [
               {
                 "name": "Silvaner (Mádl Winery)",
-                "desc": "White - dry. Aroma: Subtle white flowers. Taste: Fresh aftertaste of greengages.",
+                "desc": "White - dry. Aroma: Subtle white flowers.
+Taste: Fresh aftertaste of greengages.",
                 "price": "495 CZK"
               },
               {
                 "name": "Sauvignon Blanc (Mádl Winery)",
-                "desc": "White - dry. Aroma: Blackcurrant, linden flower. Taste: Juicy peach and gooseberry.",
+                "desc": "White - dry. Aroma: Blackcurrant, linden flower.
+Taste: Juicy peach and gooseberry.",
                 "price": "545 CZK"
               },
               {
                 "name": "Hibernal (Mádl Winery)",
-                "desc": "White - semi‑dry. Aroma: Apricot and mint. Taste: Ripe peaches with long persistence.",
+                "desc": "White - semi‑dry. Aroma: Apricot and mint.
+Taste: Ripe peaches with long persistence.",
                 "price": "495 CZK"
               },
               {
                 "name": "Riesling (V. Tetur Winery)",
-                "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots. Taste: Harmonious, spicy acidity.",
+                "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots.
+Taste: Harmonious, spicy acidity.",
                 "price": "545 CZK"
               },
               {
                 "name": "Chardonnay Remake (V. Tetur Winery)",
-                "desc": "White - dry. Aroma: Spicy yellow melon. Taste: Full, fresh citrus acidity.",
+                "desc": "White - dry. Aroma: Spicy yellow melon.
+Taste: Full, fresh citrus acidity.",
                 "price": "595 CZK"
               },
               {
                 "name": "Rrrr cuvée (Maděřič Winery)",
-                "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis. Taste: Distinctly mineral, creamy.",
+                "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis.
+Taste: Distinctly mineral, creamy.",
                 "price": "595 CZK"
               },
               {
                 "name": "Pálava Orange (Maděřič Winery)",
-                "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots. Taste: Juicy, fine tannins.",
+                "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots.
+Taste: Juicy, fine tannins.",
                 "price": "645 CZK"
               }
             ]
@@ -596,27 +617,32 @@
             "items": [
               {
                 "name": "Cabernet Sauvignon (V. HORT Winery)",
-                "desc": "Red - dry. Aroma: Black fruit, blackcurrant. Taste: Distinct tannins with smooth acidity.",
+                "desc": "Red - dry. Aroma: Black fruit, blackcurrant.
+Taste: Distinct tannins with smooth acidity.",
                 "price": "495 CZK"
               },
               {
                 "name": "Pinot Noir rosé (V. HORT Winery)",
-                "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries. Taste: Harmonious strawberry and honey.",
+                "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries.
+Taste: Harmonious strawberry and honey.",
                 "price": "490 CZK"
               },
               {
                 "name": "Blaufränkisch VOC (Mitoma Winery)",
-                "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood. Taste: Fuller, round with pleasant tannins.",
+                "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood.
+Taste: Fuller, round with pleasant tannins.",
                 "price": "520 CZK"
               },
               {
                 "name": "Bellegrado Barrique Cuvée (Zapletal)",
-                "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel. Taste: Delicious fine tannins.",
+                "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel.
+Taste: Delicious fine tannins.",
                 "price": "895 CZK"
               },
               {
                 "name": "Primitivo di Manduria DOC (Italy)",
-                "desc": "Red - dry. Aroma: Currants, plum jam, cocoa. Taste: Full and round, spice and coffee notes.",
+                "desc": "Red - dry. Aroma: Currants, plum jam, cocoa.
+Taste: Full and round, spice and coffee notes.",
                 "price": "795 CZK"
               }
             ]
@@ -627,9 +653,9 @@
     "disclaimer": "Allergen information available upon request. All prices are in CZK."
   },
   "Salonek": {
-    "eyebrow": "separé space",
+    "eyebrow": "Book our private room",
     "titleYour": "Your evening.",
-    "titleOur": "– Separé space.",
+    "titleOur": "– Our private room.",
     "description": "We're not a sterile boardroom. We have a private space with a projector. Relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, larger parties, or just a table for your crew. We tailor everything. We handle the food. On our own for smaller events, with trusted partners for bigger ones.",
     "tagProjector": "Projector",
     "tagPrivacy": "Privacy",
