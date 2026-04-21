@@ -9,6 +9,8 @@ const Moodboard = dynamic(() => import("@/components/Moodboard"));
 const Story = dynamic(() => import("@/components/Story"));
 const EventsTable = dynamic(() => import("@/components/EventsTable"));
 const Contact = dynamic(() => import("@/components/Contact"));
+import FAQ from "@/components/FAQ";
+import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -44,6 +46,8 @@ export default function Home() {
         <Moodboard />
         <Story />
         <EventsTable />
+        <Reservation />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

@@ -84,7 +84,14 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.65 }}
         >
           <button
-            onClick={kontakt.trigger}
+            onClick={() => {
+              const el = document.getElementById("rezervace");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              } else {
+                kontakt.trigger();
+              }
+            }}
             className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F5F5F0]/80"
           >
             {t("cta")}

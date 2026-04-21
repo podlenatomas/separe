@@ -18,7 +18,14 @@ interface Review {
   date: string;
 }
 
+interface Aggregate {
+  rating: number | null;
+  ratingsTotal: number | null;
+}
+
 const FALLBACK_KEYS = ["r1", "r2", "r3"] as const;
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?kgmid=/g/1tt1rdsl#lrd";
 
 function Stars() {
   return (
@@ -47,6 +54,10 @@ export default function Reviews() {
   }));
 
   const [reviews, setReviews] = useState<Review[]>(fallbackReviews);
+  const [aggregate, setAggregate] = useState<Aggregate>({
+    rating: null,
+    ratingsTotal: null,
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -57,6 +68,12 @@ export default function Reviews() {
           const data = await res.json();
           if (data.reviews && data.reviews.length > 0) {
             setReviews(data.reviews);
+          }
+          if (typeof data.rating === "number") {
+            setAggregate({
+              rating: data.rating,
+              ratingsTotal: data.ratingsTotal ?? null,
+            });
           }
         }
       } catch {
@@ -86,11 +103,38 @@ export default function Reviews() {
           {t("title")}
         </motion.h2>
         <motion.p
-          className="text-muted font-light leading-[1.8] max-w-2xl mb-12 text-pretty"
+          className="text-muted font-light leading-[1.8] max-w-2xl mb-8 text-pretty"
           {...fade}
         >
           {t("description")}
         </motion.p>
+
+        {aggregate.rating !== null && (
+          <motion.div
+            className="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-10"
+            {...fade}
+          >
+            <div className="flex items-baseline gap-2">
+              <span className="text-3xl md:text-4xl font-black tracking-tighter">
+                {aggregate.rating.toFixed(1)}
+              </span>
+              <span className="text-xs font-light uppercase tracking-[0.14em] text-muted">
+                / 5 {t("ratingLabel")}
+              </span>
+            </div>
+            {aggregate.ratingsTotal !== null && (
+              <a
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-light uppercase tracking-[0.14em] text-muted hover:text-foreground underline underline-offset-4 decoration-border hover:decoration-foreground transition-colors"
+              >
+                {aggregate.ratingsTotal} {t("reviewsCountSuffix")} —{" "}
+                {t("readAll")}
+              </a>
+            )}
+          </motion.div>
+        )}
 
         {/* Review cards — 3-col gap-px grid */}
         <div className="bg-neutral-200 rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-3 gap-px">
@@ -147,7 +191,7 @@ export default function Reviews() {
             href="https://g.page/r/CZ08UsxtABUNEAE/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0"
+            className="inline-flex items-center justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
             {...fade}
           >
             {t("cta")}

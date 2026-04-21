@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Clock } from "lucide-react";
 import { useNav } from "@/providers/NavProvider";
+import { useCookieConsent } from "@/providers/CookieConsentProvider";
 import { useTranslations } from "next-intl";
 
 const fade = {
@@ -12,9 +13,15 @@ const fade = {
   transition: { duration: 0.55, ease: "easeOut" as const },
 };
 
+const MAPS_EMBED_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY;
+const MAPS_EMBED_SRC = MAPS_EMBED_KEY
+  ? `https://www.google.com/maps/embed/v1/place?key=${MAPS_EMBED_KEY}&q=separ%C3%A9%20Mikulandsk%C3%A1%20133%2F3%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto`
+  : null;
+
 export default function Contact() {
   const { kontakt } = useNav();
   const t = useTranslations("Contact");
+  const { consent, accept } = useCookieConsent();
 
   return (
     <section
@@ -116,14 +123,14 @@ export default function Contact() {
               </table>
             </div>
 
-            <button
-              onClick={() =>
-                window.open("mailto:ahoj@separe.cz?subject=Rezervace stolu")
-              }
-              className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none"
+            <a
+              href="https://separe.choiceqr.com/booking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center h-12 px-8 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
             >
               {t("ctaReserve")}
-            </button>
+            </a>
           </motion.div>
 
           {/* Right — map */}
@@ -138,19 +145,42 @@ export default function Contact() {
               {t("mapDescription")}
             </p>
             <div className="w-full h-60 md:h-72 rounded-sm overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBlCTROrJjIQ7Zjd9En89rNlyU2Al5HHrw&q=separ%C3%A9%20Mikulandsk%C3%A1%20133%2F3%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto"
-                title="Mapa. Separé, Mikulandská 133/3, Praha 1"
-                className="w-full h-full grayscale contrast-75 opacity-80 mix-blend-multiply hover:grayscale-0 hover:contrast-100 hover:opacity-100 transition-all duration-500"
-                style={{
-                  filter: "grayscale(100%) contrast(0.75)",
-                  opacity: 0.8,
-                  mixBlendMode: "multiply",
-                }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
+              {consent === "accepted" && MAPS_EMBED_SRC ? (
+                <iframe
+                  src={MAPS_EMBED_SRC}
+                  title="Mapa. Separé, Mikulandská 133/3, Praha 1"
+                  className="w-full h-full grayscale contrast-75 opacity-80 mix-blend-multiply hover:grayscale-0 hover:contrast-100 hover:opacity-100 transition-all duration-500"
+                  style={{
+                    filter: "grayscale(100%) contrast(0.75)",
+                    opacity: 0.8,
+                    mixBlendMode: "multiply",
+                  }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center gap-4 w-full h-full bg-muted/5 border border-border/60 p-6 text-center">
+                  <p className="text-xs font-light text-muted leading-[1.7] max-w-xs text-pretty">
+                    {t("mapConsentPrompt")}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={accept}
+                    className="inline-flex items-center justify-center h-10 min-h-[44px] px-5 bg-foreground text-background text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-foreground/85 active:scale-[0.98] transition-all duration-200 cursor-pointer border-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
+                  >
+                    {t("mapConsentButton")}
+                  </button>
+                  <a
+                    href="https://www.google.com/maps/place/Mikulandsk%C3%A1+133%2F3,+110+00+Praha+1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10px] font-light uppercase tracking-[0.14em] text-muted hover:text-foreground underline underline-offset-4 decoration-border hover:decoration-foreground transition-colors"
+                  >
+                    Mikulandská 133/3, Praha 1
+                  </a>
+                </div>
+              )}
             </div>
           </motion.div>
         </div>

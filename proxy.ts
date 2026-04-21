@@ -18,7 +18,7 @@ export default function middleware(request: NextRequest) {
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-    frame-src 'self' https://www.google.com/maps/;
+    frame-src 'self' https://www.google.com/maps/ https://embed.choiceqr.com;
     frame-ancestors 'none';
     upgrade-insecure-requests;
   `;

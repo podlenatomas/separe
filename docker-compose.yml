@@ -13,7 +13,8 @@ services:
     environment:
       - NODE_ENV=production
       # Pass through any public/private Next.js environment variables here
-      # - NEXT_PUBLIC_GOOGLE_PLACES_API_KEY=${NEXT_PUBLIC_GOOGLE_PLACES_API_KEY}
+      # - GOOGLE_PLACES_API_KEY=${GOOGLE_PLACES_API_KEY}
+      # - NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY=${NEXT_PUBLIC_GOOGLE_MAPS_EMBED_KEY}
     networks:
       - separe-network
 

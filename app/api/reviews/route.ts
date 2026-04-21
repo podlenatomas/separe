@@ -1,10 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const apiKey =
-    process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY ||
-    process.env.GOOGLE_PLACES_API_KEY ||
-    "AIzaSyBlCTROrJjIQ7Zjd9En89rNlyU2Al5HHrw";
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
 
   if (!apiKey) {
     return NextResponse.json(
@@ -16,7 +13,7 @@ export async function GET() {
     );
   }
 
-  let placeId = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID;
+  let placeId = process.env.GOOGLE_PLACE_ID;
 
   try {
     // 1. Získat Place ID pokud není definováno, přes Find Place API
@@ -40,10 +37,9 @@ export async function GET() {
       }
     }
 
-    // 2. Stáhnout detaily podniku včetně 5 nejlepších/nejnovějších recenzí
+    // 2. Stáhnout detaily podniku: 5 nejnovějších recenzí + agregát (rating + count)
     const detailsRes = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&language=cs&reviews_sort=newest&key=${apiKey}`,
-      // Revalidate každé 4 hodiny (nebo dle potřeby 3600 = 1h), Next.js fetch cache
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&language=cs&reviews_sort=newest&key=${apiKey}`,
       { next: { revalidate: 14400 } },
     );
     const detailsData = await detailsRes.json();
@@ -55,7 +51,7 @@ export async function GET() {
       );
     }
 
-    // 3. Vyfiltrovat recenze (jen 4 hvězdy a více) a namapovat do našeho formátu
+    // 3. Vyfiltrovat recenze (jen 5 hvězd) a namapovat do našeho formátu
     const rawReviews = detailsData.result.reviews;
 
     interface GoogleReview {
@@ -73,13 +69,17 @@ export async function GET() {
       .map((r: GoogleReview) => ({
         name: r.author_name,
         text: r.text,
-        date: r.relative_time_description, // "před 2 týdny" v češtině (díky language=cs)
+        date: r.relative_time_description,
         rating: r.rating,
       }))
-      .slice(0, 3); // Chceme maximálně 3 pro layout
+      .slice(0, 3);
 
     return NextResponse.json(
-      { reviews: filtered },
+      {
+        reviews: filtered,
+        rating: detailsData.result.rating ?? null,
+        ratingsTotal: detailsData.result.user_ratings_total ?? null,
+      },
       {
         headers: {
           "Cache-Control": "s-maxage=14400, stale-while-revalidate",

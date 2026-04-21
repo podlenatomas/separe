@@ -108,7 +108,7 @@ export default function Moodboard() {
             href="https://instagram.com/separe_mikulandska"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0"
+            className="inline-flex items-center gap-2 justify-center h-12 px-8 text-foreground text-[10px] font-light uppercase tracking-[0.14em] rounded-sm border border-foreground hover:bg-foreground hover:text-background active:scale-[0.98] transition-all duration-200 cursor-pointer mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
             {...fade}
           >
             <Instagram size={14} strokeWidth={1.5} />

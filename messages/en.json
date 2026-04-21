@@ -9,7 +9,7 @@
     "address": "Address"
   },
   "Hero": {
-    "addressBadge": "Mikulandská 133/3, Prague 1",
+    "addressBadge": "Mikulandská 133/3, Prague 1 · Est. 2024",
     "titleCraft": "Craft beer,",
     "titleWine": "sparkling wine",
     "titlePeace": "board games and no place you'd rather be",
@@ -34,12 +34,12 @@
         "text": "We go way beyond Italian Prosecco. One of the few natural wine bars in Prague city centre. We pour pet‑nat and natural wines. Bubbles best enjoyed when you crack open a whole bottle with friends."
       },
       "quality": {
-        "title": "Premium Czech wines.",
+        "title": "Moravian and European wines.",
         "text": "We specialize in authentic Moravian and European wines. Carefully selected bottles from independent winemakers – from fresh pet-nats to pure natural wines."
       },
       "games": {
         "title": "Free board games & regular pub quizzes.",
-        "text": "Over 30 board games available to play for free – from quick card games to complex strategies. We also host regular game nights and Wednesday pub quizzes."
+        "text": "Over 30 board games available to play for free – from quick card games to complex strategies. We also host game nights and Wednesday pub quizzes."
       }
     }
   },
@@ -471,32 +471,27 @@
             "items": [
               {
                 "name": "Pinot Blanc (Vajbar Winery)",
-                "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs.
-Taste: Colorful, fresh and juicy. Subtle oak traces.",
+                "desc": "Dry. Aroma: Apples, ripe citrus, dried herbs. Taste: Colorful, fresh and juicy. Subtle oak traces.",
                 "price": "45 CZK / dcl"
               },
               {
-                "name": "Welschriesling (Mitoma Winery)",
-                "desc": "Dry. Aroma: Firm, full and dynamic.
-Taste: Round, smooth, pleasantly juicy.",
+                "name": "Welschriesling (Vajbar Winery)",
+                "desc": "Dry. Aroma: Firm, full and dynamic. Taste: Round, smooth, pleasantly juicy.",
                 "price": "45 CZK / dcl"
               },
               {
-                "name": "Gewürztraminer (Mitoma Winery)",
-                "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey.
-Taste: Mildly sweet, perfectly matching the aroma.",
+                "name": "Gewürztraminer (Vajbar Winery)",
+                "desc": "Semi‑dry. Aroma: Rich, blossoming roses, honey. Taste: Mildly sweet, perfectly matching the aroma.",
                 "price": "45 CZK / dcl"
               },
               {
-                "name": "Pálava (Mitoma Winery)",
-                "desc": "Semi‑sweet. Aroma: Rich and fresh white roses.
-Taste: Homemade marmalade fruit, long aftertaste.",
+                "name": "Pálava (Vajbar Winery)",
+                "desc": "Semi‑sweet. Aroma: Rich and fresh white roses. Taste: Homemade marmalade fruit, long aftertaste.",
                 "price": "48 CZK / dcl"
               },
               {
-                "name": "Zweigeltrebe rosé",
-                "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices.
-Taste: Dynamic, crisp cherries and currants.",
+                "name": "Zweigeltrebe rosé (Vajbar Winery)",
+                "desc": "Rosé - semi‑dry. Aroma: Fresh red fruit, spices. Taste: Dynamic, crisp cherries and currants.",
                 "price": "45 CZK / dcl"
               }
             ]
@@ -505,15 +500,13 @@ Taste: Dynamic, crisp cherries and currants.",
             "name": "Wines by the Glass (Red)",
             "items": [
               {
-                "name": "Dornfelder",
-                "desc": "Dry. Aroma: Ripe and full, fresh sour cherry.
-Taste: Round, subtle tones of cherries and cranberries.",
+                "name": "Dornfelder (Vajbar Winery)",
+                "desc": "Dry. Aroma: Ripe and full, fresh sour cherry. Taste: Round, subtle tones of cherries and cranberries.",
                 "price": "50 CZK / dcl"
               },
               {
                 "name": "Primitivo Salento IGP (Italy)",
-                "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate.
-Taste: Fruity, balanced with pepper and coffee.",
+                "desc": "Dry. Aroma: Intense plum, forest fruit, dark chocolate. Taste: Fruity, balanced with pepper and coffee.",
                 "price": "60 CZK / dcl"
               }
             ]
@@ -523,44 +516,37 @@ Taste: Fruity, balanced with pepper and coffee.",
             "items": [
               {
                 "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
-                "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers.
-Taste: Clean and dry.",
+                "desc": "Prosecco Spumante - brut nature. Aroma: Apples, pears, white flowers. Taste: Clean and dry.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Rebuli Brut (Treviso DOC)",
-                "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar.
-Taste: Dry, fruity structure.",
+                "desc": "Prosecco Spumante - vegan. Aroma: Citrus fruit, trace of cedar. Taste: Dry, fruity structure.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Perlage Ottantacinque Bio",
-                "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple.
-Taste: Balanced, long, easy to drink.",
+                "desc": "Cuvée Vino Spumante - brut. Aroma: Exotic mango, pineapple. Taste: Balanced, long, easy to drink.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Integrale Bio",
-                "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries.
-Taste: Fresh and fruity.",
+                "desc": "Organic Vino Rosé Frizzante - unfiltered. Aroma: Currants, cherries. Taste: Fresh and fruity.",
                 "price": "125 / 695 CZK"
               },
               {
                 "name": "Mionetto (Treviso DOC)",
-                "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit.
-Taste: Harmonious with honey notes.",
+                "desc": "Prosecco Frizzante - brut. Aroma: Fresh, rich fruit. Taste: Harmonious with honey notes.",
                 "price": "360 CZK / btl"
               },
               {
                 "name": "Sekt Pinot Blanc (Pavlovín)",
-                "desc": "Brut. Aroma: Floral with pears.
-Taste: Elegant, mineral with fine acidity.",
+                "desc": "Brut. Aroma: Floral with pears. Taste: Elegant, mineral with fine acidity.",
                 "price": "695 CZK / btl"
               },
               {
                 "name": "Bianco Spumante Alcohol Free",
-                "desc": "Non‑alcoholic. Aroma: Green apples.
-Taste: Harmonious, fresh, balanced sweet and sour.",
+                "desc": "Non‑alcoholic. Aroma: Green apples. Taste: Harmonious, fresh, balanced sweet and sour.",
                 "price": "495 CZK / btl"
               }
             ]
@@ -570,44 +556,37 @@ Taste: Harmonious, fresh, balanced sweet and sour.",
             "items": [
               {
                 "name": "Silvaner (Mádl Winery)",
-                "desc": "White - dry. Aroma: Subtle white flowers.
-Taste: Fresh aftertaste of greengages.",
+                "desc": "White - dry. Aroma: Subtle white flowers. Taste: Fresh aftertaste of greengages.",
                 "price": "495 CZK"
               },
               {
                 "name": "Sauvignon Blanc (Mádl Winery)",
-                "desc": "White - dry. Aroma: Blackcurrant, linden flower.
-Taste: Juicy peach and gooseberry.",
+                "desc": "White - dry. Aroma: Blackcurrant, linden flower. Taste: Juicy peach and gooseberry.",
                 "price": "545 CZK"
               },
               {
                 "name": "Hibernal (Mádl Winery)",
-                "desc": "White - semi‑dry. Aroma: Apricot and mint.
-Taste: Ripe peaches with long persistence.",
+                "desc": "White - semi‑dry. Aroma: Apricot and mint. Taste: Ripe peaches with long persistence.",
                 "price": "495 CZK"
               },
               {
                 "name": "Riesling (V. Tetur Winery)",
-                "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots.
-Taste: Harmonious, spicy acidity.",
+                "desc": "White - semi‑dry. Aroma: Linden flower, dried apricots. Taste: Harmonious, spicy acidity.",
                 "price": "545 CZK"
               },
               {
                 "name": "Chardonnay Remake (V. Tetur Winery)",
-                "desc": "White - dry. Aroma: Spicy yellow melon.
-Taste: Full, fresh citrus acidity.",
+                "desc": "White - dry. Aroma: Spicy yellow melon. Taste: Full, fresh citrus acidity.",
                 "price": "595 CZK"
               },
               {
                 "name": "Rrrr cuvée (Maděřič Winery)",
-                "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis.
-Taste: Distinctly mineral, creamy.",
+                "desc": "White (Acacia barrels) - dry. Aroma: Herbal, propolis. Taste: Distinctly mineral, creamy.",
                 "price": "595 CZK"
               },
               {
                 "name": "Pálava Orange (Maděřič Winery)",
-                "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots.
-Taste: Juicy, fine tannins.",
+                "desc": "Orange wine - dry. Aroma: Exotic fruit, dried apricots. Taste: Juicy, fine tannins.",
                 "price": "645 CZK"
               }
             ]
@@ -617,32 +596,27 @@ Taste: Juicy, fine tannins.",
             "items": [
               {
                 "name": "Cabernet Sauvignon (V. HORT Winery)",
-                "desc": "Red - dry. Aroma: Black fruit, blackcurrant.
-Taste: Distinct tannins with smooth acidity.",
+                "desc": "Red - dry. Aroma: Black fruit, blackcurrant. Taste: Distinct tannins with smooth acidity.",
                 "price": "495 CZK"
               },
               {
                 "name": "Pinot Noir rosé (V. HORT Winery)",
-                "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries.
-Taste: Harmonious strawberry and honey.",
+                "desc": "Rosé - dry. Aroma: Red cherries, wild strawberries. Taste: Harmonious strawberry and honey.",
                 "price": "490 CZK"
               },
               {
                 "name": "Blaufränkisch VOC (Mitoma Winery)",
-                "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood.
-Taste: Fuller, round with pleasant tannins.",
+                "desc": "Red - dry. Aroma: Fresh sour cherry, subtle wood. Taste: Fuller, round with pleasant tannins.",
                 "price": "520 CZK"
               },
               {
                 "name": "Bellegrado Barrique Cuvée (Zapletal)",
-                "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel.
-Taste: Delicious fine tannins.",
+                "desc": "Red, Barrique - dry. Aroma: Blackberries, vanilla from the barrel. Taste: Delicious fine tannins.",
                 "price": "895 CZK"
               },
               {
                 "name": "Primitivo di Manduria DOC (Italy)",
-                "desc": "Red - dry. Aroma: Currants, plum jam, cocoa.
-Taste: Full and round, spice and coffee notes.",
+                "desc": "Red - dry. Aroma: Currants, plum jam, cocoa. Taste: Full and round, spice and coffee notes.",
                 "price": "795 CZK"
               }
             ]
@@ -653,7 +627,7 @@ Taste: Full and round, spice and coffee notes.",
     "disclaimer": "Allergen information available upon request. All prices are in CZK."
   },
   "Salonek": {
-    "eyebrow": "Book our private room",
+    "eyebrow": "Private room",
     "titleYour": "Your evening.",
     "titleOur": "– Our private room.",
     "description": "We're not a sterile boardroom. We have a private space with a projector. Relaxed atmosphere, good food, good drinks. Birthdays, small company gatherings, larger parties, or just a table for your crew. We tailor everything. We handle the food. On our own for smaller events, with trusted partners for bigger ones.",
@@ -684,12 +658,15 @@ Taste: Full and round, spice and coffee notes.",
         "text": "The best urban hideout in Prague. You come for one beer, you leave three hours later with a new favorite board game. The staff is lovely and knows what to recommend. I'll be back.",
         "date": "3 weeks ago"
       }
-    }
+    },
+    "ratingLabel": "stars on Google",
+    "reviewsCountSuffix": "reviews",
+    "readAll": "Read all reviews on Google"
   },
   "Moodboard": {
     "eyebrow": "Gallery",
     "title": "Drop in.",
-    "description": "A small slice of the Mikulandská atmosphere. The rest is better experienced in person. Over a glass of wine or a board game.",
+    "description": "A small slice of the separé atmosphere. The rest is better experienced in person. Over a glass of wine or a board game.",
     "photos": {
       "p1": "Pouring wine in warm light",
       "p2": "Cozy bar interior with warm lighting",
@@ -733,10 +710,63 @@ Taste: Full and round, spice and coffee notes.",
       }
     }
   },
+  "FAQ": {
+    "eyebrow": "Questions & answers",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Where is Separé located?",
+        "a": "Mikulandská 133/3, Prague 1, Nové Město. Practically on Národní třída, one minute walk from the metro station (Line B). Entrance directly from the street."
+      },
+      {
+        "q": "What are the opening hours?",
+        "a": "Monday to Saturday 17:00–24:00 (5 p.m. to midnight). Closed on Sunday. Hours apply year-round; any exceptions (holidays, private events) are announced on Instagram @separe_mikulandska."
+      },
+      {
+        "q": "Can I book a table?",
+        "a": "Yes. The easiest way is online directly through the form on our site in the Reservation section or at separe.choiceqr.com/booking, or by email at ahoj@separe.cz. For groups of 8+ or the private room, please email us, ideally a few days in advance."
+      },
+      {
+        "q": "Do you really have board games?",
+        "a": "Yes. Over 30 board games at the bar, free to borrow for the entire evening, from quick 20-minute card games to two-hour strategy games. Just ask a staff member."
+      },
+      {
+        "q": "What wines do you pour?",
+        "a": "We specialize in natural wines, pet-nat, and authentic Czech and Moravian wines from independent winemakers. The full list of wines by the glass and bottles is in the menu section. We also have craft beer on tap from small Czech microbreweries and our own cocktails."
+      },
+      {
+        "q": "Do you host a pub quiz?",
+        "a": "Yes, every Wednesday at 19:00 (7 p.m.). The quiz is in Czech, with mixed topics (general knowledge, music, pop culture, history). Teams of 2–6 people. Table reservation is strongly recommended, Wednesdays fill up. Quiz reservation: https://www.hospodskykviz.cz/hospody/separe-nove-mesto."
+      },
+      {
+        "q": "Do you have a private room for events?",
+        "a": "Yes. A separate private room with a projector for 10–50 people, suitable for celebrations, small corporate gatherings, and networking. Book the room and arrange catering via ahoj@separe.cz."
+      },
+      {
+        "q": "What food do you serve?",
+        "a": "Pinsa romana (Roman-style pizza in four varieties), sandwiches, Caesar salad, Czech classics (pickled sausage, pickled Camembert, egg spread, pork crackling spread), cheese and charcuterie boards, and bar snacks (nuts, olives, nachos, popcorn). The full menu with prices is in the menu section."
+      },
+      {
+        "q": "Can I host a private party here?",
+        "a": "Yes, we love them. Private parties, birthdays, small corporate gatherings, and intimate networking happen here regularly, the private room with a projector is ideal for 10–50 people, and we can also host larger events outside opening hours. We help with preparation, catering, and wine pairing. Email us at ahoj@separe.cz and we'll work out the details."
+      },
+      {
+        "q": "Do you have Pilsner Urquell?",
+        "a": "No, we don't serve Pilsner Urquell. We're a craft bar pouring craft beer from small independent Czech microbreweries. We curate interesting picks from smaller producers, covering styles from pale lagers through IPAs to stouts, depending on what's currently on tap."
+      }
+    ]
+  },
+  "Reservation": {
+    "eyebrow": "Reservation",
+    "title": "Book a table online",
+    "description": "Pick a date and time directly here. For the private room or private parties, please email us at ahoj@separe.cz.",
+    "iframeTitle": "Separé reservation form",
+    "fallbackLink": "Open the form in a new tab"
+  },
   "Contact": {
     "eyebrow": "Contact",
     "title": "Visit Separé",
-    "description": "The entrance is right off the street. In the summer, we open a peaceful courtyard garden—a quiet escape in the center of Prague.",
+    "description": "The entrance is right off the street. In the summer, we open a peaceful courtyard garden, a quiet escape in the center of Prague.",
     "addressLabel": "Address",
     "addressLine1": "Separé",
     "addressLine2": "Mikulandská 133/3",
@@ -744,17 +774,32 @@ Taste: Full and round, spice and coffee notes.",
     "contactLabel": "Get in touch",
     "hoursLabel": "Opening hours",
     "hoursMoSa": "Monday – Saturday",
-    "hoursMoSaTime": "5:00 PM – Midnight",
+    "hoursMoSaTime": "17:00 – 24:00",
     "hoursSu": "Sunday",
     "hoursSuTime": "Closed",
     "ctaReserve": "Book a table",
     "mapLabel": "How to find us",
-    "mapDescription": "A 3‑minute walk from the Národní třída metro station (Line B). Entrance directly from Mikulandská street."
+    "mapDescription": "Practically at Národní třída metro station (Line B), a one-minute walk. Entrance directly from Mikulandská street.",
+    "mapConsentPrompt": "To display the map we need your consent for Google cookies.",
+    "mapConsentButton": "Load map"
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Prague 1"
   },
   "Page": {
     "spinnerText": "Separé · Mikulandská · Third Place · "
+  },
+  "CookieConsent": {
+    "title": "We use cookies",
+    "body": "To show you Google Maps and count visits correctly, we need your OK. The site works either way.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "reopen": "Cookie settings"
+  },
+  "StickyNav": {
+    "book": "Book",
+    "call": "Call",
+    "directions": "Directions",
+    "ariaLabel": "Quick actions"
   }
 }

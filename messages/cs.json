@@ -9,7 +9,7 @@
     "address": "Adresa"
   },
   "Hero": {
-    "addressBadge": "Mikulandská 133/3, Praha 1",
+    "addressBadge": "Mikulandská 133/3, Praha 1 · Od 2024",
     "titleCraft": "Řemeslné pivo,",
     "titleWine": "šumivá vína",
     "titlePeace": "deskovky a radost uprostřed města",
@@ -22,11 +22,11 @@
   "About": {
     "eyebrow": "O nás",
     "title": "Rodinný bar uprostřed Prahy 1.",
-    "description": "Separé je rodinný craft bar v Mikulandské 133/3, Praha 1. Vzniklo z jednoduché myšlenky: chtěli jsme v centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s naškrobenou obsluhou. Poctivý rodinný podnik, kde se cítíte jako člověk, ne jako host. Milujeme poctivé řemeslo a zajímavé chutě. Do lístku pouštíme jen to, za co dáme ruku do ohně.",
+    "description": "Separé je rodinný craft bar v Mikulandské 133/3, Praha 1. Vzniklo z jednoduché myšlenky: Chtěli jsme v centru Prahy vytvořit místo, kam bychom sami rádi chodili. Žádný neosobní bar s naškrobenou obsluhou. Poctivý rodinný podnik, kde se cítíte jako člověk, ne jako host. Milujeme poctivé řemeslo a zajímavé chutě. Do lístku pouštíme jen to, za co dáme ruku do ohně.",
     "swipeHint": "Tahem posuňte",
     "values": {
       "beer": {
-        "title": "Craft pivo z malých pivovarů.",
+        "title": "Řemeslné pivo z malých pivovarů.",
         "text": "Pečlivý výběr rotujícího čepu. Vždy z nezávislých, malých pivovarů. Nabídku pravidelně obměňujeme, aby bylo pořád co objevovat."
       },
       "wine": {
@@ -34,12 +34,12 @@
         "text": "Neomezujeme se na italské Prosecco. Nabízíme pet‑nat a přírodní vína. Bubliny, které si nejvíc užijete, když si s přáteli otevřete rovnou celou lahev."
       },
       "quality": {
-        "title": "Přívlastková česká vína.",
+        "title": "Moravská a evropská vína.",
         "text": "Specializujeme se na autentická moravská a evropská vína. Vybíráme kvalitní lahve z menších vinařství – od svěžích pet-natů až po čistá naturální vína bez zbytečných zásahů."
       },
       "games": {
         "title": "Deskovky zdarma & pravidelné kvízy.",
-        "text": "Přes 30 deskových her volně k zapůjčení – od rychlých karetek po propracované strategie. K tomu navíc pořádáme pravidelné herní večery a středeční pub kvízy."
+        "text": "Přes 30 deskových her volně k zapůjčení – od rychlých karetek po propracované strategie. K tomu navíc pořádáme herní večery a středeční pub kvízy."
       }
     }
   },
@@ -471,32 +471,27 @@
             "items": [
               {
                 "name": "Rulandské bílé (Vinařství Vajbar)",
-                "desc": "Zemské víno - suché. Vůně: Jablka, zralé citrusové plody a sušené bylinky.
-Chuť: Barvitá, svěží a šťavnatá.",
+                "desc": "Zemské víno - suché. Vůně: Jablka, zralé citrusové plody a sušené bylinky. Chuť: Barvitá, svěží a šťavnatá.",
                 "price": "45,-/dcl"
               },
               {
-                "name": "Ryzlink Vlašský (Vinařství Mitoma)",
-                "desc": "Zemské víno - suché. Vůně: Pevná, plná a dynamická.
-Chuť: Oblá a hladká, příjemně šťavnatá.",
+                "name": "Ryzlink Vlašský (Vinařství Vajbar)",
+                "desc": "Zemské víno - suché. Vůně: Pevná, plná a dynamická. Chuť: Oblá a hladká, příjemně šťavnatá.",
                 "price": "45,-/dcl"
               },
               {
-                "name": "Tramín červený (Vinařství Mitoma)",
-                "desc": "Zemské víno - polosuché. Vůně: Velmi bohatá, květoucí růže, med.
-Chuť: Jemně nasládlá, kořenitá.",
+                "name": "Tramín červený (Vinařství Vajbar)",
+                "desc": "Zemské víno - polosuché. Vůně: Velmi bohatá, květoucí růže, med. Chuť: Jemně nasládlá, kořenitá.",
                 "price": "45,-/dcl"
               },
               {
-                "name": "Pálava (Vinařství Mitoma)",
-                "desc": "Zemské víno - polosladké. Vůně: Bohatá a svěží, bílé růže.
-Chuť: Domácí marmeládové ovoce.",
+                "name": "Pálava (Vinařství Vajbar)",
+                "desc": "Zemské víno - polosladké. Vůně: Bohatá a svěží, bílé růže. Chuť: Domácí marmeládové ovoce.",
                 "price": "48,-/dcl"
               },
               {
-                "name": "Zweigeltrebe rosé",
-                "desc": "Růžové - polosuché. Vůně: Bohatá a svěží, červené ovoce, koření.
-Chuť: Svěží, dynamická, čerstvá.",
+                "name": "Zweigeltrebe rosé (Vinařství Vajbar)",
+                "desc": "Růžové - polosuché. Vůně: Bohatá a svěží, červené ovoce, koření. Chuť: Svěží, dynamická, čerstvá.",
                 "price": "45,-/dcl"
               }
             ]
@@ -505,15 +500,13 @@ Chuť: Svěží, dynamická, čerstvá.",
             "name": "Rozlévaná vína (Červená)",
             "items": [
               {
-                "name": "Dornfelder",
-                "desc": "Zemské víno - suché. Vůně: Zralá a plná, svěže višňová.
-Chuť: Oblá, jemné tóny višní, brusinek.",
+                "name": "Dornfelder (Vinařství Vajbar)",
+                "desc": "Zemské víno - suché. Vůně: Zralá a plná, svěže višňová. Chuť: Oblá, jemné tóny višní, brusinek.",
                 "price": "50,-/dcl"
               },
               {
                 "name": "Primitivo Salento IGP (Itálie)",
-                "desc": "Suché. Vůně: Intenzivní a zralá, švestky, tóny koření a tmavé čokolády.
-Chuť: Ovocně plná, vyvážená.",
+                "desc": "Suché. Vůně: Intenzivní a zralá, švestky, tóny koření a tmavé čokolády. Chuť: Ovocně plná, vyvážená.",
                 "price": "60,-/dcl"
               }
             ]
@@ -523,44 +516,37 @@ Chuť: Ovocně plná, vyvážená.",
             "items": [
               {
                 "name": "Bellenda Prima Cuvée Zero (Treviso DOC)",
-                "desc": "Prosecco Spumante - brut nature. Vůně: Jablka, hrušky a bílé květy.
-Chuť: Čistá a suchá, s dlouhou dochutí.",
+                "desc": "Prosecco Spumante - brut nature. Vůně: Jablka, hrušky a bílé květy. Chuť: Čistá a suchá, s dlouhou dochutí.",
                 "price": "125,- / 695,-"
               },
               {
                 "name": "Rebuli Brut (Treviso DOC)",
-                "desc": "Prosecco Spumante - vegan. Vůně: Citrusové ovoce, stopa cedru a minerality.
-Chuť: Suchá, ovocná struktura.",
+                "desc": "Prosecco Spumante - vegan. Vůně: Citrusové ovoce, stopa cedru a minerality. Chuť: Suchá, ovocná struktura.",
                 "price": "125,- / 695,-"
               },
               {
                 "name": "Perlage Ottantacinque Bio",
-                "desc": "Cuvée Vino Spumante - brut. Vůně: Exotické mango, ananas, bílé květy.
-Chuť: Vyvážená, dlouhá, snadno pitná.",
+                "desc": "Cuvée Vino Spumante - brut. Vůně: Exotické mango, ananas, bílé květy. Chuť: Vyvážená, dlouhá, snadno pitná.",
                 "price": "125,- / 695,-"
               },
               {
                 "name": "Integrale Bio",
-                "desc": "Organic Vino Rosé Frizzante - nefiltrované. Vůně: Tóny rybízu, třešní.
-Chuť: Svěží a ovocná.",
+                "desc": "Organic Vino Rosé Frizzante - nefiltrované. Vůně: Tóny rybízu, třešní. Chuť: Svěží a ovocná.",
                 "price": "125,- / 695,-"
               },
               {
                 "name": "Mionetto (Treviso DOC)",
-                "desc": "Prosecco Frizzante - brut. Vůně: Svěží a bohaté ovocné aroma.
-Chuť: Harmonická s medovými tóny.",
+                "desc": "Prosecco Frizzante - brut. Vůně: Svěží a bohaté ovocné aroma. Chuť: Harmonická s medovými tóny.",
                 "price": "360,-"
               },
               {
                 "name": "Sekt Pinot Blanc (Pavlovín)",
-                "desc": "Brut. Vůně: Květinová s tóny hrušek a jablíček.
-Chuť: Elegantní, minerální s jemnou kyselinkou.",
+                "desc": "Brut. Vůně: Květinová s tóny hrušek a jablíček. Chuť: Elegantní, minerální s jemnou kyselinkou.",
                 "price": "695,-"
               },
               {
                 "name": "Bianco Spumante Alcohol Free",
-                "desc": "Nealkoholické. Vůně: Zelená jablka, hrušky.
-Chuť: Harmonická, svěží s jemnou perláží.",
+                "desc": "Nealkoholické. Vůně: Zelená jablka, hrušky. Chuť: Harmonická, svěží s jemnou perláží.",
                 "price": "495,-"
               }
             ]
@@ -570,44 +556,37 @@ Chuť: Harmonická, svěží s jemnou perláží.",
             "items": [
               {
                 "name": "Sylvánské zelené (Vinařství Mádl)",
-                "desc": "Bílé, pozdní sběr - suché. Vůně: Kvetoucí bílé květy.
-Chuť: Svěží dochuť čerstvých rynglí.",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Kvetoucí bílé květy. Chuť: Svěží dochuť čerstvých rynglí.",
                 "price": "495,-"
               },
               {
                 "name": "Sauvignon (Vinařství Mádl)",
-                "desc": "Bílé, pozdní sběr - suché. Vůně: Černý rybíz, lipový květ.
-Chuť: Broskev a angrešt, svěží kyselinka.",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Černý rybíz, lipový květ. Chuť: Broskev a angrešt, svěží kyselinka.",
                 "price": "545,-"
               },
               {
                 "name": "Hibernal (Vinařství Mádl)",
-                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Meruňka a máta.
-Chuť: Zralé broskve s dlouhou perzistencí.",
+                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Meruňka a máta. Chuť: Zralé broskve s dlouhou perzistencí.",
                 "price": "495,-"
               },
               {
                 "name": "Ryzlink rýnský (Vinařství V. Tetur)",
-                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Lipový květ, sušené meruňky.
-Chuť: Harmonická, pikantní kyselina.",
+                "desc": "Bílé, pozdní sběr - polosuché. Vůně: Lipový květ, sušené meruňky. Chuť: Harmonická, pikantní kyselina.",
                 "price": "545,-"
               },
               {
                 "name": "Chardonnay Remake (Vinařství V. Tetur)",
-                "desc": "Bílé, pozdní sběr - suché. Vůně: Kořenitá s nádechem jablek.
-Chuť: Žlutý meloun, svěží kyselina.",
+                "desc": "Bílé, pozdní sběr - suché. Vůně: Kořenitá s nádechem jablek. Chuť: Žlutý meloun, svěží kyselina.",
                 "price": "595,-"
               },
               {
                 "name": "Rrrr cuvée (Vinařství Maděřič)",
-                "desc": "Bílé (Akátové sudy) - suché. Vůně: Bylinková s tóny propolisu.
-Chuť: Výrazně minerální, krémová.",
+                "desc": "Bílé (Akátové sudy) - suché. Vůně: Bylinková s tóny propolisu. Chuť: Výrazně minerální, krémová.",
                 "price": "595,-"
               },
               {
                 "name": "Pálava Orange (Vinařství Maděřič)",
-                "desc": "Oranžové víno - suché. Vůně: Exotické ovoce, čajové růže.
-Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
+                "desc": "Oranžové víno - suché. Vůně: Exotické ovoce, čajové růže. Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
                 "price": "645,-"
               }
             ]
@@ -617,32 +596,27 @@ Chuť: Šťavnatá, strukturovaná, jemná tříslovina.",
             "items": [
               {
                 "name": "Cabernet Sauvignon (Vinařství V. HORT)",
-                "desc": "Červené - suché. Vůně: Černé ovoce, černý rybíz.
-Chuť: Výrazná tříslovina s hladkou kyselinou.",
+                "desc": "Červené - suché. Vůně: Černé ovoce, černý rybíz. Chuť: Výrazná tříslovina s hladkou kyselinou.",
                 "price": "495,-"
               },
               {
                 "name": "Pinot Noir rosé (Vinařství V. HORT)",
-                "desc": "Růžové, pozdní sběr - suché. Vůně: Červené třešně, lesní jahody.
-Chuť: Harmonická chuť jahod a medu.",
+                "desc": "Růžové, pozdní sběr - suché. Vůně: Červené třešně, lesní jahody. Chuť: Harmonická chuť jahod a medu.",
                 "price": "490,-"
               },
               {
                 "name": "Frankovka VOC Modré Hory (Vinařství Mitoma)",
-                "desc": "Červené - suché. Vůně: Čerstvá višeň, lehké tóny dřeva.
-Chuť: Plnější, oblá s příjemnou tříslovinou.",
+                "desc": "Červené - suché. Vůně: Čerstvá višeň, lehké tóny dřeva. Chuť: Plnější, oblá s příjemnou tříslovinou.",
                 "price": "520,-"
               },
               {
                 "name": "Bellegrado Barrique Cuvée (Zapletal)",
-                "desc": "Červené, Barikové - suché. Vůně: Ostružiny, vanilka z bariku.
-Chuť: Lahodná s jemnými tříslovinami.",
+                "desc": "Červené, Barikové - suché. Vůně: Ostružiny, vanilka z bariku. Chuť: Lahodná s jemnými tříslovinami.",
                 "price": "895,-"
               },
               {
                 "name": "Primitivo di Manduria DOC (Itálie)",
-                "desc": "Červené - suché. Vůně: Rybíz, švestkový džem, kakao.
-Chuť: Plná a kulatá, tóny koření a kávy.",
+                "desc": "Červené - suché. Vůně: Rybíz, švestkový džem, kakao. Chuť: Plná a kulatá, tóny koření a kávy.",
                 "price": "795,-"
               }
             ]
@@ -653,9 +627,9 @@ Chuť: Plná a kulatá, tóny koření a kávy.",
     "disclaimer": "Informace o alergenech na vyžádání u obsluhy. Všechny ceny jsou uvedeny v Kč."
   },
   "Salonek": {
-    "eyebrow": "Zarezervujte si salonek",
+    "eyebrow": "Salónek",
     "titleYour": "Váš večer.",
-    "titleOur": "– Náš salonek.",
+    "titleOur": "– Náš salónek.",
     "description": "Nejsme sterilní zasedačka. Máme oddělený soukromý prostor s projektorem. Uvolněná atmosféra, dobré jídlo, dobré pití. Narozeniny, menší firemní večer nebo jen stůl pro partu přátel. Vše připravíme na míru. O občerstvení se postaráme. U menších akcí sami, u větších s prověřenými parťáky.",
     "tagProjector": "Projektor",
     "tagPrivacy": "Soukromí",
@@ -684,12 +658,15 @@ Chuť: Plná a kulatá, tóny koření a kávy.",
         "text": "Nejlepší úkryt před světem v Praze. Přijdete na jedno pivo, odejdete po třech hodinách s novou oblíbenou deskovkou. Obsluha je milá a ví, co doporučit. Vrátím se.",
         "date": "před 3 týdny"
       }
-    }
+    },
+    "ratingLabel": "hvězdiček z Google",
+    "reviewsCountSuffix": "hodnocení",
+    "readAll": "Číst všechny recenze na Googlu"
   },
   "Moodboard": {
     "eyebrow": "Galerie",
     "title": "Zastavte se.",
-    "description": "Malý výřez z atmosféry Mikulandské. Zbytek je lepší zažít osobně. U sklenky vína nebo nad deskovkou.",
+    "description": "Malý výřez z atmosféry separé. Zbytek je lepší zažít osobně. U sklenky vína nebo nad deskovkou.",
     "photos": {
       "p1": "Nalévání vína v teplém světle",
       "p2": "Útulný interiér baru s teplým osvětlením",
@@ -733,6 +710,59 @@ Chuť: Plná a kulatá, tóny koření a kávy.",
       }
     }
   },
+  "FAQ": {
+    "eyebrow": "Otázky & odpovědi",
+    "title": "Na co se nás často ptáte",
+    "items": [
+      {
+        "q": "Kde Separé najdu?",
+        "a": "Mikulandská 133/3, Praha 1, Nové Město. Prakticky na Národní třídě, minuta chůze ze stanice metra (linka B). Vstup je přímo z ulice."
+      },
+      {
+        "q": "Jaká je otevírací doba?",
+        "a": "Pondělí až sobota 17:00–24:00. V neděli máme zavřeno. Otevírací doba platí celoročně, případné výjimky (svátky, privátní akce) hlásíme na Instagramu @separe_mikulandska."
+      },
+      {
+        "q": "Dá se u vás rezervovat stůl?",
+        "a": "Ano. Rezervace je nejjednodušší online přímo přes formulář na našem webu v sekci Rezervace nebo na separe.choiceqr.com/booking, případně e-mailem na ahoj@separe.cz. Pro skupiny 8+ nebo celý salónek nám napište e-mail, ideálně s několikadenním předstihem."
+      },
+      {
+        "q": "Máte opravdu deskovky?",
+        "a": "Ano. U baru je přes 30 deskových her zdarma k zapůjčení na celý večer, od rychlých karetních her na 20 minut po strategie na dvě hodiny. Stačí se zeptat obsluhy."
+      },
+      {
+        "q": "Jaká vína naléváte?",
+        "a": "Specializujeme se na naturální vína, pet-nat a autentická česká a moravská vína od nezávislých vinařů. Kompletní lístek rozlévaných vín i lahví najdete v sekci nabídky. Kromě vín máme čepované řemeslné pivo od malých českých pivovarů a vlastní koktejly."
+      },
+      {
+        "q": "Pořádáte hospodský kvíz?",
+        "a": "Ano, každou středu od 19:00. Kvíz je v češtině, otázky smíšené (všeobecný přehled, hudba, popkultura, historie). Týmy 2–6 lidí. Rezervaci stolu důrazně doporučujeme, středa bývá plná. Rezervace kvízu: https://www.hospodskykviz.cz/hospody/separe-nove-mesto."
+      },
+      {
+        "q": "Máte salónek pro soukromé akce?",
+        "a": "Ano. Oddělený salónek s projektorem pro 10–50 lidí, vhodný pro oslavy, menší firemní posezení a networking. Rezervace salónku a domluva cateringu přes ahoj@separe.cz."
+      },
+      {
+        "q": "Jaké jídlo podáváte?",
+        "a": "Pinsa romana (římská pizza ve 4 variantách), sandwiche, Caesar salát, české klasiky (utopenec, nakládaný hermelín, vajíčková a škvarková pomazánka), sýrová a masitá prkna, bar snacks (ořechy, olivy, nachos, popcorn). Kompletní menu s cenami je v sekci nabídky."
+      },
+      {
+        "q": "Dá se u vás uspořádat soukromá oslava?",
+        "a": "Ano, moc rádi. Soukromé oslavy, narozeniny, firemní posezení i menší networking u nás dělají pravidelně, ideální je salónek s projektorem pro 10–50 lidí, ale dokážeme uspořádat i větší akci mimo otevírací dobu. Pomůžeme s přípravou, domluvou cateringu a výběrem vín. Napište nám na ahoj@separe.cz a detaily probereme."
+      },
+      {
+        "q": "Máte Plzeň?",
+        "a": "Plzeň nemáme. Jsme craft bar, čepujeme řemeslné pivo od malých nezávislých českých pivovarů. Vybíráme zajímavé kousky od menších producentů, styly od světlých ležáků přes IPA po stouty, podle aktuálního výčepu."
+      }
+    ]
+  },
+  "Reservation": {
+    "eyebrow": "Rezervace",
+    "title": "Rezervujte si stůl online",
+    "description": "Vyberte si datum a čas přímo zde. Pro rezervaci salónku nebo soukromé oslavy nám napište na ahoj@separe.cz.",
+    "iframeTitle": "Rezervační formulář Separé",
+    "fallbackLink": "Otevřít formulář v novém okně"
+  },
   "Contact": {
     "eyebrow": "Kontakt",
     "title": "Přijďte do Separé",
@@ -749,12 +779,27 @@ Chuť: Plná a kulatá, tóny koření a kávy.",
     "hoursSuTime": "Zavřeno",
     "ctaReserve": "Rezervovat stůl",
     "mapLabel": "Kde nás najdete",
-    "mapDescription": "Jsme 3 minuty chůze od stanice metra Národní třída (linka B). Vstup je přímo z ulice Mikulandská."
+    "mapDescription": "Jsme prakticky u stanice metra Národní třída (linka B), minuta chůze. Vstup je přímo z ulice Mikulandská.",
+    "mapConsentPrompt": "Pro zobrazení mapy potřebujeme váš souhlas s cookies Googlu.",
+    "mapConsentButton": "Načíst mapu"
   },
   "Footer": {
     "copyright": "© 2026 separé · Mikulandská 133/3, Praha 1"
   },
   "Page": {
     "spinnerText": "Separé · Mikulandská · Third Place · "
+  },
+  "CookieConsent": {
+    "title": "Používáme cookies",
+    "body": "Abychom vám ukázali Google mapy a správně počítali návštěvnost, potřebujeme vaše OK. Web funguje i bez nich.",
+    "accept": "Přijmout",
+    "reject": "Odmítnout",
+    "reopen": "Nastavení cookies"
+  },
+  "StickyNav": {
+    "book": "Rezervovat",
+    "call": "Zavolat",
+    "directions": "Trasa",
+    "ariaLabel": "Rychlé akce"
   }
 }
