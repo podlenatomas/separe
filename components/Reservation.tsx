@@ -10,7 +10,7 @@ export default async function Reservation() {
   return (
     <section
       id="rezervace"
-      className="border-b border-border"
+      className="border-b border-border scroll-mt-24"
       aria-labelledby="h-rezervace"
     >
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-28">

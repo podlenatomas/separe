@@ -38,6 +38,13 @@ const descriptions: Record<string, string> = {
   en: "A family craft bar in the heart of Prague 1. Specializing in authentic Czech and Moravian wines, pet-nat, natural wines, and craft beer. Board games and joy on Mikulandská.",
 };
 
+const SITE_ORIGIN = "https://www.separe-mikulandska.cz";
+// Next.js metadata resolver strips the trailing slash from root URLs, so
+// we use the origin-only form everywhere to keep canonical, hreflang,
+// sitemap and JSON-LD `url` values byte-identical.
+const CANONICAL_CS = SITE_ORIGIN;
+const CANONICAL_EN = `${SITE_ORIGIN}/en`;
+
 export async function generateMetadata({
   params,
 }: {
@@ -45,25 +52,25 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const canonicalPath = locale === "en" ? "/en" : "/";
+  const canonicalUrl = locale === "en" ? CANONICAL_EN : CANONICAL_CS;
   const ogImageAlt =
     locale === "en"
       ? "Interior and bar of Separé on Mikulandská"
       : "Interiér a bar Separé na Mikulandské";
 
   return {
-    metadataBase: new URL("https://www.separe-mikulandska.cz"),
+    metadataBase: new URL(SITE_ORIGIN),
     title: {
       template: "%s | Separé",
       default: titles[locale] || titles.cs,
     },
     description: descriptions[locale] || descriptions.cs,
     alternates: {
-      canonical: canonicalPath,
+      canonical: canonicalUrl,
       languages: {
-        cs: "/",
-        en: "/en",
-        "x-default": "/",
+        cs: CANONICAL_CS,
+        en: CANONICAL_EN,
+        "x-default": CANONICAL_CS,
       },
     },
     openGraph: {
@@ -81,7 +88,7 @@ export async function generateMetadata({
           alt: ogImageAlt,
         },
       ],
-      url: canonicalPath,
+      url: canonicalUrl,
     },
     twitter: {
       card: "summary_large_image",
@@ -268,6 +275,21 @@ export default async function LocaleLayout({ children, params }: Props) {
                 },
               ],
               hasMenu: menuSchema,
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": locale === "en" ? CANONICAL_EN : CANONICAL_CS,
+              },
+              speakable: {
+                "@type": "SpeakableSpecification",
+                cssSelector: [
+                  "#h-about",
+                  "#h-contact",
+                  "#h-rezervace",
+                  "#h-events",
+                  "#kontakt address",
+                  "#faq summary",
+                ],
+              },
               potentialAction: {
                 "@type": "ReserveAction",
                 target: {
@@ -281,7 +303,10 @@ export default async function LocaleLayout({ children, params }: Props) {
                 },
                 result: {
                   "@type": "Reservation",
-                  name: "Rezervace stolu v Separé",
+                  name:
+                    locale === "en"
+                      ? "Table reservation at Separé"
+                      : "Rezervace stolu v Separé",
                 },
               },
               sameAs: [

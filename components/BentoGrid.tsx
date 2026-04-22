@@ -51,9 +51,10 @@ export default function BentoGrid() {
     <>
       {/* ═══ O NÁS ═══ */}
       <section
+        id="o-nas"
         // eslint-disable-next-line react-hooks/refs
         ref={oNas.registerNode}
-        className="border-b border-border"
+        className="border-b border-border scroll-mt-24"
         aria-labelledby="h-about"
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
@@ -114,9 +115,10 @@ export default function BentoGrid() {
 
       {/* ═══ NABÍDKA ═══ */}
       <section
+        id="nabidka"
         // eslint-disable-next-line react-hooks/refs
         ref={nabidka.registerNode}
-        className="border-b border-border"
+        className="border-b border-border scroll-mt-24"
         aria-labelledby="h-menu"
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32 text-left">

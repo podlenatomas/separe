@@ -12,6 +12,7 @@ const Contact = dynamic(() => import("@/components/Contact"));
 import FAQ from "@/components/FAQ";
 import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
+import EventSchema from "@/components/EventSchema";
 
 export default function Home() {
   return (
@@ -51,6 +52,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <EventSchema />
     </>
   );
 }
