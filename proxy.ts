@@ -45,13 +45,12 @@ export default function middleware(request: NextRequest) {
 
   // 3. Allow browser-side caching for fast back/reload. Must stay `private`
   //    because each response carries a unique CSP nonce — we cannot let a
-  //    shared CDN serve the same HTML to multiple users.
-  if (!response.headers.has("Cache-Control")) {
-    response.headers.set(
-      "Cache-Control",
-      "private, max-age=60, stale-while-revalidate=3600",
-    );
-  }
+  //    shared CDN serve the same HTML to multiple users. Override Next's
+  //    default no-store which blocks even the browser's local cache.
+  response.headers.set(
+    "Cache-Control",
+    "private, max-age=60, stale-while-revalidate=3600",
+  );
 
   return response;
 }
