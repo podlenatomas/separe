@@ -17,10 +17,12 @@ export async function GET() {
 
   try {
     // 1. Získat Place ID pokud není definováno, přes Find Place API
+    // Cache-bust v=2: předchozí deploy uložil REQUEST_DENIED ve fetch cache;
+    // změna URL vytvoří nový cache key a Google se zavolá znovu.
     if (!placeId) {
       const findPlaceRes = await fetch(
-        `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Separé%20Mikulandská%20133&inputtype=textquery&fields=place_id&key=${apiKey}`,
-        { next: { revalidate: 86400 } }, // Cache na den
+        `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Separé%20Mikulandská%20133&inputtype=textquery&fields=place_id&language=cs&key=${apiKey}`,
+        { next: { revalidate: 86400 } },
       );
       const findPlaceData = await findPlaceRes.json();
 
@@ -39,7 +41,7 @@ export async function GET() {
 
     // 2. Stáhnout detaily podniku: 5 nejnovějších recenzí + agregát (rating + count)
     const detailsRes = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&language=cs&reviews_sort=newest&key=${apiKey}`,
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews,rating,user_ratings_total&language=cs&reviews_sort=newest&region=cz&key=${apiKey}`,
       { next: { revalidate: 14400 } },
     );
     const detailsData = await detailsRes.json();
