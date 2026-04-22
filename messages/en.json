@@ -10,11 +10,12 @@
   },
   "Hero": {
     "addressBadge": "Mikulandská 133/3, Prague 1 · Est. 2024",
-    "titleCraft": "Craft beer,",
-    "titleWine": "sparkling wine",
-    "titlePeace": "board games and no place you'd rather be",
-    "subtitle": "Craft bar in the center of Prague 1. Craft beer, natural wines, pet-nat and board games, all just a minute from Národní třída.",
-    "cta": "Book a table"
+    "titleCraft": "Beer, wine, coffee,",
+    "titleWine": "board games",
+    "subtitle": "Craft bar by Národní třída. Moravian wines from Mádl, Vajbar, Tetur and Maděřič, craft beer, Italian prosecco and 80+ board games on the table.",
+    "cta": "Rezervovat stůl",
+    "titlePeaceA": "and joy a minute",
+    "titlePeaceB": "from Národní třída"
   },
   "LanguageSwitcher": {
     "switchTo": "Česky"

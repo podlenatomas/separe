@@ -65,7 +65,8 @@ export default function Hero() {
             {t("titleWine")}
           </span>{" "}
           <br className="hidden md:block" />
-          {t("titlePeace")}
+          {t("titlePeaceA")} <br className="hidden md:block" />
+          {t("titlePeaceB")}
         </motion.h1>
 
         <motion.p

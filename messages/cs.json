@@ -10,11 +10,12 @@
   },
   "Hero": {
     "addressBadge": "Mikulandská 133/3, Praha 1 · Od 2024",
-    "titleCraft": "Řemeslné pivo,",
-    "titleWine": "šumivá vína",
-    "titlePeace": "deskovky a radost uprostřed města",
-    "subtitle": "Craft bar v centru Prahy 1. Řemeslné pivo, naturální vína, pet-nat a deskovky, vše minutu od Národní třídy.",
-    "cta": "Rezervovat stůl"
+    "titleCraft": "Pivo, víno, káva,",
+    "titleWine": "deskovky",
+    "subtitle": "Craft bar u Národní třídy. Moravská vína od Mádla, Vajbara, Tetura a Maděřiče, řemeslné pivo, italská prosecca a 80+ deskovek na stole.",
+    "cta": "Rezervovat stůl",
+    "titlePeaceA": "a radost minutu",
+    "titlePeaceB": "od Národní třídy"
   },
   "LanguageSwitcher": {
     "switchTo": "English"
