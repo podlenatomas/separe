@@ -54,13 +54,17 @@ export default async function Reservation() {
             </a>
           </div>
 
-          {/* Iframe with light picture-frame */}
-          <div className="mx-auto md:mx-0 shrink-0 rounded-sm border border-border/60 bg-background p-[6px] shadow-[0_30px_80px_-40px_rgba(0,0,0,0.25)]">
+          {/* Iframe — minimal frame, blend into cream page background */}
+          <div className="mx-auto md:mx-0 shrink-0 rounded-sm border border-border/60 p-[2px] shadow-[0_30px_80px_-40px_rgba(0,0,0,0.25)]">
             <iframe
               src={embedSrc}
               title={t("iframeTitle")}
               loading="lazy"
-              className="block w-[360px] max-w-[calc(100vw-3rem)] h-[720px] rounded-[2px] bg-background border-0"
+              className="block w-[360px] max-w-[calc(100vw-3rem)] h-[720px] rounded-[2px] border-0"
+              style={{
+                mixBlendMode: "darken",
+                filter: "contrast(1.05)",
+              }}
             />
           </div>
         </div>
