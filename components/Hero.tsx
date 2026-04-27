@@ -14,7 +14,7 @@ export default function Hero() {
     <section
       // eslint-disable-next-line react-hooks/refs
       ref={hero.registerNode}
-      className="relative min-h-svh flex items-end pt-[72px] overflow-hidden"
+      className="relative min-h-[88svh] md:min-h-svh flex items-center md:items-end pt-[72px] overflow-hidden"
       aria-label="Úvod"
     >
       <motion.div
@@ -42,20 +42,20 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 md:px-12 pb-16 md:pb-24">
+      <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 md:px-12 pb-8 md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-neutral-300/50 bg-[#F5F5F0]/10 backdrop-blur-md text-xs font-bold uppercase tracking-widest text-neutral-200">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 md:mb-6 rounded-full border border-neutral-300/50 bg-[#F5F5F0]/10 backdrop-blur-md text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-200">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>{" "}
             {t("addressBadge")}
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[0.98] text-[#F5F5F0] max-w-2xl mb-6 text-balance"
+          className="text-[2rem] md:text-[3.5rem] lg:text-[4.5rem] font-black tracking-tighter leading-[1] md:leading-[0.98] text-[#F5F5F0] max-w-2xl mb-4 md:mb-6 text-balance"
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-base md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-8 leading-relaxed text-pretty"
+          className="text-sm md:text-lg font-light text-[#F5F5F0]/85 max-w-lg mb-6 md:mb-8 leading-relaxed text-pretty"
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -79,7 +79,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="mt-8 flex justify-center md:justify-start w-full"
+          className="flex justify-start w-full"
           initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.65 }}
@@ -93,7 +93,7 @@ export default function Hero() {
                 kontakt.trigger();
               }
             }}
-            className="inline-flex items-center justify-center h-[52px] px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none mx-auto md:mx-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F5F5F0]/80"
+            className="inline-flex items-center justify-center h-12 md:h-[52px] px-8 md:px-10 bg-[#F5F5F0] text-[#1A1A1A] text-[10px] font-light uppercase tracking-[0.14em] rounded-sm hover:bg-[#E8E8E2] active:scale-[0.98] transition-all duration-200 cursor-pointer border-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#F5F5F0]/80"
           >
             {t("cta")}
           </button>
