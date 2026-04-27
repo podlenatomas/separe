@@ -60,7 +60,7 @@ export default async function Reservation() {
               src={embedSrc}
               title={t("iframeTitle")}
               loading="lazy"
-              className="block w-[360px] max-w-[calc(100vw-3rem)] h-[600px] rounded-[2px] border-0"
+              className="block w-[360px] max-w-[calc(100vw-3rem)] h-[605px] rounded-[2px] border-0"
               style={{
                 mixBlendMode: "darken",
                 filter: "contrast(1.05)",
