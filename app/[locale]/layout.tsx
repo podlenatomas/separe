@@ -96,6 +96,9 @@ export async function generateMetadata({
       description: descriptions[locale] || descriptions.cs,
       images: ["/images/exterior.jpg"],
     },
+    verification: {
+      google: "OHLipchfSiZ4MQHqBzT3PSfClSEZh3GJR0hlMFKmgcs",
+    },
   };
 }
 
