@@ -19,29 +19,29 @@ export default function StickyMobileNav() {
   return (
     <nav
       aria-label={t("ariaLabel")}
-      className={`md:hidden fixed inset-x-0 z-[90] transition-transform duration-300 ${
-        bannerVisible ? "translate-y-full" : "translate-y-0"
+      className={`md:hidden fixed left-3 right-3 z-[90] transition-transform duration-300 ${
+        bannerVisible ? "translate-y-[calc(100%+1rem)]" : "translate-y-0"
       }`}
       style={{
-        bottom: "env(safe-area-inset-bottom, 0)",
+        bottom: "calc(env(safe-area-inset-bottom, 0px) + 0.75rem)",
       }}
     >
-      <div className="grid grid-cols-3 bg-foreground text-background border-t border-background/10">
+      <div className="grid grid-cols-3 bg-foreground text-background rounded-full overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.45)] ring-1 ring-background/10">
         <button
           type="button"
           onClick={handleBook}
-          className="flex flex-col items-center justify-center gap-1 h-16 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10 border-none cursor-pointer bg-transparent text-background"
+          className="flex flex-col items-center justify-center gap-1 h-14 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10 border-none cursor-pointer bg-transparent text-background"
         >
-          <Calendar size={18} strokeWidth={1.5} aria-hidden="true" />
+          <Calendar size={16} strokeWidth={1.5} aria-hidden="true" />
           <span className="text-[10px] font-light uppercase tracking-[0.12em]">
             {t("book")}
           </span>
         </button>
         <a
           href="tel:+420722339488"
-          className="flex flex-col items-center justify-center gap-1 h-16 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10 border-l border-r border-background/10"
+          className="flex flex-col items-center justify-center gap-1 h-14 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10 border-l border-r border-background/10"
         >
-          <Phone size={18} strokeWidth={1.5} aria-hidden="true" />
+          <Phone size={16} strokeWidth={1.5} aria-hidden="true" />
           <span className="text-[10px] font-light uppercase tracking-[0.12em]">
             {t("call")}
           </span>
@@ -50,9 +50,9 @@ export default function StickyMobileNav() {
           href={DIRECTIONS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center gap-1 h-16 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10"
+          className="flex flex-col items-center justify-center gap-1 h-14 min-h-[44px] px-2 active:bg-background/10 transition-colors focus-visible:outline-none focus-visible:bg-background/10"
         >
-          <MapPin size={18} strokeWidth={1.5} aria-hidden="true" />
+          <MapPin size={16} strokeWidth={1.5} aria-hidden="true" />
           <span className="text-[10px] font-light uppercase tracking-[0.12em]">
             {t("directions")}
           </span>

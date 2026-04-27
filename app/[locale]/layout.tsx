@@ -165,7 +165,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased pb-16 md:pb-0`}
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased pb-24 md:pb-0`}
       >
         <a href="#main" className="skip-link">
           {locale === "en" ? "Skip to content" : "Přeskočit na obsah"}
