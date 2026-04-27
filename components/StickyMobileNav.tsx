@@ -19,14 +19,14 @@ export default function StickyMobileNav() {
   return (
     <nav
       aria-label={t("ariaLabel")}
-      className={`md:hidden fixed left-3 right-3 z-[90] transition-transform duration-300 ${
+      className={`md:hidden fixed left-4 right-4 z-[90] transition-transform duration-300 ${
         bannerVisible ? "translate-y-[calc(100%+1rem)]" : "translate-y-0"
       }`}
       style={{
         bottom: "calc(env(safe-area-inset-bottom, 0px) + 0.75rem)",
       }}
     >
-      <div className="grid grid-cols-3 bg-foreground text-background rounded-full overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.45)] ring-1 ring-background/10">
+      <div className="grid grid-cols-3 bg-foreground text-background rounded-sm overflow-hidden shadow-[0_12px_30px_-12px_rgba(0,0,0,0.45)] ring-1 ring-background/10">
         <button
           type="button"
           onClick={handleBook}
